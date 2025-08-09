@@ -1,112 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>N5 Flashcards — Lilac Mobile v2</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>N5 Flashcards — Mobile v3</title>
 <style>
   :root{
-    --lilac:#b79df4; --lilac-2:#ece6ff; --lilac-3:#f7f4ff;
-    --ink:#1b2230; --ok:#2bbb73; --bad:#e05353; --card:#ffffff;
-    --shadow: 0 10px 30px rgba(0,0,0,.08); --radius:18px;
+    --bg-1:#f7f4ff; --bg-2:#ece6ff; --brand:#b79df4; --ink:#1b2230;
+    --ok:#2bbb73; --bad:#e05353; --card:#ffffff; --ring:rgba(0,0,0,.04);
+    --shadow:0 10px 30px rgba(0,0,0,.08); --radius:18px;
   }
-  html,body{height:100%; margin:0; overflow:hidden; background:
-    radial-gradient(1200px 600px at 0% 100%, var(--lilac-2), transparent 60%),
-    radial-gradient(1200px 600px at 100% 0%, var(--lilac-2), transparent 60%),
-    var(--lilac-3);
+  /* Themes */
+  .theme-lilac{ --bg-1:#f7f4ff; --bg-2:#ece6ff; --brand:#b79df4; }
+  .theme-blue { --bg-1:#f4f8ff; --bg-2:#e5efff; --brand:#78a8ff; }
+  .theme-mint { --bg-1:#f4fffb; --bg-2:#dff8ef; --brand:#4fd3a6; }
+  .theme-rose { --bg-1:#fff5f7; --bg-2:#ffe3ea; --brand:#ff7aa2; }
+
+  html,body{height:100%;margin:0;overflow:hidden;background:
+    radial-gradient(1200px 600px at 0% 100%, var(--bg-2), transparent 60%),
+    radial-gradient(1200px 600px at 100% 0%, var(--bg-2), transparent 60%),
+    var(--bg-1);
     font-family: ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans";
     color:var(--ink); -webkit-tap-highlight-color:transparent;
   }
   .app{
-    height: calc(100svh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-    padding:
-      calc(8px + env(safe-area-inset-top))
-      calc(12px + env(safe-area-inset-right))
-      calc(12px + env(safe-area-inset-bottom))
-      calc(12px + env(safe-area-inset-left));
-    display:flex; flex-direction:column; gap:12px; box-sizing:border-box;
+    height:calc(100svh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding: calc(8px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right))
+             calc(12px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
+    display:flex;flex-direction:column;gap:12px;box-sizing:border-box;
   }
-  .header{display:flex; align-items:center; justify-content:space-between;}
-  .brand{display:flex; align-items:center; gap:10px; font-weight:800}
-  .badge{background:var(--lilac); color:#fff; width:36px; height:36px; border-radius:10px;
-    display:grid; place-items:center; box-shadow:var(--shadow)}
-  .menu{
-    width:40px; height:40px; border-radius:12px; display:grid; place-items:center;
-    background:#fff7; backdrop-filter:saturate(120%) blur(4px); box-shadow:var(--shadow);
-  }
-  .menu div{width:18px; height:2px; background:#444; border-radius:2px; position:relative}
-  .menu div:before,.menu div:after{content:""; position:absolute; left:0; right:0; height:2px; background:#444; border-radius:2px}
-  .menu div:before{top:-6px} .menu div:after{top:6px}
+  .header{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+  .badge{background:var(--brand);color:#fff;width:36px;height:36px;border-radius:10px;
+         display:grid;place-items:center;box-shadow:var(--shadow)}
+  .menu{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+        background:#fff7;backdrop-filter:saturate(120%) blur(4px);box-shadow:var(--shadow);cursor:pointer}
+  .menu div{width:18px;height:2px;background:#444;border-radius:2px;position:relative}
+  .menu div:before,.menu div:after{content:"";position:absolute;left:0;right:0;height:2px;background:#444;border-radius:2px}
+  .menu div:before{top:-6px}.menu div:after{top:6px}
 
-  .stage{flex:1; display:flex; flex-direction:column; align-items:center; gap:12px}
+  .stage{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px}
 
-  .card-wrap{flex:1; width:100%; display:grid; place-items:center; perspective:1200px}
-  .card{
-    width:min(980px, 95vw);
-    height:min(58svh, 70vw);
-    border-radius:calc(var(--radius) + 6px);
-    box-shadow:var(--shadow), inset 0 0 0 1px rgba(0,0,0,.04);
-    position:relative;
-    background:var(--card);
-    transition: background-color .25s ease, box-shadow .25s ease;
-  }
-  .card-inner{
-    position:absolute; inset:0; border-radius:inherit; transform-style:preserve-3d;
-    transition: transform .45s cubic-bezier(.2,.7,.2,1);
-    display:grid; place-items:center;
-  }
-  .face{
-    position:absolute; inset:0; backface-visibility:hidden; border-radius:inherit;
-    display:grid; place-items:center; text-align:center; padding:14px;
-  }
-  .front .main{font-weight:800; font-size: clamp(34px, 8.5vw, 80px)}
-  .back  .main{font-weight:700; font-size: clamp(22px, 5.2vw, 36px)}
-  .back  .sub1{font-size: clamp(16px, 4vw, 22px); opacity:.9; margin-top:8px}
-  .back  .sub2{font-size: clamp(14px, 3.6vw, 18px); opacity:.85; margin-top:6px}
+  /* Card */
+  .card-wrap{flex:1;width:100%;display:grid;place-items:center;perspective:1200px}
+  .card{width:min(980px,95vw);height:min(58svh,70vw);border-radius:calc(var(--radius)+6px);
+        box-shadow:var(--shadow),inset 0 0 0 1px var(--ring);position:relative;background:var(--card);
+        transition:background-color .25s ease,box-shadow .25s ease}
+  .card-inner{position:absolute;inset:0;border-radius:inherit;transform-style:preserve-3d;
+              transition:transform .45s cubic-bezier(.2,.7,.2,1);display:grid;place-items:center}
+  .face{position:absolute;inset:0;backface-visibility:hidden;border-radius:inherit;
+        display:grid;place-items:center;text-align:center;padding:14px}
+  .front .main{font-weight:800;font-size:clamp(36px,9vw,84px)}
+  .back .main {font-weight:800;font-size:clamp(30px,7.6vw,70px)} /* แสดงคำบนหลังด้วย */
+  .back .sub1 {font-size:clamp(18px,4.6vw,22px);opacity:.9;margin-top:8px}
+  .back .sub2 {font-size:clamp(14px,3.8vw,18px);opacity:.85;margin-top:6px}
   .back{transform:rotateY(180deg)}
+  .flipped .card-inner{transform:rotateY(180deg)}
 
-  .flipped .card-inner{ transform: rotateY(180deg) }
+  .tint-ok{background:#f1fbf6!important;box-shadow:var(--shadow),0 0 0 4px rgba(43,187,115,.18) inset}
+  .tint-bad{background:#fff5f6!important;box-shadow:var(--shadow),0 0 0 4px rgba(224,83,83,.18) inset}
+  .mark{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;
+        display:grid;place-items:center;font-weight:900;color:#fff;opacity:0;transform:scale(.8);
+        transition:opacity .2s ease,transform .2s ease}
+  .mark.ok{background:var(--ok)} .mark.bad{background:var(--bad)}
+  .show-ok .mark.ok{opacity:1;transform:scale(1)} .show-bad .mark.bad{opacity:1;transform:scale(1)}
 
-  /* swipe feedback */
-  .tint-ok{ background:#f1fbf6 !important; box-shadow:var(--shadow), 0 0 0 4px rgba(43,187,115,.18) inset }
-  .tint-bad{ background:#fff5f6 !important; box-shadow:var(--shadow), 0 0 0 4px rgba(224,83,83,.18) inset }
-
-  .mark{
-    position:absolute; top:12px; right:12px; width:40px; height:40px; border-radius:50%;
-    display:grid; place-items:center; font-weight:900; color:#fff; opacity:0; transform:scale(.8);
-    transition: opacity .2s ease, transform .2s ease;
-  }
-  .mark.ok{ background:var(--ok) } .mark.bad{ background:var(--bad) }
-  .show-ok .mark.ok{ opacity:1; transform:scale(1) }
-  .show-bad .mark.bad{ opacity:1; transform:scale(1) }
-
-  .actions{display:grid; grid-template-columns:1fr 1fr; gap:12px; width:min(960px, 96vw)}
-  .btn{
-    padding:16px 18px; border:none; border-radius:20px; color:#fff; font-weight:800;
-    font-size: clamp(15px, 3.8vw, 18px); box-shadow:var(--shadow); cursor:pointer; touch-action:manipulation;
-  }
+  /* Controls */
+  .controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(960px,96vw)}
+  .btn{padding:14px 16px;border:none;border-radius:20px;color:#fff;font-weight:800;
+       font-size:clamp(14px,3.6vw,18px);box-shadow:var(--shadow);cursor:pointer;touch-action:manipulation}
   .btn-ok{background:var(--ok)} .btn-bad{background:var(--bad)}
-  .footer{text-align:center; font-size:12px; opacity:.55}
+  .btn-ghost{grid-column:1 / -1;background:#fff;color:#333;border:1px solid rgba(0,0,0,.06)}
+  .hint{text-align:center;font-size:12px;opacity:.55}
+
+  /* Drawer */
+  .drawer{position:fixed;inset:0 0 0 auto;width:min(92vw,420px);background:#fff;border-left:1px solid #eee;
+          transform:translateX(110%);transition:transform .35s ease;box-shadow:-10px 0 30px rgba(0,0,0,.08);
+          display:flex;flex-direction:column;z-index:40}
+  .drawer.open{transform:none}
+  .drawer header{padding:14px 16px;border-bottom:1px solid #f0f0f0;font-weight:800}
+  .drawer nav{display:flex;flex-wrap:wrap;gap:8px;padding:12px 12px 0}
+  .navbtn{padding:10px 12px;border-radius:12px;background:#f7f7fb;border:1px solid #eee;cursor:pointer}
+  .panel{flex:1;overflow:auto;padding:12px}
+
+  /* Filters UI */
+  .row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+  select,input[type="search"]{flex:1;padding:10px 12px;border-radius:12px;border:1px solid #e5e5ef;background:#fff}
+  .pill{padding:8px 10px;border-radius:999px;background:#f2f2fa;border:1px solid #ececf5;margin-right:6px;font-size:12px}
+
+  /* Summary table */
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:10px;border-bottom:1px solid #f0f0f5;text-align:left}
+  th{position:sticky;top:0;background:#fff;z-index:1}
+  tr:hover{background:#fafaff}
 </style>
 </head>
-<body>
+<body class="theme-lilac">
 <div class="app">
   <div class="header">
-    <div class="brand">
-      <div class="badge">N5</div><div>N5 Flashcards</div>
-    </div>
-    <div class="menu" aria-label="menu"><div></div></div>
+    <div class="brand"><div class="badge">N5</div><div>N5 Flashcards</div></div>
+    <div class="menu" id="btnMenu" aria-label="menu"><div></div></div>
   </div>
 
-  <div class="stage">
+  <div class="stage" id="stageStudy">
     <div class="card-wrap">
       <div class="card" id="card">
         <div class="card-inner" id="cardInner">
-          <div class="face front">
-            <div>
-              <div class="main" id="frontMain">Loading…</div>
-            </div>
-          </div>
+          <div class="face front"><div class="main" id="frontMain">Loading…</div></div>
           <div class="face back">
             <div>
               <div class="main" id="backMain">—</div>
@@ -119,97 +119,215 @@
         <div class="mark bad">✗</div>
       </div>
     </div>
-
-    <div class="actions">
+    <button class="btn btn-ghost" id="btnFlip">⟳ Flip</button>
+    <div class="controls">
       <button class="btn btn-ok"  id="btnKnow">✓ Know</button>
       <button class="btn btn-bad" id="btnDont">✗ Don’t know</button>
     </div>
-    <div class="footer">Tap = flip · Swipe right = Know · Swipe left = Don’t know</div>
+    <div class="hint">Tap = flip · Swipe right = Know · Swipe left = Don’t know</div>
   </div>
+
+  <!-- Drawer -->
+  <aside class="drawer" id="drawer">
+    <header>Menu</header>
+    <nav>
+      <button class="navbtn" data-panel="study">Study</button>
+      <button class="navbtn" data-panel="summary">Summary</button>
+      <button class="navbtn" data-panel="train">Train “Don’t know”</button>
+      <button class="navbtn" data-panel="filters">Filters</button>
+      <button class="navbtn" data-panel="settings">Settings</button>
+    </nav>
+    <div class="panel" id="panelContent"></div>
+  </aside>
 </div>
 
 <script>
-/* ใช้ลิงก์ RAW ของโกโก้ */
+/* ====== Config: ใช้ลิงก์ RAW ของโกโก้ ====== */
 const DATA_URL = 'https://raw.githubusercontent.com/Pongpipatt/n5-flashcards/refs/heads/main/n5-n4-core-1000.json';
 
-let cards=[], i=0, flipped=false;
-let startX=0, startY=0, swiping=false;
+/* ====== State ====== */
+let raw=[], cards=[], i=0, flipped=false;
+let startX=0,startY=0, swiping=false;
+let filters = { tag:'', pos:'', q:'' };
+let trainUnknown = false;
+const knownMapKey='n5-known-map', themeKey='n5-theme', filterKey='n5-filters';
+let knownMap = JSON.parse(localStorage.getItem(knownMapKey)||'{}');
 
-const $ = sel => document.querySelector(sel);
+/* ====== Helpers ====== */
+const $ = s=>document.querySelector(s);
+const $$ = s=>document.querySelectorAll(s);
 const $card = $('#card'), $inner = $('#cardInner');
 const $front = $('#frontMain'), $back = $('#backMain'), $b1 = $('#backSub1'), $b2 = $('#backSub2');
+const drawer = $('#drawer'), panel = $('#panelContent');
 
-function norm(row){
-  const front = row.kanji || row.kana || row.word || '—';
-  const b1 = row.kana || '';
-  const b2 = (row.romaji || '') + (row.romaji && (row.meaning||row.thai)?' · ':'') + (row.meaning || row.thai || '');
-  return {front,b1,b2};
+function idOf(r){ return (r.kanji||'')+'|'+(r.kana||'')+'|'+(r.meaning||r.thai||'') }
+function norm(r){
+  return {
+    id: idOf(r),
+    front: r.kanji || r.kana || r.word || '—',
+    b1: r.kana || '',
+    b2: (r.romaji||'') + (r.romaji && (r.meaning||r.thai)?' · ':'') + (r.meaning||r.thai||''),
+    pos: r.pos||'', tags: r.tags||''
+  }
 }
+function applyFilters(){
+  const q = filters.q.trim().toLowerCase();
+  cards = raw.filter(r=>{
+    if(trainUnknown && knownMap[r.id]==='k') return false; // ซ่อนที่รู้แล้ว
+    if(filters.tag && !(r.tags||'').includes(filters.tag)) return false;
+    if(filters.pos && r.pos!==filters.pos) return false;
+    if(q){
+      const blob = (r.front+' '+r.b1+' '+r.b2+' '+r.tags+' '+r.pos).toLowerCase();
+      if(!blob.includes(q)) return false;
+    }
+    return true;
+  });
+  shuffle(cards); i=0; render();
+}
+function shuffle(a){ for(let k=a.length-1;k>0;k--){ const j=Math.floor(Math.random()*(k+1)); [a[k],a[j]]=[a[j],a[k]]; } }
 
 function render(){
-  const c = cards[i]; if(!c) return;
-  // reset tint & marks every render
+  if(!cards.length){ $front.textContent='No cards'; $back.textContent='—'; $b1.textContent=''; $b2.textContent=''; return; }
+  const c = cards[i];
   $card.classList.remove('tint-ok','tint-bad','show-ok','show-bad');
   $front.textContent = c.front;
-  $back.textContent  = c.front; // ต้องการให้เห็นคันจิ/ตัวคำบนหลังด้วย
+  $back.textContent  = c.front; // หลังยังแสดงคำ
   $b1.textContent    = c.b1;
   $b2.textContent    = c.b2;
   setFlip(false);
 }
-function setFlip(v){
-  flipped=v;
-  if(flipped) $card.classList.add('flipped'); else $card.classList.remove('flipped');
-}
-function next(){
-  i = (i+1) % cards.length;
-  render();
-}
-
+function setFlip(v){ flipped=v; $card.classList.toggle('flipped',flipped); }
+function next(){ i=(i+1)%cards.length; render(); }
 function know(){
-  $card.classList.add('tint-ok','show-ok');
-  setTimeout(next, 170);
+  knownMap[cards[i].id]='k'; localStorage.setItem(knownMapKey,JSON.stringify(knownMap));
+  $card.classList.add('tint-ok','show-ok'); setTimeout(()=>{ if(trainUnknown){cards.splice(i,1);} next(); },160);
 }
 function dont(){
+  knownMap[cards[i].id]='d'; localStorage.setItem(knownMapKey,JSON.stringify(knownMap));
   $card.classList.add('tint-bad','show-bad');
-  // ใบนี้โยนไปท้ายกอง
-  const cur = cards[i]; cards.splice(i,1); cards.push(cur);
-  if(i>=cards.length) i=0;
-  setTimeout(next, 170);
+  const cur = cards[i]; cards.splice(i,1); cards.push(cur); setTimeout(next,160);
 }
 
-/* Touch / Swipe */
-$card.addEventListener('touchstart', e=>{
-  const t=e.changedTouches[0]; startX=t.clientX; startY=t.clientY; swiping=true;
-},{passive:true});
-$card.addEventListener('touchmove', e=>{
-  if(!swiping) return;
-  const t=e.changedTouches[0]; const dx=t.clientX-startX; const dy=t.clientY-startY;
-  // แสดงการลากนิดหน่อย
-  $card.style.transform = `translateX(${Math.max(Math.min(dx,90),-90)}px) rotate(${dx/90*2}deg)`;
-},{passive:true});
+/* ====== Touch / Swipe / Buttons ====== */
+$card.addEventListener('touchstart', e=>{const t=e.changedTouches[0];startX=t.clientX;startY=t.clientY;swiping=true},{passive:true});
+$card.addEventListener('touchmove', e=>{if(!swiping)return; const t=e.changedTouches[0];const dx=t.clientX-startX;const dy=t.clientY-startY;
+  $card.style.transform=`translateX(${Math.max(Math.min(dx,90),-90)}px) rotate(${dx/90*2}deg)`;},{passive:true});
 $card.addEventListener('touchend', e=>{
-  if(!swiping) return; swiping=false;
-  const t=e.changedTouches[0]; const dx=t.clientX-startX; const dy=t.clientY-startY;
-  $card.style.transform='translateX(0) rotate(0)';
-  const TH=60;
+  if(!swiping)return; swiping=false; const t=e.changedTouches[0]; const dx=t.clientX-startX; const dy=t.clientY-startY;
+  $card.style.transform='translateX(0) rotate(0)'; const TH=60;
   if(Math.abs(dx)<TH && Math.abs(dy)<40){ setFlip(!flipped); return; }
   if(dx>TH) know(); else if(dx<-TH) dont();
 });
-
-// Desktop click = flip
 $card.addEventListener('click', ()=> setFlip(!flipped));
 $('#btnKnow').addEventListener('click', know);
 $('#btnDont').addEventListener('click', dont);
+$('#btnFlip').addEventListener('click', ()=> setFlip(!flipped));
 
-/* Load data */
-(async ()=>{
+/* ====== Drawer / Panels ====== */
+$('#btnMenu').onclick = ()=> drawer.classList.toggle('open');
+drawer.addEventListener('click', e=>{
+  const btn = e.target.closest('.navbtn'); if(!btn) return;
+  const p = btn.dataset.panel;
+  if(p==='study'){ drawer.classList.remove('open'); return; }
+  if(p==='train'){ trainUnknown = true; applyFilters(); renderTrainPanel(); return; }
+  if(p==='summary'){ trainUnknown=false; applyFilters(); renderSummaryPanel(); return; }
+  if(p==='filters'){ renderFilterPanel(); return; }
+  if(p==='settings'){ renderSettingsPanel(); return; }
+});
+
+/* Panels */
+function renderSummaryPanel(){
+  const rows = cards.map((c,idx)=>`<tr data-idx="${idx}"><td>${idx+1}</td><td>${escapeHtml(c.front)}</td><td>${escapeHtml(c.b1)}</td><td>${escapeHtml(c.b2)}</td><td>${escapeHtml(c.pos)}</td><td>${escapeHtml(c.tags)}</td></tr>`).join('');
+  panel.innerHTML = `
+    <h3 style="margin:6px 2px 10px">Summary · ${cards.length} items</h3>
+    <div class="row"><input id="qSum" type="search" placeholder="Search..." value="${filters.q||''}"></div>
+    <div style="overflow:auto;border:1px solid #eee;border-radius:12px">
+      <table>
+        <thead><tr><th>#</th><th>Word</th><th>Kana</th><th>Meaning</th><th>POS</th><th>Tags</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  $('#qSum').oninput = (e)=>{ filters.q = e.target.value||''; localStorage.setItem(filterKey,JSON.stringify(filters)); applyFilters(); renderSummaryPanel(); };
+  panel.querySelectorAll('tbody tr').forEach(tr=>{
+    tr.addEventListener('click',()=>{
+      const idx = +tr.dataset.idx; i = idx; drawer.classList.remove('open'); render();
+    });
+  });
+  drawer.classList.add('open');
+}
+
+function renderFilterPanel(){
+  const tags = Array.from(new Set(raw.flatMap(r=>(r.tags||'').split(',').map(s=>s.trim()).filter(Boolean)))).sort();
+  const poses = Array.from(new Set(raw.map(r=>r.pos).filter(Boolean))).sort();
+  panel.innerHTML = `
+    <h3 style="margin:6px 2px 10px">Filters</h3>
+    <div class="row"><input id="q" type="search" placeholder="Search…" value="${filters.q||''}"></div>
+    <div class="row">
+      <select id="selTag"><option value="">All tags</option>${tags.map(t=>`<option ${filters.tag===t?'selected':''}>${t}</option>`).join('')}</select>
+      <select id="selPos"><option value="">All POS</option>${poses.map(p=>`<option ${filters.pos===p?'selected':''}>${p}</option>`).join('')}</select>
+    </div>
+    <div class="row">
+      <button class="navbtn" id="apply">Apply</button>
+      <button class="navbtn" id="reset">Reset</button>
+    </div>
+    <div>Active: ${filters.tag?`<span class="pill">${filters.tag}</span>`:''}
+               ${filters.pos?`<span class="pill">${filters.pos}</span>`:''}
+               ${filters.q?`<span class="pill">"${escapeHtml(filters.q)}"</span>`:''}</div>`;
+  $('#apply').onclick = ()=>{ filters.q=$('#q').value.trim(); filters.tag=$('#selTag').value; filters.pos=$('#selPos').value;
+    localStorage.setItem(filterKey,JSON.stringify(filters)); applyFilters(); };
+  $('#reset').onclick = ()=>{ filters={tag:'',pos:'',q:''}; localStorage.setItem(filterKey,JSON.stringify(filters)); applyFilters(); renderFilterPanel(); };
+  drawer.classList.add('open');
+}
+
+function renderSettingsPanel(){
+  panel.innerHTML = `
+    <h3 style="margin:6px 2px 10px">Settings</h3>
+    <div class="row">
+      <button class="navbtn themeSel" data-t="lilac">Lilac</button>
+      <button class="navbtn themeSel" data-t="blue">Blue</button>
+      <button class="navbtn themeSel" data-t="mint">Mint</button>
+      <button class="navbtn themeSel" data-t="rose">Rose</button>
+    </div>
+    <div class="row"><button class="navbtn" id="clearKnown">Clear “Know/Don't” history</button></div>
+    <small>Theme preference & filters will be saved on this device.</small>
+  `;
+  $$('.themeSel').forEach(b=>b.addEventListener('click',()=>setTheme(b.dataset.t)));
+  $('#clearKnown').onclick = ()=>{ knownMap={}; localStorage.removeItem(knownMapKey); alert('Cleared.'); };
+  drawer.classList.add('open');
+}
+
+function renderTrainPanel(){
+  panel.innerHTML = `
+    <h3 style="margin:6px 2px 10px">Train “Don’t know”</h3>
+    <p>ฝึกเฉพาะคำที่ยังไม่รู้ (จากประวัติการกด). เมื่อจำได้แล้วกด ✓ ระบบจะเอาออกจากกองนี้ให้อัตโนมัติ</p>
+    <div class="row"><button class="navbtn" id="startTrain">Start</button>
+                     <button class="navbtn" id="exitTrain">Exit</button></div>
+    <div>Remaining: <b>${cards.length}</b> items</div>`;
+  $('#startTrain').onclick = ()=>{ drawer.classList.remove('open'); };
+  $('#exitTrain').onclick = ()=>{ trainUnknown=false; applyFilters(); };
+  drawer.classList.add('open');
+}
+
+/* ====== Theme ====== */
+function setTheme(name){
+  document.body.classList.remove('theme-lilac','theme-blue','theme-mint','theme-rose');
+  document.body.classList.add('theme-'+name);
+  localStorage.setItem(themeKey,name);
+}
+
+/* ====== Utils ====== */
+function escapeHtml(s){ return (s||'').replace(/[&<>"]/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c])); }
+
+/* ====== Boot ====== */
+(async function init(){
   try{
     const r = await fetch(DATA_URL,{cache:'no-store'});
     const arr = await r.json();
-    cards = (Array.isArray(arr)?arr:arr.data).map(norm).filter(x=>x.front.trim());
-    // สุ่มเล็กน้อย
-    for(let k=cards.length-1;k>0;k--){ const j=Math.floor(Math.random()*(k+1)); [cards[k],cards[j]]=[cards[j],cards[k]]; }
-    i=0; render();
+    raw = (Array.isArray(arr)?arr:arr.data).map(norm);
+    // restore settings
+    try{ const f = JSON.parse(localStorage.getItem(filterKey)||'{}'); if(f) filters={...filters,...f}; }catch{}
+    const th = localStorage.getItem(themeKey)||'lilac'; setTheme(th);
+    applyFilters();
   }catch(e){
     $front.textContent='Load failed'; console.error(e);
   }
