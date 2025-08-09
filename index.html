@@ -1,465 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<title>N5 Flashcards — Lilac Glass (centered actions)</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>N5 Flashcards — Lilac Mobile</title>
 <style>
-:root{
-  --lilac-50:#faf7ff; --lilac-100:#f4efff; --lilac-200:#ebe3ff;
-  --lilac-300:#d9c9ff; --lilac-400:#bda5ff; --lilac-500:#a78bfa;
-  --ink:#1f2430; --muted:#6b7280; --ok:#22c55e; --bad:#ef4444;
-  --glass-bg: color-mix(in oklab, white 65%, transparent);
-  --glass-brd: color-mix(in oklab, #c9b8ff 55%, transparent);
-  --shadow:0 18px 60px rgba(100, 64, 255, .12);
-  --safe-bottom: env(safe-area-inset-bottom, 0px);
-}
-@media (prefers-color-scheme: dark){
   :root{
-    --lilac-50:#0f0e15; --lilac-100:#141321; --lilac-200:#1b1930;
-    --lilac-300:#221f3d; --lilac-400:#3c3566; --lilac-500:#a78bfa;
-    --ink:#e7e7f1; --muted:#a7a8bb; --glass-bg: color-mix(in oklab, #171527 55%, transparent);
-    --glass-brd: color-mix(in oklab, #6c5bd6 60%, transparent);
-    --shadow:none;
+    --lilac:#b79df4;
+    --lilac-2:#e9e2ff;
+    --lilac-3:#f5f1ff;
+    --ink:#1f2630;
+    --ok:#29b36a;
+    --bad:#e14b4b;
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+    --radius:18px;
   }
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0; color:var(--ink);
-  font-family: ui-rounded, system-ui, -apple-system, "SF Pro", "Segoe UI", Inter, Arial;
-  background:
-    radial-gradient(1800px 1200px at 10% -10%, var(--lilac-300), transparent 60%),
-    radial-gradient(1600px 1000px at 90% 10%, var(--lilac-200), transparent 60%),
-    linear-gradient(180deg, var(--lilac-50), var(--lilac-100));
-}
+  html, body {height:100%; margin:0; padding:0; overflow:hidden; background:
+    radial-gradient(1200px 600px at 0% 100%, var(--lilac-2), transparent 60%),
+    radial-gradient(1200px 600px at 100% 0%, var(--lilac-2), transparent 60%),
+    var(--lilac-3);
+    -webkit-tap-highlight-color: transparent;
+    font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    color:var(--ink);
+  }
 
-/* App bar */
-.header{position:sticky; top:0; z-index:50; backdrop-filter:blur(10px);
-  background: var(--glass-bg); border-bottom:1px solid var(--glass-brd);}
-.header-in{max-width:1200px; margin:0 auto; padding:12px 18px;
-  display:flex; align-items:center; justify-content:space-between; gap:12px;}
-.brand{display:flex; align-items:center; gap:10px}
-.logo{display:grid; place-items:center; width:38px; height:38px; border-radius:12px;
-  background: linear-gradient(135deg, var(--lilac-500), #c5b3ff); color:#fff; font-weight:900; letter-spacing:.5px; box-shadow: var(--shadow);}
-h1{margin:0; font-size:18px; letter-spacing:.2px}
-.iconbtn{display:inline-grid; place-items:center; width:40px; height:40px; border-radius:12px;
-  border:1px solid var(--glass-brd); background:var(--glass-bg); cursor:pointer;
-  backdrop-filter: blur(10px); transition:transform .08s ease;}
-.iconbtn:active{transform:scale(.98)}
-.iconbtn svg{width:20px;height:20px;color:var(--ink)}
+  /* App layout */
+  .app{
+    height: calc(100svh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding:
+      calc(8px + env(safe-area-inset-top))
+      calc(12px + env(safe-area-inset-right))
+      calc(12px + env(safe-area-inset-bottom))
+      calc(12px + env(safe-area-inset-left));
+    display:flex; flex-direction:column; gap:12px; box-sizing:border-box;
+  }
 
-/* Shell */
-.shell{max-width:1200px; margin:18px auto; padding:0 18px 140px}
-.center{display:flex; align-items:center; justify-content:center}
+  .header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:6px 10px; border-radius:12px;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px;}
+  .badge{background:var(--lilac); color:#fff; width:36px; height:36px; border-radius:10px; display:grid; place-items:center; font-weight:800; box-shadow: var(--shadow);}
+  .brand span{opacity:.9}
 
-/* Card */
-.card{width:min(100%,880px); min-height:56vh; border-radius:24px; border:1px solid var(--glass-brd);
-  background: var(--glass-bg); backdrop-filter: blur(12px); box-shadow: var(--shadow);
-  padding:28px; margin:0 auto; display:flex; align-items:center; justify-content:center; text-align:center}
-.face{max-width:92%}
-.title{font-size:52px; font-weight:800; letter-spacing:.4px}
-.reading{margin-top:8px; font-size:22px; color:var(--muted)}
-.romaji{margin-top:2px; font-size:14px; color:var(--muted)}
-.meaning{margin-top:14px; font-size:20px; font-weight:700}
-.hint{max-width:880px; margin:8px auto 0; font-size:12px; color:var(--muted)}
+  .stage{ flex:1 1 auto; display:flex; flex-direction:column; align-items:center; gap:10px; }
 
-/* Stats */
-.stats{display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin:14px auto 0; max-width:880px}
-.box{background: var(--glass-bg); border:1px solid var(--glass-brd); border-radius:14px; text-align:center; padding:10px 8px; backdrop-filter: blur(10px)}
-.box h3{margin:0 0 6px; font-size:11px; color:var(--muted); font-weight:700}
-.box div{font-size:18px; font-weight:800}
+  .card-wrap{
+    position:relative; flex:1 1 auto; width:100%;
+    display:grid; place-items:center;
+  }
+  .card{
+    width:min(980px, 95vw);
+    height:min(56svh, 66vw); /* ดูดีทั้งแนวตั้ง/แนวนอน */
+    background: #fff;
+    border-radius: calc(var(--radius) + 6px);
+    box-shadow: var(--shadow), inset 0 0 0 1px rgba(0,0,0,.03);
+    display:grid; place-items:center;
+    padding: 12px; box-sizing:border-box;
+    font-weight:800; font-size: clamp(28px, 6.2vw, 64px);
+    transform: translate3d(0,0,0);
+    transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease;
+    user-select:none;
+    text-align:center;
+  }
+  .card.knew   { background: #f2fbf6; box-shadow: var(--shadow), 0 0 0 4px rgba(41,179,106,.15) inset; }
+  .card.dk     { background: #fff5f5; box-shadow: var(--shadow), 0 0 0 4px rgba(225,75,75,.15) inset; }
 
-/* Bottom actions — CENTERED */
-.bottom{position:fixed; left:0; right:0; bottom:0; z-index:40;
-  border-top:1px solid var(--glass-brd); background:var(--glass-bg); backdrop-filter:blur(10px);
-  padding:12px 16px calc(12px + var(--safe-bottom));}
-.actions{
-  max-width:880px; margin:0 auto;
-  display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap;
-}
-.btn{
-  min-width:220px; padding:14px 16px; border-radius:14px;
-  border:1px solid var(--glass-brd); background:var(--glass-bg);
-  font-weight:800; letter-spacing:.2px; cursor:pointer; box-shadow: var(--shadow);
-}
-.btn.primary{background:linear-gradient(135deg, var(--lilac-500), #c5b3ff); color:#fff; border-color:transparent}
-.btn.ok{background:#22c55e; color:#fff; border-color:transparent}
-.btn.bad{background:#ef4444; color:#fff; border-color:transparent}
-.linkbtn{background:transparent; border:0; color:var(--ink); opacity:.8; font-weight:800; cursor:pointer}
-.linkwrap{width:100%; display:flex; justify-content:center}
+  .sub{
+    position:absolute; bottom:10px; left:0; right:0;
+    font-size: clamp(13px, 2.6vw, 16px); opacity:.7; font-weight:500;
+  }
 
-/* Desktop: keep centered as well (no fixed bar feel) */
-@media (min-width:900px){
-  .shell{padding-bottom:40px}
-  .bottom{position:static; background:transparent; border:0; padding:18px 0 0}
-}
+  /* Buttons row */
+  .actions{
+    display:grid; grid-template-columns:1fr 1fr; gap:12px;
+    width:min(960px, 96vw); margin: 0 auto;
+  }
+  .btn{
+    padding:16px 18px; border-radius:20px; border:none; cursor:pointer; font-weight:800;
+    font-size: clamp(15px, 3.8vw, 18px);
+    color:#fff; box-shadow: var(--shadow);
+    transition: transform .12s ease, filter .12s ease, opacity .12s ease, background .2s ease;
+    touch-action: manipulation;
+  }
+  .btn:active{ transform: translateY(1px) scale(.99); filter:brightness(.98) }
+  .btn-ok{ background: var(--ok); }
+  .btn-bad{ background: var(--bad); }
 
-/* Drawer */
-.drawer{position:fixed; inset:0; z-index:70; display:none}
-.drawer.open{display:block}
-.backdrop{position:absolute; inset:0; background:rgba(0,0,0,.25)}
-.panel{position:absolute; right:0; top:0; bottom:0; width:min(420px,92vw);
-  background:var(--glass-bg); backdrop-filter:blur(14px);
-  border-left:1px solid var(--glass-brd); padding:16px; overflow:auto}
-.section{border:1px solid var(--glass-brd); border-radius:12px; padding:12px; margin-bottom:12px; background:var(--glass-bg)}
-.section h3{margin:0 0 8px; font-size:13px; color:var(--muted); font-weight:900; letter-spacing:.2px}
-.row{display:flex; gap:8px; flex-wrap:wrap}
-select, textarea, .ghost, .solid{
-  width:100%; border:1px solid var(--glass-brd); border-radius:10px;
-  padding:10px 12px; background:var(--glass-bg); color:var(--ink); font-weight:700}
-.ghost{cursor:pointer}
-.solid{background:linear-gradient(135deg, var(--lilac-500), #c5b3ff); color:#fff; border-color:transparent; cursor:pointer}
+  .footer { text-align:center; font-size:12px; opacity:.55; padding-top:4px;}
 
-/* Summary */
-.tools{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:12px 0}
-.tools .search{flex:1}
-.tools input{width:100%; padding:10px 12px; border:1px solid var(--glass-brd); border-radius:10px; background:var(--glass-bg); color:var(--ink); font-weight:600}
-.tablewrap{border:1px solid var(--glass-brd); border-radius:12px; background:var(--glass-bg); backdrop-filter:blur(10px);
-  max-width:880px; margin:0 auto; overflow:auto}
-table{width:100%; border-collapse:collapse}
-th,td{padding:10px; border-bottom:1px solid var(--glass-brd); font-size:13px; text-align:left}
-th{user-select:none; cursor:pointer; color:var(--muted)}
-tr:hover{background:color-mix(in oklab, var(--lilac-500) 10%, transparent)}
-.small{font-size:12px; color:var(--muted)}
-.hidden{display:none}
+  /* Flip states */
+  .face-front{ display:block; }
+  .face-back { display:none; font-weight:600 }
+  .flipped .face-front{ display:none }
+  .flipped .face-back { display:block }
+
+  /* swipe hint overlay (subtle) */
+  .hint{
+    position:absolute; inset:0; pointer-events:none; border-radius: inherit;
+    background: linear-gradient(90deg, rgba(41,179,106,.08), transparent 35%, transparent 65%, rgba(225,75,75,.08));
+  }
 </style>
 </head>
 <body>
-  <!-- App Bar -->
-  <div class="header">
-    <div class="header-in">
+  <div class="app">
+    <div class="header">
       <div class="brand">
-        <div class="logo">N5</div>
-        <h1>N5 Flashcards</h1>
+        <div class="badge">N5</div>
+        <span>N5 Flashcards</span>
       </div>
-      <div>
-        <button class="iconbtn" id="openSummary" title="Summary">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v2H3zM3 11h12v2H3zM3 17h18v2H3z"/></svg>
-        </button>
-        <button class="iconbtn" id="openMenu" title="Menu">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 7h18v2H3V7Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="shell">
-    <div class="center">
-      <div class="card" id="card"><div class="face" id="face">Loading…</div></div>
-    </div>
-    <div class="hint" id="hint"></div>
-
-    <div class="stats">
-      <div class="box"><h3>Box 1</h3><div id="b1">0</div></div>
-      <div class="box"><h3>Box 2</h3><div id="b2">0</div></div>
-      <div class="box"><h3>Box 3</h3><div id="b3">0</div></div>
-      <div class="box"><h3>Box 4</h3><div id="b4">0</div></div>
-      <div class="box"><h3>Box 5</h3><div id="b5">0</div></div>
+      <div style="font-size:13px;opacity:.65" id="meta"></div>
     </div>
 
-    <!-- Summary -->
-    <div class="hidden" id="summary">
-      <div class="tools" style="max-width:880px;margin-left:auto;margin-right:auto">
-        <div class="search"><input id="q" placeholder="Search: kanji/kana/romaji/meaning/tags"></div>
-        <select id="dueOnly">
-          <option value="all">All</option>
-          <option value="due">Due today</option>
-        </select>
-        <button class="ghost" id="exportFiltered">Export CSV (filtered)</button>
-        <div class="small" id="countInfo"></div>
-      </div>
-      <div class="tablewrap">
-        <table id="tbl">
-          <thead>
-            <tr>
-              <th data-k="idx">#</th>
-              <th data-k="kanji">Kanji/Kana</th>
-              <th data-k="romaji">Romaji</th>
-              <th data-k="meaning">Meaning (TH)</th>
-              <th data-k="pos">POS</th>
-              <th data-k="tags">Tags</th>
-              <th data-k="box">Box</th>
-              <th data-k="nextReview">Due</th>
-            </tr>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
-      </div>
-      <div class="small" style="max-width:880px;margin:6px auto 0">Tap column to sort • Tap row to drill into this card</div>
-    </div>
-  </div>
-
-  <!-- Centered Bottom Actions -->
-  <div class="bottom">
-    <div class="actions">
-      <button class="btn primary" id="flip">⎌ Flip (Space)</button>
-      <button class="btn ok" id="know">✓ Know</button>
-      <button class="btn bad" id="dontknow">✗ Don’t know</button>
-      <div class="linkwrap">
-        <button class="linkbtn" id="trainHard">Train “Don’t know”</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Drawer -->
-  <div class="drawer" id="drawer">
-    <div class="backdrop" id="closeMenu"></div>
-    <div class="panel">
-      <div class="section">
-        <h3>View & Filters</h3>
-        <div class="row">
-          <select id="view">
-            <option value="flash">Flashcard</option>
-            <option value="quiz">Quiz</option>
-            <option value="summary">Summary</option>
-          </select>
-          <select id="front">
-            <option value="kanji">Front: Kanji</option>
-            <option value="kana">Front: Kana</option>
-            <option value="meaning">Front: Meaning (TH)</option>
-          </select>
-          <select id="filter">
-            <option value="due">Due today</option>
-            <option value="all">All</option>
-            <option value="new">New only</option>
-            <option value="hard">Don’t know (Box 1)</option>
-          </select>
-          <select id="categorySelect">
-            <option value="">All tags</option>
-          </select>
-          <button class="ghost" id="shuffle">Shuffle</button>
+    <div class="stage">
+      <div class="card-wrap">
+        <div class="card" id="card">
+          <div>
+            <div class="face-front" id="front">Loading…</div>
+            <div class="face-back"  id="back"></div>
+          </div>
+          <div class="hint"></div>
+          <div class="sub" id="sub"></div>
         </div>
       </div>
 
-      <div class="section">
-        <h3>Data</h3>
-        <div class="row">
-          <button class="ghost" id="export">Export JSON</button>
-          <label class="ghost" style="display:block;cursor:pointer">
-            <input id="import" type="file" accept=".csv,.json" style="display:none">Import CSV/JSON
-          </label>
-          <button class="ghost" id="reset">Reset to Seed</button>
-        </div>
+      <div class="actions">
+        <button class="btn btn-ok"  id="btnKnow">✓ Know</button>
+        <button class="btn btn-bad" id="btnDont">✗ Don’t know</button>
       </div>
 
-      <div class="section">
-        <h3>Edit Vocabulary (JSON)</h3>
-        <div class="row">
-          <textarea id="editor" placeholder="Edit JSON then click Update…"></textarea>
-          <button class="solid" id="applyEdit">Update list</button>
-        </div>
-        <div class="small" style="margin-top:6px">Columns: <b>kanji, kana, romaji, meaning, pos, tags</b></div>
-      </div>
-
-      <div class="small">Lilac Glass — mobile-first • dark mode • progress saved locally</div>
+      <div class="footer">Tip: tap to flip · swipe right = Know, left = Don’t know</div>
     </div>
   </div>
 
 <script>
-/* --- Seed (short). Use your n5-flashcards.json for full set. --- */
-const seed=[{kanji:"日",kana:"ひ / にち",romaji:"hi / nichi",meaning:"วัน / ดวงอาทิตย์",pos:"n",tags:"เวลา,kanji"},
-{kanji:"学校",kana:"がっこう",romaji:"gakkou",meaning:"โรงเรียน",pos:"n",tags:"สถานที่"},
-{kanji:"行く",kana:"いく",romaji:"iku",meaning:"ไป",pos:"v",tags:"กริยา,การเคลื่อนที่"},
-{kanji:"食べる",kana:"たべる",romaji:"taberu",meaning:"กิน",pos:"v",tags:"กริยา,อาหาร"},
-{kanji:"白",kana:"しろ",romaji:"shiro",meaning:"สีขาว",pos:"n/adj",tags:"สี"},
-{kanji:"赤",kana:"あか",romaji:"aka",meaning:"สีแดง",pos:"n/adj",tags:"สี"},
-{kanji:"青",kana:"あお",romaji:"ao",meaning:"สีน้ำเงิน/ฟ้า",pos:"n/adj",tags:"สี"},
-{kanji:"きょう",kana:"きょう",romaji:"kyou",meaning:"วันนี้",pos:"n",tags:"เวลา"}];
+/* 1) ตั้งลิงก์ JSON จาก GitHub (ปุ่ม RAW)
+   ตัวอย่าง:
+   https://raw.githubusercontent.com/pongpipatt/jp-n5-n4-flashcards/main/n5-n4-core-1000.json
+*/
+const DATA_URL = 'https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/n5-n4-core-1000.json';
 
-const KEY="n5_cards_lilac_glass_v2";
-const today=()=>new Date();
-const addDays=(d,n)=>{const t=new Date(d);t.setDate(t.getDate()+n);return t}
-const intervals=[0,0,1,3,7,14];
-const emptyState=()=>seed.map((c,i)=>({id:i+"-"+(c.kanji||c.kana||c.meaning),...c,box:1,nextReview:new Date(0).toISOString()}));
-function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch{}}
-function load(){try{const raw=localStorage.getItem(KEY); if(!raw){const init=emptyState();save(init);return init;}
-  const data=JSON.parse(raw); if(!Array.isArray(data)||!data.length){const init=emptyState();save(init);return init;} return data;}
-  catch{const init=emptyState();save(init);return init;}}
+// ====== State ======
+let cards = []; // {front, back, raw}
+let idx = 0;
+let flipped = false;
+let stats = {known:0, unknown:0};
+let touchStartX = 0, touchStartY = 0, swiping = false;
 
-let cards=load(), current=null, showBack=false;
-const $=id=>document.getElementById(id);
-const els={
-  face:$('face'), card:$('card'), hint:$('hint'),
-  b1:$('b1'),b2:$('b2'),b3:$('b3'),b4:$('b4'),b5:$('b5'),
-  drawer:$('drawer'), openMenu:$('openMenu'), closeMenu:$('closeMenu'),
-  view:$('view'), front:$('front'), filter:$('filter'), cat:$('categorySelect'),
-  shuffle:$('shuffle'), exportBtn:$('export'), importBtn:$('import'),
-  reset:$('reset'), editor:$('editor'), applyEdit:$('applyEdit'),
-  flip:$('flip'), know:$('know'), dont:$('dontknow'), trainHard:$('trainHard'),
-  openSummary:$('openSummary'), summary:$('summary'), q:$('q'), dueOnly:$('dueOnly'),
-  tbody:$('tbody'), countInfo:$('countInfo'), exportFiltered:$('exportFiltered'), tbl:$('tbl')
-};
+// ====== Helpers ======
+const el = id => document.getElementById(id);
+const $card = el('card'), $front = el('front'), $back = el('back'), $sub = el('sub'), $meta = el('meta');
 
-/* Helpers */
-const hasKanji=t=>/[\u4E00-\u9FAF\u3400-\u4DBF]/.test(t||"");
-const fmtDate=d=> (new Date(d).getTime()===0 ? "-" : new Date(d).toLocaleDateString('th-TH'));
-function buildCategories(){
-  const set=new Set();
-  cards.forEach(c=>(c.tags||"").split(",").map(s=>s.trim()).filter(Boolean).forEach(t=>set.add(t)));
-  const list=['',...Array.from(set).sort()];
-  els.cat.innerHTML=''; list.forEach(v=>{const op=document.createElement('option'); op.value=v; op.textContent=v||'All tags'; els.cat.appendChild(op);});
-}
-function inCategory(c){const sel=els.cat.value; if(!sel) return true; return (c.tags||"").split(",").map(s=>s.trim()).includes(sel);}
-function dueFilter(c){return new Date(c.nextReview)<=today();}
-function getPool(){
-  const base=cards.filter(inCategory); const f=els.filter.value;
-  if(f==='all') return base;
-  if(f==='new') return base.filter(c=>c.box===1 && new Date(c.nextReview).getTime()===0);
-  if(f==='hard') return base.filter(c=>c.box===1);
-  return base.filter(dueFilter);
-}
-const rand=a=>a[Math.floor(Math.random()*a.length)];
-function updateStats(){const ct=[0,0,0,0,0,0]; cards.forEach(c=>ct[c.box]++);
-  els.b1.textContent=ct[1]; els.b2.textContent=ct[2]; els.b3.textContent=ct[3]; els.b4.textContent=ct[4]; els.b5.textContent=ct[5];}
-
-/* Flash/Quiz */
-function backHTML(it){
-  const showK=hasKanji(it.kanji), head=showK? it.kanji : (it.kana||it.kanji||"");
-  const reading=(showK && it.kana)? `<div class="reading">${it.kana}</div>` : "";
-  const romaji=it.romaji?`<div class="romaji">${it.romaji}</div>`:"";
-  const meaning=it.meaning?`<div class="meaning">${it.meaning}</div>`:"";
-  return `<div class="title">${head}</div>${reading}${romaji}${meaning}`;
-}
-function frontText(it,side){
-  if(side==='kanji') return it.kanji || it.kana || it.meaning || "";
-  if(side==='kana')  return it.kana  || it.kanji || it.meaning || "";
-  return it.meaning || it.kanji || it.kana || "";
-}
-function renderCard(){
-  const pool=getPool();
-  if(!pool.length){ els.face.innerHTML="<div class='meaning'>No cards for current filters</div>"; els.hint.textContent=""; current=null; showBack=false; return; }
-  current=rand(pool); showBack=false; drawFace();
-}
-function drawFace(){
-  if(!current) return;
-  const front=`<div class="title">${frontText(current, els.front.value)}</div>`;
-  els.face.innerHTML = showBack ? backHTML(current) : front;
-  els.hint.textContent = `#${current.box} • next: ${fmtDate(current.nextReview)} • tags: ${current.tags||'-'}`;
-}
-function mark(ok){
-  if(!current) return;
-  current.box = ok ? Math.min(5,current.box+1) : 1;
-  current.nextReview = addDays(today(), intervals[current.box]).toISOString();
-  save(cards); updateStats();
-  (els.view.value==='quiz')? renderQuiz(): renderCard();
-}
-function shuffle(a){return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);}
-function renderQuiz(){
-  const pool=getPool();
-  if(pool.length<4){ els.face.innerHTML="<div class='meaning'>Need ≥ 4 cards for quiz</div>"; els.hint.textContent=""; current=null; return; }
-  current=rand(pool); showBack=true;
-  const q=frontText(current, els.front.value);
-  const ans=(els.front.value==='meaning')?(current.kanji||current.kana):current.meaning;
-  const choices=shuffle(cards.filter(c=>c.id!==current.id && inCategory(c))).slice(0,3)
-    .map(c=> (els.front.value==='meaning') ? (c.kanji||c.kana) : c.meaning);
-  const opts=shuffle([ans,...choices]);
-  els.face.innerHTML=`<div class="title" style="font-size:28px">${q}</div>
-                      <div class="romaji">Choose the correct answer</div>
-                      <div id="choices" style="margin-top:10px"></div>`;
-  els.hint.textContent=`Box ${current.box} • tags: ${current.tags||"-"}`;
-  const wrap=document.getElementById('choices');
-  opts.forEach(o=>{
-    const b=document.createElement('button'); b.className='btn'; b.style.margin='6px'; b.textContent=o;
-    b.onclick=()=>{ const ok=(o===ans); b.className='btn '+(ok?'ok':'bad'); setTimeout(()=>mark(ok),350); };
-    wrap.appendChild(b);
-  });
+function normalizeRow(r){
+  const front = r.kanji || r.kana || r.word || '';
+  const back  = `
+    <div style="font-size:clamp(15px,3.8vw,18px);opacity:.9;margin-bottom:6px">${r.kana || ''}</div>
+    <div style="font-size:clamp(13px,3.4vw,16px);opacity:.8">${r.romaji || ''}</div>
+    <div style="font-size:clamp(14px,3.6vw,17px);margin-top:8px">${r.meaning || r.thai || ''}</div>
+  `.trim();
+  const sub   = `${r.pos? r.pos+' · ' : ''}${r.tags || ''}`;
+  return { front: front || '—', back, sub, raw:r };
 }
 
-/* Summary */
-let sortKey='idx', sortDir=1;
-function summaryFiltered(){
-  const term=(els.q?.value||'').trim().toLowerCase();
-  const dueOnly=(els.dueOnly?.value==='due'); const catSel=els.cat.value;
-  return cards.filter(c=>{
-    if(catSel && !(c.tags||'').split(',').map(s=>s.trim()).includes(catSel)) return false;
-    if(dueOnly && !(new Date(c.nextReview)<=today())) return false;
-    const hay=[c.kanji,c.kana,c.romaji,c.meaning,c.pos,c.tags].join(' ').toLowerCase();
-    return !term || hay.includes(term);
-  });
+function render(){
+  const c = cards[idx];
+  if(!c){ $front.textContent='No cards'; $back.textContent=''; return; }
+  $front.textContent = c.front;
+  $back.innerHTML    = c.back;
+  $sub.textContent   = c.sub;
+  $meta.textContent  = `#${idx+1}/${cards.length} · Known ${stats.known} · Unknown ${stats.unknown}`;
+  setFlipped(false);
 }
-function cmp(a,b,k){ const av=(k==='nextReview')? new Date(a[k]).getTime() : (a[k]??''); const bv=(k==='nextReview')? new Date(b[k]).getTime() : (b[k]??''); return av<bv?-1:av>bv?1:0; }
-function renderSummary(){
-  const data=summaryFiltered().map((c,i)=>({...c,idx:i+1}));
-  data.sort((a,b)=>sortDir*cmp(a,b,sortKey));
-  els.tbody.innerHTML='';
-  data.forEach((c,i)=>{
-    const tr=document.createElement('tr');
-    tr.innerHTML=`<td>${i+1}</td>
-      <td>${c.kanji||c.kana||'-'} ${c.kana?`<span class="small">【${c.kana}】</span>`:''}</td>
-      <td>${c.romaji||'-'}</td><td>${c.meaning||'-'}</td>
-      <td>${c.pos||'-'}</td><td>${c.tags||'-'}</td>
-      <td>${c.box}</td><td>${fmtDate(c.nextReview)}</td>`;
-    tr.onclick=()=>{ current=cards.find(x=>x.kanji===c.kanji && x.kana===c.kana && x.meaning===c.meaning) || null; els.view.value='flash'; switchView(); drawFace(); };
-    els.tbody.appendChild(tr);
-  });
-  els.countInfo.textContent=`Showing ${data.length} / ${cards.length}`;
+
+function setFlipped(f){
+  flipped = f;
+  $card.classList.toggle('flipped', flipped);
 }
-Array.from(els.tbl.querySelectorAll('th')).forEach(th=>{
-  th.onclick=()=>{const k=th.getAttribute('data-k'); if(sortKey===k) sortDir*=-1; else{sortKey=k; sortDir=1;} renderSummary();};
+
+function nextCard(){
+  // เลือกการ์ดถัดไปแบบสุ่มถ่วงน้ำหนักเล็กน้อย
+  idx = (idx + 1) % cards.length;
+  render();
+}
+
+// ====== Actions ======
+function onKnow(){
+  stats.known++;
+  flashTint('ok');
+  nextCard();
+}
+function onDont(){
+  stats.unknown++;
+  flashTint('bad');
+  // ถ้ายังจำไม่ได้ เอาใบนี้สลับไปท้ายกอง
+  const cur = cards[idx];
+  cards.splice(idx,1);
+  cards.push(cur);
+  if(idx >= cards.length) idx = 0;
+  nextCard();
+}
+
+function flashTint(type){
+  $card.classList.remove('knew','dk');
+  void $card.offsetWidth; // restart transition
+  if(type==='ok') $card.classList.add('knew');
+  if(type==='bad') $card.classList.add('dk');
+  // slide animation
+  $card.style.transition = 'transform .22s ease, background-color .25s ease, box-shadow .25s ease';
+  $card.style.transform = `translateX(${type==='ok'?'+80':'-80'}px)`;
+  setTimeout(()=>{$card.style.transform='translateX(0)';}, 180);
+}
+
+// ====== Touch / Swipe ======
+$card.addEventListener('touchstart', e=>{
+  const t = e.changedTouches[0];
+  touchStartX = t.clientX; touchStartY = t.clientY; swiping = true;
+},{passive:true});
+
+$card.addEventListener('touchmove', e=>{
+  if(!swiping) return;
+  const t = e.changedTouches[0];
+  const dx = t.clientX - touchStartX;
+  const dy = t.clientY - touchStartY;
+  // จำกัดให้ลากได้เล็กน้อยเป็นฟีดแบ็ก
+  $card.style.transform = `translateX(${Math.max(Math.min(dx,90),-90)}px) rotate(${dx/90*2}deg)`;
+},{passive:true});
+
+$card.addEventListener('touchend', e=>{
+  if(!swiping) return;
+  swiping = false;
+  const t = e.changedTouches[0];
+  const dx = t.clientX - touchStartX;
+  const dy = t.clientY - touchStartY;
+  $card.style.transform = 'translateX(0) rotate(0)';
+  const TH = 60; // threshold
+  // ถ้าไม่ถึง threshold ให้ถือว่า tap => flip
+  if (Math.abs(dx) < TH && Math.abs(dy) < 40) { setFlipped(!flipped); return; }
+  if (dx > TH) onKnow();
+  else if (dx < -TH) onDont();
 });
-els.q?.addEventListener('input',()=>renderSummary());
-els.dueOnly?.addEventListener('change',()=>renderSummary());
-els.exportFiltered.onclick=()=>{
-  const rows=summaryFiltered().map(c=>[c.kanji??'',c.kana??'',c.romaji??'',c.meaning??'',c.pos??'',c.tags??'',c.box,c.nextReview]);
-  const csv=[["kanji","kana","romaji","meaning","pos","tags","box","nextReview"],...rows].map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
-  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='n5-summary-filtered.csv'; a.click(); URL.revokeObjectURL(url);
-};
 
-/* Import/Export/Editor */
-function fromCSV(text){
-  const lines=text.trim().split(/\r?\n/); const head=lines.shift().split(",").map(s=>s.trim().toLowerCase()); const idx=k=>head.indexOf(k); const out=[];
-  for(const line of lines){ const cells=[]; let cur="",q=false; for(let i=0;i<line.length;i++){const ch=line[i];
-    if(ch=='"'){ if(q && line[i+1]=='"'){cur+='"';i++;} else q=!q; }
-    else if(ch==',' && !q){ cells.push(cur); cur=""; }
-    else cur+=ch; } cells.push(cur);
-    out.push({kanji:cells[idx("kanji")]||"",kana:cells[idx("kana")]||"",romaji:cells[idx("romaji")]||"",meaning:cells[idx("meaning")]||"",pos:cells[idx("pos")]||"",tags:cells[idx("tags")]||""});
+// Desktop click = flip
+$card.addEventListener('click', ()=> setFlipped(!flipped));
+
+// Buttons
+document.getElementById('btnKnow').addEventListener('click', onKnow);
+document.getElementById('btnDont').addEventListener('click', onDont);
+
+// ====== Boot ======
+(async function init(){
+  try{
+    const res = await fetch(DATA_URL, {cache:'no-store'});
+    const raw = await res.json();
+    // รองรับทั้ง array เดียว หรือ object ที่มี data
+    const arr = Array.isArray(raw) ? raw : (raw.data || []);
+    cards = arr.map(normalizeRow).filter(x=>x.front && (x.raw.meaning || x.raw.thai));
+    // สุ่มลำดับเริ่มต้นเล็กน้อย
+    for(let i=cards.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [cards[i],cards[j]]=[cards[j],cards[i]]; }
+    idx = 0; stats = {known:0, unknown:0};
+    render();
+  }catch(err){
+    $front.textContent = 'Failed to load data';
+    console.error(err);
   }
-  return out;
-}
-function normalize(list){ return list.filter(x=>(x.kanji||x.kana||x.meaning)).map((c,i)=>({id:i+"-"+(c.kanji||c.kana||c.meaning),kanji:c.kanji??"",kana:c.kana??"",romaji:c.romaji??"",meaning:c.meaning??"",pos:c.pos??"",tags:c.tags??"",box:1,nextReview:new Date(0).toISOString()})); }
-els.applyEdit.onclick=()=>{ try{ const list=JSON.parse(els.editor.value); const norm=normalize(list); cards=norm; save(cards); updateStats(); buildCategories(); (els.view.value==='summary')?renderSummary():render(); alert("Updated!"); }catch{ alert("Invalid JSON"); } };
-els.exportBtn.onclick=()=>{ const blob=new Blob([JSON.stringify(cards,null,2)],{type:"application/json"}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='n5-flashcards.json'; a.click(); URL.revokeObjectURL(url); };
-els.importBtn.onchange=e=>{ const f=e.target.files?.[0]; if(!f) return; const reader=new FileReader(); reader.onload=()=>{ try{ const txt=reader.result; const list=f.name.toLowerCase().endsWith(".csv")? fromCSV(txt): JSON.parse(txt);
-  const norm=normalize(list); if(!norm.length){alert("No data found"); return;} cards=norm; save(cards); updateStats(); buildCategories(); (els.view.value==='summary')?renderSummary():render(); alert("Imported!"); }catch{ alert("Invalid file"); } }; reader.readAsText(f,"utf-8"); };
-els.reset.onclick=()=>{ if(confirm('Reset to seed? This clears stats.')){ cards=emptyState(); save(cards); updateStats(); buildCategories(); (els.view.value==='summary')?renderSummary():render(); alert('Reset done'); } };
-
-/* Drawer & View */
-function openDrawer(open=true){ if(open) els.drawer.classList.add('open'); else els.drawer.classList.remove('open'); }
-$('openMenu').onclick=()=>openDrawer(true);
-$('closeMenu').onclick=()=>openDrawer(false);
-
-/* Summary button = toggle */
-$('openSummary').onclick=()=>{
-  if(els.view.value==='summary'){ els.view.value='flash'; switchView(); }
-  else { els.view.value='summary'; switchView(); }
-  openDrawer(false);
-};
-
-function switchView(){
-  const v=els.view.value;
-  if(v==='summary'){ els.summary.classList.remove('hidden'); renderSummary(); }
-  else { els.summary.classList.add('hidden'); (v==='flash')?renderCard():renderQuiz(); }
-}
-
-/* Actions / shortcuts */
-els.flip.onclick=()=>{ showBack=!showBack; drawFace(); };
-els.card.onclick=()=>{ showBack=!showBack; drawFace(); };
-els.know.onclick=()=>mark(true);
-els.dont.onclick=()=>mark(false);
-els.shuffle.onclick=()=>{ cards=cards.sort(()=>Math.random()-0.5); (els.view.value==='quiz')?renderQuiz():renderCard(); };
-document.addEventListener('keydown',e=>{
-  if(e.code==='Space' && els.view.value!=='summary'){ e.preventDefault(); els.flip.click(); }
-  if(e.key==='1'){ els.dont.click(); }
-  if(e.key==='2'){ els.know.click(); }
-  if(e.key.toLowerCase()==='h'){ els.trainHard.click(); }
-});
-els.trainHard.onclick=()=>{ els.view.value='flash'; els.filter.value='hard'; els.cat.value=''; switchView(); };
-
-/* Init */
-function buildEditor(){ const bare=cards.map(({kanji,kana,romaji,meaning,pos,tags})=>({kanji,kana,romaji,meaning,pos,tags})); els.editor.value=JSON.stringify(bare,null,2); }
-function init(){ updateStats(); buildCategories(); buildEditor(); els.view.value='flash'; switchView(); }
-init();
+})();
 </script>
 </body>
 </html>
