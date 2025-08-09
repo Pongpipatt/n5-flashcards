@@ -5,7 +5,10 @@
     "romaji": "aaisukuriimu",
     "meaning": "ไอศกรีม",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをあアイスクリーみます。",
+    "example_th": "ฉันไอศกรีม",
+    "qa_flags": []
   },
   {
     "kanji": "間",
@@ -13,7 +16,10 @@
     "romaji": "aida",
     "meaning": "ระหว่าง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の間にあります。",
+    "example_th": "หนังสืออยู่ระหว่างโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "青",
@@ -21,7 +27,10 @@
     "romaji": "ao",
     "meaning": "สีฟ้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは青です。",
+    "example_th": "นี่คือสีฟ้า",
+    "qa_flags": []
   },
   {
     "kanji": "赤",
@@ -29,7 +38,10 @@
     "romaji": "aka",
     "meaning": "สีแดง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは赤です。",
+    "example_th": "นี่คือสีแดง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -37,7 +49,10 @@
     "romaji": "agemasu",
     "meaning": "ให้",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをあげまします。",
+    "example_th": "ฉันให้",
+    "qa_flags": []
   },
   {
     "kanji": "朝",
@@ -45,7 +60,10 @@
     "romaji": "asa",
     "meaning": "ตอนเช้า",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これは朝です。",
+    "example_th": "นี่คือตอนเช้า",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -53,7 +71,10 @@
     "romaji": "asatte",
     "meaning": "มะรืน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはあさってです。",
+    "example_th": "นี่คือมะรืน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -61,7 +82,10 @@
     "romaji": "asoko",
     "meaning": "ตรงโน้น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはあそこです。",
+    "example_th": "นี่คือตรงโน้น",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -69,7 +93,10 @@
     "romaji": "ato",
     "meaning": "หลังจาก",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の後ろにあります。",
+    "example_th": "หนังสืออยู่หลังโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -77,7 +104,10 @@
     "romaji": "abunai",
     "meaning": "อันตราย",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はあぶないです。",
+    "example_th": "ห้องนี้อันตราย",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -85,7 +115,10 @@
     "romaji": "amarinai",
     "meaning": "ไม่ค่อย",
     "level": "N5",
-    "category": "คำกริยาวิเศษณ์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はあまりないです。",
+    "example_th": "ห้องนี้ไม่ค่อย",
+    "qa_flags": []
   },
   {
     "kanji": "雨",
@@ -93,15 +126,10 @@
     "romaji": "ame",
     "meaning": "ฝน",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "歩",
-    "kana": "ある",
-    "romaji": "aru",
-    "meaning": "いてきます เดินมา",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは雨です。",
+    "example_th": "นี่คือฝน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -109,7 +137,10 @@
     "romaji": "arubaito",
     "meaning": "งานพาร์ตไทม์, งานพิเศษ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはアルバイトです。",
+    "example_th": "นี่คืองานพาร์ตไทม์, งานพิเศษ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -117,7 +148,10 @@
     "romaji": "iii",
     "meaning": "ดี",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はいいいです。",
+    "example_th": "ห้องนี้ดี",
+    "qa_flags": []
   },
   {
     "kanji": "家",
@@ -125,7 +159,10 @@
     "romaji": "ie",
     "meaning": "บ้าน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは家です。",
+    "example_th": "นี่คือบ้าน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -133,7 +170,10 @@
     "romaji": "itaria",
     "meaning": "ประเทศอิตาลี",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはイタリアです。",
+    "example_th": "นี่คือประเทศอิตาลี",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -141,7 +181,10 @@
     "romaji": "itsu",
     "meaning": "เมื่อไร",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいちます。",
+    "example_th": "ฉันเมื่อไร",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -149,7 +192,10 @@
     "romaji": "itsumo",
     "meaning": "เสมอๆ",
     "level": "N5",
-    "category": "คำกริยาวิเศษณ์"
+    "category": "คำนาม",
+    "example_jp": "これはいつもです。",
+    "example_th": "นี่คือเสมอๆ",
+    "qa_flags": []
   },
   {
     "kanji": "犬",
@@ -157,7 +203,10 @@
     "romaji": "inu",
     "meaning": "สุนัข",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをにます。",
+    "example_th": "ฉันสุนัข",
+    "qa_flags": []
   },
   {
     "kanji": "今",
@@ -165,7 +214,10 @@
     "romaji": "ima",
     "meaning": "ตอนนี้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは今です。",
+    "example_th": "นี่คือตอนนี้",
+    "qa_flags": []
   },
   {
     "kanji": "今",
@@ -173,7 +225,12 @@
     "romaji": "ima",
     "meaning": "から หลังจากนี้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の後ろにあります。",
+    "example_th": "หนังสืออยู่หลังโต๊ะ",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "入",
@@ -181,7 +238,10 @@
     "romaji": "riguchi",
     "meaning": "ทางเข้า",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは入です。",
+    "example_th": "นี่คือทางเข้า",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -189,7 +249,10 @@
     "romaji": "irimasu",
     "meaning": "ต้องการ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいりまします。",
+    "example_th": "ฉันต้องการ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -197,7 +260,10 @@
     "romaji": "iroiro",
     "meaning": "ต่างๆนานา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはいろいろです。",
+    "example_th": "นี่คือต่างๆนานา",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -205,7 +271,10 @@
     "romaji": "intaanetto",
     "meaning": "อินเทอร์เน็ต",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはインターネットです。",
+    "example_th": "นี่คืออินเทอร์เน็ต",
+    "qa_flags": []
   },
   {
     "kanji": "歌",
@@ -213,15 +282,10 @@
     "romaji": "uta",
     "meaning": "เพลง",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "歌",
-    "kana": "うた",
-    "romaji": "uta",
-    "meaning": "います ร้องเพลง",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは歌です。",
+    "example_th": "นี่คือเพลง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -229,7 +293,10 @@
     "romaji": "uchi",
     "meaning": "บ้าน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはうちです。",
+    "example_th": "นี่คือบ้าน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -237,7 +304,10 @@
     "romaji": "ura",
     "meaning": "ด้านหลัง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の後ろにあります。",
+    "example_th": "หนังสืออยู่หลังโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -245,15 +315,10 @@
     "romaji": "ee",
     "meaning": "รูปวาด",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "映",
-    "kana": "が",
-    "romaji": "ga",
-    "meaning": "ภาพยนตร์",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはええです。",
+    "example_th": "นี่คือรูปวาด",
+    "qa_flags": []
   },
   {
     "kanji": "画",
@@ -261,23 +326,10 @@
     "romaji": "kan",
     "meaning": "โรงภาพยนตร์",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "駅",
-    "kana": "えき",
-    "romaji": "eki",
-    "meaning": "สถานีรถไฟ",
-    "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "駅",
-    "kana": "まえ",
-    "romaji": "mae",
-    "meaning": "หน้าสถานีรถไฟ",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは画です。",
+    "example_th": "นี่คือโรงภาพยนตร์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -285,7 +337,10 @@
     "romaji": "enpitsu",
     "meaning": "ดินสอ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをえんぴちます。",
+    "example_th": "ฉันดินสอ",
+    "qa_flags": []
   },
   {
     "kanji": "金",
@@ -293,7 +348,10 @@
     "romaji": "okane",
     "meaning": "เงิน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは金です。",
+    "example_th": "นี่คือเงิน",
+    "qa_flags": []
   },
   {
     "kanji": "言",
@@ -301,7 +359,12 @@
     "romaji": "ikata",
     "meaning": "ของที่ชอบ( รูปสุภาพของ好す",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは言です。",
+    "example_th": "นี่คือของที่ชอบ( รูปสุภาพของ好す",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "茶",
@@ -309,7 +372,10 @@
     "romaji": "ocha",
     "meaning": "น้าชา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは茶です。",
+    "example_th": "นี่คือน้าชา",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -317,7 +383,10 @@
     "romaji": "otera",
     "meaning": "วัด",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはおてらです。",
+    "example_th": "นี่คือวัด",
+    "qa_flags": []
   },
   {
     "kanji": "男",
@@ -325,7 +394,10 @@
     "romaji": "noko",
     "meaning": "เด็กผู้ชาย",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは男です。",
+    "example_th": "นี่คือเด็กผู้ชาย",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -333,7 +405,10 @@
     "romaji": "ototoi",
     "meaning": "เมื่อวานซืน",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はおとといです。",
+    "example_th": "ห้องนี้เมื่อวานซืน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -341,7 +416,10 @@
     "romaji": "onaka",
     "meaning": "ท้อง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはおなかです。",
+    "example_th": "นี่คือท้อง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -349,7 +427,10 @@
     "romaji": "ofuro",
     "meaning": "อ่างอาบน้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の上にあります。",
+    "example_th": "หนังสืออยู่บนโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "弁",
@@ -357,7 +438,12 @@
     "romaji": "tou",
     "meaning": "ข้าวกล่อง(รูปสุภาพของ弁べん",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันข้าวกล่อง(รูปสุภาพของ弁べん",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -365,7 +451,10 @@
     "romaji": "omiyage",
     "meaning": "ของฝาก",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはおみやげです。",
+    "example_th": "นี่คือของฝาก",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -373,15 +462,10 @@
     "romaji": "imasu",
     "meaning": "คิด",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "泳",
-    "kana": "およ",
-    "romaji": "oyo",
-    "meaning": "ぎます ว่ายน้า",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいまします。",
+    "example_th": "ฉันคิด",
+    "qa_flags": []
   },
   {
     "kanji": "言",
@@ -389,31 +473,12 @@
     "romaji": "ikata",
     "meaning": "เครื่องดื่ม( รูปสุภาพของ飲の",
     "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันอังคาร",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "会",
-    "kana": "ぎ",
-    "romaji": "gi",
-    "meaning": "การประชุม",
-    "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "会",
-    "kana": "ぎ",
-    "romaji": "gi",
-    "meaning": "（を）します ประชุม",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは言です。",
+    "example_th": "นี่คือเครื่องดื่ม( รูปสุภาพของ飲の",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "買",
@@ -421,23 +486,10 @@
     "romaji": "imono",
     "meaning": "การซื้อของ",
     "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "買",
-    "kana": "いもの",
-    "romaji": "imono",
-    "meaning": "（を）します ซื้อของ",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "帰",
-    "kana": "かえ",
-    "romaji": "kae",
-    "meaning": "ってきます กลับมา",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは買です。",
+    "example_th": "นี่คือการซื้อของ",
+    "qa_flags": []
   },
   {
     "kanji": "顔",
@@ -445,7 +497,10 @@
     "romaji": "kao",
     "meaning": "หน้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -453,7 +508,10 @@
     "romaji": "kagi",
     "meaning": "กุญแจ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはかぎです。",
+    "example_th": "นี่คือกุญแจ",
+    "qa_flags": []
   },
   {
     "kanji": "生",
@@ -461,7 +519,10 @@
     "romaji": "sei",
     "meaning": "นักเรียน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは生です。",
+    "example_th": "นี่คือนักเรียน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -469,7 +530,10 @@
     "romaji": "kasa",
     "meaning": "ร่ม",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはかさです。",
+    "example_th": "นี่คือร่ม",
+    "qa_flags": []
   },
   {
     "kanji": "形",
@@ -477,23 +541,10 @@
     "romaji": "katachi",
     "meaning": "รูปร่าง",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "学",
-    "kana": "こう",
-    "romaji": "kou",
-    "meaning": "โรงเรียน",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "買",
-    "kana": "か",
-    "romaji": "ka",
-    "meaning": "ってきます ซื้อมา",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは形です。",
+    "example_th": "นี่คือรูปร่าง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -501,7 +552,10 @@
     "romaji": "kaban",
     "meaning": "กระเป๋า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはかばんです。",
+    "example_th": "นี่คือกระเป๋า",
+    "qa_flags": []
   },
   {
     "kanji": "紙",
@@ -509,7 +563,10 @@
     "romaji": "kami",
     "meaning": "กระดาษ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは紙です。",
+    "example_th": "นี่คือกระดาษ",
+    "qa_flags": []
   },
   {
     "kanji": "紙",
@@ -517,7 +574,12 @@
     "romaji": "kami",
     "meaning": "しばい การเล่านิทานประกอบภาพ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは紙です。",
+    "example_th": "นี่คือしばい การเล่านิทานประกอบภาพ",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -525,7 +587,10 @@
     "romaji": "kamera",
     "meaning": "กล้อง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはカメラです。",
+    "example_th": "นี่คือกล้อง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -533,7 +598,10 @@
     "romaji": "karai",
     "meaning": "เผ็ด",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はからいです。",
+    "example_th": "ห้องนี้เผ็ด",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -541,7 +609,10 @@
     "romaji": "karaoke",
     "meaning": "คาราโอเกะ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはカラオケです。",
+    "example_th": "นี่คือคาราโอเกะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -549,7 +620,10 @@
     "romaji": "karaokeosuru",
     "meaning": "ร้องคาราโอเกะ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをカラオケをします。",
+    "example_th": "ฉันร้องคาราโอเกะ",
+    "qa_flags": []
   },
   {
     "kanji": "体",
@@ -557,7 +631,10 @@
     "romaji": "karada",
     "meaning": "ร่างกาย",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは体です。",
+    "example_th": "นี่คือร่างกาย",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -565,7 +642,10 @@
     "romaji": "karee",
     "meaning": "แกงกะหรี่",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはカレーです。",
+    "example_th": "นี่คือแกงกะหรี่",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -573,7 +653,10 @@
     "romaji": "karendaa",
     "meaning": "ปฏิทิน",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはカレンダーです。",
+    "example_th": "นี่คือปฏิทิน",
+    "qa_flags": []
   },
   {
     "kanji": "川",
@@ -581,7 +664,10 @@
     "romaji": "kawa",
     "meaning": "แม่น้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは川です。",
+    "example_th": "นี่คือแม่น้า",
+    "qa_flags": []
   },
   {
     "kanji": "木",
@@ -589,7 +675,10 @@
     "romaji": "kiki",
     "meaning": "ต้นไม้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは木です。",
+    "example_th": "นี่คือต้นไม้",
+    "qa_flags": []
   },
   {
     "kanji": "北",
@@ -597,7 +686,10 @@
     "romaji": "kita",
     "meaning": "ทิศเหนือ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは北です。",
+    "example_th": "นี่คือทิศเหนือ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -605,7 +697,10 @@
     "romaji": "gitaa",
     "meaning": "กีตาร์",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはギターです。",
+    "example_th": "นี่คือกีตาร์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -613,7 +708,10 @@
     "romaji": "kitanai",
     "meaning": "สกปรก",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はきたないです。",
+    "example_th": "ห้องนี้สกปรก",
+    "qa_flags": []
   },
   {
     "kanji": "店",
@@ -621,7 +719,10 @@
     "romaji": "kissaten",
     "meaning": "ร้านกาแฟ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "สถานที่",
+    "example_jp": "これは店です。",
+    "example_th": "นี่คือร้านกาแฟ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -629,15 +730,10 @@
     "romaji": "kinou",
     "meaning": "เมื่อวาน",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "決",
-    "kana": "き",
-    "romaji": "ki",
-    "meaning": "めます ตัดสินใจ",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをきのいます。",
+    "example_th": "ฉันเมื่อวาน",
+    "qa_flags": []
   },
   {
     "kanji": "今日",
@@ -645,7 +741,10 @@
     "romaji": "kyou",
     "meaning": "วันนี้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれを今います。",
+    "example_th": "ฉันวันนี้",
+    "qa_flags": []
   },
   {
     "kanji": "兄",
@@ -653,7 +752,10 @@
     "romaji": "dai",
     "meaning": "พี่น้อง",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は兄です。",
+    "example_th": "ห้องนี้พี่น้อง",
+    "qa_flags": []
   },
   {
     "kanji": "去",
@@ -661,15 +763,10 @@
     "romaji": "nen",
     "meaning": "ปีที่แล้ว",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันศุกร์",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは去です。",
+    "example_th": "นี่คือปีที่แล้ว",
+    "qa_flags": []
   },
   {
     "kanji": "行",
@@ -677,7 +774,10 @@
     "romaji": "kou",
     "meaning": "ธนาคาร",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันธนาคาร",
+    "qa_flags": []
   },
   {
     "kanji": "空",
@@ -685,15 +785,10 @@
     "romaji": "kou",
     "meaning": "สนามบิน",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "電",
-    "kana": "わ",
-    "romaji": "wa",
-    "meaning": "โทรศัพท์เคลื่อนที่, โทรศัพท์มือถือ",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันสนามบิน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -701,7 +796,10 @@
     "romaji": "keeki",
     "meaning": "เค้ก",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはケーキです。",
+    "example_th": "นี่คือเค้ก",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -709,7 +807,10 @@
     "romaji": "geemu",
     "meaning": "เกม",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをゲーみます。",
+    "example_th": "ฉันเกม",
+    "qa_flags": []
   },
   {
     "kanji": "今朝",
@@ -717,23 +818,10 @@
     "romaji": "kesa",
     "meaning": "เมื่อเช้า",
     "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันจันทร์",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "วันจันทร์",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは今朝です。",
+    "example_th": "นี่คือเมื่อเช้า",
+    "qa_flags": []
   },
   {
     "kanji": "公",
@@ -741,7 +829,10 @@
     "romaji": "en",
     "meaning": "สวนสาธารณะ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "สถานที่",
+    "example_jp": "これは公です。",
+    "example_th": "นี่คือสวนสาธารณะ",
+    "qa_flags": []
   },
   {
     "kanji": "茶",
@@ -749,7 +840,10 @@
     "romaji": "koucha",
     "meaning": "ชาดา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは茶です。",
+    "example_th": "นี่คือชาดา",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -757,7 +851,10 @@
     "romaji": "kouban",
     "meaning": "ป้อมตารวจ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはこうばんです。",
+    "example_th": "นี่คือป้อมตารวจ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -765,7 +862,10 @@
     "romaji": "koohii",
     "meaning": "กาแฟ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはコーヒーです。",
+    "example_th": "นี่คือกาแฟ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -773,7 +873,10 @@
     "romaji": "koko",
     "meaning": "ที่นี่",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはここです。",
+    "example_th": "นี่คือที่นี่",
+    "qa_flags": []
   },
   {
     "kanji": "午",
@@ -781,7 +884,10 @@
     "romaji": "zen",
     "meaning": "ช่วงเช้า",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これは午です。",
+    "example_th": "นี่คือช่วงเช้า",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -789,7 +895,10 @@
     "romaji": "koppu",
     "meaning": "ถ้วย",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはコップです。",
+    "example_th": "นี่คือถ้วย",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -797,7 +906,10 @@
     "romaji": "kotoba",
     "meaning": "คาศัพท์",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはことばです。",
+    "example_th": "นี่คือคาศัพท์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -805,7 +917,10 @@
     "romaji": "kono",
     "meaning": "นี้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはこのです。",
+    "example_th": "นี่คือนี้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -813,7 +928,10 @@
     "romaji": "konoato",
     "meaning": "หลังจากนี้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の後ろにあります。",
+    "example_th": "หนังสืออยู่หลังโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -821,7 +939,10 @@
     "romaji": "konohen",
     "meaning": "แถวนี้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはこのへんです。",
+    "example_th": "นี่คือแถวนี้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -829,15 +950,10 @@
     "romaji": "konsaato",
     "meaning": "คอนเสิร์ต",
     "level": "N5",
-    "category": "คาตาคานะ"
-  },
-  {
-    "kanji": "今",
-    "kana": "ど",
-    "romaji": "do",
-    "meaning": "ครั้งนี้",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはコンサートです。",
+    "example_th": "นี่คือคอนเสิร์ต",
+    "qa_flags": []
   },
   {
     "kanji": "今",
@@ -845,7 +961,10 @@
     "romaji": "ban",
     "meaning": "คืนนี้",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは今です。",
+    "example_th": "นี่คือคืนนี้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -853,7 +972,10 @@
     "romaji": "konbini",
     "meaning": "ร้านสะดวกซื้อ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "สถานที่",
+    "example_jp": "これはコンビニです。",
+    "example_th": "นี่คือร้านสะดวกซื้อ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -861,7 +983,10 @@
     "romaji": "konpyuutaa",
     "meaning": "คอมพิวเตอร์",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはコンピューターです。",
+    "example_th": "นี่คือคอมพิวเตอร์",
+    "qa_flags": []
   },
   {
     "kanji": "魚",
@@ -869,7 +994,10 @@
     "romaji": "sasakana",
     "meaning": "ปลา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは魚です。",
+    "example_th": "นี่คือปลา",
+    "qa_flags": []
   },
   {
     "kanji": "作",
@@ -877,7 +1005,10 @@
     "romaji": "bun",
     "meaning": "เรียงความ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは作です。",
+    "example_th": "นี่คือเรียงความ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -885,7 +1016,10 @@
     "romaji": "sakkaa",
     "meaning": "ฟุตบอล",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはサッカーです。",
+    "example_th": "นี่คือฟุตบอล",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -893,7 +1027,10 @@
     "romaji": "sakki",
     "meaning": "ก่อนหน้านี้, เมื่อสักครู่",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -901,7 +1038,10 @@
     "romaji": "sandoicchi",
     "meaning": "แซนด์วิช",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはサンドイッチです。",
+    "example_th": "นี่คือแซนด์วิช",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -909,7 +1049,10 @@
     "romaji": "zannen",
     "meaning": "น่าเสียดาย",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはざんねんです。",
+    "example_th": "นี่คือน่าเสียดาย",
+    "qa_flags": []
   },
   {
     "kanji": "試",
@@ -917,7 +1060,10 @@
     "romaji": "ken",
     "meaning": "การสอบ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは試です。",
+    "example_th": "นี่คือการสอบ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -925,7 +1071,10 @@
     "romaji": "shatsu",
     "meaning": "เสื้อเชิ้ต",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをシャちます。",
+    "example_th": "ฉันเสื้อเชิ้ต",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -933,7 +1082,10 @@
     "romaji": "shawaa",
     "meaning": "การอาบน้าฝักบัว",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "本は机の上にあります。",
+    "example_th": "หนังสืออยู่บนโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -941,7 +1093,10 @@
     "romaji": "juusu",
     "meaning": "น้าผลไม้",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをジューします。",
+    "example_th": "ฉันน้าผลไม้",
+    "qa_flags": []
   },
   {
     "kanji": "宿",
@@ -949,23 +1104,10 @@
     "romaji": "dai",
     "meaning": "การบ้าน",
     "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "宿",
-    "kana": "だい",
-    "romaji": "dai",
-    "meaning": "（を）します ทาการบ้าน",
-    "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "上",
-    "kana": "ず",
-    "romaji": "zu",
-    "meaning": "เก่ง",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は宿です。",
+    "example_th": "ห้องนี้การบ้าน",
+    "qa_flags": []
   },
   {
     "kanji": "堂",
@@ -973,7 +1115,10 @@
     "romaji": "dou",
     "meaning": "โรงอาหาร",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันโรงอาหาร",
+    "qa_flags": []
   },
   {
     "kanji": "親",
@@ -981,7 +1126,10 @@
     "romaji": "setsu",
     "meaning": "ใจดี",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "กริยา",
+    "example_jp": "私はそれをちます。",
+    "example_th": "ฉันใจดี",
+    "qa_flags": []
   },
   {
     "kanji": "心",
@@ -989,23 +1137,10 @@
     "romaji": "pai",
     "meaning": "ความกังวล, ความเป็นห่วง",
     "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "新",
-    "kana": "ぶん",
-    "romaji": "bun",
-    "meaning": "หนังสือพิมพ์",
-    "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันพุธ",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は心です。",
+    "example_th": "ห้องนี้ความกังวล, ความเป็นห่วง",
+    "qa_flags": []
   },
   {
     "kanji": "水",
@@ -1013,15 +1148,10 @@
     "romaji": "ei",
     "meaning": "การว่ายน้า",
     "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "วันพุธ",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は水です。",
+    "example_th": "ห้องนี้การว่ายน้า",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1029,7 +1159,10 @@
     "romaji": "suutsu",
     "meaning": "สูท",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをスーちます。",
+    "example_th": "ฉันสูท",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1037,7 +1170,10 @@
     "romaji": "suupaa",
     "meaning": "ซูเปอร์มาร์เกต",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはスーパーです。",
+    "example_th": "นี่คือซูเปอร์มาร์เกต",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1045,7 +1181,10 @@
     "romaji": "sukii",
     "meaning": "สกี",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはスキーです。",
+    "example_th": "นี่คือสกี",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1053,7 +1192,10 @@
     "romaji": "onakagasukimasu",
     "meaning": "หิว",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをおなかがすきまします。",
+    "example_th": "ฉันหิว",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1061,7 +1203,10 @@
     "romaji": "sukeeto",
     "meaning": "สเกต",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはスケートです。",
+    "example_th": "นี่คือสเกต",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1069,7 +1214,10 @@
     "romaji": "sutoobu",
     "meaning": "เครื่องทาความร้อน, เตาผิง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをストーびます。",
+    "example_th": "ฉันเครื่องทาความร้อน, เตาผิง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1077,7 +1225,10 @@
     "romaji": "supootsu",
     "meaning": "กีฬา",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをスポーちます。",
+    "example_th": "ฉันกีฬา",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1085,7 +1236,10 @@
     "romaji": "zubon",
     "meaning": "กางเกง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはズボンです。",
+    "example_th": "นี่คือกางเกง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1093,7 +1247,10 @@
     "romaji": "suwarimasu",
     "meaning": "นั่ง",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをすわりまします。",
+    "example_th": "ฉันนั่ง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1101,7 +1258,10 @@
     "romaji": "seikatsu",
     "meaning": "การใช้ชีวิต, วิถีชีวิต",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをせいかちます。",
+    "example_th": "ฉันการใช้ชีวิต, วิถีชีวิต",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1109,7 +1269,10 @@
     "romaji": "seetaa",
     "meaning": "สเวตเตอร์",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはセーターです。",
+    "example_th": "นี่คือสเวตเตอร์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1117,7 +1280,10 @@
     "romaji": "zehi",
     "meaning": "อย่างแน่นอน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはぜひです。",
+    "example_th": "นี่คืออย่างแน่นอน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1125,15 +1291,10 @@
     "romaji": "semai",
     "meaning": "แคบ",
     "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "全",
-    "kana": "ぶ",
-    "romaji": "bu",
-    "meaning": "で รวมทั้งหมด",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はせまいです。",
+    "example_th": "ห้องนี้แคบ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1141,7 +1302,10 @@
     "romaji": "sozou",
     "meaning": "ช้าง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをそゾいます。",
+    "example_th": "ฉันช้าง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1149,7 +1313,10 @@
     "romaji": "soko",
     "meaning": "ที่นั่น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはそこです。",
+    "example_th": "นี่คือที่นั่น",
+    "qa_flags": []
   },
   {
     "kanji": "外",
@@ -1157,7 +1324,10 @@
     "romaji": "soto",
     "meaning": "ข้างนอก",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の外にあります。",
+    "example_th": "หนังสืออยู่นอกโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1165,7 +1335,10 @@
     "romaji": "soba",
     "meaning": "ใกล้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の近くにあります。",
+    "example_th": "หนังสืออยู่ใกล้โต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "空",
@@ -1173,7 +1346,10 @@
     "romaji": "sora",
     "meaning": "ท้องฟ้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは空です。",
+    "example_th": "นี่คือท้องฟ้า",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1181,7 +1357,10 @@
     "romaji": "sorekara",
     "meaning": "จากนั้น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはそれからです。",
+    "example_th": "นี่คือจากนั้น",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1189,7 +1368,10 @@
     "romaji": "soredeha",
     "meaning": "ถ้าอย่างนั้น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはそれではです。",
+    "example_th": "นี่คือถ้าอย่างนั้น",
+    "qa_flags": []
   },
   {
     "kanji": "大",
@@ -1197,7 +1379,10 @@
     "romaji": "setsu",
     "meaning": "สาคัญ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをちます。",
+    "example_th": "ฉันสาคัญ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1205,7 +1390,10 @@
     "romaji": "taitei",
     "meaning": "ปกติ",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋はたいていです。",
+    "example_th": "ห้องนี้ปกติ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1213,7 +1401,10 @@
     "romaji": "taihen",
     "meaning": "อย่างมาก",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはたいへんです。",
+    "example_th": "นี่คืออย่างมาก",
+    "qa_flags": []
   },
   {
     "kanji": "台",
@@ -1221,7 +1412,10 @@
     "romaji": "wan",
     "meaning": "ไต้หวัน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは台です。",
+    "example_th": "นี่คือไต้หวัน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1229,7 +1423,10 @@
     "romaji": "takushii",
     "meaning": "แท็กซี่",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはタクシーです。",
+    "example_th": "นี่คือแท็กซี่",
+    "qa_flags": []
   },
   {
     "kanji": "正",
@@ -1237,7 +1434,12 @@
     "romaji": "tada",
     "meaning": "しい ถูกต้อง",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これは正です。",
+    "example_th": "นี่คือしい ถูกต้อง",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -1245,7 +1447,10 @@
     "romaji": "tachi",
     "meaning": "คาเติมท้ายให้เป็นรูปพหูพจน์( ใช้กับคน)",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはたちです。",
+    "example_th": "นี่คือคาเติมท้ายให้เป็นรูปพหูพจน์( ใช้กับคน)",
+    "qa_flags": []
   },
   {
     "kanji": "楽",
@@ -1253,7 +1458,12 @@
     "romaji": "tano",
     "meaning": "しみ ความสนุก",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは楽です。",
+    "example_th": "นี่คือしみ ความสนุก",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -1261,7 +1471,10 @@
     "romaji": "dame",
     "meaning": "ไม่ได้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはだめです。",
+    "example_th": "นี่คือไม่ได้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1269,7 +1482,10 @@
     "romaji": "dare",
     "meaning": "ใคร",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはだれです。",
+    "example_th": "นี่คือใคร",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1277,7 +1493,10 @@
     "romaji": "dareka",
     "meaning": "ใครสักคน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはだれかです。",
+    "example_th": "นี่คือใครสักคน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1285,7 +1504,10 @@
     "romaji": "daretomo",
     "meaning": "กับใครก็ตาม( ใช้กับคากริยารูปปฏิเสธ)",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはだれともです。",
+    "example_th": "นี่คือกับใครก็ตาม( ใช้กับคากริยารูปปฏิเสธ)",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1293,7 +1515,10 @@
     "romaji": "daremo",
     "meaning": "ใครก็ตาม( ใช้กับคากริยารูปปฏิเสธ)",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはだれもです。",
+    "example_th": "นี่คือใครก็ตาม( ใช้กับคากริยารูปปฏิเสธ)",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1301,7 +1526,10 @@
     "romaji": "dansu",
     "meaning": "การเต้น",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをダンします。",
+    "example_th": "ฉันการเต้น",
+    "qa_flags": []
   },
   {
     "kanji": "近",
@@ -1309,7 +1537,12 @@
     "romaji": "chika",
     "meaning": "く ความใกล้เคียง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の近くにあります。",
+    "example_th": "หนังสืออยู่ใกล้โต๊ะ",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "下",
@@ -1317,7 +1550,10 @@
     "romaji": "tetsu",
     "meaning": "รถไฟใต้ดิน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをちます。",
+    "example_th": "ฉันรถไฟใต้ดิน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1325,7 +1561,10 @@
     "romaji": "chiketto",
     "meaning": "ตั๋ว",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはチケットです。",
+    "example_th": "นี่คือตั๋ว",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1333,7 +1572,10 @@
     "romaji": "choudo",
     "meaning": "พอดี",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これはちょうどです。",
+    "example_th": "นี่คือพอดี",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1341,7 +1583,10 @@
     "romaji": "tsukaremasu",
     "meaning": "เหนื่อย",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをつかれまします。",
+    "example_th": "ฉันเหนื่อย",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1349,7 +1594,10 @@
     "romaji": "kimasu",
     "meaning": "มาถึง",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをきまします。",
+    "example_th": "ฉันมาถึง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1357,7 +1605,10 @@
     "romaji": "sutoobuotsukemasu",
     "meaning": "เปิด(เครื่องทาความร้อน)",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをストーブをつけまします。",
+    "example_th": "ฉันเปิด(เครื่องทาความร้อน)",
+    "qa_flags": []
   },
   {
     "kanji": "手",
@@ -1365,7 +1616,10 @@
     "romaji": "tete",
     "meaning": "มือ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは手です。",
+    "example_th": "นี่คือมือ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1373,7 +1627,10 @@
     "romaji": "shatsu",
     "meaning": "เสื้อยืด",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをシャちます。",
+    "example_th": "ฉันเสื้อยืด",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1381,7 +1638,10 @@
     "romaji": "deizuniirando",
     "meaning": "ดิสนีย์แลนด์",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはディズニーランドです。",
+    "example_th": "นี่คือดิสนีย์แลนด์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1389,15 +1649,10 @@
     "romaji": "teeburu",
     "meaning": "โต๊ะ",
     "level": "N5",
-    "category": "คาตาคานะ"
-  },
-  {
-    "kanji": "出",
-    "kana": "で",
-    "romaji": "de",
-    "meaning": "かけます ออกไปข้างนอก",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをテーブます。",
+    "example_th": "ฉันโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "手",
@@ -1405,7 +1660,10 @@
     "romaji": "gami",
     "meaning": "จดหมาย",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは手です。",
+    "example_th": "นี่คือจดหมาย",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1413,7 +1671,10 @@
     "romaji": "tenisu",
     "meaning": "เทนนิส",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをテニします。",
+    "example_th": "ฉันเทนนิส",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1421,15 +1682,10 @@
     "romaji": "dehasoredeha",
     "meaning": "ถ้าอย่างนั้น",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "学",
-    "kana": "をで",
-    "romaji": "ode",
-    "meaning": "ます③ จบการศึกษา(จากมหาวิทยาลัย)",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはではそれではです。",
+    "example_th": "นี่คือถ้าอย่างนั้น",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1437,7 +1693,10 @@
     "romaji": "demo",
     "meaning": "แต่",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはでもです。",
+    "example_th": "นี่คือแต่",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1445,15 +1704,10 @@
     "romaji": "terebi",
     "meaning": "โทรทัศน์",
     "level": "N5",
-    "category": "คาตาคานะ"
-  },
-  {
-    "kanji": "天",
-    "kana": "き",
-    "romaji": "ki",
-    "meaning": "อากาศ",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはテレビです。",
+    "example_th": "นี่คือโทรทัศน์",
+    "qa_flags": []
   },
   {
     "kanji": "天気",
@@ -1461,7 +1715,10 @@
     "romaji": "nohi",
     "meaning": "วันที่อากาศแจ่มใส",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは天気です。",
+    "example_th": "นี่คือวันที่อากาศแจ่มใส",
+    "qa_flags": []
   },
   {
     "kanji": "会",
@@ -1469,23 +1726,10 @@
     "romaji": "tenrankai",
     "meaning": "นิทรรศการ",
     "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "話",
-    "kana": "わ",
-    "romaji": "wa",
-    "meaning": "โทรศัพท์",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันเสาร์",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は会です。",
+    "example_th": "ห้องนี้นิทรรศการ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1493,7 +1737,10 @@
     "romaji": "doa",
     "meaning": "ประตู",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはドアです。",
+    "example_th": "นี่คือประตู",
+    "qa_flags": []
   },
   {
     "kanji": "動",
@@ -1501,7 +1748,10 @@
     "romaji": "butsu",
     "meaning": "สัตว์",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをちます。",
+    "example_th": "ฉันสัตว์",
+    "qa_flags": []
   },
   {
     "kanji": "物",
@@ -1509,7 +1759,10 @@
     "romaji": "en",
     "meaning": "สวนสัตว์",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "สถานที่",
+    "example_jp": "これは物です。",
+    "example_th": "นี่คือสวนสัตว์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1517,7 +1770,10 @@
     "romaji": "douyatte",
     "meaning": "ทาอย่างไร",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどうやってです。",
+    "example_th": "นี่คือทาอย่างไร",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1525,7 +1781,10 @@
     "romaji": "tokidoki",
     "meaning": "บางครั้ง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはときどきです。",
+    "example_th": "นี่คือบางครั้ง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1533,7 +1792,10 @@
     "romaji": "doko",
     "meaning": "ที่ไหน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどこです。",
+    "example_th": "นี่คือที่ไหน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1541,7 +1803,10 @@
     "romaji": "dokohemo",
     "meaning": "ที่ไหนก็ตาม( ใช้กับคากริยารูปปฏิเสธ)",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはどこへもです。",
+    "example_th": "นี่คือที่ไหนก็ตาม( ใช้กับคากริยารูปปฏิเสธ)",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1549,7 +1814,10 @@
     "romaji": "dokoka",
     "meaning": "ที่ไหนสักแห่ง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどこかです。",
+    "example_th": "นี่คือที่ไหนสักแห่ง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1557,7 +1825,10 @@
     "romaji": "tokoro",
     "meaning": "สถานที่",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはところです。",
+    "example_th": "นี่คือสถานที่",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1565,7 +1836,10 @@
     "romaji": "totemo",
     "meaning": "มาก",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これはとてもです。",
+    "example_th": "นี่คือมาก",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1573,7 +1847,10 @@
     "romaji": "tonari",
     "meaning": "ข้างๆ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の隣にあります。",
+    "example_th": "หนังสืออยู่ข้างโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1581,15 +1858,10 @@
     "romaji": "dono",
     "meaning": "ไหน",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "วันเสาร์",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどのです。",
+    "example_th": "นี่คือไหน",
+    "qa_flags": []
   },
   {
     "kanji": "鳥",
@@ -1597,7 +1869,10 @@
     "romaji": "tori",
     "meaning": "นก",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは鳥です。",
+    "example_th": "นี่คือนก",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1605,7 +1880,10 @@
     "romaji": "dore",
     "meaning": "สิ่งไหน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどれです。",
+    "example_th": "นี่คือสิ่งไหน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1613,7 +1891,10 @@
     "romaji": "doreka",
     "meaning": "สิ่งไหนบ้าง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどれかです。",
+    "example_th": "นี่คือสิ่งไหนบ้าง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1621,7 +1902,10 @@
     "romaji": "doredemo",
     "meaning": "สิ่งไหนก็ตาม",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはどれでもです。",
+    "example_th": "นี่คือสิ่งไหนก็ตาม",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1629,7 +1913,10 @@
     "romaji": "naifu",
     "meaning": "มีด",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはナイフです。",
+    "example_th": "นี่คือมีด",
+    "qa_flags": []
   },
   {
     "kanji": "中",
@@ -1637,7 +1924,10 @@
     "romaji": "naka",
     "meaning": "ในบรรดา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の中にあります。",
+    "example_th": "หนังสืออยู่ในโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "夏休",
@@ -1645,7 +1935,12 @@
     "romaji": "natsuyasu",
     "meaning": "み วันหยุดฤดูร้อน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれを夏します。",
+    "example_th": "ฉันみ วันหยุดฤดูร้อน",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -1653,7 +1948,10 @@
     "romaji": "nado",
     "meaning": "เป็นต้น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはなどです。",
+    "example_th": "นี่คือเป็นต้น",
+    "qa_flags": []
   },
   {
     "kanji": "名",
@@ -1661,7 +1959,10 @@
     "romaji": "mae",
     "meaning": "ชื่อ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは名です。",
+    "example_th": "นี่คือชื่อ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1669,7 +1970,10 @@
     "romaji": "naraimasu",
     "meaning": "เรียนรู้",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをならいまします。",
+    "example_th": "ฉันเรียนรู้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1677,23 +1981,10 @@
     "romaji": "nandemo",
     "meaning": "ไม่ว่าอะไรก็ตาม",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันอาทิตย์",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "วันอาทิตย์",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはなんでもです。",
+    "example_th": "นี่คือไม่ว่าอะไรก็ตาม",
+    "qa_flags": []
   },
   {
     "kanji": "日",
@@ -1701,7 +1992,10 @@
     "romaji": "hon",
     "meaning": "ประเทศญี่ปุ่น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは日です。",
+    "example_th": "นี่คือประเทศญี่ปุ่น",
+    "qa_flags": []
   },
   {
     "kanji": "語",
@@ -1709,15 +2003,10 @@
     "romaji": "gakkou",
     "meaning": "โรงเรียนสอนภาษาญี่ปุ่น",
     "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "料",
-    "kana": "り",
-    "romaji": "ri",
-    "meaning": "อาหารญี่ปุ่น",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私は学校へ行きます。",
+    "example_th": "ฉันไปโรงเรียน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1725,7 +2014,10 @@
     "romaji": "nyuuyooku",
     "meaning": "นิวยอร์ก",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをニューヨーきます。",
+    "example_th": "ฉันนิวยอร์ก",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1733,7 +2025,10 @@
     "romaji": "neneko",
     "meaning": "แมว",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはねねこです。",
+    "example_th": "นี่คือแมว",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1741,7 +2036,10 @@
     "romaji": "nemasu",
     "meaning": "นอน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをねまします。",
+    "example_th": "ฉันนอน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1749,7 +2047,10 @@
     "romaji": "nonooto",
     "meaning": "สมุดโน้ต",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはのノートです。",
+    "example_th": "นี่คือสมุดโน้ต",
+    "qa_flags": []
   },
   {
     "kanji": "飲",
@@ -1757,7 +2058,10 @@
     "romaji": "mimono",
     "meaning": "เครื่องดื่ม",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは飲です。",
+    "example_th": "นี่คือเครื่องดื่ม",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1765,7 +2069,10 @@
     "romaji": "haha",
     "meaning": "ฟัน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはははです。",
+    "example_th": "นี่คือฟัน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1773,7 +2080,10 @@
     "romaji": "baitoarubaito",
     "meaning": "งานพาร์ตไทม์, งานพิเศษ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはバイトアルバイトです。",
+    "example_th": "นี่คืองานพาร์ตไทม์, งานพิเศษ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1781,7 +2091,10 @@
     "romaji": "hako",
     "meaning": "กล่อง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これははこです。",
+    "example_th": "นี่คือกล่อง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1789,7 +2102,10 @@
     "romaji": "hasami",
     "meaning": "กรรไกร",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これははさみです。",
+    "example_th": "นี่คือกรรไกร",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1797,7 +2113,10 @@
     "romaji": "basu",
     "meaning": "รถประจาทาง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをバします。",
+    "example_th": "ฉันรถประจาทาง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1805,7 +2124,10 @@
     "romaji": "pasuta",
     "meaning": "พาสต้า",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはパスタです。",
+    "example_th": "นี่คือพาสต้า",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1813,7 +2135,10 @@
     "romaji": "pasokon",
     "meaning": "คอมพิวเตอร์",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはパソコンです。",
+    "example_th": "นี่คือคอมพิวเตอร์",
+    "qa_flags": []
   },
   {
     "kanji": "花",
@@ -1821,7 +2146,10 @@
     "romaji": "hana",
     "meaning": "ดอกไม้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは花です。",
+    "example_th": "นี่คือดอกไม้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1829,15 +2157,10 @@
     "romaji": "hana",
     "meaning": "จมูก",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "花",
-    "kana": "や",
-    "romaji": "ya",
-    "meaning": "ร้านดอกไม้",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これははなです。",
+    "example_th": "นี่คือจมูก",
+    "qa_flags": []
   },
   {
     "kanji": "春",
@@ -1845,7 +2168,10 @@
     "romaji": "haru",
     "meaning": "ฤดูใบไม้ผลิ",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをます。",
+    "example_th": "ฉันฤดูใบไม้ผลิ",
+    "qa_flags": []
   },
   {
     "kanji": "晩",
@@ -1853,7 +2179,10 @@
     "romaji": "ban",
     "meaning": "กลางคืน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは晩です。",
+    "example_th": "นี่คือกลางคืน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1861,7 +2190,10 @@
     "romaji": "pan",
     "meaning": "ขนมปัง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはパンです。",
+    "example_th": "นี่คือขนมปัง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1869,7 +2201,10 @@
     "romaji": "hankachi",
     "meaning": "ผ้าเช็ดหน้า",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1877,7 +2212,10 @@
     "romaji": "panda",
     "meaning": "แพนด้า",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはパンダです。",
+    "example_th": "นี่คือแพนด้า",
+    "qa_flags": []
   },
   {
     "kanji": "屋",
@@ -1885,7 +2223,10 @@
     "romaji": "pan'ya",
     "meaning": "ร้านขนมปัง",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "สถานที่",
+    "example_jp": "これは屋です。",
+    "example_th": "นี่คือร้านขนมปัง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1893,7 +2234,10 @@
     "romaji": "hipiano",
     "meaning": "เปียโน",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはひピアノです。",
+    "example_th": "นี่คือเปียโน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1901,15 +2245,10 @@
     "romaji": "biiru",
     "meaning": "เบียร์",
     "level": "N5",
-    "category": "คาตาคานะ"
-  },
-  {
-    "kanji": "行",
-    "kana": "き",
-    "romaji": "ki",
-    "meaning": "เครื่องบิน",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをビーます。",
+    "example_th": "ฉันเบียร์",
+    "qa_flags": []
   },
   {
     "kanji": "左",
@@ -1917,7 +2256,10 @@
     "romaji": "hidari",
     "meaning": "ซ้าย",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは左です。",
+    "example_th": "นี่คือซ้าย",
+    "qa_flags": []
   },
   {
     "kanji": "左",
@@ -1925,7 +2267,12 @@
     "romaji": "hidari",
     "meaning": "がわ ทางซ้าย",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは左です。",
+    "example_th": "นี่คือがわ ทางซ้าย",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "人",
@@ -1933,23 +2280,10 @@
     "romaji": "hito",
     "meaning": "คน",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "病",
-    "kana": "いん",
-    "romaji": "in",
-    "meaning": "โรงพยาบาล",
-    "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "病",
-    "kana": "き",
-    "romaji": "ki",
-    "meaning": "โรคภัยไข้เจ็บ, การเจ็บป่วย",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは人です。",
+    "example_th": "นี่คือคน",
+    "qa_flags": []
   },
   {
     "kanji": "昼",
@@ -1957,7 +2291,12 @@
     "romaji": "yasu",
     "meaning": "み พักกลางวัน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをします。",
+    "example_th": "ฉันみ พักกลางวัน",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -1965,7 +2304,10 @@
     "romaji": "fupuuru",
     "meaning": "สระ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをふプーます。",
+    "example_th": "ฉันสระ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1973,7 +2315,10 @@
     "romaji": "fune",
     "meaning": "เรือ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはふねです。",
+    "example_th": "นี่คือเรือ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -1981,7 +2326,10 @@
     "romaji": "fumimasu",
     "meaning": "เหยียบ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをふみまします。",
+    "example_th": "ฉันเหยียบ",
+    "qa_flags": []
   },
   {
     "kanji": "冬",
@@ -1989,7 +2337,10 @@
     "romaji": "fuyu",
     "meaning": "ฤดูหนาว",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは冬です。",
+    "example_th": "นี่คือฤดูหนาว",
+    "qa_flags": []
   },
   {
     "kanji": "冬",
@@ -1997,7 +2348,12 @@
     "romaji": "yasu",
     "meaning": "み วันหยุดฤดูหนาว",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをします。",
+    "example_th": "ฉันみ วันหยุดฤดูหนาว",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -2005,7 +2361,10 @@
     "romaji": "purezento",
     "meaning": "ของขวัญ",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはプレゼントです。",
+    "example_th": "นี่คือของขวัญ",
+    "qa_flags": []
   },
   {
     "kanji": "北",
@@ -2013,7 +2372,10 @@
     "romaji": "kin",
     "meaning": "ปักกิ่ง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは北です。",
+    "example_th": "นี่คือปักกิ่ง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2021,7 +2383,10 @@
     "romaji": "heta",
     "meaning": "ไม่เก่ง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはへたです。",
+    "example_th": "นี่คือไม่เก่ง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2029,7 +2394,10 @@
     "romaji": "betonamu",
     "meaning": "ประเทศเวียดนาม",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをベトナみます。",
+    "example_th": "ฉันประเทศเวียดนาม",
+    "qa_flags": []
   },
   {
     "kanji": "部屋",
@@ -2037,7 +2405,10 @@
     "romaji": "heya",
     "meaning": "ห้อง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "สถานที่",
+    "example_jp": "これは部屋です。",
+    "example_th": "นี่คือห้อง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2045,7 +2416,10 @@
     "romaji": "pen",
     "meaning": "ปากกา",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはペンです。",
+    "example_th": "นี่คือปากกา",
+    "qa_flags": []
   },
   {
     "kanji": "勉",
@@ -2053,23 +2427,10 @@
     "romaji": "kyou",
     "meaning": "การเรียน",
     "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "勉",
-    "kana": "きょう",
-    "romaji": "kyou",
-    "meaning": "（を）します เรียน",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "便",
-    "kana": "り",
-    "romaji": "ri",
-    "meaning": "สะดวก",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันการเรียน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2077,7 +2438,10 @@
     "romaji": "boorupen",
     "meaning": "ปากกาลูกลื่น",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはボールペンです。",
+    "example_th": "นี่คือปากกาลูกลื่น",
+    "qa_flags": []
   },
   {
     "kanji": "人",
@@ -2085,7 +2449,10 @@
     "romaji": "hokanohito",
     "meaning": "คนอื่น",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは人です。",
+    "example_th": "นี่คือคนอื่น",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2093,7 +2460,10 @@
     "romaji": "hoteru",
     "meaning": "โรงแรม",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "กริยา",
+    "example_jp": "私はそれをホテます。",
+    "example_th": "ฉันโรงแรม",
+    "qa_flags": []
   },
   {
     "kanji": "本",
@@ -2101,7 +2471,10 @@
     "romaji": "hon",
     "meaning": "หนังสือ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは本です。",
+    "example_th": "นี่คือหนังสือ",
+    "qa_flags": []
   },
   {
     "kanji": "本",
@@ -2109,7 +2482,10 @@
     "romaji": "tou",
     "meaning": "จริง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันจริง",
+    "qa_flags": []
   },
   {
     "kanji": "毎",
@@ -2117,7 +2493,10 @@
     "romaji": "asa",
     "meaning": "ทุกเช้า",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これは毎です。",
+    "example_th": "นี่คือทุกเช้า",
+    "qa_flags": []
   },
   {
     "kanji": "毎",
@@ -2125,7 +2504,10 @@
     "romaji": "ban",
     "meaning": "ทุกคืน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは毎です。",
+    "example_th": "นี่คือทุกคืน",
+    "qa_flags": []
   },
   {
     "kanji": "前",
@@ -2133,7 +2515,10 @@
     "romaji": "mae",
     "meaning": "ข้างหน้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2141,7 +2526,10 @@
     "romaji": "mata",
     "meaning": "อีกครั้ง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはまたです。",
+    "example_th": "นี่คืออีกครั้ง",
+    "qa_flags": []
   },
   {
     "kanji": "町",
@@ -2149,7 +2537,10 @@
     "romaji": "machi",
     "meaning": "เมือง",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは町です。",
+    "example_th": "นี่คือเมือง",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2157,7 +2548,10 @@
     "romaji": "machigaemasu",
     "meaning": "ทาผิด",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをまちがえまします。",
+    "example_th": "ฉันทาผิด",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2165,7 +2559,10 @@
     "romaji": "massugu",
     "meaning": "ตรงไป",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをまっすぎます。",
+    "example_th": "ฉันตรงไป",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2173,7 +2570,10 @@
     "romaji": "mareeshia",
     "meaning": "ประเทศมาเลเซีย",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはマレーシアです。",
+    "example_th": "นี่คือประเทศมาเลเซีย",
+    "qa_flags": []
   },
   {
     "kanji": "右",
@@ -2181,7 +2581,10 @@
     "romaji": "migi",
     "meaning": "ขวา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは右です。",
+    "example_th": "นี่คือขวา",
+    "qa_flags": []
   },
   {
     "kanji": "水",
@@ -2189,7 +2592,10 @@
     "romaji": "mizu",
     "meaning": "น้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは水です。",
+    "example_th": "นี่คือน้า",
+    "qa_flags": []
   },
   {
     "kanji": "店",
@@ -2197,7 +2603,10 @@
     "romaji": "mise",
     "meaning": "ร้านค้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "สถานที่",
+    "example_jp": "これは店です。",
+    "example_th": "นี่คือร้านค้า",
+    "qa_flags": []
   },
   {
     "kanji": "道",
@@ -2205,7 +2614,10 @@
     "romaji": "michi",
     "meaning": "ถนน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは道です。",
+    "example_th": "นี่คือถนน",
+    "qa_flags": []
   },
   {
     "kanji": "南",
@@ -2213,7 +2625,10 @@
     "romaji": "minami",
     "meaning": "ทิศใต้",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは南です。",
+    "example_th": "นี่คือทิศใต้",
+    "qa_flags": []
   },
   {
     "kanji": "耳",
@@ -2221,7 +2636,10 @@
     "romaji": "mimi",
     "meaning": "หู",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは耳です。",
+    "example_th": "นี่คือหู",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2229,7 +2647,10 @@
     "romaji": "minna",
     "meaning": "ทุกคน",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはみんなです。",
+    "example_th": "นี่คือทุกคน",
+    "qa_flags": []
   },
   {
     "kanji": "目",
@@ -2237,7 +2658,10 @@
     "romaji": "meme",
     "meaning": "ดวงตา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは目です。",
+    "example_th": "นี่คือดวงตา",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2245,7 +2669,10 @@
     "romaji": "megane",
     "meaning": "แว่นตา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはめがねです。",
+    "example_th": "นี่คือแว่นตา",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2253,7 +2680,10 @@
     "romaji": "meron",
     "meaning": "เมล่อน",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはメロンです。",
+    "example_th": "นี่คือเมล่อน",
+    "qa_flags": []
   },
   {
     "kanji": "少",
@@ -2261,39 +2691,12 @@
     "romaji": "mousuko",
     "meaning": "し อีกนิดหน่อย",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "） ตัวย่อของวันพฤหัสบดี",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "曜",
-    "kana": "び",
-    "romaji": "bi",
-    "meaning": "วันพฤหัสบดี",
-    "level": "N5",
-    "category": "คำคุณศัพท์"
-  },
-  {
-    "kanji": "持",
-    "kana": "も",
-    "romaji": "mo",
-    "meaning": "っていきます ถือไป",
-    "level": "N5",
-    "category": "กริยา"
-  },
-  {
-    "kanji": "持",
-    "kana": "も",
-    "romaji": "mo",
-    "meaning": "ってきます ถือมา",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "คำนาม",
+    "example_jp": "これは少です。",
+    "example_th": "นี่คือし อีกนิดหน่อย",
+    "qa_flags": [
+      "thai_has_jp"
+    ]
   },
   {
     "kanji": "",
@@ -2301,7 +2704,10 @@
     "romaji": "motto",
     "meaning": "อีก",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはもっとです。",
+    "example_th": "นี่คืออีก",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2309,7 +2715,10 @@
     "romaji": "moraimasu",
     "meaning": "ได้รับ",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをもらいまします。",
+    "example_th": "ฉันได้รับ",
+    "qa_flags": []
   },
   {
     "kanji": "野",
@@ -2317,7 +2726,10 @@
     "romaji": "sai",
     "meaning": "ผัก",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は野です。",
+    "example_th": "ห้องนี้ผัก",
+    "qa_flags": []
   },
   {
     "kanji": "山",
@@ -2325,7 +2737,10 @@
     "romaji": "yama",
     "meaning": "ภูเขา",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは山です。",
+    "example_th": "นี่คือภูเขา",
+    "qa_flags": []
   },
   {
     "kanji": "夕",
@@ -2333,7 +2748,10 @@
     "romaji": "gata",
     "meaning": "ตอนเย็น",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これは夕です。",
+    "example_th": "นี่คือตอนเย็น",
+    "qa_flags": []
   },
   {
     "kanji": "有",
@@ -2341,7 +2759,10 @@
     "romaji": "mei",
     "meaning": "มีชื่อเสียง",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำคุณศัพท์",
+    "example_jp": "この部屋は有です。",
+    "example_th": "ห้องนี้มีชื่อเสียง",
+    "qa_flags": []
   },
   {
     "kanji": "雪",
@@ -2349,7 +2770,10 @@
     "romaji": "yuki",
     "meaning": "หิมะ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これは雪です。",
+    "example_th": "นี่คือหิมะ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2357,7 +2781,10 @@
     "romaji": "yobimasu",
     "meaning": "เรียก",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをよびまします。",
+    "example_th": "ฉันเรียก",
+    "qa_flags": []
   },
   {
     "kanji": "夜",
@@ -2365,7 +2792,10 @@
     "romaji": "yoru",
     "meaning": "กลางคืน",
     "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをます。",
+    "example_th": "ฉันกลางคืน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2373,7 +2803,10 @@
     "romaji": "raraamen",
     "meaning": "ราเมน",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはらラーメンです。",
+    "example_th": "นี่คือราเมน",
+    "qa_flags": []
   },
   {
     "kanji": "来",
@@ -2381,7 +2814,10 @@
     "romaji": "getsu",
     "meaning": "เดือนหน้า",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "来",
@@ -2389,23 +2825,10 @@
     "romaji": "nen",
     "meaning": "ปีหน้า",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "料",
-    "kana": "り",
-    "romaji": "ri",
-    "meaning": "อาหาร",
-    "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "料",
-    "kana": "り",
-    "romaji": "ri",
-    "meaning": "（を）します ทาอาหาร",
-    "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
   },
   {
     "kanji": "旅",
@@ -2413,15 +2836,10 @@
     "romaji": "kou",
     "meaning": "การท่องเที่ยว",
     "level": "N5",
-    "category": "คำนาม"
-  },
-  {
-    "kanji": "旅",
-    "kana": "こう",
-    "romaji": "kou",
-    "meaning": "（を）します เดินทางท่องเที่ยว",
-    "level": "N5",
-    "category": "กริยา"
+    "category": "กริยา",
+    "example_jp": "私はそれをいます。",
+    "example_th": "ฉันการท่องเที่ยว",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2429,7 +2847,10 @@
     "romaji": "ringo",
     "meaning": "แอปเปิล",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはリンゴです。",
+    "example_th": "นี่คือแอปเปิล",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2437,7 +2858,10 @@
     "romaji": "rereizouko",
     "meaning": "ตู้เย็น",
     "level": "N5",
-    "category": "คำคุณศัพท์"
+    "category": "คำนาม",
+    "example_jp": "これはれれいぞうこです。",
+    "example_th": "นี่คือตู้เย็น",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2445,7 +2869,10 @@
     "romaji": "reji",
     "meaning": "เครื่องคิดเงิน",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはレジです。",
+    "example_th": "นี่คือเครื่องคิดเงิน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2453,7 +2880,10 @@
     "romaji": "resutoran",
     "meaning": "ภัตตาคาร",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはレストランです。",
+    "example_th": "นี่คือภัตตาคาร",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2461,7 +2891,10 @@
     "romaji": "repooto",
     "meaning": "รายงาน",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはレポートです。",
+    "example_th": "นี่คือรายงาน",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2469,7 +2902,10 @@
     "romaji": "rorobii",
     "meaning": "ล็อบบี้",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはろロビーです。",
+    "example_th": "นี่คือล็อบบี้",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2477,7 +2913,10 @@
     "romaji": "wawain",
     "meaning": "ไวน์",
     "level": "N5",
-    "category": "คาตาคานะ"
+    "category": "คำนาม",
+    "example_jp": "これはわワインです。",
+    "example_th": "นี่คือไวน์",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2485,7 +2924,10 @@
     "romaji": "wasabi",
     "meaning": "วาซาบิ",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "คำนาม",
+    "example_jp": "これはわさびです。",
+    "example_th": "นี่คือวาซาบิ",
+    "qa_flags": []
   },
   {
     "kanji": "",
@@ -2493,6 +2935,218 @@
     "romaji": "wasuremasu",
     "meaning": "ลืม",
     "level": "N5",
-    "category": "คำนาม"
+    "category": "กริยา",
+    "example_jp": "私はそれをわすれまします。",
+    "example_th": "ฉันลืม",
+    "qa_flags": []
+  },
+  {
+    "kanji": "飛行機",
+    "kana": "ひこうき",
+    "romaji": "hikouki",
+    "meaning": "เครื่องบิน",
+    "level": "N5",
+    "category": "คำนาม",
+    "example_jp": "これは飛行機です。",
+    "example_th": "นี่คือเครื่องบิน",
+    "qa_flags": []
+  },
+  {
+    "kanji": "新聞",
+    "kana": "しんぶん",
+    "romaji": "shinbun",
+    "meaning": "หนังสือพิมพ์",
+    "level": "N5",
+    "category": "คำนาม",
+    "example_jp": "これは新聞です。",
+    "example_th": "นี่คือหนังสือพิมพ์",
+    "qa_flags": []
+  },
+  {
+    "kanji": "駅前",
+    "kana": "えきまえ",
+    "romaji": "ekimae",
+    "meaning": "หน้าสถานีรถไฟ",
+    "level": "N5",
+    "category": "สถานที่",
+    "example_jp": "本は机の前にあります。",
+    "example_th": "หนังสืออยู่หน้าโต๊ะ",
+    "qa_flags": []
+  },
+  {
+    "kanji": "会議",
+    "kana": "かいぎ",
+    "romaji": "kaigi",
+    "meaning": "ประชุม",
+    "level": "N4",
+    "category": "คำนาม",
+    "example_jp": "これは会議です。",
+    "example_th": "นี่คือประชุม",
+    "qa_flags": []
+  },
+  {
+    "kanji": "買い物",
+    "kana": "かいもの",
+    "romaji": "kaimono",
+    "meaning": "ซื้อของ",
+    "level": "N5",
+    "category": "คำนาม",
+    "example_jp": "これは買い物です。",
+    "example_th": "นี่คือซื้อของ",
+    "qa_flags": []
+  },
+  {
+    "kanji": "泳ぐ",
+    "kana": "およぐ",
+    "romaji": "oyogu",
+    "meaning": "ว่ายน้ำ",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを泳ぎます。",
+    "example_th": "ฉันว่ายน้ำ",
+    "qa_flags": []
+  },
+  {
+    "kanji": "歌う",
+    "kana": "うたう",
+    "romaji": "utau",
+    "meaning": "ร้องเพลง",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを歌います。",
+    "example_th": "ฉันร้องเพลง",
+    "qa_flags": []
+  },
+  {
+    "kanji": "練習する",
+    "kana": "れんしゅうする",
+    "romaji": "renshuusuru",
+    "meaning": "ฝึกซ้อม, ฝึก",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを練習します。",
+    "example_th": "ฉันฝึกซ้อม, ฝึก",
+    "qa_flags": []
+  },
+  {
+    "kanji": "歩く",
+    "kana": "あるく",
+    "romaji": "aruku",
+    "meaning": "เดิน",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを歩きます。",
+    "example_th": "ฉันเดิน",
+    "qa_flags": []
+  },
+  {
+    "kanji": "飲む",
+    "kana": "のむ",
+    "romaji": "nomu",
+    "meaning": "ดื่ม",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを飲みます。",
+    "example_th": "ฉันดื่ม",
+    "qa_flags": []
+  },
+  {
+    "kanji": "見る",
+    "kana": "みる",
+    "romaji": "miru",
+    "meaning": "ดู, มอง",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを見ます。",
+    "example_th": "ฉันดู, มอง",
+    "qa_flags": []
+  },
+  {
+    "kanji": "行く",
+    "kana": "いく",
+    "romaji": "iku",
+    "meaning": "ไป",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを行きます。",
+    "example_th": "ฉันไป",
+    "qa_flags": []
+  },
+  {
+    "kanji": "来る",
+    "kana": "くる",
+    "romaji": "kuru",
+    "meaning": "มา",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを来ます。",
+    "example_th": "ฉันมา",
+    "qa_flags": []
+  },
+  {
+    "kanji": "学校",
+    "kana": "がっこう",
+    "romaji": "gakkou",
+    "meaning": "โรงเรียน",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私は学校へ行きます。",
+    "example_th": "ฉันไปโรงเรียน",
+    "qa_flags": []
+  },
+  {
+    "kanji": "病院",
+    "kana": "びょういん",
+    "romaji": "byouin",
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สถานที่",
+    "example_jp": "これは病院です。",
+    "example_th": "นี่คือโรงพยาบาล",
+    "qa_flags": []
+  },
+  {
+    "kanji": "銀行",
+    "kana": "ぎんこう",
+    "romaji": "ginkou",
+    "meaning": "ธนาคาร",
+    "level": "N5",
+    "category": "กริยา",
+    "example_jp": "私はそれを銀います。",
+    "example_th": "ฉันธนาคาร",
+    "qa_flags": []
+  },
+  {
+    "kanji": "図書館",
+    "kana": "としょかん",
+    "romaji": "toshokan",
+    "meaning": "ห้องสมุด",
+    "level": "N5",
+    "category": "สถานที่",
+    "example_jp": "これは図書館です。",
+    "example_th": "นี่คือห้องสมุด",
+    "qa_flags": []
+  },
+  {
+    "kanji": "会社",
+    "kana": "かいしゃ",
+    "romaji": "kaisha",
+    "meaning": "บริษัท",
+    "level": "N5",
+    "category": "สถานที่",
+    "example_jp": "これは会社です。",
+    "example_th": "นี่คือบริษัท",
+    "qa_flags": []
+  },
+  {
+    "kanji": "駅",
+    "kana": "えき",
+    "romaji": "eki",
+    "meaning": "สถานีรถไฟ",
+    "level": "N5",
+    "category": "สถานที่",
+    "example_jp": "私は駅へ行きます。",
+    "example_th": "ฉันไปสถานีรถไฟ",
+    "qa_flags": []
   }
 ]
