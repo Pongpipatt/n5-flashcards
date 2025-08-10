@@ -3,5720 +3,4160 @@
     "kanji": "愛する",
     "kana": "あいする",
     "romaji": "aisuru",
-    "thai": "รัก",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รัก",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "あいさつ",
     "kana": "あいさつ",
     "romaji": "aisatsu",
-    "thai": "การทักทาย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การทักทาย",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "会う",
     "kana": "あう",
     "romaji": "au",
-    "thai": "พบ, เจอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พบ, เจอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "青",
     "kana": "あお",
     "romaji": "ao",
-    "thai": "สีน้ำเงิน, (สี) ฟ้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สีน้ำเงิน, (สี) ฟ้า",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "青い",
     "kana": "あおい",
     "romaji": "aoi",
-    "thai": "(สี) ฟ้า, สีน้ำเงิน",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(สี) ฟ้า, สีน้ำเงิน",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "赤",
     "kana": "あか",
     "romaji": "aka",
-    "thai": "สีแดง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สีแดง",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "赤い",
     "kana": "あかい",
     "romaji": "akai",
-    "thai": "(สี) แดง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(สี) แดง",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "あかるい",
     "kana": "あかるい",
     "romaji": "akarui",
-    "thai": "สดใส, สว่าง, ร่าเริง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สดใส, สว่าง, ร่าเริง",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "開ける",
     "kana": "あける",
     "romaji": "akeru",
-    "thai": "เปิด (บางสิ่ง)",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เปิด (บางสิ่ง)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "あげる",
     "kana": "あげる",
     "romaji": "ageru",
-    "thai": "ให้",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ให้",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "朝",
     "kana": "あさ",
     "romaji": "asa",
-    "thai": "ตอนเช้า, เช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตอนเช้า, เช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "あさって",
     "kana": "あさって",
     "romaji": "asatte",
-    "thai": "มะรืน (วันหลังจากพรุ่งนี้)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "มะรืน (วันหลังจากพรุ่งนี้)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "足",
     "kana": "あし",
     "romaji": "ashi",
-    "thai": "เท้า, ขา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "เท้า, ขา",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "明日",
     "kana": "あした",
     "romaji": "ashita",
-    "thai": "พรุ่งนี้",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พรุ่งนี้",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "あそこ",
     "kana": "あそこ",
     "romaji": "asoko",
-    "thai": "ที่โน่น, ตรงโน้น",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ที่โน่น, ตรงโน้น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "遊ぶ",
     "kana": "あそぶ",
     "romaji": "asobu",
-    "thai": "เล่น, เที่ยวเล่น",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เล่น, เที่ยวเล่น",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "温かい",
     "kana": "あたたかい",
     "romaji": "atatakai",
-    "thai": "อุ่น, อบอุ่น",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "อุ่น, อบอุ่น",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "あちら",
     "kana": "あちら",
     "romaji": "achira",
-    "thai": "ทางโน้น, ที่โน่น (คำสุภาพของ あそこ)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางโน้น, ที่โน่น (คำสุภาพของ あそこ)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "暑い",
     "kana": "あつい",
     "romaji": "atsui",
-    "thai": "(อากาศ) ร้อน",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(อากาศ) ร้อน",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "あと",
     "kana": "あと",
     "romaji": "ato",
-    "thai": "หลังจาก, ต่อจาก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หลังจาก, ต่อจาก",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "兄",
     "kana": "あに",
     "romaji": "ani",
-    "thai": "พี่ชาย (ของตนเอง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "พี่ชาย (ของตนเอง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "姉",
     "kana": "あね",
     "romaji": "ane",
-    "thai": "พี่สาว (ของตนเอง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "พี่สาว (ของตนเอง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "あの",
     "kana": "あの",
     "romaji": "ano",
-    "thai": "โน่น, นั้น (ใช้ชี้สิ่งที่อยู่ไกลทั้งผู้พูดและผู้ฟัง)",
-    "type": "prenoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "โน่น, นั้น (ใช้ชี้สิ่งที่อยู่ไกลทั้งผู้พูดและผู้ฟัง)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "浴びる",
     "kana": "あびる",
     "romaji": "abiru",
-    "thai": "อาบ (น้ำ)",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาบ (น้ำ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "危ない",
     "kana": "あぶない",
     "romaji": "abunai",
-    "thai": "อันตราย",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "อันตราย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "あまり",
     "kana": "あまり",
     "romaji": "amari",
-    "thai": "(ไม่) ค่อย...",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ไม่) ค่อย...",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "雨",
     "kana": "あめ",
     "romaji": "ame",
-    "thai": "ฝน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฝน",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "アメリカ人",
     "kana": "アメリカじん",
     "romaji": "amerikajin",
-    "thai": "ชาวอเมริกัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ชาวอเมริกัน",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "洗う",
     "kana": "あらう",
     "romaji": "arau",
-    "thai": "ล้าง, ซัก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ล้าง, ซัก",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "ある",
     "kana": "ある",
     "romaji": "aru",
-    "thai": "มี, อยู่ (สำหรับสิ่งไม่มีชีวิต)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "มี, อยู่ (สำหรับสิ่งไม่มีชีวิต)",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "歩く",
     "kana": "あるく",
     "romaji": "aruku",
-    "thai": "เดิน",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เดิน",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "あれ",
     "kana": "あれ",
     "romaji": "are",
-    "thai": "สิ่งนั้น (ที่อยู่ไกลจากทั้งผู้พูดและผู้ฟัง)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "สิ่งนั้น (ที่อยู่ไกลจากทั้งผู้พูดและผู้ฟัง)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "いい",
     "kana": "いい",
     "romaji": "ii",
-    "thai": "ดี",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ดี",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "いいえ",
     "kana": "いいえ",
     "romaji": "iie",
-    "thai": "ไม่ใช่, เปล่า",
-    "type": "expression",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่ใช่, เปล่า",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "言う",
     "kana": "いう",
     "romaji": "iu",
-    "thai": "พูด, บอก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พูด, บอก",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "家",
     "kana": "いえ",
     "romaji": "ie",
-    "thai": "บ้าน, ที่บ้าน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "บ้าน, ที่บ้าน",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "いかが",
     "kana": "いかが",
     "romaji": "ikaga",
-    "thai": "(คำสุภาพของ どう) อย่างไร, เป็นอย่างไร",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "(คำสุภาพของ どう) อย่างไร, เป็นอย่างไร",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "行く",
     "kana": "いく",
     "romaji": "iku",
-    "thai": "ไป",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไป",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "いくつ",
     "kana": "いくつ",
     "romaji": "ikutsu",
-    "thai": "เท่าไร (จำนวน, อายุ)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "เท่าไร (จำนวน, อายุ)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "いくら",
     "kana": "いくら",
     "romaji": "ikura",
-    "thai": "เท่าไร (ราคา)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "เท่าไร (ราคา)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "池",
     "kana": "いけ",
     "romaji": "ike",
-    "thai": "บ่อน้ำ, สระน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "บ่อน้ำ, สระน้ำ",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "医者",
     "kana": "いしゃ",
     "romaji": "isha",
-    "thai": "แพทย์, หมอ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "แพทย์, หมอ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "椅子",
     "kana": "いす",
     "romaji": "isu",
-    "thai": "เก้าอี้",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก้าอี้",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "忙しい",
     "kana": "いそがしい",
     "romaji": "isogashii",
-    "thai": "ยุ่ง (ไม่ว่าง)",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ยุ่ง (ไม่ว่าง)",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "急ぐ",
     "kana": "いそぐ",
     "romaji": "isogu",
-    "thai": "รีบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รีบ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "痛い",
     "kana": "いたい",
     "romaji": "itai",
-    "thai": "เจ็บ, ปวด",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "เจ็บ, ปวด",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "イタリア",
     "kana": "イタリア",
     "romaji": "Itaria",
-    "thai": "ประเทศอิตาลี",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศอิตาลี",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "一番",
     "kana": "いちばん",
     "romaji": "ichiban",
-    "thai": "อันดับหนึ่ง, ที่สุด",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อันดับหนึ่ง, ที่สุด",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "いつ",
     "kana": "いつ",
     "romaji": "itsu",
-    "thai": "เมื่อไร",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมื่อไร",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "いっしょに",
     "kana": "いっしょに",
     "romaji": "issho ni",
-    "thai": "ด้วยกัน",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ด้วยกัน",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "いつも",
     "kana": "いつも",
     "romaji": "itsumo",
-    "thai": "เสมอ ๆ, ตลอดเวลา",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "เสมอ ๆ, ตลอดเวลา",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "犬",
     "kana": "いぬ",
     "romaji": "inu",
-    "thai": "สุนัข",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สัตว์",
-    "example": "",
-    "example_th": ""
+    "meaning": "สุนัข",
+    "level": "N5",
+    "category": "สัตว์"
   },
   {
     "kanji": "今",
     "kana": "いま",
     "romaji": "ima",
-    "thai": "ตอนนี้, ขณะนี้",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตอนนี้, ขณะนี้",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "いまから",
     "kana": "いまから",
     "romaji": "ima kara",
-    "thai": "หลังจากนี้, จากนี้ไป",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หลังจากนี้, จากนี้ไป",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "いる",
     "kana": "いる",
     "romaji": "iru",
-    "thai": "มี, อยู่ (สำหรับสิ่งมีชีวิต)",
-    "type": "verb V1",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "มี, อยู่ (สำหรับสิ่งมีชีวิต)",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "妹",
     "kana": "いもうと",
     "romaji": "imouto",
-    "thai": "น้องสาว (ของตนเอง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "น้องสาว (ของตนเอง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "入口",
     "kana": "いりぐち",
     "romaji": "iriguchi",
-    "thai": "ทางเข้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางเข้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "要る",
     "kana": "いる",
     "romaji": "iru (iru)",
-    "thai": "จำเป็น, ต้องการ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จำเป็น, ต้องการ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "入れる",
     "kana": "いれる",
     "romaji": "ireru",
-    "thai": "ใส่, บรรจุ",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ใส่, บรรจุ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "色々",
     "kana": "いろいろ",
     "romaji": "iroiro",
-    "thai": "ต่าง ๆ นานา, หลากหลาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ต่าง ๆ นานา, หลากหลาย",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "インターネット",
     "kana": "インターネット",
     "romaji": "inta-netto",
-    "thai": "อินเทอร์เน็ต",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "อินเทอร์เน็ต",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "上",
     "kana": "うえ",
     "romaji": "ue",
-    "thai": "ข้างบน, ด้านบน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างบน, ด้านบน",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "後ろ",
     "kana": "うしろ",
     "romaji": "ushiro",
-    "thai": "ข้างหลัง, ด้านหลัง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหลัง, ด้านหลัง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "薄い",
     "kana": "うすい",
     "romaji": "usui",
-    "thai": "บาง (ไม่หนา), (รส) จาง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "บาง (ไม่หนา), (รส) จาง",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "歌",
     "kana": "うた",
     "romaji": "uta",
-    "thai": "เพลง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เพลง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "歌う",
     "kana": "うたう",
     "romaji": "utau",
-    "thai": "ร้องเพลง",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ร้องเพลง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "内",
     "kana": "うち",
     "romaji": "uchi",
-    "thai": "บ้าน (ของตนเอง), ข้างใน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "บ้าน (ของตนเอง), ข้างใน",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "生まれる",
     "kana": "うまれる",
     "romaji": "umareru",
-    "thai": "เกิด (มา)",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "เกิด (มา)",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "海",
     "kana": "うみ",
     "romaji": "umi",
-    "thai": "ทะเล, มหาสมุทร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทะเล, มหาสมุทร",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "売る",
     "kana": "うる",
     "romaji": "uru",
-    "thai": "ขาย",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขาย",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "うるさい",
     "kana": "うるさい",
     "romaji": "urusai",
-    "thai": "เสียงดัง, หนวกหู",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "เสียงดัง, หนวกหู",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "嬉しい",
     "kana": "うれしい",
     "romaji": "ureshii",
-    "thai": "ดีใจ, ยินดี",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ดีใจ, ยินดี",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "うん",
     "kana": "うん",
     "romaji": "un",
-    "thai": "(คำไม่เป็นทางการของ はい) อือ, ใช่",
-    "type": "expression",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "(คำไม่เป็นทางการของ はい) อือ, ใช่",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "絵",
     "kana": "え",
     "romaji": "e",
-    "thai": "รูปภาพ, ภาพวาด",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รูปภาพ, ภาพวาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "映画",
     "kana": "えいが",
     "romaji": "eiga",
-    "thai": "ภาพยนตร์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภาพยนตร์",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "映画館",
     "kana": "えいがかん",
     "romaji": "eigakan",
-    "thai": "โรงภาพยนตร์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงภาพยนตร์",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "英語",
     "kana": "えいご",
     "romaji": "eigo",
-    "thai": "ภาษาอังกฤษ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภาษาอังกฤษ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "ええ",
     "kana": "ええ",
     "romaji": "ee",
-    "thai": "(เทียบเท่า はい) ค่ะ/ครับ, ใช่",
-    "type": "expression",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เทียบเท่า はい) ค่ะ/ครับ, ใช่",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "駅",
     "kana": "えき",
     "romaji": "eki",
-    "thai": "สถานีรถไฟ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "สถานีรถไฟ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "駅前",
     "kana": "えきまえ",
     "romaji": "ekimae",
-    "thai": "หน้าสถานีรถไฟ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "หน้าสถานีรถไฟ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "鉛筆",
     "kana": "えんぴつ",
     "romaji": "enpitsu",
-    "thai": "ดินสอ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ดินสอ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "多い",
     "kana": "おおい",
     "romaji": "ooi",
-    "thai": "เยอะ, มาก",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "เยอะ, มาก",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "大きい",
     "kana": "おおきい",
     "romaji": "ōkī",
-    "thai": "ใหญ่",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ใหญ่",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "おおぜい",
     "kana": "おおぜい",
     "romaji": "ōzei",
-    "thai": "(คน) เยอะ, จำนวนมาก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "(คน) เยอะ, จำนวนมาก",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "お母さん",
     "kana": "おかあさん",
     "romaji": "okāsan",
-    "thai": "คุณแม่",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณแม่",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "お菓子",
     "kana": "おかし",
     "romaji": "okashi",
-    "thai": "ขนม, ของหวาน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขนม, ของหวาน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "お金",
     "kana": "おかね",
     "romaji": "okane",
-    "thai": "เงิน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เงิน",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "起きる",
     "kana": "おきる",
     "romaji": "okiru",
-    "thai": "ตื่น (นอน)",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตื่น (นอน)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "置く",
     "kana": "おく",
     "romaji": "oku",
-    "thai": "วาง, วางไว้",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วาง, วางไว้",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "お客さん",
     "kana": "おきゃくさん",
     "romaji": "okyakusan",
-    "thai": "แขก, ลูกค้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "แขก, ลูกค้า",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "奥さん",
     "kana": "おくさん",
     "romaji": "okusan",
-    "thai": "ภรรยา (ของผู้อื่น)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภรรยา (ของผู้อื่น)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "お酒",
     "kana": "おさけ",
     "romaji": "osake",
-    "thai": "เหล้าสาเก, เครื่องดื่มแอลกอฮอล์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหล้าสาเก, เครื่องดื่มแอลกอฮอล์",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "お皿",
     "kana": "おさら",
     "romaji": "osara",
-    "thai": "จาน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "จาน",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "おじいさん",
     "kana": "おじいさん",
     "romaji": "ojīsan",
-    "thai": "คุณปู่, คุณตา (ของผู้อื่น)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณปู่, คุณตา (ของผู้อื่น)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おじいさん",
     "kana": "おじいさん",
     "romaji": "ojīsan",
-    "thai": "คุณลุง (ใช้เรียกผู้ชายที่มีอายุมาก)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณลุง (ใช้เรียกผู้ชายที่มีอายุมาก)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おじさん",
     "kana": "おじさん",
     "romaji": "ojisan",
-    "thai": "คุณลุง (พี่ชาย/น้องชายของพ่อหรือแม่); ชายวัยกลางคน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณลุง (พี่ชาย/น้องชายของพ่อหรือแม่); ชายวัยกลางคน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "お時間",
     "kana": "おじかん",
     "romaji": "ojikan",
-    "thai": "เวลา (คำสุภาพของ 時間)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เวลา (คำสุภาพของ 時間)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "お好きなもの",
     "kana": "おすきなもの",
     "romaji": "osuki na mono",
-    "thai": "ของที่ชอบ (คำสุภาพของ 好きなもの)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของที่ชอบ (คำสุภาพของ 好きなもの)",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "遅い",
     "kana": "おそい",
     "romaji": "osoi",
-    "thai": "ช้า, สาย",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ช้า, สาย",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "おそくまで",
     "kana": "おそくまで",
     "romaji": "osoku made",
-    "thai": "จนดึก",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนดึก",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "お茶",
     "kana": "おちゃ",
     "romaji": "ocha",
-    "thai": "น้ำชา, ชาญี่ปุ่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "น้ำชา, ชาญี่ปุ่น",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "夫",
     "kana": "おっと",
     "romaji": "otto",
-    "thai": "สามี (ของตนเอง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "สามี (ของตนเอง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "お寺",
     "kana": "おてら",
     "romaji": "otera",
-    "thai": "วัด (วัดพุทธ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "วัด (วัดพุทธ)",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "お父さん",
     "kana": "おとうさん",
     "romaji": "otōsan",
-    "thai": "คุณพ่อ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณพ่อ",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "弟",
     "kana": "おとうと",
     "romaji": "otōto",
-    "thai": "น้องชาย (ของตนเอง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "น้องชาย (ของตนเอง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おとうとさん",
     "kana": "おとうとさん",
     "romaji": "otōto-san",
-    "thai": "น้องชาย (ของผู้อื่น)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "น้องชาย (ของผู้อื่น)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "男の子",
     "kana": "おとこのこ",
     "romaji": "otokonoko",
-    "thai": "เด็กผู้ชาย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "เด็กผู้ชาย",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "男の人",
     "kana": "おとこのひと",
     "romaji": "otoko no hito",
-    "thai": "ผู้ชาย (คนผู้ชาย)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผู้ชาย (คนผู้ชาย)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おととい",
     "kana": "おととい",
     "romaji": "ototoi",
-    "thai": "เมื่อวานซืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมื่อวานซืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "お腹",
     "kana": "おなか",
     "romaji": "onaka",
-    "thai": "ท้อง, กระเพาะอาหาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ท้อง, กระเพาะอาหาร",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "お兄さん",
     "kana": "おにいさん",
     "romaji": "onīsan",
-    "thai": "พี่ชาย (ของผู้อื่น)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "พี่ชาย (ของผู้อื่น)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "お姉さん",
     "kana": "おねえさん",
     "romaji": "onēsan",
-    "thai": "พี่สาว (ของผู้อื่น)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "พี่สาว (ของผู้อื่น)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おばあさん",
     "kana": "おばあさん",
     "romaji": "obāsan",
-    "thai": "คุณย่า, คุณยาย (ของผู้อื่น)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณย่า, คุณยาย (ของผู้อื่น)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おばあさん",
     "kana": "おばあさん",
     "romaji": "obāsan",
-    "thai": "คุณป้า (เรียกผู้หญิงที่มีอายุมาก)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณป้า (เรียกผู้หญิงที่มีอายุมาก)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "おばさん",
     "kana": "おばさん",
     "romaji": "obasan",
-    "thai": "คุณป้า, คุณน้า (พี่/น้องสาวของพ่อหรือแม่); หญิงวัยกลางคน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คุณป้า, คุณน้า (พี่/น้องสาวของพ่อหรือแม่); หญิงวัยกลางคน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "お風呂",
     "kana": "おふろ",
     "romaji": "ofuro",
-    "thai": "อ่างอาบน้ำ, การอาบน้ำ (แบบแช่)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "อ่างอาบน้ำ, การอาบน้ำ (แบบแช่)",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "お弁当",
     "kana": "おべんとう",
     "romaji": "obentō",
-    "thai": "ข้าวกล่อง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้าวกล่อง",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "覚える",
     "kana": "おぼえる",
     "romaji": "oboeru",
-    "thai": "จำ, จดจำ",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จำ, จดจำ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "お土産",
     "kana": "おみやげ",
     "romaji": "omiyage",
-    "thai": "ของฝาก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของฝาก",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "重い",
     "kana": "おもい",
     "romaji": "omoi",
-    "thai": "หนัก",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนัก",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "思う",
     "kana": "おもう",
     "romaji": "omou",
-    "thai": "คิด (ความคิดเห็น)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "คิด (ความคิดเห็น)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "面白い",
     "kana": "おもしろい",
     "romaji": "omoshiroi",
-    "thai": "สนุก, น่าสนใจ",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "สนุก, น่าสนใจ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "泳ぐ",
     "kana": "およぐ",
     "romaji": "oyogu",
-    "thai": "ว่ายน้ำ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ว่ายน้ำ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "降りる",
     "kana": "おりる",
     "romaji": "oriru",
-    "thai": "ลง (จากพาหนะ)",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ลง (จากพาหนะ)",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "終わる",
     "kana": "おわる",
     "romaji": "owaru",
-    "thai": "จบ, เสร็จสิ้น",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จบ, เสร็จสิ้น",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "音楽",
     "kana": "おんがく",
     "romaji": "ongaku",
-    "thai": "ดนตรี",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ดนตรี",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "温泉",
     "kana": "おんせん",
     "romaji": "onsen",
-    "thai": "บ่อน้ำพุร้อน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "บ่อน้ำพุร้อน",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "女の人",
     "kana": "おんなのひと",
     "romaji": "onna no hito",
-    "thai": "ผู้หญิง (คนผู้หญิง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผู้หญิง (คนผู้หญิง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "飲み物",
     "kana": "のみもの",
     "romaji": "nomimono",
-    "thai": "เครื่องดื่ม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "เครื่องดื่ม",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "話",
     "kana": "はなし",
     "romaji": "hanashi",
-    "thai": "เรื่องราว, การพูดคุย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรื่องราว, การพูดคุย",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "話す",
     "kana": "はなす",
     "romaji": "hanasu",
-    "thai": "พูด, เล่า (เรื่อง)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พูด, เล่า (เรื่อง)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "花屋",
     "kana": "はなや",
     "romaji": "hanaya",
-    "thai": "ร้านดอกไม้",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ร้านดอกไม้",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "母",
     "kana": "はは",
     "romaji": "haha",
-    "thai": "แม่ (ของตนเอง)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "แม่ (ของตนเอง)",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "早い",
     "kana": "はやい",
     "romaji": "hayai",
-    "thai": "เช้า, เร็ว (เวลา)",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เช้า, เร็ว (เวลา)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "速い",
     "kana": "はやい",
     "romaji": "hayai (speed)",
-    "thai": "เร็ว (ความเร็ว)",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เร็ว (ความเร็ว)",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "払う",
     "kana": "はらう",
     "romaji": "harau",
-    "thai": "จ่าย (เงิน)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "จ่าย (เงิน)",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "貼る",
     "kana": "はる",
     "romaji": "haru",
-    "thai": "ติด, แปะ (รูปภาพ ฯลฯ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ติด, แปะ (รูปภาพ ฯลฯ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "春",
     "kana": "はる",
     "romaji": "haru",
-    "thai": "ฤดูใบไม้ผลิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูใบไม้ผลิ",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "晩",
     "kana": "ばん",
     "romaji": "ban",
-    "thai": "กลางคืน, ตอนค่ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางคืน, ตอนค่ำ",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "パン",
     "kana": "パン",
     "romaji": "pan",
-    "thai": "ขนมปัง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขนมปัง",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "ハンカチ",
     "kana": "ハンカチ",
     "romaji": "hankachi",
-    "thai": "ผ้าเช็ดหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผ้าเช็ดหน้า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "晩ご飯",
     "kana": "ばんごはん",
     "romaji": "ban gohan",
-    "thai": "อาหารเย็น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารเย็น",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "パンダ",
     "kana": "パンダ",
     "romaji": "panda",
-    "thai": "แพนด้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สัตว์",
-    "example": "",
-    "example_th": ""
+    "meaning": "แพนด้า",
+    "level": "N5",
+    "category": "สัตว์"
   },
   {
     "kanji": "パン屋",
     "kana": "パンや",
     "romaji": "pan ya",
-    "thai": "ร้านขนมปัง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ร้านขนมปัง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "ピアノ",
     "kana": "ピアノ",
     "romaji": "piano",
-    "thai": "เปียโน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เปียโน",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "ビール",
     "kana": "ビール",
     "romaji": "bīru",
-    "thai": "เบียร์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "เบียร์",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "東",
     "kana": "ひがし",
     "romaji": "higashi",
-    "thai": "ทิศตะวันออก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทิศตะวันออก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "弾く",
     "kana": "ひく",
     "romaji": "hiku",
-    "thai": "ดีด/เล่น (เครื่องดนตรีประเภทดีด)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ดีด/เล่น (เครื่องดนตรีประเภทดีด)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "飛行機",
     "kana": "ひこうき",
     "romaji": "hikōki",
-    "thai": "เครื่องบิน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เครื่องบิน",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "美術館",
     "kana": "びじゅつかん",
     "romaji": "bijutsukan",
-    "thai": "หอศิลป์, พิพิธภัณฑ์ศิลปะ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "หอศิลป์, พิพิธภัณฑ์ศิลปะ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "左",
     "kana": "ひだり",
     "romaji": "hidari",
-    "thai": "ซ้าย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ซ้าย",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "左側",
     "kana": "ひだりがわ",
     "romaji": "hidari-gawa",
-    "thai": "ทางซ้าย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางซ้าย",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "北京",
     "kana": "ペきん",
     "romaji": "Pekin",
-    "thai": "ปักกิ่ง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ปักกิ่ง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "毎朝",
     "kana": "まいあさ",
     "romaji": "mai asa",
-    "thai": "ทุกเช้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกเช้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎週",
     "kana": "まいしゅう",
     "romaji": "mai shū",
-    "thai": "ทุกสัปดาห์",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกสัปดาห์",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎日",
     "kana": "まいにち",
     "romaji": "mai nichi",
-    "thai": "ทุกวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "毎晩",
     "kana": "まいばん",
     "romaji": "mai ban",
-    "thai": "ทุกคืน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทุกคืน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "前",
     "kana": "まえ",
     "romaji": "mae",
-    "thai": "ข้างหน้า",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ข้างหน้า",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "まえに",
     "kana": "まえに",
     "romaji": "mae ni",
-    "thai": "ก่อน..., ล่วงหน้า",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ก่อน..., ล่วงหน้า",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "また",
     "kana": "また",
     "romaji": "mata",
-    "thai": "อีกครั้ง, แล้วก็",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อีกครั้ง, แล้วก็",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "町",
     "kana": "まち",
     "romaji": "machi",
-    "thai": "เมือง, ตัวเมือง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "เมือง, ตัวเมือง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "間違える",
     "kana": "まちがえる",
     "romaji": "machigaeru",
-    "thai": "ทำผิด, ผิดพลาด",
-    "type": "verb V2",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทำผิด, ผิดพลาด",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "待つ",
     "kana": "まつ",
     "romaji": "matsu",
-    "thai": "รอ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "รอ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "まっすぐ",
     "kana": "まっすぐ",
     "romaji": "massugu",
-    "thai": "ตรงไป, ตรง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตรงไป, ตรง",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "まで",
     "kana": "まで",
     "romaji": "made",
-    "thai": "จนถึง..., ถึง (เวลา, สถานที่)",
-    "type": "particle",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "จนถึง..., ถึง (เวลา, สถานที่)",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "マレーシア",
     "kana": "マレーシア",
     "romaji": "Marēshia",
-    "thai": "ประเทศมาเลเซีย",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "ประเทศมาเลเซีย",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "漫画",
     "kana": "まんが",
     "romaji": "manga",
-    "thai": "หนังสือการ์ตูน (มังงะ)",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือการ์ตูน (มังงะ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "磨く",
     "kana": "みがく",
     "romaji": "migaku",
-    "thai": "แปรง, ขัด (ฟัน/สิ่งของ)",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "แปรง, ขัด (ฟัน/สิ่งของ)",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "右",
     "kana": "みぎ",
     "romaji": "migi",
-    "thai": "ขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "右側",
     "kana": "みぎがわ",
     "romaji": "migi-gawa",
-    "thai": "ทางขวา, ด้านขวา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ทางขวา, ด้านขวา",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "人",
     "kana": "ひと",
     "romaji": "hito",
-    "thai": "คน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ครอบครัว",
-    "example": "",
-    "example_th": ""
+    "meaning": "คน",
+    "level": "N5",
+    "category": "ครอบครัว"
   },
   {
     "kanji": "ひま",
     "kana": "ひま",
     "romaji": "hima",
-    "thai": "(เวลา) ว่าง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "(เวลา) ว่าง",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "病院",
     "kana": "びょういん",
     "romaji": "byōin",
-    "thai": "โรงพยาบาล",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงพยาบาล",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "病気",
     "kana": "びょうき",
     "romaji": "byōki",
-    "thai": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความเจ็บป่วย, โรคภัยไข้เจ็บ",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "昼",
     "kana": "ひる",
     "romaji": "hiru",
-    "thai": "กลางวัน, เที่ยงวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "กลางวัน, เที่ยงวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "ビル",
     "kana": "ビル",
     "romaji": "biru",
-    "thai": "ตึก, อาคาร",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ตึก, อาคาร",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "昼ご飯",
     "kana": "ひるごはん",
     "romaji": "hiru gohan",
-    "thai": "อาหารกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "อาหาร",
-    "example": "",
-    "example_th": ""
+    "meaning": "อาหารกลางวัน",
+    "level": "N5",
+    "category": "อาหาร"
   },
   {
     "kanji": "昼休み",
     "kana": "ひるやすみ",
     "romaji": "hiruyasumi",
-    "thai": "พักกลางวัน",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "พักกลางวัน",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "広い",
     "kana": "ひろい",
     "romaji": "hiroi",
-    "thai": "กว้าง",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "กว้าง",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "プール",
     "kana": "プール",
     "romaji": "pūru",
-    "thai": "สระว่ายน้ำ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "สระว่ายน้ำ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "袋",
     "kana": "ふくろ",
     "romaji": "fukuro",
-    "thai": "ถุง, กระสอบ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "ถุง, กระสอบ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "富士山",
     "kana": "ふじさん",
     "romaji": "Fuji-san",
-    "thai": "ภูเขาฟูจิ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สถานที่",
-    "example": "",
-    "example_th": ""
+    "meaning": "ภูเขาฟูจิ",
+    "level": "N5",
+    "category": "สถานที่"
   },
   {
     "kanji": "船",
     "kana": "ふね",
     "romaji": "fune",
-    "thai": "เรือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรือ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "踏む",
     "kana": "ふむ",
     "romaji": "fumu",
-    "thai": "เหยียบ",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "เหยียบ",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "冬",
     "kana": "ふゆ",
     "romaji": "fuyu",
-    "thai": "ฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ฤดูหนาว",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "冬休み",
     "kana": "ふゆやすみ",
     "romaji": "fuyu yasumi",
-    "thai": "วันหยุดฤดูหนาว",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เวลา/วัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "วันหยุดฤดูหนาว",
+    "level": "N5",
+    "category": "เวลา/วัน"
   },
   {
     "kanji": "降る",
     "kana": "ふる",
     "romaji": "furu",
-    "thai": "(ฝน/หิมะ) ตก",
-    "type": "verb V5",
-    "jlpt": "N5",
-    "category": "ธรรมชาติ",
-    "example": "",
-    "example_th": ""
+    "meaning": "(ฝน/หิมะ) ตก",
+    "level": "N5",
+    "category": "ธรรมชาติ"
   },
   {
     "kanji": "古い",
     "kana": "ふるい",
     "romaji": "furui",
-    "thai": "เก่า",
-    "type": "adj い",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "เก่า",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "プレゼント",
     "kana": "プレゼント",
     "romaji": "purezento",
-    "thai": "ของขวัญ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "ของขวัญ",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "下手",
     "kana": "へた",
     "romaji": "heta",
-    "thai": "ไม่เก่ง",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ไม่เก่ง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "勉強",
     "kana": "べんきょう",
     "romaji": "benkyō",
-    "thai": "การเรียน, การศึกษา",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "การเรียน, การศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "勉強する",
     "kana": "べんきょうする",
     "romaji": "benkyō suru",
-    "thai": "เรียน, ศึกษา",
-    "type": "verb irregular",
-    "jlpt": "N5",
-    "category": "กิจกรรมประจำวัน",
-    "example": "",
-    "example_th": ""
+    "meaning": "เรียน, ศึกษา",
+    "level": "N5",
+    "category": "กิจกรรมประจำวัน"
   },
   {
     "kanji": "便利",
     "kana": "べんり",
     "romaji": "benri",
-    "thai": "สะดวก, สบาย",
-    "type": "adj な",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "สะดวก, สบาย",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "帽子",
     "kana": "ぼうし",
     "romaji": "bōshi",
-    "thai": "หมวก",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หมวก",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "他",
     "kana": "ほか",
     "romaji": "hoka",
-    "thai": "อื่น, ที่อื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "อื่น, ที่อื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "他の人",
     "kana": "ほかのひと",
     "romaji": "hoka no hito",
-    "thai": "คนอื่น",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "คนอื่น",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "僕",
     "kana": "ぼく",
     "romaji": "boku",
-    "thai": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
-    "type": "pronoun",
-    "jlpt": "N5",
-    "category": "คำชี้/สรรพนาม",
-    "example": "",
-    "example_th": ""
+    "meaning": "ผม (สรรพนามบุรุษที่1 ผู้ชาย, ภาษาพูด)",
+    "level": "N5",
+    "category": "คำชี้/สรรพนาม"
   },
   {
     "kanji": "ホテル",
     "kana": "ホテル",
     "romaji": "hoteru",
-    "thai": "โรงแรม",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "การเดินทาง",
-    "example": "",
-    "example_th": ""
+    "meaning": "โรงแรม",
+    "level": "N5",
+    "category": "การเดินทาง"
   },
   {
     "kanji": "本",
     "kana": "ほん",
     "romaji": "hon",
-    "thai": "หนังสือ",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "เครื่องใช้",
-    "example": "",
-    "example_th": ""
+    "meaning": "หนังสือ",
+    "level": "N5",
+    "category": "เครื่องใช้"
   },
   {
     "kanji": "本当",
     "kana": "ほんとう",
     "romaji": "hontō",
-    "thai": "ความจริง",
-    "type": "noun",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "ความจริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   },
   {
     "kanji": "本当に",
     "kana": "ほんとうに",
     "romaji": "hontōni",
-    "thai": "จริง ๆ, อย่างแท้จริง",
-    "type": "adverb",
-    "jlpt": "N5",
-    "category": "สุขภาพ",
-    "example": "",
-    "example_th": ""
+    "meaning": "จริง ๆ, อย่างแท้จริง",
+    "level": "N5",
+    "category": "สุขภาพ"
   }
 ]
