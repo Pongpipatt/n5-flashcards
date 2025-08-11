@@ -2,118 +2,158 @@
 <html lang="th">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
   <title>JLPT N5 Flashcards</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-  --bg:#f6fbff;
-  --card:#ffffff;
-  --ink:#0f172a;
-  --ink-soft:#475569;
-  --pri:#2a86ff;
-  --pri-ink:#fff;
-  --success:#22c55e;
-  --danger:#ef4444;
-  --chip:#e8f1ff;
-  --outline:#dbe7ff;
-  --shadow:0 8px 24px rgba(15,23,42,.06);
+:root{
+  /* พาเลตโทน JP minimal */
+  --bg:#F6F8FB;        /* พื้นหลังเทาอมฟ้าอ่อน */
+  --surface:#FFFFFF;   /* การ์ด/ปุ่มพื้น */
+  --ink:#0F172A;       /* ตัวอักษรหลัก */
+  --ink-soft:#5B667A;  /* ตัวอักษรรอง */
+  --primary:#2A86FF;
+  --success:#21C35B;
+  --danger:#EF4D4D;
+
+  /* เส้น/เงา */
+  --stroke:#E7ECF7;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.06), 0 1px 1px rgba(15,23,42,.03);
+  --shadow-md:0 6px 18px rgba(15,23,42,.08);
+
   --radius:18px;
+  --radius-lg:24px;
 }
 
+/* base */
 *{box-sizing:border-box}
-html,body{height:100%;}
+html,body{height:100%}
 body{
   margin:0;background:var(--bg);
-  font-family:'Noto Sans Thai','Noto Sans JP',system-ui,Arial,sans-serif;
   color:var(--ink);
+  -webkit-font-smoothing:antialiased;  /* เนียน */
+  font-family:'Noto Sans Thai','Noto Sans JP',system-ui,Arial,sans-serif;
 }
 
+/* Appbar */
 .appbar{
-  position:sticky;top:0;z-index:10;
-  display:flex;align-items:center;gap:12px;
-  padding:14px 16px;background:#fff;border-bottom:1px solid #eef2ff;
+  position:sticky; top:0; z-index:20;
+  display:flex; align-items:center; gap:12px;
+  padding:12px 16px; background:var(--surface);
+  border-bottom:1px solid var(--stroke);
 }
-.app-title{font-size:18px;margin:0;font-weight:700;letter-spacing:.2px;}
-.appbar-right{margin-left:auto;display:flex;align-items:center;gap:8px;}
-.counter-pill{background:#eef6ff;border:1px solid var(--outline);padding:6px 10px;border-radius:999px;font-weight:700;}
+.app-title{margin:0; font-weight:800; letter-spacing:.2px; font-size:20px}
+.counter-pill{
+  background:#EDF4FF; color:#244A8A; font-weight:700;
+  border:1px solid var(--stroke); border-radius:999px; padding:6px 12px;
+}
 
+/* buttons */
 .icon-btn{
-  border:none;background:#fff;width:40px;height:40px;border-radius:12px;
-  box-shadow:var(--shadow);display:inline-grid;place-items:center;cursor:pointer;
+  appearance:none; border:none; background:var(--surface);
+  width:40px; height:40px; border-radius:12px;
+  box-shadow:var(--shadow-sm); display:grid; place-items:center; cursor:pointer;
+  transition:transform .08s ease, box-shadow .2s ease;
 }
-.icon-btn span{font-size:22px;transform:translateY(-1px)}
+.icon-btn:active{transform:translateY(1px); box-shadow:none}
 
-.hint{padding:8px 16px 0;color:var(--ink-soft);font-size:14px}
-.chip-row{display:flex;gap:8px;overflow:auto;padding:8px 16px 0 16px}
-.chip{border:none;background:#fff;border-radius:999px;padding:10px 14px;box-shadow:var(--shadow);cursor:pointer}
-.chip.ghost{background:#fff;border:1px solid var(--outline)}
-.chip.outline{background:var(--chip);border:1px solid var(--outline)}
-.chip.icon-left{display:inline-flex;gap:8px;align-items:center}
-.chip.danger{background:#ffeaea;border:1px solid #ffd4d4;color:#c02626}
+.chip{
+  appearance:none; border:none; background:var(--surface);
+  padding:10px 14px; border-radius:999px; cursor:pointer;
+  box-shadow:var(--shadow-sm); transition:transform .08s ease, box-shadow .2s ease;
+}
+.chip:active{transform:translateY(1px); box-shadow:none}
+.chip.ghost{background:var(--surface); border:1px solid var(--stroke)}
+.chip.outline{background:#F3F7FF; border:1px solid var(--stroke)}
+.chip.danger{background:#FFF3F3; border:1px solid #FFD7D7; color:#C62828}
 
-.stage{padding:16px;max-width:880px;margin:0 auto}
-.card-wrap{display:grid;place-items:center;margin:10px 0 14px}
+/* layout */
+.stage{padding:12px 16px 112px; max-width:920px; margin:0 auto} /* กันชนกับ footer */
+.hint{padding:8px 16px 0; color:var(--ink-soft); font-size:14px}
+.chip-row{display:flex; gap:8px; padding:8px 16px 0; overflow:auto}
+
+/* card (สูงคงที่ + aspect ไม่กระตุกเวลา flip) */
+.card-wrap{display:grid; place-items:center; margin:8px 0 14px}
 .card{
-  width:min(720px,92vw);min-height:260px;background:var(--card);
-  border-radius:24px;box-shadow:var(--shadow);
-  position:relative;transform-style:preserve-3d;transition:transform .5s ease;
-  padding:28px 24px;cursor:pointer;
+  width:min(760px,92vw);
+  aspect-ratio: 16 / 9;               /* สัดส่วนคงที่ */
+  min-height:260px;
+  border-radius:var(--radius-lg);
+  background:var(--surface);
+  box-shadow:var(--shadow-md);
+  position:relative; overflow:hidden;
+  transform-style:preserve-3d;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1);
+  will-change:transform;
+}
+.card-face{
+  position:absolute; inset:0; padding:28px 24px;
+  backface-visibility:hidden;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
 }
 .card.flipped{transform:rotateY(180deg)}
-.card-face{position:absolute;inset:0;padding:28px 24px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .card-back{transform:rotateY(180deg)}
-.word-kanji{font-family:'Noto Sans JP',sans-serif;font-size:64px;font-weight:700;line-height:1.1}
-.word-kana{font-family:'Noto Sans JP',sans-serif;font-size:22px;margin-top:8px;color:var(--ink-soft)}
-.word-romaji{font-size:16px;color:#8b98b7;margin-top:4px}
-.meaning{font-size:24px;font-weight:700;text-align:center}
-.meta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-.meta-badge{background:#eef6ff;border:1px solid var(--outline);padding:6px 10px;border-radius:999px;font-size:12px}
 
-.action-row{display:flex;gap:12px;justify-content:center;margin:12px 0}
+.word-kanji{font-family:'Noto Sans JP',sans-serif; font-size:68px; font-weight:800}
+.word-kana{font-family:'Noto Sans JP',sans-serif; font-size:22px; margin-top:6px; color:var(--ink-soft)}
+.word-romaji{font-size:16px; color:#8B98B7; margin-top:2px}
+.meaning{font-size:24px; font-weight:800; text-align:center}
+.meta{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; justify-content:center}
+.meta-badge{background:#EDF4FF; border:1px solid var(--stroke); padding:6px 10px; border-radius:999px; font-size:12px}
+
+/* big FLIP button (เต็มกว้างเนียน) */
 .btn{
-  border:none;border-radius:999px;padding:14px 18px;font-weight:700;cursor:pointer;
-  box-shadow:var(--shadow);
+  appearance:none; border:none; border-radius:999px;
+  padding:16px 18px; font-weight:800; cursor:pointer;
+  box-shadow:var(--shadow-md);
+  transition:transform .06s ease, box-shadow .2s ease, opacity .2s ease;
 }
+.btn:active{transform:translateY(1px); box-shadow:var(--shadow-sm)}
 .btn.flip{
-  background:#fff;border:1px solid var(--outline);width:min(720px,92vw);
+  background:#FFFFFF; border:1px solid var(--stroke);
+  width:min(760px,92vw); margin:10px auto 6px; display:block;
 }
-.btn.success{background:var(--success);color:#fff;min-width:180px}
-.btn.danger{background:var(--danger);color:#fff;min-width:180px}
-.btn.primary{background:var(--pri);color:var(--pri-ink)}
-.btn.ghost{background:#fff;border:1px solid var(--outline)}
+.btn.success{background:var(--success); color:#fff}
+.btn.danger{background:var(--danger); color:#fff}
+.btn.primary{background:var(--primary); color:#fff}
+.btn.ghost{background:var(--surface); border:1px solid var(--stroke)}
 
-.nav-row,.utility-row{
-  display:flex;gap:10px;justify-content:center;margin-top:8px;flex-wrap:wrap
+/* footer action bar — fixed + safe area */
+.action-footer{
+  position:fixed; left:0; right:0; bottom:0; z-index:30;
+  padding:12px clamp(12px,4vw,24px) calc(12px + env(safe-area-inset-bottom));
+  background:linear-gradient(180deg, rgba(246,248,251,0) 0%, rgba(246,248,251,0.9) 20%, rgba(246,248,251,1) 60%);
+  backdrop-filter:saturate(140%) blur(6px);
+  border-top:1px solid var(--stroke);
 }
+.action-footer .row{
+  max-width:920px; margin:0 auto; display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+}
+.action-footer .row .btn{min-width:180px}
 
-.sheet{width:min(780px,94vw);border:none;border-radius:20px;padding:0;box-shadow:var(--shadow)}
+/* secondary rows */
+.nav-row,.utility-row{display:flex; gap:10px; justify-content:center; margin-top:8px; flex-wrap:wrap}
+
+/* sheets */
+.sheet{width:min(780px,94vw); border:none; border-radius:20px; padding:0; box-shadow:var(--shadow-md)}
 .sheet::backdrop{background:rgba(15,23,42,.35)}
-.sheet-head{display:flex;align-items:center;gap:8px;padding:14px 16px;border-bottom:1px solid #eef2ff;background:#fff;border-radius:20px 20px 0 0}
-.sheet-body{padding:16px 16px 6px;background:#fff;max-height:min(64vh,560px);overflow:auto}
-.sheet-foot{padding:12px 16px;display:flex;gap:10px;justify-content:flex-end;background:#fff;border-top:1px solid #eef2ff;border-radius:0 0 20px 20px}
-.form-row{margin:12px 0}
-.lbl{display:block;margin:6px 0 10px;font-weight:700}
-.pill-group{display:flex;gap:8px;flex-wrap:wrap}
-.pill{border:1px solid var(--outline);background:#fff;padding:8px 12px;border-radius:999px;cursor:pointer}
-.pill.active{background:#2a86ff;color:#fff;border-color:#2a86ff}
+.sheet-head{display:flex; align-items:center; gap:8px; padding:14px 16px; border-bottom:1px solid var(--stroke); background:var(--surface); border-radius:20px 20px 0 0}
+.sheet-body{padding:16px 16px 6px; background:var(--surface); max-height:min(64vh,560px); overflow:auto}
+.sheet-foot{padding:12px 16px; display:flex; gap:10px; justify-content:flex-end; background:var(--surface); border-top:1px solid var(--stroke); border-radius:0 0 20px 20px}
+.pill-group{display:flex; gap:8px; flex-wrap:wrap}
+.pill{border:1px solid var(--stroke); background:var(--surface); padding:8px 12px; border-radius:999px; cursor:pointer}
+.pill.active{background:var(--primary); color:#fff; border-color:var(--primary)}
 
-.switch{display:flex;align-items:center;gap:10px;margin:8px 0}
-.switch input{width:18px;height:18px}
-
-.subbar{position:sticky;top:0;z-index:9;background:#fff;display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid #eef2ff}
-.stars-wrap{padding:14px 16px;max-width:860px;margin:0 auto}
-.star-group{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:12px 12px 4px;margin-bottom:14px}
-.star-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.word-list{display:flex;flex-wrap:wrap;gap:8px}
-.word-chip{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:10px 12px}
+.subbar{position:sticky; top:0; z-index:9; background:var(--surface); display:flex; align-items:center; gap:8px; padding:12px 14px; border-bottom:1px solid var(--stroke)}
+.stars-wrap{padding:14px 16px 120px; max-width:900px; margin:0 auto}
+.star-group{background:var(--surface); border-radius:16px; box-shadow:var(--shadow-sm); padding:12px 12px 6px; margin-bottom:14px}
+.word-chip{background:#F8FAFE; border:1px solid var(--stroke); border-radius:12px; padding:10px 12px}
 
 @media (min-width:960px){
-  .app-title{font-size:20px}
-  .word-kanji{font-size:72px}
-  .btn.success,.btn.danger{min-width:220px}
+  .word-kanji{font-size:76px}
 }
   </style>
 </head>
@@ -158,28 +198,20 @@ body{
       </div>
     </div>
 
-    <!-- ปุ่ม Flip ยาว -->
-    <div class="action-row">
-      <button id="btnFlip" class="btn flip">Flip</button>
-    </div>
+    <button id="btnFlip" class="btn flip">Flip</button>  <!-- อันนี้ยังอยู่ตรงกลางเหนือ footer -->
 
-    <!-- Know / Don't know -->
-    <div class="action-row">
-      <button id="btnKnow" class="btn success">✓ Know</button>
-      <button id="btnDont" class="btn danger">✗ Don’t know</button>
-    </div>
-
-    <!-- นำทาง -->
-    <div class="nav-row">
-      <button id="btnPrev" class="chip">‹ ก่อนหน้า</button>
-      <button id="btnNext" class="chip">ถัดไป ›</button>
-    </div>
-
-    <!-- ยูทิลิตี้ -->
-    <div class="utility-row">
-      <button id="btnShuffle" class="chip icon-left">🔀 สุ่มชุดใหม่</button>
-      <button id="btnStars" class="chip outline">📊 รีเช็คความคืบหน้า</button>
-    </div>
+<div class="action-footer">
+  <div class="row">
+    <button id="btnKnow" class="btn success">✓ Know</button>
+    <button id="btnDont" class="btn danger">✗ Don’t know</button>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <button id="btnPrev" class="chip">‹ ก่อนหน้า</button>
+    <button id="btnNext" class="chip">ถัดไป ›</button>
+    <button id="btnShuffle" class="chip icon-left">🔀 สุ่มชุดใหม่</button>
+    <button id="btnStars" class="chip outline">📊 รีเช็คความคืบหน้า</button>
+  </div>
+</div>
   </main>
 
   <!-- Filter -->
@@ -517,6 +549,21 @@ $('header .back-btn').onclick = goHome;
   bindSettings();
   applyFilters();
 })();
+    // ===== UX polish: ป้องกัน double-tap zoom / pinch บางเคสบน iOS =====
+let lastTouch = 0;
+document.addEventListener('touchend', e=>{
+  const now = Date.now();
+  if(now - lastTouch <= 300){ e.preventDefault(); } // กัน double-tap zoom
+  lastTouch = now;
+}, {passive:false});
+document.addEventListener('gesturestart', e => e.preventDefault()); // กัน pinch-zoom (iOS)
+
+// ไม่ให้หน้า “กระดิก” ตอนพลิกการ์ดเพราะหน้าหลังยาวกว่า
+// (เราตั้ง aspect-ratio แล้ว ถ้าข้อความแปลยาวมากให้ตัดด้วย)
+const back = document.querySelector('.card-back');
+back.style.wordBreak = 'break-word';
+back.style.padding = '28px 24px';
   </script>
 </body>
 </html>
+
