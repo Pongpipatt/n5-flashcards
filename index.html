@@ -1,548 +1,538 @@
 <!doctype html>
 <html lang="th">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>JLPT N5 Flashcards</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#fafaf7;           /* กระดาษขาวนวล */
-  --panel:#ffffff;        /* แผง/การ์ด */
-  --ink:#16181d;          /* ตัวหนังสือ */
-  --muted:#6b7280;        /* ข้อความรอง */
-  --line:#e8e8e3;         /* เส้นขอบบาง */
-  --accent:#3a74ff;       /* ฟ้าอินดิโก้ */
-  --accent-weak:#eaf1ff;  /* ฟ้าอ่อน */
-  --success:#16a34a;
-  --danger:#ef4444;
-  --radius:16px;
-  --shadow:0 6px 18px rgba(20,24,32,.08);
-}
-
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:"Noto Sans Thai","Noto Sans JP",ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;
-}
-
-.app{max-width:960px;margin:0 auto;padding:20px 16px 96px}
-
-.header{
-  position:sticky;top:0;z-index:10;
-  padding:8px 0 12px;
-  background:linear-gradient(#fafaf7, rgba(250,250,247,.85));
-  backdrop-filter:saturate(1.2) blur(4px);
-  border-bottom:1px solid var(--line);
-}
-.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.title{font-weight:800}
-.subtitle{font-size:12px;color:var(--muted)}
-
-.badge{
-  padding:6px 10px;border-radius:999px;
-  background:var(--accent-weak); color:#2a4fcf;
-  font-size:12px;font-weight:700
-}
-.spacer{flex:1}
-
-.btn{
-  appearance:none;border:1px solid var(--line);background:#fff;
-  padding:10px 14px;border-radius:12px;cursor:pointer;
-  box-shadow:var(--shadow);font-weight:700;color:var(--ink);
-  transition:.15s ease transform,.2s ease box-shadow,.2s ease background;
-}
-.btn:hover{transform:translateY(-1px)}
-.btn:active{transform:translateY(0)}
-.btn-icon{display:inline-flex;align-items:center;gap:8px}
-.btn-primary{background:var(--accent);color:#fff;border-color:transparent}
-.btn-success{background:#eaf7ee;color:#135e2b;border-color:#cfead8}
-.btn-danger{background:#feeeee;color:#7c2222;border-color:#ffdede}
-.btn-ghost{background:#fff}
-
-.select,.input{
-  width:100%;max-width:220px;padding:10px 12px;border-radius:12px;
-  border:1px solid var(--line);background:#fff;color:var(--ink)
-}
-
-.panel{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  box-shadow:var(--shadow);padding:12px;margin-top:12px
-}
-.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.hidden{display:none!important}
-
-.grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
-
-.card{
-  position:relative;border-radius:20px;border:1px solid var(--line);
-  background:var(--panel);box-shadow:var(--shadow);
-  padding:18px;min-height:220px; /* ไม่มีปุ่มอยู่ด้านในแล้ว */
-}
-.card-inner{position:relative;transform-style:preserve-3d;transition:transform .5s ease}
-.card.flipped .card-inner{transform:rotateY(180deg)}
-.card-face{position:absolute;inset:0;padding:18px;backface-visibility:hidden;display:flex;flex-direction:column;gap:10px}
-.card-face.back{transform:rotateY(180deg)}
-.card-top{display:flex;align-items:center;gap:8px}
-.card-main{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px}
-
-.kanji{font-size:44px;font-weight:800;letter-spacing:.5px}
-.kana{font-size:20px;color:#334155}
-.romaji{font-size:14px;color:var(--muted)}
-.meaning{font-size:18px;font-weight:800}
-
-.actions-bar{
-  display:flex;gap:10px;margin-top:10px
-}
-.actions-bar .btn{flex:1}
-.actions-bar .btn.flip{
-  /* ให้ยาวเท่ากับ Know + Don't know รวมกัน */
-  flex:2;background:var(--accent);color:#fff;border-color:transparent
-}
-
-/* backbar สำหรับหน้า secondary */
-.backbar{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>JLPT N5 Flashcards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ======= Part 2/3 – CSS ทั้งหมดอยู่ช่วงท้ายไฟล์นี้ (เลื่อนไปพาร์ท 2) ======= */
+  </style>
 </head>
 <body>
-  <div class="app">
-    <header class="header">
-      <div class="toolbar">
-        <button id="btnBack" class="btn btn-icon hidden" aria-label="Back">
-          ◀︎
-        </button>
-        <div>
-          <div class="title">JLPT N5 Flashcards</div>
-          <div class="subtitle">ฝึกทีละหมวด + จดจำแบบก้าวหน้า</div>
-        </div>
-        <div class="spacer"></div>
-        <span id="statCounter" class="badge">0 / 0</span>
-        <button id="btnSettings" class="btn btn-icon">⚙️ Settings</button>
-        <button id="btnFilter" class="btn btn-icon">🔎 Filter</button>
-      </div>
-      <div id="panelSettings" class="panel hidden" role="region" aria-label="Settings">
-        <div class="backbar">
-          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
-          <strong>Settings</strong>
-        </div>
-        <div class="row">
-          <label>โหมดการสุ่ม
-            <select id="modeSelect" class="select">
-              <option value="mixed">สุ่มทั้งหมด (ผสม)</option>
-              <option value="category">สุ่มตามหมวด (Category)</option>
-            </select>
-          </label>
-          <label>แสดงข้อมูลหน้าแรก
-            <select id="frontSelect" class="select">
-              <option value="kanji">Kanji</option>
-              <option value="kana">Kana</option>
-              <option value="meaning">ความหมาย (ไทย)</option>
-            </select>
-          </label>
-          <label>หลังการ์ดแสดง
-            <select id="backSelect" class="select">
-              <option value="meaning">ความหมาย (ไทย)</option>
-              <option value="kana">Kana</option>
-              <option value="romaji">Romaji</option>
-              <option value="kanji">Kanji</option>
-            </select>
-          </label>
-        </div>
-      </div>
+  <!-- Top App Bar -->
+  <header class="appbar">
+    <button class="icon-btn back-btn" aria-label="ย้อนกลับ" data-nav="back" hidden>
+      <span>‹</span>
+    </button>
+    <h1 class="app-title">JLPT N5 Flashcards</h1>
 
-      <div id="panelFilter" class="panel hidden" role="region" aria-label="Filter">
-        <div class="backbar">
-          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
-          <strong>Filter</strong>
-        </div>
-        <div class="row">
-          <label>ระดับ
-            <select id="levelSelect" class="select">
-              <option value="">ทั้งหมด</option>
-              <option value="N5">N5</option>
-              <option value="N4">N4</option>
-            </select>
-          </label>
-          <label>หมวด (Category)
-            <select id="categorySelect" class="select">
-              <option value="">ทั้งหมด</option>
-            </select>
-          </label>
-          <label>ค้นหา (ญี่ปุ่น/ไทย)
-            <input id="searchInput" class="input" placeholder="พิมพ์คำค้น… (เช่น いく / 行く / ไป)">
-          </label>
-          <button id="btnApplyFilter" class="btn btn-primary">Apply</button>
-          <button id="btnClearFilter" class="btn btn-ghost">Clear</button>
-        </div>
-      </div>
-    </header>
+    <div class="appbar-right">
+      <div class="counter-pill"><span id="progressIndex">1</span>/<span id="progressTotal">1</span></div>
+      <button class="chip ghost" id="btnSettings" aria-haspopup="dialog">⚙︎ Settings</button>
+      <button class="chip ghost" id="btnFilter" aria-haspopup="dialog">🔎 Filter</button>
+    </div>
+  </header>
 
-    <main>
-<div class="grid">
-  <section class="card" id="flashCard" tabindex="0" aria-label="Flashcard (tap/คลิกเพื่อ flip)">
-    <div class="card-inner">
-      <div class="card-face front">
-        <div class="card-top">
-          <span id="badgeLevel" class="badge">N5</span>
-          <span id="badgeCategory" class="badge">หมวด</span>
+  <!-- Notice / hint -->
+  <section class="hint">
+    <p>ติ๊กเลือกหมวด + จดจำแบบคว่ำหน้า (แตะการ์ดเพื่อพลิก)</p>
+  </section>
+
+  <!-- Category chips -->
+  <section class="chip-row" id="categoryRow">
+    <!-- เติมด้วย JS -->
+  </section>
+
+  <!-- Flashcard Area -->
+  <main class="stage">
+    <div class="card-wrap">
+      <div class="card" id="flashcard" tabindex="0" role="button" aria-label="แตะเพื่อพลิกการ์ด">
+        <div class="card-face card-front">
+          <div class="word-kanji" id="wordKanji">行く</div>
+          <div class="word-kana" id="wordKana">いく</div>
+          <div class="word-romaji" id="wordRomaji">iku</div>
+          <!-- *จงใจไม่แสดงดาวบนการ์ด* -->
         </div>
-        <div class="card-main">
-          <div id="frontMain" class="kanji">…</div>
-          <div id="frontSub1" class="kana">…</div>
-          <div id="frontSub2" class="romaji">…</div>
-        </div>
-      </div>
-      <div class="card-face back">
-        <div class="card-top">
-          <span class="badge">คำแปล</span>
-        </div>
-        <div class="card-main">
-          <div id="backMain" class="meaning">…</div>
-          <div id="backSub1" class="kana">…</div>
-          <div id="backSub2" class="romaji">…</div>
+        <div class="card-face card-back">
+          <div class="meaning" id="wordMeaning">ไป / to go</div>
+          <div class="meta">
+            <span class="meta-badge" id="wordLevel">N5</span>
+            <span class="meta-badge" id="wordCategory">การเดินทาง</span>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Big Flip (กดยาวเท่า Know + Don't know) -->
+    <div class="action-row">
+      <button id="btnFlip" class="btn flip">Flip</button>
+    </div>
+
+    <!-- Know / Don't know -->
+    <div class="action-row">
+      <button id="btnKnow" class="btn success">✓ Know</button>
+      <button id="btnDont" class="btn danger">✗ Don’t know</button>
+    </div>
+
+    <!-- Nav row -->
+    <div class="nav-row">
+      <button id="btnPrev" class="chip">‹ ก่อนหน้า</button>
+      <button id="btnNext" class="chip">ถัดไป ›</button>
+    </div>
+
+    <!-- Utility row -->
+    <div class="utility-row">
+      <button id="btnShuffle" class="chip icon-left">🔀 สุ่มชุดใหม่</button>
+      <button id="btnStars" class="chip outline">📊 รีเช็คความคืบหน้า</button>
+    </div>
+  </main>
+
+  <!-- ========== Sheets / Pages ========== -->
+
+  <!-- Filter Sheet -->
+  <dialog id="sheetFilter" class="sheet">
+    <div class="sheet-head">
+      <button class="icon-btn" data-close="sheetFilter" aria-label="ปิด">✕</button>
+      <h3>Filter</h3>
+    </div>
+    <div class="sheet-body">
+      <div class="form-row">
+        <label class="lbl">ระดับ</label>
+        <div class="pill-group" id="levelPills">
+          <!-- เติมด้วย JS -->
+        </div>
+      </div>
+      <div class="form-row">
+        <label class="lbl">หมวด</label>
+        <div class="pill-group" id="categoryPills">
+          <!-- เติมด้วย JS -->
+        </div>
+      </div>
+      <div class="form-row">
+        <label class="lbl">ชนิดคำ (POS)</label>
+        <div class="pill-group" id="posPills">
+          <!-- เติมด้วย JS -->
+        </div>
+      </div>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn ghost" data-close="sheetFilter">ยกเลิก</button>
+      <button id="applyFilter" class="btn primary">ใช้ตัวกรอง</button>
+    </div>
+  </dialog>
+
+  <!-- Settings Sheet -->
+  <dialog id="sheetSettings" class="sheet">
+    <div class="sheet-head">
+      <button class="icon-btn" data-close="sheetSettings" aria-label="ปิด">✕</button>
+      <h3>Settings</h3>
+    </div>
+    <div class="sheet-body">
+      <label class="switch">
+        <input type="checkbox" id="toggleTapToFlip" checked>
+        <span>แตะการ์ดเพื่อ Flip</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="toggleAutoAdvance" checked>
+        <span>ตอบแล้วเลื่อนไปข้อถัดไปอัตโนมัติ</span>
+      </label>
+      <button id="btnReset" class="chip danger">รีเซ็ตความคืบหน้า</button>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn primary" data-close="sheetSettings">ปิด</button>
+    </div>
+  </dialog>
+
+  <!-- Stars / Review Page -->
+  <section id="starsPage" hidden>
+    <div class="subbar">
+      <button class="icon-btn back-btn" data-nav="home">‹</button>
+      <h2>สรุปตามดาว</h2>
+    </div>
+    <div class="stars-wrap" id="starsWrap">
+      <!-- เติมด้วย JS เป็นกลุ่ม 1★ – 5★ -->
+    </div>
   </section>
-</div>
 
-<!-- แถบปุ่มอยู่ “นอกการ์ด” แล้ว จึงไม่ทับกัน -->
-<div class="actions-bar">
-  <button id="btnDontKnow" class="btn btn-danger">Don’t know</button>
-  <button id="btnFlip" class="btn flip">Flip</button>
-  <button id="btnKnow" class="btn btn-success">Know</button>
-</div>
-    </main>
-  </div>
-<script>
-/* ========= Utils ========= */
-const qs = (s, el=document)=>el.querySelector(s);
-const qsa = (s, el=document)=>[...el.querySelectorAll(s)];
-const clamp = (n,min,max)=>Math.max(min, Math.min(max,n));
-const escapeHTML = (str) => (str??"")
-  .toString()
-  .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
-  .replaceAll('"',"&quot;").replaceAll("'","&#39;");
+  <script>
+    /* ======= Part 3/3 – JS ทั้งหมดอยู่ช่วงท้ายไฟล์นี้ (เลื่อนไปพาร์ท 3) ======= */
+  </script>
+</body>
+</html>
+:root{
+  --bg:#f6fbff;
+  --card:#ffffff;
+  --ink:#0f172a;
+  --ink-soft:#475569;
+  --pri:#2a86ff;
+  --pri-ink:#fff;
+  --success:#22c55e;
+  --danger:#ef4444;
+  --chip:#e8f1ff;
+  --outline:#dbe7ff;
+  --shadow:0 8px 24px rgba(15,23,42,.06);
+  --radius:18px;
+}
 
-const persist = {
-  get(k, d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } },
-  set(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  margin:0;background:var(--bg);
+  font-family:'Noto Sans Thai','Noto Sans JP',system-ui,Arial,sans-serif;
+  color:var(--ink);
+}
+
+.appbar{
+  position:sticky;top:0;z-index:10;
+  display:flex;align-items:center;gap:12px;
+  padding:14px 16px;background:#fff;border-bottom:1px solid #eef2ff;
+}
+.app-title{font-size:18px;margin:0;font-weight:700;letter-spacing:.2px;}
+.appbar-right{margin-left:auto;display:flex;align-items:center;gap:8px;}
+.counter-pill{background:#eef6ff;border:1px solid var(--outline);padding:6px 10px;border-radius:999px;font-weight:700;}
+
+.icon-btn{
+  border:none;background:#fff;width:40px;height:40px;border-radius:12px;
+  box-shadow:var(--shadow);display:inline-grid;place-items:center;cursor:pointer;
+}
+.icon-btn span{font-size:22px;transform:translateY(-1px)}
+
+.hint{padding:8px 16px 0;color:var(--ink-soft);font-size:14px}
+.chip-row{display:flex;gap:8px;overflow:auto;padding:8px 16px 0 16px}
+.chip{border:none;background:#fff;border-radius:999px;padding:10px 14px;box-shadow:var(--shadow);cursor:pointer}
+.chip.ghost{background:#fff;border:1px solid var(--outline)}
+.chip.outline{background:var(--chip);border:1px solid var(--outline)}
+.chip.icon-left{display:inline-flex;gap:8px;align-items:center}
+.chip.danger{background:#ffeaea;border:1px solid #ffd4d4;color:#c02626}
+
+.stage{padding:16px;max-width:880px;margin:0 auto}
+.card-wrap{display:grid;place-items:center;margin:10px 0 14px}
+.card{
+  width:min(720px,92vw);min-height:260px;background:var(--card);
+  border-radius:24px;box-shadow:var(--shadow);
+  position:relative;transform-style:preserve-3d;transition:transform .5s ease;
+  padding:28px 24px;cursor:pointer;
+}
+.card.flipped{transform:rotateY(180deg)}
+.card-face{position:absolute;inset:0;padding:28px 24px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.card-back{transform:rotateY(180deg)}
+.word-kanji{font-family:'Noto Sans JP',sans-serif;font-size:64px;font-weight:700;line-height:1.1}
+.word-kana{font-family:'Noto Sans JP',sans-serif;font-size:22px;margin-top:8px;color:var(--ink-soft)}
+.word-romaji{font-size:16px;color:#8b98b7;margin-top:4px}
+.meaning{font-size:24px;font-weight:700;text-align:center}
+.meta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.meta-badge{background:#eef6ff;border:1px solid var(--outline);padding:6px 10px;border-radius:999px;font-size:12px}
+
+.action-row{display:flex;gap:12px;justify-content:center;margin:12px 0}
+.btn{
+  border:none;border-radius:999px;padding:14px 18px;font-weight:700;cursor:pointer;
+  box-shadow:var(--shadow);
+}
+.btn.flip{
+  background:#fff;border:1px solid var(--outline);width:min(720px,92vw);
+}
+.btn.success{background:var(--success);color:#fff;min-width:180px}
+.btn.danger{background:var(--danger);color:#fff;min-width:180px}
+.btn.primary{background:var(--pri);color:var(--pri-ink)}
+.btn.ghost{background:#fff;border:1px solid var(--outline)}
+
+.nav-row,.utility-row{
+  display:flex;gap:10px;justify-content:center;margin-top:8px;flex-wrap:wrap
+}
+
+.sheet{width:min(780px,94vw);border:none;border-radius:20px;padding:0;box-shadow:var(--shadow)}
+.sheet::backdrop{background:rgba(15,23,42,.35)}
+.sheet-head{display:flex;align-items:center;gap:8px;padding:14px 16px;border-bottom:1px solid #eef2ff;background:#fff;border-radius:20px 20px 0 0}
+.sheet-body{padding:16px 16px 6px;background:#fff;max-height:min(64vh,560px);overflow:auto}
+.sheet-foot{padding:12px 16px;display:flex;gap:10px;justify-content:flex-end;background:#fff;border-top:1px solid #eef2ff;border-radius:0 0 20px 20px}
+.form-row{margin:12px 0}
+.lbl{display:block;margin:6px 0 10px;font-weight:700}
+.pill-group{display:flex;gap:8px;flex-wrap:wrap}
+.pill{border:1px solid var(--outline);background:#fff;padding:8px 12px;border-radius:999px;cursor:pointer}
+.pill.active{background:#2a86ff;color:#fff;border-color:#2a86ff}
+
+.switch{display:flex;align-items:center;gap:10px;margin:8px 0}
+.switch input{width:18px;height:18px}
+
+.subbar{position:sticky;top:0;z-index:9;background:#fff;display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid #eef2ff}
+.stars-wrap{padding:14px 16px;max-width:860px;margin:0 auto}
+.star-group{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:12px 12px 4px;margin-bottom:14px}
+.star-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.word-list{display:flex;flex-wrap:wrap;gap:8px}
+.word-chip{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:10px 12px}
+
+@media (min-width:960px){
+  .app-title{font-size:20px}
+  .word-kanji{font-size:72px}
+  .btn.success,.btn.danger{min-width:220px}
+}
+// ========= Data Loading =========
+const STORAGE_KEY = 'n5flash_v1';
+const state = {
+  all: [],
+  pool: [],
+  idx: 0,
+  filters: { level: new Set(['N5']), category: new Set(), pos: new Set() },
+  tapToFlip: true,
+  autoAdvance: true,
+  stars: {}, // id -> 0..5
 };
 
-/* ========= Data mapping =========
-ไฟล์ n5-500 word.json (ฟิลด์):
-- kanji -> kanji
-- kana -> kana
-- romaji -> romaji
-- thai -> meaning
-- jlpt -> level
-- category -> category
-หมายเหตุ: ถ้าไม่มี kanji ให้ขึ้นจาก kana
-*/
-const SOURCE_URL = 'n5-500 word.json';
+const sample = [
+  {"kanji":"行く","kana":"いく","romaji":"iku","meaning":"ไป / to go","level":"N5","category":"การเดินทาง","pos":"verb"},
+  {"kanji":"来る","kana":"くる","romaji":"kuru","meaning":"มา / to come","level":"N5","category":"การเดินทาง","pos":"verb"},
+  {"kanji":"帰る","kana":"かえる","romaji":"kaeru","meaning":"กลับ / to return","level":"N5","category":"การเดินทาง","pos":"verb"},
+  {"kanji":"読む","kana":"よむ","romaji":"yomu","meaning":"อ่าน / to read","level":"N5","category":"กิจกรรม","pos":"verb"},
+  {"kanji":"書く","kana":"かく","romaji":"kaku","meaning":"เขียน / to write","level":"N5","category":"กิจกรรม","pos":"verb"},
+  {"kanji":"暑い","kana":"あつい","romaji":"atsui","meaning":"ร้อน (อากาศ)","level":"N5","category":"สภาพอากาศ","pos":"adj-i"},
+  {"kanji":"寒い","kana":"さむい","romaji":"samui","meaning":"หนาว (อากาศ)","level":"N5","category":"สภาพอากาศ","pos":"adj-i"},
+  {"kanji":"犬","kana":"いぬ","romaji":"inu","meaning":"สุนัข / dog","level":"N5","category":"สัตว์","pos":"noun"},
+  {"kanji":"猫","kana":"ねこ","romaji":"neko","meaning":"แมว / cat","level":"N5","category":"สัตว์","pos":"noun"},
+  {"kanji":"学校","kana":"がっこう","romaji":"gakkou","meaning":"โรงเรียน","level":"N5","category":"สถานที่","pos":"noun"}
+];
 
-let rawCards = [];
-let cards = [];       // หลัง filter/sort
-let idx = 0;          // index ปัจจุบัน
-let showingBack = false;
-
-// เก็บ “ดาว” และ คะแนนรู้/ไม่รู้ แบบซ่อนใน UI
-let stars = persist.get('stars', {});      // key = id (hash text), value = 0..3
-let mastery = persist.get('mastery', {});  // { id: {know: n, dont: n} }
-
-const settings = persist.get('settings', {
-  mode: 'mixed',
-  front: 'kanji',
-  back: 'meaning'
-});
-
-const filters = persist.get('filters', {
-  level: '',
-  category: '',
-  search: ''
-});
-
-function hashId(o){
-  const s = [o.kanji,o.kana,o.romaji,o.meaning,o.level,o.category].join('|');
-  let h=0; for(let i=0;i<s.length;i++){ h=((h<<5)-h)+s.charCodeAt(i); h|=0; }
-  return String(h);
-}
-
-/* ========= Load & Prepare ========= */
-async function loadData(){
-  try{
-    const res = await fetch(SOURCE_URL);
-    const json = await res.json();
-    rawCards = (json.vocab ?? json).map(x => ({
-      kanji: x.kanji?.trim() || '',
-      kana: x.kana?.trim() || '',
-      romaji: x.romaji?.trim() || '',
-      meaning: (x.thai ?? x.meaning ?? '').trim(),
-      level: (x.jlpt ?? x.level ?? '').trim() || 'N5',
-      category: (x.category ?? '').trim() || 'ทั่วไป',
-    })).map(o=>{
-      if(!o.kanji) o.kanji = o.kana || o.meaning;
-      return {...o, id: hashId(o)};
-    });
-  }catch(e){
-    console.error('โหลดไฟล์ไม่สำเร็จ', e);
-    rawCards = [{
-      kanji:'行く', kana:'いく', romaji:'iku', meaning:'ไป', level:'N5', category:'การเดินทาง'
-    }].map(o=>({...o, id: hashId(o)}));
+async function loadData() {
+  try {
+    const res = await fetch('data/n5-500-word.json', {cache:'no-store'});
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+    return normalize(data);
+  } catch {
+    return normalize(sample);
   }
-  buildCategoryOptions();
-  applyAll();
+}
+function normalize(arr){
+  // แน่ใจว่ามี field pos; ถ้าไม่มี ใช้ type/ชนิดเก่า ๆ
+  return arr.map((x,i)=>({
+    id: i + '_' + (x.kanji||x.kana),
+    kanji: x.kanji ?? '',
+    kana: x.kana ?? '',
+    romaji: x.romaji ?? '',
+    meaning: x.meaning ?? x.thai ?? '',
+    level: x.level ?? x.jlpt ?? 'N5',
+    category: x.category ?? '',
+    pos: x.pos ?? x.type ?? '',
+  }));
 }
 
-/* ========= Filtering / Shuffling / Mode ========= */
-function buildCategoryOptions(){
-  const set = new Set(rawCards.map(c=>c.category).filter(Boolean));
-  const sel = qs('#categorySelect');
-  sel.innerHTML = '<option value="">ทั้งหมด</option>' + [...set].sort().map(c=>`<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join('');
+// ========= Storage =========
+function save(){
+  const payload = {
+    stars: state.stars,
+    filters: {level:[...state.filters.level], category:[...state.filters.category], pos:[...state.filters.pos]},
+    tapToFlip: state.tapToFlip,
+    autoAdvance: state.autoAdvance,
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+}
+function restore(){
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if(!raw) return;
+  try{
+    const j = JSON.parse(raw);
+    state.stars = j.stars || {};
+    if(j.filters){
+      state.filters.level = new Set(j.filters.level||[]);
+      state.filters.category = new Set(j.filters.category||[]);
+      state.filters.pos = new Set(j.filters.pos||[]);
+    }
+    state.tapToFlip = j.tapToFlip ?? true;
+    state.autoAdvance = j.autoAdvance ?? true;
+  }catch{}
+}
+
+// ========= UI Helpers =========
+const $ = (q)=>document.querySelector(q);
+const $$ = (q)=>document.querySelectorAll(q);
+
+function setCard(word){
+  $('#wordKanji').textContent = word.kanji || '—';
+  $('#wordKana').textContent = word.kana || '';
+  $('#wordRomaji').textContent = word.romaji || '';
+  $('#wordMeaning').textContent = word.meaning || '';
+  $('#wordLevel').textContent = word.level || '';
+  $('#wordCategory').textContent = word.category || '';
+  $('#flashcard').classList.remove('flipped');
+
+  $('#progressIndex').textContent = state.idx + 1;
+  $('#progressTotal').textContent = state.pool.length;
 }
 
 function applyFilters(){
-  const {level, category, search} = filters;
-  const t = (search||'').toLowerCase().trim();
-  let out = rawCards.filter(c=>{
-    if(level && c.level!==level) return false;
-    if(category && c.category!==category) return false;
-    if(t){
-      const hay = [c.kanji,c.kana,c.romaji,c.meaning].join(' ').toLowerCase();
-      if(!hay.includes(t)) return false;
+  const {level, category, pos} = state.filters;
+  state.pool = state.all.filter(v => 
+    (level.size ? level.has(v.level) : true) &&
+    (category.size ? category.has(v.category) : true) &&
+    (pos.size ? pos.has(v.pos) : true)
+  );
+  if(state.pool.length===0){ state.pool = [...state.all]; }
+  state.idx = 0;
+  setCard(state.pool[state.idx]);
+  paintCategoryRow();
+}
+
+function paintCategoryRow(){
+  const row = $('#categoryRow');
+  row.innerHTML = '';
+  const cats = [...new Set(state.pool.map(v=>v.category).filter(Boolean))];
+  cats.forEach(c=>{
+    const b = document.createElement('button');
+    b.className = 'chip';
+    b.textContent = c || 'อื่น ๆ';
+    b.onclick = ()=> {
+      // toggle filter category
+      if(state.filters.category.has(c)) state.filters.category.delete(c);
+      else { state.filters.category.clear(); state.filters.category.add(c); }
+      save(); applyFilters();
+      openToast(`ฝึกหมวด: ${c}`);
+    };
+    row.appendChild(b);
+  });
+}
+
+function openToast(msg){
+  // เล็กๆ ใช้ native alert แทนเพื่อความสั้น
+  // คุณอยากได้แบบ snackbar ค่อยเพิ่มได้
+  console.log(msg);
+}
+
+// ========= Actions =========
+function next(delta = 1){
+  state.idx = (state.idx + delta + state.pool.length) % state.pool.length;
+  setCard(state.pool[state.idx]);
+}
+function flip(){
+  $('#flashcard').classList.toggle('flipped');
+}
+function mark(know){
+  const w = state.pool[state.idx];
+  const cur = state.stars[w.id] ?? 0;
+  if(know) state.stars[w.id] = Math.min(5, cur + 1);
+  else state.stars[w.id] = Math.max(0, cur - 1);
+  save();
+  if(state.autoAdvance) next(1);
+}
+
+// ========= Sheets =========
+function bindSheet(btnId, sheetId){
+  $(btnId).addEventListener('click', ()=> $(sheetId).showModal());
+  $(`${sheetId} [data-close="${sheetId.substring(1)}"]`)?.addEventListener('click', ()=> $(sheetId).close());
+}
+bindSheet('#btnFilter', '#sheetFilter');
+bindSheet('#btnSettings', '#sheetSettings');
+
+// Build filters
+function buildFilterUI(){
+  const levels = [...new Set(state.all.map(v=>v.level))];
+  const cats = [...new Set(state.all.map(v=>v.category).filter(Boolean))];
+  const poss = [...new Set(state.all.map(v=>v.pos).filter(Boolean))];
+
+  const mk = (arr,set,wrapId)=>{
+    const wrap = $(wrapId); wrap.innerHTML='';
+    arr.forEach(v=>{
+      const el = document.createElement('button');
+      el.className='pill'+(set.has(v)?' active':'');
+      el.textContent=v||'อื่นๆ';
+      el.onclick=()=>{ el.classList.toggle('active'); set.has(v)?set.delete(v):set.add(v); };
+      wrap.appendChild(el);
+    });
+  };
+  mk(levels, state.filters.level, '#levelPills');
+  mk(cats, state.filters.category, '#categoryPills');
+  mk(poss, state.filters.pos, '#posPills');
+
+  $('#applyFilter').onclick=()=>{ save(); applyFilters(); $('#sheetFilter').close(); };
+}
+
+// ========= Settings Bind =========
+function bindSettings(){
+  $('#toggleTapToFlip').checked = state.tapToFlip;
+  $('#toggleAutoAdvance').checked = state.autoAdvance;
+  $('#toggleTapToFlip').onchange = e => { state.tapToFlip = !!e.target.checked; save(); };
+  $('#toggleAutoAdvance').onchange = e => { state.autoAdvance = !!e.target.checked; save(); };
+  $('#btnReset').onclick = ()=>{
+    if(confirm('รีเซ็ตความคืบหน้า/ดาว ทั้งหมด?')){
+      state.stars = {}; save();
+      openToast('ล้างข้อมูลแล้ว');
     }
-    return true;
-  });
-  if(settings.mode==='category' && !filters.category){
-    // ถ้าโหมด category แต่ยังไม่ได้เลือกหมวด เลือกหมวดแรกให้
-    const firstCat = out[0]?.category || rawCards[0]?.category || '';
-    filters.category = firstCat;
-    persist.set('filters', filters);
-    out = rawCards.filter(c=>c.category===firstCat && (!level || c.level===level));
-    qs('#categorySelect').value = firstCat;
-  }
-  // สุ่มแบบถ่วงน้ำหนัก: คำที่ไม่รู้ (dont) และดาวน้อย โผล่บ่อยขึ้น
-  out = weightedShuffle(out);
-  return out;
+  };
 }
 
-function weightedShuffle(arr){
-  // weight = 1 + dont - know + (1 - star/3)
-  const items = arr.map(c=>{
-    const m = mastery[c.id] || {know:0, dont:0};
-    const star = stars[c.id] ?? 0;
-    const w = Math.max(0.2, 1 + (m.dont - m.know)*0.7 + (1 - (star/3))*0.5);
-    return {c, w};
-  });
-  // roulette wheel
-  const result=[];
-  const pool=[...items];
-  while(pool.length){
-    const sum = pool.reduce((s,x)=>s+x.w,0);
-    let r = Math.random()*sum;
-    let pickIdx = 0;
-    for(let i=0;i<pool.length;i++){
-      r -= pool[i].w;
-      if(r<=0){ pickIdx=i; break; }
+// ========= Stars Review Page =========
+function openStarsPage(){
+  $('header .back-btn').hidden = false;
+  $('main').hidden = true;
+  $('#starsPage').hidden = false;
+
+  const wrap = $('#starsWrap');
+  wrap.innerHTML = '';
+  for(let s=5; s>=0; s--){
+    const group = document.createElement('div');
+    group.className='star-group';
+    const head = document.createElement('div');
+    head.className='star-head';
+    head.innerHTML = `<strong>${s} ★</strong><span style="color:#64748b">ฝึกจำ ${s===0?'ยังไม่เริ่ม':s+' ดาว'}</span>`;
+    const list = document.createElement('div');
+    list.className='word-list';
+
+    const ids = Object.entries(state.stars).filter(([id,st])=>st===s).map(([id])=>id);
+    const items = state.all.filter(w=>ids.includes(w.id));
+    if(items.length===0){
+      const none = document.createElement('div');
+      none.style.color='#9aa3b2'; none.style.padding='6px 10px';
+      none.textContent='— ไม่มีคำในกลุ่มนี้ —';
+      list.appendChild(none);
+    }else{
+      items.forEach(w=>{
+        const chip = document.createElement('div');
+        chip.className='word-chip';
+        chip.textContent = (w.kanji || w.kana) + ' • ' + (w.meaning||'');
+        chip.onclick = ()=> {
+          // jump to this word
+          const idxInPool = state.pool.findIndex(x=>x.id===w.id);
+          if(idxInPool>=0){ state.idx=idxInPool; }
+          else{
+            state.filters.level = new Set([w.level]);
+            state.filters.category = new Set([w.category]);
+            applyFilters();
+            state.idx = state.pool.findIndex(x=>x.id===w.id);
+          }
+          goHome();
+          setCard(state.pool[state.idx]);
+        };
+        list.appendChild(chip);
+      });
     }
-    result.push(pool[pickIdx].c);
-    pool.splice(pickIdx,1);
+
+    group.appendChild(head); group.appendChild(list); wrap.appendChild(group);
   }
-  return result;
+}
+function goHome(){
+  $('header .back-btn').hidden = true;
+  $('#starsPage').hidden = true;
+  $('main').hidden = false;
 }
 
-function applyAll(){
-  cards = applyFilters();
-  idx = clamp(idx, 0, Math.max(0, cards.length-1));
-  showingBack = false;
-  updateStat();
-  renderCard();
-}
+// ========= Events =========
+$('#btnFlip').onclick = flip;
+$('#flashcard').addEventListener('click', ()=> { if(state.tapToFlip) flip(); });
+$('#flashcard').addEventListener('keypress', e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); flip(); }});
 
-/* ========= Render ========= */
-function setFrontBackDisplay(frontKey, backKey, item){
-  // Front
-  let frontMain='', frontSub1='', frontSub2='';
-  if(frontKey==='kanji'){ frontMain=item.kanji; frontSub1=item.kana; frontSub2=item.romaji; }
-  else if(frontKey==='kana'){ frontMain=item.kana || item.kanji; frontSub1=item.kanji; frontSub2=item.romaji; }
-  else if(frontKey==='meaning'){ frontMain=item.meaning; frontSub1=item.kana || item.kanji; frontSub2=item.romaji; }
+$('#btnKnow').onclick = ()=> mark(true);
+$('#btnDont').onclick = ()=> mark(false);
 
-  qs('#frontMain').textContent = frontMain || '—';
-  qs('#frontSub1').textContent = frontSub1 || '';
-  qs('#frontSub2').textContent = frontSub2 || '';
+$('#btnPrev').onclick = ()=> next(-1);
+$('#btnNext').onclick = ()=> next(1);
 
-  // Back
-  let backMain='', backSub1='', backSub2='';
-  if(backKey==='meaning'){ backMain=item.meaning; backSub1=item.kana; backSub2=item.romaji; }
-  else if(backKey==='kana'){ backMain=item.kana || item.kanji; backSub1=item.meaning; backSub2=item.romaji; }
-  else if(backKey==='romaji'){ backMain=item.romaji || item.kana; backSub1=item.kana || item.kanji; backSub2=item.meaning; }
-  else if(backKey==='kanji'){ backMain=item.kanji; backSub1=item.kana; backSub2=item.romaji; }
-
-  qs('#backMain').textContent = backMain || '—';
-  qs('#backSub1').textContent = backSub1 || '';
-  qs('#backSub2').textContent = backSub2 || '';
-}
-
-function renderCard(){
-  const cardEl = qs('#flashCard');
-  cardEl.classList.toggle('flipped', showingBack);
-
-  const item = cards[idx];
-  if(!item){
-    qs('#frontMain').textContent = 'ไม่พบการ์ดตามเงื่อนไข';
-    qs('#frontSub1').textContent = '';
-    qs('#frontSub2').textContent = '';
-    qs('#backMain').textContent = '';
-    qs('#backSub1').textContent = '';
-    qs('#backSub2').textContent = '';
-    qs('#badgeLevel').textContent = '';
-    qs('#badgeCategory').textContent = '';
-    return;
+$('#btnShuffle').onclick = ()=>{
+  // Fisher–Yates
+  for (let i = state.pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [state.pool[i], state.pool[j]] = [state.pool[j], state.pool[i]];
   }
-  qs('#badgeLevel').textContent = item.level || '—';
-  qs('#badgeCategory').textContent = item.category || '—';
+  state.idx = 0; setCard(state.pool[state.idx]);
+};
+$('#btnStars').onclick = openStarsPage;
+$('header .back-btn').onclick = goHome;
 
-  setFrontBackDisplay(settings.front, settings.back, item);
-}
-
-function updateStat(){
-  qs('#statCounter').textContent = `${cards.length? (idx+1):0} / ${cards.length}`;
-}
-
-/* ========= Navigation & Actions ========= */
-function next(){ if(!cards.length) return; idx = (idx+1)%cards.length; showingBack=false; updateStat(); renderCard(); }
-function prev(){ if(!cards.length) return; idx = (idx-1+cards.length)%cards.length; showingBack=false; updateStat(); renderCard(); }
-function flip(){ showingBack = !showingBack; renderCard(); }
-
-function markKnow(val){ // val: true=know, false=dont
-  const item = cards[idx]; if(!item) return;
-  const rec = mastery[item.id] || {know:0, dont:0};
-  if(val) rec.know++; else rec.dont++;
-  mastery[item.id] = rec;
-  // อัปเดต “ดาว” แบบเงียบ ๆ : รู้มากขึ้นให้ดาวสูงขึ้น ไม่รู้ลดลง
-  const score = Math.max(0, Math.min(3, Math.round(rec.know - rec.dont/2)));
-  stars[item.id] = score;
-  persist.set('mastery', mastery);
-  persist.set('stars', stars);
-  next();
-}
-
-/* ========= Star Summary (เก็บข้อมูลแต่ซ่อนบนการ์ด) ========= */
-function showStarSummary(){
-  const box = qs('#starBuckets');
-  const buckets = {0:[],1:[],2:[],3:[]};
-  for(const c of rawCards){
-    const s = stars[c.id] ?? 0;
-    buckets[s].push(c);
-  }
-  box.innerHTML = [3,2,1,0].map(st => {
-    const list = buckets[st].slice(0,100).map(it=>`<li>${escapeHTML(it.kanji)} — ${escapeHTML(it.meaning)} <small>(${escapeHTML(it.kana||'')})</small></li>`).join('');
-    const more = buckets[st].length>100 ? `<li>…และอีก ${buckets[st].length-100} คำ</li>`: '';
-    return `
-      <div class="panel" style="margin-top:12px">
-        <strong>⭐️ × ${st}</strong> — ${buckets[st].length} คำ
-        <ol style="margin-top:8px">${list}${more}</ol>
-      </div>`;
-  }).join('');
-}
-
-/* ========= Panels & Back button ========= */
-function openPanel(which){
-  // which: 'settings' | 'filter' | 'star'
-  qs('#panelSettings').classList.toggle('hidden', which!=='settings');
-  qs('#panelFilter').classList.toggle('hidden', which!=='filter');
-  qs('#starSummary').classList.toggle('hidden', which!=='star');
-  qs('#btnBack').classList.toggle('hidden', which===null);
-  if(which==='star') showStarSummary();
-}
-function closePanels(){ openPanel(null); }
-
-/* ========= Wire UI ========= */
-function bindUI(){
-  qs('#btnSettings').addEventListener('click', ()=>openPanel('settings'));
-  qs('#btnFilter').addEventListener('click', ()=>openPanel('filter'));
-  qs('#btnBack').addEventListener('click', closePanels);
-  qsa('[data-action="back"]').forEach(b=>b.addEventListener('click', closePanels));
-
-  qs('#btnPrev').addEventListener('click', prev);
-  qs('#btnNext').addEventListener('click', next);
-  qs('#btnFlip').addEventListener('click', flip);
-  qs('#btnKnow').addEventListener('click', ()=>markKnow(true));
-  qs('#btnDontKnow').addEventListener('click', ()=>markKnow(false));
-  qs('#btnShuffle').addEventListener('click', ()=>{ cards = weightedShuffle(cards); idx=0; showingBack=false; updateStat(); renderCard(); });
-  qs('#btnResetProgress').addEventListener('click', ()=>{
-    if(confirm('ล้างสถิติการจำ (ดาว/รู้/ไม่รู้) ทั้งหมด?')){
-      stars={}; mastery={};
-      persist.set('stars',stars); persist.set('mastery',mastery);
-      alert('รีเซ็ตเรียบร้อย');
-    }
-  });
-
-  // Tap/Click การ์ด = flip (ไม่ต้องกดค้าง)
-  const card = qs('#flashCard');
-  card.addEventListener('click', (e)=>{
-    // ถ้าคลิกที่ปุ่มใน actions ให้ไม่ flip ซ้ำ
-    if(e.target.closest('.actions')) return;
-    flip();
-  });
-
-  // Keyboard
-  document.addEventListener('keydown', (e)=>{
-    if(e.key==='ArrowRight') next();
-    else if(e.key==='ArrowLeft') prev();
-    else if(e.key===' '){ e.preventDefault(); flip(); }
-    else if(e.key==='1') markKnow(false);
-    else if(e.key==='2') markKnow(true);
-  });
-
-  // Settings
-  const modeSel = qs('#modeSelect');
-  const frontSel = qs('#frontSelect');
-  const backSel = qs('#backSelect');
-  modeSel.value = settings.mode; frontSel.value = settings.front; backSel.value = settings.back;
-
-  modeSel.addEventListener('change', ()=>{
-    settings.mode = modeSel.value; persist.set('settings', settings); applyAll();
-  });
-  frontSel.addEventListener('change', ()=>{
-    settings.front = frontSel.value; persist.set('settings', settings); renderCard();
-  });
-  backSel.addEventListener('change', ()=>{
-    settings.back = backSel.value; persist.set('settings', settings); renderCard();
-  });
-
-  // Filter
-  qs('#levelSelect').value = filters.level;
-  qs('#categorySelect').value = filters.category;
-  qs('#searchInput').value = filters.search;
-
-  qs('#btnApplyFilter').addEventListener('click', ()=>{
-    filters.level = qs('#levelSelect').value;
-    filters.category = qs('#categorySelect').value;
-    filters.search = qs('#searchInput').value.trim();
-    persist.set('filters', filters);
-    applyAll();
-    closePanels();
-  });
-  qs('#btnClearFilter').addEventListener('click', ()=>{
-    filters.level=''; filters.category=''; filters.search='';
-    persist.set('filters', filters);
-    qs('#levelSelect').value=''; qs('#categorySelect').value=''; qs('#searchInput').value='';
-    applyAll();
-  });
-
-  // ซ่อนหน้า “ดาว” ไว้ก่อน — อยากเปิดดูให้ทำปุ่มเองหรือลองเรียกในคอนโซล openPanel('star')
-}
-
-/* ========= Init ========= */
-document.addEventListener('DOMContentLoaded', async ()=>{
-  bindUI();
-  await loadData();
-});
-</script>
-</body>
-</html>
+// ========= Init =========
+(async function init(){
+  restore();
+  state.all = await loadData();
+  buildFilterUI();
+  bindSettings();
+  applyFilters();
+})();
