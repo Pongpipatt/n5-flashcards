@@ -8,151 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    /* ======= Part 2/3 – CSS ทั้งหมดอยู่ช่วงท้ายไฟล์นี้ (เลื่อนไปพาร์ท 2) ======= */
-  </style>
-</head>
-<body>
-  <!-- Top App Bar -->
-  <header class="appbar">
-    <button class="icon-btn back-btn" aria-label="ย้อนกลับ" data-nav="back" hidden>
-      <span>‹</span>
-    </button>
-    <h1 class="app-title">JLPT N5 Flashcards</h1>
-
-    <div class="appbar-right">
-      <div class="counter-pill"><span id="progressIndex">1</span>/<span id="progressTotal">1</span></div>
-      <button class="chip ghost" id="btnSettings" aria-haspopup="dialog">⚙︎ Settings</button>
-      <button class="chip ghost" id="btnFilter" aria-haspopup="dialog">🔎 Filter</button>
-    </div>
-  </header>
-
-  <!-- Notice / hint -->
-  <section class="hint">
-    <p>ติ๊กเลือกหมวด + จดจำแบบคว่ำหน้า (แตะการ์ดเพื่อพลิก)</p>
-  </section>
-
-  <!-- Category chips -->
-  <section class="chip-row" id="categoryRow">
-    <!-- เติมด้วย JS -->
-  </section>
-
-  <!-- Flashcard Area -->
-  <main class="stage">
-    <div class="card-wrap">
-      <div class="card" id="flashcard" tabindex="0" role="button" aria-label="แตะเพื่อพลิกการ์ด">
-        <div class="card-face card-front">
-          <div class="word-kanji" id="wordKanji">行く</div>
-          <div class="word-kana" id="wordKana">いく</div>
-          <div class="word-romaji" id="wordRomaji">iku</div>
-          <!-- *จงใจไม่แสดงดาวบนการ์ด* -->
-        </div>
-        <div class="card-face card-back">
-          <div class="meaning" id="wordMeaning">ไป / to go</div>
-          <div class="meta">
-            <span class="meta-badge" id="wordLevel">N5</span>
-            <span class="meta-badge" id="wordCategory">การเดินทาง</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Big Flip (กดยาวเท่า Know + Don't know) -->
-    <div class="action-row">
-      <button id="btnFlip" class="btn flip">Flip</button>
-    </div>
-
-    <!-- Know / Don't know -->
-    <div class="action-row">
-      <button id="btnKnow" class="btn success">✓ Know</button>
-      <button id="btnDont" class="btn danger">✗ Don’t know</button>
-    </div>
-
-    <!-- Nav row -->
-    <div class="nav-row">
-      <button id="btnPrev" class="chip">‹ ก่อนหน้า</button>
-      <button id="btnNext" class="chip">ถัดไป ›</button>
-    </div>
-
-    <!-- Utility row -->
-    <div class="utility-row">
-      <button id="btnShuffle" class="chip icon-left">🔀 สุ่มชุดใหม่</button>
-      <button id="btnStars" class="chip outline">📊 รีเช็คความคืบหน้า</button>
-    </div>
-  </main>
-
-  <!-- ========== Sheets / Pages ========== -->
-
-  <!-- Filter Sheet -->
-  <dialog id="sheetFilter" class="sheet">
-    <div class="sheet-head">
-      <button class="icon-btn" data-close="sheetFilter" aria-label="ปิด">✕</button>
-      <h3>Filter</h3>
-    </div>
-    <div class="sheet-body">
-      <div class="form-row">
-        <label class="lbl">ระดับ</label>
-        <div class="pill-group" id="levelPills">
-          <!-- เติมด้วย JS -->
-        </div>
-      </div>
-      <div class="form-row">
-        <label class="lbl">หมวด</label>
-        <div class="pill-group" id="categoryPills">
-          <!-- เติมด้วย JS -->
-        </div>
-      </div>
-      <div class="form-row">
-        <label class="lbl">ชนิดคำ (POS)</label>
-        <div class="pill-group" id="posPills">
-          <!-- เติมด้วย JS -->
-        </div>
-      </div>
-    </div>
-    <div class="sheet-foot">
-      <button class="btn ghost" data-close="sheetFilter">ยกเลิก</button>
-      <button id="applyFilter" class="btn primary">ใช้ตัวกรอง</button>
-    </div>
-  </dialog>
-
-  <!-- Settings Sheet -->
-  <dialog id="sheetSettings" class="sheet">
-    <div class="sheet-head">
-      <button class="icon-btn" data-close="sheetSettings" aria-label="ปิด">✕</button>
-      <h3>Settings</h3>
-    </div>
-    <div class="sheet-body">
-      <label class="switch">
-        <input type="checkbox" id="toggleTapToFlip" checked>
-        <span>แตะการ์ดเพื่อ Flip</span>
-      </label>
-      <label class="switch">
-        <input type="checkbox" id="toggleAutoAdvance" checked>
-        <span>ตอบแล้วเลื่อนไปข้อถัดไปอัตโนมัติ</span>
-      </label>
-      <button id="btnReset" class="chip danger">รีเซ็ตความคืบหน้า</button>
-    </div>
-    <div class="sheet-foot">
-      <button class="btn primary" data-close="sheetSettings">ปิด</button>
-    </div>
-  </dialog>
-
-  <!-- Stars / Review Page -->
-  <section id="starsPage" hidden>
-    <div class="subbar">
-      <button class="icon-btn back-btn" data-nav="home">‹</button>
-      <h2>สรุปตามดาว</h2>
-    </div>
-    <div class="stars-wrap" id="starsWrap">
-      <!-- เติมด้วย JS เป็นกลุ่ม 1★ – 5★ -->
-    </div>
-  </section>
-
-  <script>
-    /* ======= Part 3/3 – JS ทั้งหมดอยู่ช่วงท้ายไฟล์นี้ (เลื่อนไปพาร์ท 3) ======= */
-  </script>
-</body>
-</html>
-:root{
+    :root{
   --bg:#f6fbff;
   --card:#ffffff;
   --ink:#0f172a;
@@ -259,7 +115,132 @@ body{
   .word-kanji{font-size:72px}
   .btn.success,.btn.danger{min-width:220px}
 }
-// ========= Data Loading =========
+  </style>
+</head>
+<body>
+  <!-- Top App Bar -->
+  <header class="appbar">
+    <button class="icon-btn back-btn" aria-label="ย้อนกลับ" data-nav="back" hidden>
+      <span>‹</span>
+    </button>
+    <h1 class="app-title">JLPT N5 Flashcards</h1>
+
+    <div class="appbar-right">
+      <div class="counter-pill"><span id="progressIndex">1</span>/<span id="progressTotal">1</span></div>
+      <button class="chip ghost" id="btnSettings" aria-haspopup="dialog">⚙︎ Settings</button>
+      <button class="chip ghost" id="btnFilter" aria-haspopup="dialog">🔎 Filter</button>
+    </div>
+  </header>
+
+  <section class="hint">
+    <p>ติ๊กเลือกหมวด + จดจำแบบคว่ำหน้า (แตะการ์ดเพื่อพลิก)</p>
+  </section>
+
+  <!-- หมวดหมู่ -->
+  <section class="chip-row" id="categoryRow"></section>
+
+  <!-- พื้นที่การ์ด -->
+  <main class="stage">
+    <div class="card-wrap">
+      <div class="card" id="flashcard" tabindex="0" role="button" aria-label="แตะเพื่อพลิกการ์ด">
+        <div class="card-face card-front">
+          <div class="word-kanji" id="wordKanji">行く</div>
+          <div class="word-kana" id="wordKana">いく</div>
+          <div class="word-romaji" id="wordRomaji">iku</div>
+        </div>
+        <div class="card-face card-back">
+          <div class="meaning" id="wordMeaning">ไป / to go</div>
+          <div class="meta">
+            <span class="meta-badge" id="wordLevel">N5</span>
+            <span class="meta-badge" id="wordCategory">การเดินทาง</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ปุ่ม Flip ยาว -->
+    <div class="action-row">
+      <button id="btnFlip" class="btn flip">Flip</button>
+    </div>
+
+    <!-- Know / Don't know -->
+    <div class="action-row">
+      <button id="btnKnow" class="btn success">✓ Know</button>
+      <button id="btnDont" class="btn danger">✗ Don’t know</button>
+    </div>
+
+    <!-- นำทาง -->
+    <div class="nav-row">
+      <button id="btnPrev" class="chip">‹ ก่อนหน้า</button>
+      <button id="btnNext" class="chip">ถัดไป ›</button>
+    </div>
+
+    <!-- ยูทิลิตี้ -->
+    <div class="utility-row">
+      <button id="btnShuffle" class="chip icon-left">🔀 สุ่มชุดใหม่</button>
+      <button id="btnStars" class="chip outline">📊 รีเช็คความคืบหน้า</button>
+    </div>
+  </main>
+
+  <!-- Filter -->
+  <dialog id="sheetFilter" class="sheet">
+    <div class="sheet-head">
+      <button class="icon-btn" data-close="sheetFilter" aria-label="ปิด">✕</button>
+      <h3>Filter</h3>
+    </div>
+    <div class="sheet-body">
+      <div class="form-row">
+        <label class="lbl">ระดับ</label>
+        <div class="pill-group" id="levelPills"></div>
+      </div>
+      <div class="form-row">
+        <label class="lbl">หมวด</label>
+        <div class="pill-group" id="categoryPills"></div>
+      </div>
+      <div class="form-row">
+        <label class="lbl">ชนิดคำ (POS)</label>
+        <div class="pill-group" id="posPills"></div>
+      </div>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn ghost" data-close="sheetFilter">ยกเลิก</button>
+      <button id="applyFilter" class="btn primary">ใช้ตัวกรอง</button>
+    </div>
+  </dialog>
+
+  <!-- Settings -->
+  <dialog id="sheetSettings" class="sheet">
+    <div class="sheet-head">
+      <button class="icon-btn" data-close="sheetSettings" aria-label="ปิด">✕</button>
+      <h3>Settings</h3>
+    </div>
+    <div class="sheet-body">
+      <label class="switch">
+        <input type="checkbox" id="toggleTapToFlip" checked>
+        <span>แตะการ์ดเพื่อ Flip</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="toggleAutoAdvance" checked>
+        <span>ตอบแล้วเลื่อนไปข้อถัดไปอัตโนมัติ</span>
+      </label>
+      <button id="btnReset" class="chip danger">รีเซ็ตความคืบหน้า</button>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn primary" data-close="sheetSettings">ปิด</button>
+    </div>
+  </dialog>
+
+  <!-- หน้ารีวิวดาว -->
+  <section id="starsPage" hidden>
+    <div class="subbar">
+      <button class="icon-btn back-btn" data-nav="home">‹</button>
+      <h2>สรุปตามดาว</h2>
+    </div>
+    <div class="stars-wrap" id="starsWrap"></div>
+  </section>
+
+  <script>
+    // ========= Data Loading =========
 const STORAGE_KEY = 'n5flash_v1';
 const state = {
   all: [],
@@ -536,3 +517,6 @@ $('header .back-btn').onclick = goHome;
   bindSettings();
   applyFilters();
 })();
+  </script>
+</body>
+</html>
