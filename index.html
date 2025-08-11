@@ -1,490 +1,548 @@
 <!doctype html>
-<html lang="en">
+<html lang="th">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<title>N5 Flashcards — Mobile v4.1</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JLPT N5 Flashcards</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg-1:#f7f4ff; --bg-2:#ece6ff; --brand:#b79df4;
-    --ink:#1b2330; --ok:#26b06a; --bad:#e05353; --card:#ffffff;
-    --ring:rgba(0,0,0,.05); --shadow:0 10px 30px rgba(0,0,0,.08); --radius:18px;
-    --cardFont: clamp(36px, var(--cardFontVW,9vw), 84px);
-    --swipeTH: 60;
-  }
-  .theme-lilac{ --bg-1:#f7f4ff; --bg-2:#ece6ff; --brand:#b79df4; }
-  .theme-blue { --bg-1:#f4f8ff; --bg-2:#e5efff; --brand:#78a8ff; }
-  .theme-mint { --bg-1:#f4fffb; --bg-2:#dff8ef; --brand:#4fd3a6; }
-  .theme-rose { --bg-1:#fff5f7; --bg-2:#ffe3ea; --brand:#ff7aa2; }
+:root{
+  --bg:#fafaf7;           /* กระดาษขาวนวล */
+  --panel:#ffffff;        /* แผง/การ์ด */
+  --ink:#16181d;          /* ตัวหนังสือ */
+  --muted:#6b7280;        /* ข้อความรอง */
+  --line:#e8e8e3;         /* เส้นขอบบาง */
+  --accent:#3a74ff;       /* ฟ้าอินดิโก้ */
+  --accent-weak:#eaf1ff;  /* ฟ้าอ่อน */
+  --success:#16a34a;
+  --danger:#ef4444;
+  --radius:16px;
+  --shadow:0 6px 18px rgba(20,24,32,.08);
+}
 
-  html,body{height:100%;margin:0;overflow:hidden;background:
-    radial-gradient(1200px 600px at 0% 100%, var(--bg-2), transparent 60%),
-    radial-gradient(1200px 600px at 100% 0%, var(--bg-2), transparent 60%),
-    var(--bg-1);
-    font-family: ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans";
-    color:var(--ink); -webkit-tap-highlight-color:transparent;
-  }
-  .app{
-    height:calc(100svh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-    padding: calc(8px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right))
-             calc(12px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
-    display:flex;flex-direction:column;gap:12px;box-sizing:border-box;
-  }
-  .header{display:flex;align-items:center;justify-content:space-between}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:800}
-  .badge{background:var(--brand);color:#fff;width:36px;height:36px;border-radius:10px;
-         display:grid;place-items:center;box-shadow:var(--shadow)}
-  .toolbar{display:flex;gap:8px;align-items:center}
-  .chip{padding:8px 10px;border-radius:999px;background:#fff; border:1px solid #eee; font-size:13px; box-shadow:var(--shadow); cursor:pointer}
-  .menu{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
-        background:#fff7;backdrop-filter:saturate(120%) blur(4px);box-shadow:var(--shadow);cursor:pointer}
-  .menu div{width:18px;height:2px;background:#444;border-radius:2px;position:relative}
-  .menu div:before,.menu div:after{content:"";position:absolute;left:0;right:0;height:2px;background:#444;border-radius:2px}
-  .menu div:before{top:-6px}.menu div:after{top:6px}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Sans Thai","Noto Sans JP",ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;
+}
 
-  .view{flex:1;display:none}
-  .view.active{display:flex;flex-direction:column}
-  .scroll{flex:1;overflow:auto}
+.app{max-width:960px;margin:0 auto;padding:20px 16px 96px}
 
-  .stage{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px}
-  .card-wrap{flex:1;width:100%;display:grid;place-items:center;perspective:1200px}
-  .card{width:min(980px,95vw);height:min(58svh,70vw);border-radius:calc(var(--radius)+6px);
-        box-shadow:var(--shadow),inset 0 0 0 1px var(--ring);position:relative;background:var(--card);
-        transition:background-color .25s ease,box-shadow .25s ease}
-  .card-inner{position:absolute;inset:0;border-radius:inherit;transform-style:preserve-3d;
-              transition:transform .45s cubic-bezier(.2,.7,.2,1);display:grid;place-items:center}
-  .face{position:absolute;inset:0;backface-visibility:hidden;border-radius:inherit;
-        display:grid;place-items:center;text-align:center;padding:16px}
-  .front .main{font-weight:800;font-size:var(--cardFont)}
-  .back .main {font-weight:800;font-size:var(--cardFont)}
-  .back .sub1 {font-size:clamp(18px,4.6vw,22px);opacity:.9;margin-top:8px}
-  .back .sub2 {font-size:clamp(14px,3.8vw,18px);opacity:.85;margin-top:6px}
-  .back{transform:rotateY(180deg)}
-  .flipped .card-inner{transform:rotateY(180deg)}
-  .tint-ok{background:#f1fbf6!important;box-shadow:var(--shadow),0 0 0 4px rgba(43,187,115,.18) inset}
-  .tint-bad{background:#fff5f6!important;box-shadow:var(--shadow),0 0 0 4px rgba(224,83,83,.18) inset}
-  .mark{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;
-        display:grid;place-items:center;font-weight:900;color:#fff;opacity:0;transform:scale(.8);
-        transition:opacity .2s ease,transform .2s ease}
-  .mark.ok{background:#2bbb73} .mark.bad{background:#e05353}
-  .show-ok .mark.ok{opacity:1;transform:scale(1)} .show-bad .mark.bad{opacity:1;transform:scale(1)}
-  .lvl{position:absolute; top:12px; left:12px; font-size:12px; opacity:.5; background:#00000008; padding:6px 8px; border-radius:8px}
-  .tag{position:absolute; bottom:12px; left:12px; font-size:12px; opacity:.6; background:#00000006; padding:6px 8px; border-radius:8px}
-  .stars{position:absolute; top:12px; right:58px; font-size:16px; opacity:.7; letter-spacing:2px}
+.header{
+  position:sticky;top:0;z-index:10;
+  padding:8px 0 12px;
+  background:linear-gradient(#fafaf7, rgba(250,250,247,.85));
+  backdrop-filter:saturate(1.2) blur(4px);
+  border-bottom:1px solid var(--line);
+}
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.title{font-weight:800}
+.subtitle{font-size:12px;color:var(--muted)}
 
-  .controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(960px,96vw)}
-  .btn{padding:14px 16px;border:none;border-radius:20px;color:#fff;font-weight:800;
-       font-size:clamp(14px,3.6vw,18px);box-shadow:var(--shadow);cursor:pointer;touch-action:manipulation}
-  .btn-ok{background:var(--ok)} .btn-bad{background:var(--bad)}
-  .btn-ghost{grid-column:1 / -1;background:#fff;color:#333;border:1px solid #eee}
-  .hint{text-align:center;font-size:12px;opacity:.55}
+.badge{
+  padding:6px 10px;border-radius:999px;
+  background:var(--accent-weak); color:#2a4fcf;
+  font-size:12px;font-weight:700
+}
+.spacer{flex:1}
 
-  .overlay{position:fixed; inset:0; background:rgba(0,0,0,.22); opacity:0; pointer-events:none; transition:opacity .25s ease; z-index:50}
-  .overlay.show{opacity:1; pointer-events:auto}
-  .sheet{position:fixed; inset:auto 0 0 0; background:#fff; border-top-left-radius:16px; border-top-right-radius:16px;
-         transform:translateY(102%); transition:transform .35s ease; box-shadow:0 -10px 30px rgba(0,0,0,.18); max-height:80svh; z-index:51}
-  .sheet.show{transform:none}
-  .sheet header{padding:14px 16px; font-weight:800; border-bottom:1px solid #f0f0f0}
-  .sheet .rows{display:flex; flex-direction:column}
-  .row-item{padding:14px 16px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #f6f6f8; font-weight:600; cursor:pointer}
-  .row-item small{opacity:.6; font-weight:500}
+.btn{
+  appearance:none;border:1px solid var(--line);background:#fff;
+  padding:10px 14px;border-radius:12px;cursor:pointer;
+  box-shadow:var(--shadow);font-weight:700;color:var(--ink);
+  transition:.15s ease transform,.2s ease box-shadow,.2s ease background;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-icon{display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn-success{background:#eaf7ee;color:#135e2b;border-color:#cfead8}
+.btn-danger{background:#feeeee;color:#7c2222;border-color:#ffdede}
+.btn-ghost{background:#fff}
 
-  .page{padding:12px; gap:12px}
-  .search{display:flex; gap:8px; align-items:center; margin-bottom:10px}
-  .search input{flex:1; padding:10px 12px; border:1px solid #e6e6ef; border-radius:12px}
-  .grid{display:grid; gap:8px}
-  .grid.two{grid-template-columns:1fr 1fr}
-  .select{padding:10px 12px; border:1px solid #e6e6ef; border-radius:12px; background:#fff}
-  .btn-mini{padding:10px 12px; border-radius:12px; border:1px solid #e6e6ef; background:#fff; cursor:pointer}
-  table{width:100%; border-collapse:collapse}
-  th,td{padding:10px; border-bottom:1px solid #f0f0f5; text-align:left}
-  th{position:sticky; top:0; background:#fff}
+.select,.input{
+  width:100%;max-width:220px;padding:10px 12px;border-radius:12px;
+  border:1px solid var(--line);background:#fff;color:var(--ink)
+}
+
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:12px;margin-top:12px
+}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.hidden{display:none!important}
+
+.grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+
+.card{
+  position:relative;border-radius:20px;border:1px solid var(--line);
+  background:var(--panel);box-shadow:var(--shadow);
+  padding:18px;min-height:220px; /* ไม่มีปุ่มอยู่ด้านในแล้ว */
+}
+.card-inner{position:relative;transform-style:preserve-3d;transition:transform .5s ease}
+.card.flipped .card-inner{transform:rotateY(180deg)}
+.card-face{position:absolute;inset:0;padding:18px;backface-visibility:hidden;display:flex;flex-direction:column;gap:10px}
+.card-face.back{transform:rotateY(180deg)}
+.card-top{display:flex;align-items:center;gap:8px}
+.card-main{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px}
+
+.kanji{font-size:44px;font-weight:800;letter-spacing:.5px}
+.kana{font-size:20px;color:#334155}
+.romaji{font-size:14px;color:var(--muted)}
+.meaning{font-size:18px;font-weight:800}
+
+.actions-bar{
+  display:flex;gap:10px;margin-top:10px
+}
+.actions-bar .btn{flex:1}
+.actions-bar .btn.flip{
+  /* ให้ยาวเท่ากับ Know + Don't know รวมกัน */
+  flex:2;background:var(--accent);color:#fff;border-color:transparent
+}
+
+/* backbar สำหรับหน้า secondary */
+.backbar{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 </style>
 </head>
-<body class="theme-lilac">
-<div class="app">
-  <div class="header">
-    <div class="brand"><div class="badge">N5</div><div>N5 Flashcards</div></div>
-    <div class="toolbar">
-      <div class="chip" id="btnFilters">Filters</div>
-      <div class="menu" id="btnMenu" aria-label="menu"><div></div></div>
-    </div>
-  </div>
-
-  <!-- Study -->
-  <div class="view active" id="viewStudy">
-    <div class="stage">
-      <div class="card-wrap">
-        <div class="card" id="card">
-          <div class="lvl" id="cardLvl"></div>
-          <div class="tag" id="cardTag"></div>
-          <div class="stars" id="cardStars">☆ ☆ ☆ ☆ ☆</div>
-          <div class="card-inner" id="cardInner">
-            <div class="face front"><div class="main" id="frontMain">Loading…</div></div>
-            <div class="face back"><div id="backBox"></div></div>
-          </div>
-          <div class="mark ok">✓</div><div class="mark bad">✗</div>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="toolbar">
+        <button id="btnBack" class="btn btn-icon hidden" aria-label="Back">
+          ◀︎
+        </button>
+        <div>
+          <div class="title">JLPT N5 Flashcards</div>
+          <div class="subtitle">ฝึกทีละหมวด + จดจำแบบก้าวหน้า</div>
+        </div>
+        <div class="spacer"></div>
+        <span id="statCounter" class="badge">0 / 0</span>
+        <button id="btnSettings" class="btn btn-icon">⚙️ Settings</button>
+        <button id="btnFilter" class="btn btn-icon">🔎 Filter</button>
+      </div>
+      <div id="panelSettings" class="panel hidden" role="region" aria-label="Settings">
+        <div class="backbar">
+          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
+          <strong>Settings</strong>
+        </div>
+        <div class="row">
+          <label>โหมดการสุ่ม
+            <select id="modeSelect" class="select">
+              <option value="mixed">สุ่มทั้งหมด (ผสม)</option>
+              <option value="category">สุ่มตามหมวด (Category)</option>
+            </select>
+          </label>
+          <label>แสดงข้อมูลหน้าแรก
+            <select id="frontSelect" class="select">
+              <option value="kanji">Kanji</option>
+              <option value="kana">Kana</option>
+              <option value="meaning">ความหมาย (ไทย)</option>
+            </select>
+          </label>
+          <label>หลังการ์ดแสดง
+            <select id="backSelect" class="select">
+              <option value="meaning">ความหมาย (ไทย)</option>
+              <option value="kana">Kana</option>
+              <option value="romaji">Romaji</option>
+              <option value="kanji">Kanji</option>
+            </select>
+          </label>
         </div>
       </div>
-      <button class="btn btn-ghost" id="btnFlip">⟳ Flip</button>
-      <div class="controls">
-        <button class="btn btn-ok"  id="btnKnow">✓ Know</button>
-        <button class="btn btn-bad" id="btnDont">✗ Don’t know</button>
-      </div>
-      <div class="hint">Tap = flip · Swipe right = Know · Swipe left = Don’t know</div>
-    </div>
-  </div>
 
-  <!-- Summary -->
-  <div class="view" id="viewSummary">
-    <div class="page scroll" id="summaryPage">
-      <div class="search">
-        <input id="qSum" type="search" placeholder="Search word / kana / meaning…" />
-        <button class="btn-mini" id="sumBack">Back</button>
+      <div id="panelFilter" class="panel hidden" role="region" aria-label="Filter">
+        <div class="backbar">
+          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
+          <strong>Filter</strong>
+        </div>
+        <div class="row">
+          <label>ระดับ
+            <select id="levelSelect" class="select">
+              <option value="">ทั้งหมด</option>
+              <option value="N5">N5</option>
+              <option value="N4">N4</option>
+            </select>
+          </label>
+          <label>หมวด (Category)
+            <select id="categorySelect" class="select">
+              <option value="">ทั้งหมด</option>
+            </select>
+          </label>
+          <label>ค้นหา (ญี่ปุ่น/ไทย)
+            <input id="searchInput" class="input" placeholder="พิมพ์คำค้น… (เช่น いく / 行く / ไป)">
+          </label>
+          <button id="btnApplyFilter" class="btn btn-primary">Apply</button>
+          <button id="btnClearFilter" class="btn btn-ghost">Clear</button>
+        </div>
       </div>
-      <div style="overflow:auto; border:1px solid #eee; border-radius:12px">
-        <table id="sumTable">
-          <thead><tr><th>#</th><th>Word</th><th>Kana</th><th>Meaning</th><th>POS</th><th>Tags</th><th>Lv</th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- Filters -->
-  <div class="view" id="viewFilters">
-    <div class="page scroll">
-      <div class="search">
-        <input id="q" type="search" placeholder="Search…" />
-        <button class="btn-mini" id="apply">Apply</button>
-        <button class="btn-mini" id="reset">Reset</button>
+    <main>
+<div class="grid">
+  <section class="card" id="flashCard" tabindex="0" aria-label="Flashcard (tap/คลิกเพื่อ flip)">
+    <div class="card-inner">
+      <div class="card-face front">
+        <div class="card-top">
+          <span id="badgeLevel" class="badge">N5</span>
+          <span id="badgeCategory" class="badge">หมวด</span>
+        </div>
+        <div class="card-main">
+          <div id="frontMain" class="kanji">…</div>
+          <div id="frontSub1" class="kana">…</div>
+          <div id="frontSub2" class="romaji">…</div>
+        </div>
       </div>
-      <div class="grid two">
-        <select id="selTag" class="select"><option value="">All tags</option></select>
-        <select id="selPos" class="select"><option value="">All POS</option></select>
-      </div>
-    </div>
-  </div>
-
-  <!-- Settings -->
-  <div class="view" id="viewSettings">
-    <div class="page scroll">
-      <h3>Theme</h3>
-      <div class="grid two">
-        <button class="btn-mini themeSel" data-t="lilac">Lilac</button>
-        <button class="btn-mini themeSel" data-t="blue">Blue</button>
-        <button class="btn-mini themeSel" data-t="mint">Mint</button>
-        <button class="btn-mini themeSel" data-t="rose">Rose</button>
-      </div>
-      <h3>Card font size</h3>
-      <input id="fontRange" type="range" min="6" max="12" step="0.5" value="9"/>
-      <small id="fontVal">9vw</small>
-      <h3>Swipe threshold</h3>
-      <input id="thRange" type="range" min="40" max="120" step="5" value="60"/>
-      <small id="thVal">60 px</small>
-      <h3>Data</h3>
-      <div class="grid two">
-        <button class="btn-mini" id="clearKnown">Clear Know/Don’t</button>
-        <button class="btn-mini" id="clearBoxes">Clear Stars (1–5)</button>
-      </div>
-      <div style="margin-top:8px">
-        <button class="btn-mini" id="btnExport">Export current JSON</button>
+      <div class="card-face back">
+        <div class="card-top">
+          <span class="badge">คำแปล</span>
+        </div>
+        <div class="card-main">
+          <div id="backMain" class="meaning">…</div>
+          <div id="backSub1" class="kana">…</div>
+          <div id="backSub2" class="romaji">…</div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- QA -->
-  <div class="view" id="viewQA">
-    <div class="page scroll">
-      <div class="search">
-        <button class="btn-mini" id="qaBack">Back</button>
-      </div>
-      <div style="overflow:auto; border:1px solid #eee; border-radius:12px">
-        <table id="qaTable">
-          <thead><tr><th>#</th><th>JP</th><th>Meaning (TH)</th><th>Flags</th><th>Action</th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <!-- Menu -->
-  <div class="overlay" id="overlay"></div>
-  <div class="sheet" id="sheet">
-    <header>Menu</header>
-    <div class="rows">
-      <div class="row-item" data-go="study">Study <small>เรียนตามตัวกรอง</small></div>
-      <div class="row-item" data-go="summary">Summary <small>รายการคำทั้งหมด</small></div>
-      <div class="row-item" data-go="train">Train “Don’t know” <small>ฝึกเฉพาะที่ยังไม่รู้</small></div>
-      <div class="row-item" data-go="filters">Filters <small>ค้นหา/หมวด/ชนิดคำ</small></div>
-      <div class="row-item" data-go="qa">QA (Data Check) <small>รายการติดธง</small></div>
-      <div class="row-item" data-go="settings">Settings <small>ธีม/ฟอนต์/สไลด์</small></div>
-      <div class="row-item" id="closeMenu">Close</div>
-    </div>
-  </div>
+  </section>
 </div>
+
+<!-- แถบปุ่มอยู่ “นอกการ์ด” แล้ว จึงไม่ทับกัน -->
+<div class="actions-bar">
+  <button id="btnDontKnow" class="btn btn-danger">Don’t know</button>
+  <button id="btnFlip" class="btn flip">Flip</button>
+  <button id="btnKnow" class="btn btn-success">Know</button>
+</div>
+    </main>
+  </div>
 <script>
-/* ===== CONFIG ===== */
-const DATA_URL = 'https://raw.githubusercontent.com/Pongpipatt/n5-flashcards/refs/heads/main/n5-500%20word.json'; // <-- เปลี่ยนเป็นลิงก์ RAW ของโกโก้
+/* ========= Utils ========= */
+const qs = (s, el=document)=>el.querySelector(s);
+const qsa = (s, el=document)=>[...el.querySelectorAll(s)];
+const clamp = (n,min,max)=>Math.max(min, Math.min(max,n));
+const escapeHTML = (str) => (str??"")
+  .toString()
+  .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
+  .replaceAll('"',"&quot;").replaceAll("'","&#39;");
 
-/* ===== STATE ===== */
-let raw=[], cards=[], i=0, flipped=false;
-let startX=0,startY=0, swiping=false;
-let filters = JSON.parse(localStorage.getItem('n5-filters')||'{"tag":"","pos":"","q":""}');
-let trainUnknown = false;
-const knownKey='n5-known-map', boxKey='n5-boxes', themeKey='n5-theme', fontKey='n5-font', thKey='n5-th';
-let knownMap = JSON.parse(localStorage.getItem(knownKey)||'{}');
-let boxMap = JSON.parse(localStorage.getItem(boxKey)||'{}');
+const persist = {
+  get(k, d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } },
+  set(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
+};
 
-/* ===== EL ===== */
-const $ = s=>document.querySelector(s);
-const $$ = s=>document.querySelectorAll(s);
-const $card = $('#card'), $inner = $('#cardInner');
-const $front = $('#frontMain'), $backBox = $('#backBox');
-const $lvl = $('#cardLvl'), $tag = $('#cardTag'), $stars = $('#cardStars');
-const overlay = $('#overlay'), sheet = $('#sheet');
+/* ========= Data mapping =========
+ไฟล์ n5-500 word.json (ฟิลด์):
+- kanji -> kanji
+- kana -> kana
+- romaji -> romaji
+- thai -> meaning
+- jlpt -> level
+- category -> category
+หมายเหตุ: ถ้าไม่มี kanji ให้ขึ้นจาก kana
+*/
+const SOURCE_URL = 'n5-500 word.json';
 
-/* ===== UTIL ===== */
-function escapeHtml(s){ return (s||'').replace(/[&<>"]/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c])); }
-function shuffle(a){ for(let k=a.length-1;k>0;k--){ const j=Math.floor(Math.random()*(k+1)); [a[k],a[j]]=[a[j],a[k]]; } }
-function drawStars(n){ return ('★ '.repeat(n) + '☆ '.repeat(5-n)).trim(); }
-function boxOf(id){ return Math.min(5, Math.max(1, boxMap[id]||1)); }
+let rawCards = [];
+let cards = [];       // หลัง filter/sort
+let idx = 0;          // index ปัจจุบัน
+let showingBack = false;
 
-/* ===== RENDER ===== */
-function setFlip(v){ flipped=v; $card.classList.toggle('flipped',flipped); }
-function render(){
-  if(!cards.length){ $front.textContent='No cards'; $backBox.innerHTML=''; $lvl.textContent=''; $tag.textContent=''; $stars.textContent='☆ ☆ ☆ ☆ ☆'; return; }
-  const c = cards[i];
-  $card.classList.remove('tint-ok','tint-bad','show-ok','show-bad');
-  // front
-  $front.textContent = c.front;
+// เก็บ “ดาว” และ คะแนนรู้/ไม่รู้ แบบซ่อนใน UI
+let stars = persist.get('stars', {});      // key = id (hash text), value = 0..3
+let mastery = persist.get('mastery', {});  // { id: {know: n, dont: n} }
 
-  // back: kana/romaji/meaning + examples
-  const rom = c.romaji ? ` <span style="opacity:.7">${escapeHtml(c.romaji)}</span>` : '';
-  const mean = escapeHtml(c.meaning||c.b2||'');
-  const exJp = c.example_jp || (c.raw && c.raw.example_jp) || '';
-  const exTh = c.example_th || (c.raw && c.raw.example_th) || '';
-  $backBox.innerHTML = `
-    <div class="main">${escapeHtml(c.front)}</div>
-    <div class="sub1">${escapeHtml(c.kana||c.b1||'')}</div>
-    <div class="sub2">${(c.romaji?escapeHtml(c.romaji)+' · ':'')+mean}</div>
-    ${ (exJp||exTh) ? `
-      <div style="margin-top:12px;border-top:1px solid rgba(0,0,0,.06);padding-top:10px;text-align:left">
-        ${exJp?`<div style="font-weight:700;font-size:clamp(16px,4.5vw,20px)">${escapeHtml(exJp)}</div>`:''}
-        ${exTh?`<div style="opacity:.82;font-size:clamp(13px,3.8vw,16px)">${escapeHtml(exTh)}</div>`:''}
-      </div>`:''}
-  `;
-
-  $lvl.textContent   = c.level ? c.level : '';
-  $tag.textContent   = c.category || c.tags || '';
-  $stars.textContent = drawStars(boxOf(c.id));
-  setFlip(false);
-}
-function next(){ i=(i+1)%cards.length; render(); }
-
-/* ===== ACTIONS ===== */
-function know(){
-  const id = cards[i].id;
-  knownMap[id]='k'; localStorage.setItem(knownKey,JSON.stringify(knownMap));
-  boxMap[id] = Math.min(5, boxOf(id)+1); localStorage.setItem(boxKey,JSON.stringify(boxMap));
-  $stars.textContent = drawStars(boxMap[id]);
-  $card.classList.add('tint-ok','show-ok'); setTimeout(()=>{ if(trainUnknown){cards.splice(i,1);} next(); },160);
-}
-function dont(){
-  const id = cards[i].id;
-  knownMap[id]='d'; localStorage.setItem(knownKey,JSON.stringify(knownMap));
-  boxMap[id] = 1; localStorage.setItem(boxKey,JSON.stringify(boxMap));
-  $stars.textContent = drawStars(1);
-  const cur = cards[i]; cards.splice(i,1); cards.push(cur);
-  $card.classList.add('tint-bad','show-bad'); setTimeout(next,160);
-}
-
-/* ===== TOUCH | BUTTONS ===== */
-$('#btnKnow').addEventListener('click', know);
-$('#btnDont').addEventListener('click', dont);
-$('#btnFlip').addEventListener('click', ()=> setFlip(!flipped));
-$card.addEventListener('click', ()=> setFlip(!flipped));
-
-$card.addEventListener('touchstart', e=>{const t=e.changedTouches[0];startX=t.clientX;startY=t.clientY;swiping=true},{passive:true});
-$card.addEventListener('touchmove', e=>{
-  if(!swiping)return;
-  const t=e.changedTouches[0]; const dx=t.clientX-startX;
-  $card.style.transform=`translateX(${Math.max(Math.min(dx,90),-90)}px) rotate(${dx/90*2}deg)`;
-},{passive:true});
-$card.addEventListener('touchend', e=>{
-  if(!swiping)return; swiping=false;
-  const t=e.changedTouches[0]; const dx=t.clientX-startX; const dy=t.clientY-startY;
-  $card.style.transform='translateX(0) rotate(0)';
-  const TH=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--swipeTH'))||60;
-  if(Math.abs(dx)<TH && Math.abs(dy)<40){ setFlip(!flipped); return; }
-  if(dx>TH) know(); else if(dx<-TH) dont();
+const settings = persist.get('settings', {
+  mode: 'mixed',
+  front: 'kanji',
+  back: 'meaning'
 });
 
-/* ===== MENU ===== */
-const openMenu = ()=>{ overlay.classList.add('show'); sheet.classList.add('show'); }
-const closeMenu= ()=>{ overlay.classList.remove('show'); sheet.classList.remove('show'); }
-$('#btnMenu').onclick=openMenu; $('#closeMenu').onclick=closeMenu; overlay.onclick=closeMenu;
-sheet.addEventListener('click', e=>{
-  const row = e.target.closest('.row-item'); if(!row) return;
-  const go = row.dataset.go; if(!go) return;
-  switch(go){
-    case 'study': showView('viewStudy'); closeMenu(); break;
-    case 'summary': buildSummary(); showView('viewSummary'); closeMenu(); break;
-    case 'filters': buildFilters(); showView('viewFilters'); closeMenu(); break;
-    case 'settings': buildSettings(); showView('viewSettings'); closeMenu(); break;
-    case 'train': trainUnknown=true; applyFilters(); showView('viewStudy'); closeMenu(); break;
-    case 'qa': buildQA(); showView('viewQA'); closeMenu(); break;
-  }
+const filters = persist.get('filters', {
+  level: '',
+  category: '',
+  search: ''
 });
-$('#btnFilters').onclick = ()=>{ buildFilters(); showView('viewFilters'); };
 
-function showView(id){ $$('.view').forEach(v=>v.classList.remove('active')); $('#'+id).classList.add('active'); }
-
-/* ===== EXPORT JSON (สถานะปัจจุบัน) ===== */
-function exportFilteredJSON(){
-  const cleaned = cards.map(c => ({
-    kanji: c.kanji||'',
-    kana: c.kana||'',
-    romaji: c.romaji||'',
-    meaning: c.meaning||'',
-    level: c.level||'N5',
-    category: c.category||'',
-    example_jp: c.example_jp||'',
-    example_th: c.example_th||'',
-    qa_flags: c.qa_flags||[]
-  }));
-  const blob = new Blob([JSON.stringify(cleaned, null, 2)], {type:'application/json'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = 'n5-clean-export.json'; document.body.appendChild(a); a.click(); a.remove();
-  URL.revokeObjectURL(url);
-}
-/* ===== SUMMARY ===== */
-function buildSummary(){
-  const tbody = $('#sumTable tbody'); tbody.innerHTML='';
-  cards.forEach((c,idx)=>{
-    const tr=document.createElement('tr'); tr.dataset.idx=idx;
-    tr.innerHTML = `<td>${idx+1}</td><td>${escapeHtml(c.front)}</td><td>${escapeHtml(c.kana||'')}</td>
-                    <td>${escapeHtml(c.meaning||'')}</td><td>${escapeHtml(c.pos||'')}</td>
-                    <td>${escapeHtml(c.category||c.tags||'')}</td><td>${escapeHtml(c.level||'')}</td>`;
-    tr.onclick=()=>{ i=idx; showView('viewStudy'); render(); };
-    tbody.appendChild(tr);
-  });
-  $('#qSum').value = filters.q||'';
-  $('#qSum').oninput = (e)=>{ filters.q=e.target.value||''; localStorage.setItem('n5-filters',JSON.stringify(filters)); applyFilters(); buildSummary(); };
-  $('#sumBack').onclick = ()=> showView('viewStudy');
+function hashId(o){
+  const s = [o.kanji,o.kana,o.romaji,o.meaning,o.level,o.category].join('|');
+  let h=0; for(let i=0;i<s.length;i++){ h=((h<<5)-h)+s.charCodeAt(i); h|=0; }
+  return String(h);
 }
 
-/* ===== FILTERS ===== */
-function buildFilters(){
-  $('#q').value = filters.q||'';
-  const tags = Array.from(new Set(raw.map(r=>r.category||r.tags||'').filter(Boolean))).sort();
-  const poses = Array.from(new Set(raw.map(r=>r.pos||'').filter(Boolean))).sort();
-  $('#selTag').innerHTML = `<option value="">All tags</option>${tags.map(t=>`<option ${filters.tag===t?'selected':''}>${t}</option>`).join('')}`;
-  $('#selPos').innerHTML = `<option value="">All POS</option>${poses.map(p=>`<option ${filters.pos===p?'selected':''}>${p}</option>`).join('')}`;
-
-  $('#apply').onclick = ()=>{ filters.q=$('#q').value.trim(); filters.tag=$('#selTag').value; filters.pos=$('#selPos').value;
-    localStorage.setItem('n5-filters',JSON.stringify(filters)); trainUnknown=false; applyFilters(); showView('viewStudy'); };
-  $('#reset').onclick = ()=>{ filters={tag:'',pos:'',q:''}; localStorage.setItem('n5-filters',JSON.stringify(filters)); trainUnknown=false; applyFilters(); buildFilters(); };
-}
-
-/* ===== SETTINGS ===== */
-function setTheme(name){
-  document.body.classList.remove('theme-lilac','theme-blue','theme-mint','theme-rose');
-  document.body.classList.add('theme-'+name);
-  localStorage.setItem(themeKey,name);
-}
-function buildSettings(){
-  $$('.themeSel').forEach(b=> b.onclick=()=> setTheme(b.dataset.t) );
-  const cur = parseFloat(localStorage.getItem(fontKey)||'9');
-  $('#fontRange').value = cur; $('#fontVal').textContent = cur+'vw';
-  $('#fontRange').oninput = (e)=>{ const v=e.target.value; document.documentElement.style.setProperty('--cardFontVW', v+'vw'); $('#fontVal').textContent=v+'vw'; localStorage.setItem(fontKey, v); };
-  const th = parseInt(localStorage.getItem(thKey)||'60',10);
-  $('#thRange').value = th; $('#thVal').textContent = th+' px';
-  $('#thRange').oninput = (e)=>{ const v=parseInt(e.target.value,10); document.documentElement.style.setProperty('--swipeTH', v); $('#thVal').textContent=v+' px'; localStorage.setItem(thKey, v); };
-  $('#clearKnown').onclick = ()=>{ knownMap={}; localStorage.removeItem(knownKey); alert('Cleared know/don’t'); };
-  $('#clearBoxes').onclick = ()=>{ boxMap={}; localStorage.removeItem(boxKey); render(); alert('Cleared stars'); };
-  $('#btnExport').onclick = exportFilteredJSON;
-}
-
-/* ===== QA PAGE ===== */
-function buildQA(){
-  const tbody = $('#qaTable tbody'); tbody.innerHTML='';
-  cards.forEach((c,idx)=>{
-    const flags = c.qa_flags || [];
-    if(!flags.length) return;
-    const tr=document.createElement('tr');
-    tr.innerHTML = `
-      <td>${idx+1}</td>
-      <td>${escapeHtml(c.front)}<br><small>${escapeHtml(c.kana||'')}</small></td>
-      <td>${escapeHtml(c.meaning||'')}</td>
-      <td><small>${flags.join(', ')}</small></td>
-      <td><button class="btn-mini" data-act="drop" data-idx="${idx}">Delete</button></td>`;
-    tbody.appendChild(tr);
-  });
-  tbody.onclick = (e)=>{
-    const b = e.target.closest('button'); if(!b) return;
-    const idx = +b.dataset.idx;
-    if(b.dataset.act==='drop'){ cards.splice(idx,1); buildQA(); }
-  };
-  $('#qaBack').onclick = ()=> showView('viewStudy');
-}
-
-/* ===== FILTER PIPELINE ===== */
-function applyFilters(){
-  const q = (filters.q||'').trim().toLowerCase();
-  cards = raw
-    .filter(r=> !(r._drop))   // เผื่อไว้ถ้ามีธง
-    .map(r=>{
-      const front = r.kanji || r.kana || r.word || '—';
-      return {
-        id: `${r.kanji||''}|${r.kana||''}|${r.meaning||''}`,
-        front,
-        kana: r.kana||'',
-        romaji: r.romaji||'',
-        meaning: r.meaning||'',
-        level: r.level||'N5',
-        category: r.category||r.tags||'',
-        example_jp: r.example_jp||'',
-        example_th: r.example_th||'',
-        qa_flags: r.qa_flags||[],
-        raw: r
-      };
-    })
-    .filter(r=>{
-      if(trainUnknown && knownMap[r.id]==='k') return false;
-      if(filters.tag && !(r.category||'').includes(filters.tag)) return false;
-      if(filters.pos && r.pos!==filters.pos) return false;
-      if(q){
-        const blob = (r.front+' '+r.kana+' '+r.romaji+' '+r.meaning+' '+r.category+' '+(r.level||'')).toLowerCase();
-        if(!blob.includes(q)) return false;
-      }
-      return true;
-    });
-
-  shuffle(cards); i=0; render();
-}
-
-/* ===== BOOT ===== */
-(async function init(){
+/* ========= Load & Prepare ========= */
+async function loadData(){
   try{
-    const r = await fetch(DATA_URL,{cache:'no-store'});
-    const arr = await r.json();
-    raw = Array.isArray(arr)?arr:(arr.data||[]);
-    const th = parseInt(localStorage.getItem(thKey)||'60',10);
-    document.documentElement.style.setProperty('--swipeTH', th);
-    const fv = parseFloat(localStorage.getItem(fontKey)||'9'); 
-    document.documentElement.style.setProperty('--cardFontVW', fv+'vw');
-    setTheme(localStorage.getItem(themeKey)||'lilac');
-    applyFilters();
+    const res = await fetch(SOURCE_URL);
+    const json = await res.json();
+    rawCards = (json.vocab ?? json).map(x => ({
+      kanji: x.kanji?.trim() || '',
+      kana: x.kana?.trim() || '',
+      romaji: x.romaji?.trim() || '',
+      meaning: (x.thai ?? x.meaning ?? '').trim(),
+      level: (x.jlpt ?? x.level ?? '').trim() || 'N5',
+      category: (x.category ?? '').trim() || 'ทั่วไป',
+    })).map(o=>{
+      if(!o.kanji) o.kanji = o.kana || o.meaning;
+      return {...o, id: hashId(o)};
+    });
   }catch(e){
-    console.error(e); $('#frontMain').textContent='Load failed';
+    console.error('โหลดไฟล์ไม่สำเร็จ', e);
+    rawCards = [{
+      kanji:'行く', kana:'いく', romaji:'iku', meaning:'ไป', level:'N5', category:'การเดินทาง'
+    }].map(o=>({...o, id: hashId(o)}));
   }
-})();
+  buildCategoryOptions();
+  applyAll();
+}
+
+/* ========= Filtering / Shuffling / Mode ========= */
+function buildCategoryOptions(){
+  const set = new Set(rawCards.map(c=>c.category).filter(Boolean));
+  const sel = qs('#categorySelect');
+  sel.innerHTML = '<option value="">ทั้งหมด</option>' + [...set].sort().map(c=>`<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join('');
+}
+
+function applyFilters(){
+  const {level, category, search} = filters;
+  const t = (search||'').toLowerCase().trim();
+  let out = rawCards.filter(c=>{
+    if(level && c.level!==level) return false;
+    if(category && c.category!==category) return false;
+    if(t){
+      const hay = [c.kanji,c.kana,c.romaji,c.meaning].join(' ').toLowerCase();
+      if(!hay.includes(t)) return false;
+    }
+    return true;
+  });
+  if(settings.mode==='category' && !filters.category){
+    // ถ้าโหมด category แต่ยังไม่ได้เลือกหมวด เลือกหมวดแรกให้
+    const firstCat = out[0]?.category || rawCards[0]?.category || '';
+    filters.category = firstCat;
+    persist.set('filters', filters);
+    out = rawCards.filter(c=>c.category===firstCat && (!level || c.level===level));
+    qs('#categorySelect').value = firstCat;
+  }
+  // สุ่มแบบถ่วงน้ำหนัก: คำที่ไม่รู้ (dont) และดาวน้อย โผล่บ่อยขึ้น
+  out = weightedShuffle(out);
+  return out;
+}
+
+function weightedShuffle(arr){
+  // weight = 1 + dont - know + (1 - star/3)
+  const items = arr.map(c=>{
+    const m = mastery[c.id] || {know:0, dont:0};
+    const star = stars[c.id] ?? 0;
+    const w = Math.max(0.2, 1 + (m.dont - m.know)*0.7 + (1 - (star/3))*0.5);
+    return {c, w};
+  });
+  // roulette wheel
+  const result=[];
+  const pool=[...items];
+  while(pool.length){
+    const sum = pool.reduce((s,x)=>s+x.w,0);
+    let r = Math.random()*sum;
+    let pickIdx = 0;
+    for(let i=0;i<pool.length;i++){
+      r -= pool[i].w;
+      if(r<=0){ pickIdx=i; break; }
+    }
+    result.push(pool[pickIdx].c);
+    pool.splice(pickIdx,1);
+  }
+  return result;
+}
+
+function applyAll(){
+  cards = applyFilters();
+  idx = clamp(idx, 0, Math.max(0, cards.length-1));
+  showingBack = false;
+  updateStat();
+  renderCard();
+}
+
+/* ========= Render ========= */
+function setFrontBackDisplay(frontKey, backKey, item){
+  // Front
+  let frontMain='', frontSub1='', frontSub2='';
+  if(frontKey==='kanji'){ frontMain=item.kanji; frontSub1=item.kana; frontSub2=item.romaji; }
+  else if(frontKey==='kana'){ frontMain=item.kana || item.kanji; frontSub1=item.kanji; frontSub2=item.romaji; }
+  else if(frontKey==='meaning'){ frontMain=item.meaning; frontSub1=item.kana || item.kanji; frontSub2=item.romaji; }
+
+  qs('#frontMain').textContent = frontMain || '—';
+  qs('#frontSub1').textContent = frontSub1 || '';
+  qs('#frontSub2').textContent = frontSub2 || '';
+
+  // Back
+  let backMain='', backSub1='', backSub2='';
+  if(backKey==='meaning'){ backMain=item.meaning; backSub1=item.kana; backSub2=item.romaji; }
+  else if(backKey==='kana'){ backMain=item.kana || item.kanji; backSub1=item.meaning; backSub2=item.romaji; }
+  else if(backKey==='romaji'){ backMain=item.romaji || item.kana; backSub1=item.kana || item.kanji; backSub2=item.meaning; }
+  else if(backKey==='kanji'){ backMain=item.kanji; backSub1=item.kana; backSub2=item.romaji; }
+
+  qs('#backMain').textContent = backMain || '—';
+  qs('#backSub1').textContent = backSub1 || '';
+  qs('#backSub2').textContent = backSub2 || '';
+}
+
+function renderCard(){
+  const cardEl = qs('#flashCard');
+  cardEl.classList.toggle('flipped', showingBack);
+
+  const item = cards[idx];
+  if(!item){
+    qs('#frontMain').textContent = 'ไม่พบการ์ดตามเงื่อนไข';
+    qs('#frontSub1').textContent = '';
+    qs('#frontSub2').textContent = '';
+    qs('#backMain').textContent = '';
+    qs('#backSub1').textContent = '';
+    qs('#backSub2').textContent = '';
+    qs('#badgeLevel').textContent = '';
+    qs('#badgeCategory').textContent = '';
+    return;
+  }
+  qs('#badgeLevel').textContent = item.level || '—';
+  qs('#badgeCategory').textContent = item.category || '—';
+
+  setFrontBackDisplay(settings.front, settings.back, item);
+}
+
+function updateStat(){
+  qs('#statCounter').textContent = `${cards.length? (idx+1):0} / ${cards.length}`;
+}
+
+/* ========= Navigation & Actions ========= */
+function next(){ if(!cards.length) return; idx = (idx+1)%cards.length; showingBack=false; updateStat(); renderCard(); }
+function prev(){ if(!cards.length) return; idx = (idx-1+cards.length)%cards.length; showingBack=false; updateStat(); renderCard(); }
+function flip(){ showingBack = !showingBack; renderCard(); }
+
+function markKnow(val){ // val: true=know, false=dont
+  const item = cards[idx]; if(!item) return;
+  const rec = mastery[item.id] || {know:0, dont:0};
+  if(val) rec.know++; else rec.dont++;
+  mastery[item.id] = rec;
+  // อัปเดต “ดาว” แบบเงียบ ๆ : รู้มากขึ้นให้ดาวสูงขึ้น ไม่รู้ลดลง
+  const score = Math.max(0, Math.min(3, Math.round(rec.know - rec.dont/2)));
+  stars[item.id] = score;
+  persist.set('mastery', mastery);
+  persist.set('stars', stars);
+  next();
+}
+
+/* ========= Star Summary (เก็บข้อมูลแต่ซ่อนบนการ์ด) ========= */
+function showStarSummary(){
+  const box = qs('#starBuckets');
+  const buckets = {0:[],1:[],2:[],3:[]};
+  for(const c of rawCards){
+    const s = stars[c.id] ?? 0;
+    buckets[s].push(c);
+  }
+  box.innerHTML = [3,2,1,0].map(st => {
+    const list = buckets[st].slice(0,100).map(it=>`<li>${escapeHTML(it.kanji)} — ${escapeHTML(it.meaning)} <small>(${escapeHTML(it.kana||'')})</small></li>`).join('');
+    const more = buckets[st].length>100 ? `<li>…และอีก ${buckets[st].length-100} คำ</li>`: '';
+    return `
+      <div class="panel" style="margin-top:12px">
+        <strong>⭐️ × ${st}</strong> — ${buckets[st].length} คำ
+        <ol style="margin-top:8px">${list}${more}</ol>
+      </div>`;
+  }).join('');
+}
+
+/* ========= Panels & Back button ========= */
+function openPanel(which){
+  // which: 'settings' | 'filter' | 'star'
+  qs('#panelSettings').classList.toggle('hidden', which!=='settings');
+  qs('#panelFilter').classList.toggle('hidden', which!=='filter');
+  qs('#starSummary').classList.toggle('hidden', which!=='star');
+  qs('#btnBack').classList.toggle('hidden', which===null);
+  if(which==='star') showStarSummary();
+}
+function closePanels(){ openPanel(null); }
+
+/* ========= Wire UI ========= */
+function bindUI(){
+  qs('#btnSettings').addEventListener('click', ()=>openPanel('settings'));
+  qs('#btnFilter').addEventListener('click', ()=>openPanel('filter'));
+  qs('#btnBack').addEventListener('click', closePanels);
+  qsa('[data-action="back"]').forEach(b=>b.addEventListener('click', closePanels));
+
+  qs('#btnPrev').addEventListener('click', prev);
+  qs('#btnNext').addEventListener('click', next);
+  qs('#btnFlip').addEventListener('click', flip);
+  qs('#btnKnow').addEventListener('click', ()=>markKnow(true));
+  qs('#btnDontKnow').addEventListener('click', ()=>markKnow(false));
+  qs('#btnShuffle').addEventListener('click', ()=>{ cards = weightedShuffle(cards); idx=0; showingBack=false; updateStat(); renderCard(); });
+  qs('#btnResetProgress').addEventListener('click', ()=>{
+    if(confirm('ล้างสถิติการจำ (ดาว/รู้/ไม่รู้) ทั้งหมด?')){
+      stars={}; mastery={};
+      persist.set('stars',stars); persist.set('mastery',mastery);
+      alert('รีเซ็ตเรียบร้อย');
+    }
+  });
+
+  // Tap/Click การ์ด = flip (ไม่ต้องกดค้าง)
+  const card = qs('#flashCard');
+  card.addEventListener('click', (e)=>{
+    // ถ้าคลิกที่ปุ่มใน actions ให้ไม่ flip ซ้ำ
+    if(e.target.closest('.actions')) return;
+    flip();
+  });
+
+  // Keyboard
+  document.addEventListener('keydown', (e)=>{
+    if(e.key==='ArrowRight') next();
+    else if(e.key==='ArrowLeft') prev();
+    else if(e.key===' '){ e.preventDefault(); flip(); }
+    else if(e.key==='1') markKnow(false);
+    else if(e.key==='2') markKnow(true);
+  });
+
+  // Settings
+  const modeSel = qs('#modeSelect');
+  const frontSel = qs('#frontSelect');
+  const backSel = qs('#backSelect');
+  modeSel.value = settings.mode; frontSel.value = settings.front; backSel.value = settings.back;
+
+  modeSel.addEventListener('change', ()=>{
+    settings.mode = modeSel.value; persist.set('settings', settings); applyAll();
+  });
+  frontSel.addEventListener('change', ()=>{
+    settings.front = frontSel.value; persist.set('settings', settings); renderCard();
+  });
+  backSel.addEventListener('change', ()=>{
+    settings.back = backSel.value; persist.set('settings', settings); renderCard();
+  });
+
+  // Filter
+  qs('#levelSelect').value = filters.level;
+  qs('#categorySelect').value = filters.category;
+  qs('#searchInput').value = filters.search;
+
+  qs('#btnApplyFilter').addEventListener('click', ()=>{
+    filters.level = qs('#levelSelect').value;
+    filters.category = qs('#categorySelect').value;
+    filters.search = qs('#searchInput').value.trim();
+    persist.set('filters', filters);
+    applyAll();
+    closePanels();
+  });
+  qs('#btnClearFilter').addEventListener('click', ()=>{
+    filters.level=''; filters.category=''; filters.search='';
+    persist.set('filters', filters);
+    qs('#levelSelect').value=''; qs('#categorySelect').value=''; qs('#searchInput').value='';
+    applyAll();
+  });
+
+  // ซ่อนหน้า “ดาว” ไว้ก่อน — อยากเปิดดูให้ทำปุ่มเองหรือลองเรียกในคอนโซล openPanel('star')
+}
+
+/* ========= Init ========= */
+document.addEventListener('DOMContentLoaded', async ()=>{
+  bindUI();
+  await loadData();
+});
 </script>
 </body>
 </html>
-
-  
-
-
