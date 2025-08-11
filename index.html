@@ -1,181 +1,400 @@
-<!-- head -->
-<meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>JLPT N5 Flashcards</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#F7F9FC;
+      --card:#FFFFFF;
+      --ink:#0F172A;
+      --sub:#5B667A;
+      --muted:#8B98B7;
+      --ring:#DCE6F9;
+      --chip:#EDF4FF;
+      --chip-b:#E7ECF7;
+      --ok:#22C55E;
+      --ng:#EF4444;
+      --ok-press:#16A34A;
+      --ng-press:#DC2626;
+      --brand:#2F80ED;
+      --shadow:0 10px 24px rgba(15,23,42,.10);
+    }
+    * { box-sizing: border-box }
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans Thai",sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .page{
+      max-width:980px; margin:0 auto; padding:16px clamp(12px,3vw,24px) 100px;
+      /* bottom padding เผื่อแถบปุ่มล่าง */
+    }
+    /* Header */
+    .topbar{ display:flex; align-items:center; gap:12px; }
+    .back{
+      width:44px; height:44px; display:grid; place-items:center; border-radius:12px;
+      background:var(--card); box-shadow: var(--shadow); border:1px solid var(--ring); cursor:pointer;
+      user-select:none; touch-action:manipulation;
+    }
+    .brand{ display:flex; flex-direction:column }
+    .brand h1{
+      font-size:22px; line-height:1.2; margin:0; font-weight:800;
+      letter-spacing:.2px;
+    }
+    .brand small{ color:var(--sub) }
+    .spacer{ flex:1 }
+    .pill{
+      background:var(--card); border:1px solid var(--ring); box-shadow:var(--shadow);
+      border-radius:16px; padding:10px 14px; display:flex; align-items:center; gap:8px; user-select:none;
+      cursor:pointer; touch-action:manipulation;
+    }
+    .pill strong{ font-weight:800 }
 
-<style>
-:root{
-  --bg:#F6F8FB; --surface:#FFFFFF;
-  --ink:#0F172A; --ink-soft:#5B667A;
-  --primary:#2A86FF; --success:#21C35B; --danger:#EF4D4D;
-  --stroke:#E7ECF7;
-  --shadow-sm:0 1px 2px rgba(15,23,42,.06), 0 1px 1px rgba(15,23,42,.03);
-  --shadow-md:0 10px 24px rgba(15,23,42,.10);
-  --r:12px; --r-lg:18px;
-}
+    /* Filter chips row */
+    .chips{ display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 8px }
+    .chip{
+      padding:8px 12px; border-radius:999px; background:var(--chip); border:1px solid var(--chip-b);
+      font-weight:600; color:#35507a; cursor:pointer; user-select:none; touch-action:manipulation;
+    }
+    .chip.is-on{ background:#DBEAFE; border-color:#C7DBFF }
 
-/* base */
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;background:var(--bg);color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-  font-family:'Noto Sans Thai','Noto Sans JP',system-ui,Arial,sans-serif;
-}
+    /* Card */
+    .card-wrap{ display:grid; place-items:center; margin-top:8px }
+    .card, #flashcard, #card{
+      width:min(760px,92vw);
+      aspect-ratio:16/9; min-height:260px;
+      background:var(--card); border-radius:18px; box-shadow:var(--shadow);
+      position:relative; overflow:hidden; transform-style:preserve-3d;
+      transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .2s;
+      will-change:transform;
+      border:1px solid var(--ring);
+    }
+    .card:active{ box-shadow:0 6px 18px rgba(15,23,42,.12) }
+    .card-face{ position:absolute; inset:0; padding:28px 24px;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      backface-visibility:hidden;
+    }
+    .card.flipped{ transform:rotateY(180deg) }
+    .card-back{ transform:rotateY(180deg) }
 
-/* app bar */
-.appbar{position:sticky;top:0;z-index:20;display:flex;gap:12px;align-items:center;
-  padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--stroke)}
-.app-title{margin:0;font-weight:800;letter-spacing:.2px;font-size:20px}
-.counter-pill{background:#EDF4FF;color:#244A8A;border:1px solid var(--stroke);
-  border-radius:999px;padding:6px 12px;font-weight:700}
+    .word-kanji{
+      font-family:"Noto Sans JP", Inter, sans-serif; font-weight:800;
+      font-size: clamp(48px, 7vw, 76px); line-height:1.1;
+    }
+    .word-kana{
+      font-family:"Noto Sans JP", Inter, sans-serif; font-weight:600;
+      margin-top:6px; color:var(--sub); font-size: clamp(18px, 2.6vw, 24px);
+    }
+    .word-romaji{ color:var(--muted); margin-top:2px; font-size: 16px }
+    .meaning{ font-size: clamp(22px, 2.8vw, 28px); font-weight:800; text-align:center }
+    .meta{ margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; justify-content:center }
+    .meta-badge{ background:var(--chip); border:1px solid var(--chip-b); padding:6px 10px; border-radius:999px; font-size:12px }
 
-/* layout */
-.stage{padding:12px 16px 112px;max-width:920px;margin:0 auto}
-.hint{padding:6px 16px 0;color:var(--ink-soft);font-size:14px}
-.chip-row{display:flex;gap:8px;padding:8px 16px 0;overflow:auto}
+    /* Motion for change */
+    @keyframes enterUp { from{ transform:translateY(8px); opacity:.0 } to{ transform:translateY(0); opacity:1 } }
+    @keyframes leaveUp { from{ transform:translateY(0); opacity:1 } to{ transform:translateY(-8px); opacity:0 } }
+    .enter{ animation:enterUp .22s ease-out }
+    .leave{ animation:leaveUp .18s ease-in }
 
-/* card */
-.card-wrap{display:grid;place-items:center;margin:8px 0 14px}
-.card{
-  width:min(760px,92vw);aspect-ratio:16/9;min-height:260px;background:var(--surface);
-  border-radius:var(--r-lg);box-shadow:var(--shadow-md);position:relative;overflow:hidden;
-  transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1)
-}
-.card-face{position:absolute;inset:0;padding:28px 24px;display:flex;
-  flex-direction:column;align-items:center;justify-content:center;backface-visibility:hidden}
-.card.flipped{transform:rotateY(180deg)}
-.card-back{transform:rotateY(180deg)}
-.word-kanji{font-family:'Noto Sans JP',sans-serif;font-size:68px;font-weight:800}
-.word-kana{font-family:'Noto Sans JP',sans-serif;font-size:22px;margin-top:6px;color:var(--ink-soft)}
-.word-romaji{font-size:16px;color:#8B98B7;margin-top:2px}
-.meaning{font-size:24px;font-weight:800;text-align:center}
-.meta{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-.meta-badge{background:#EDF4FF;border:1px solid var(--stroke);padding:6px 10px;border-radius:999px;font-size:12px}
+    /* Flip button (full width) */
+    .flip-bar{
+      width:min(760px,92vw); margin:12px auto 8px;
+      background:var(--card); border:1px solid var(--ring); border-radius:14px;
+      box-shadow: var(--shadow); padding:12px 16px; text-align:center; font-weight:800; color:#3a516e;
+      user-select:none; cursor:pointer; touch-action:manipulation;
+    }
 
-/* refined buttons (ไม่วงรี, มุม 12px, padding กระชับ) */
-.btn{
-  appearance:none;border:none;border-radius:var(--r);
-  padding:12px 16px;line-height:1;font-weight:800;cursor:pointer;
-  box-shadow:var(--shadow-sm);background:var(--surface);color:var(--ink);
-  transition:transform .06s ease, box-shadow .2s ease, opacity .2s ease, filter .2s ease;
-}
-.btn:active{transform:translateY(1px);box-shadow:none;filter:saturate(.96)}
-.btn--fill{width:min(760px,92vw);display:block;margin:10px auto 6px;border:1px solid var(--stroke)}
-.btn--success{background:var(--success);color:#fff}
-.btn--danger{background:var(--danger);color:#fff}
-.btn--primary{background:var(--primary);color:#fff}
-.btn--ghost{background:var(--surface);border:1px solid var(--stroke)}
-.btn .ripple{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
-.btn .ripple span{position:absolute;border-radius:50%;transform:scale(0);
-  background:rgba(255,255,255,.45);animation:ripple .6s ease-out}
-@keyframes ripple{to{transform:scale(10);opacity:0}}
+    /* Bottom action bar (fixed) */
+    .bottom-bar{
+      position:fixed; left:0; right:0; bottom:0; z-index:30;
+      background:linear-gradient(180deg, rgba(247,249,252,0) 0%, var(--bg) 18%, var(--bg) 100%);
+      padding:18px clamp(12px,3vw,24px) calc(12px + env(safe-area-inset-bottom, 8px));
+      display:flex; flex-direction:column; gap:12px; align-items:center;
+    }
+    .actions{ display:flex; gap:14px; width:min(760px,92vw) }
+    .btn{
+      flex:1; padding:16px 18px; border-radius:14px;
+      color:#fff; font-weight:800; text-align:center; border:none; cursor:pointer; touch-action:manipulation;
+      box-shadow:var(--shadow);
+    }
+    .btn-ok{ background:var(--ok) }
+    .btn-ok:active{ background:var(--ok-press) }
+    .btn-ng{ background:var(--ng) }
+    .btn-ng:active{ background:var(--ng-press) }
 
-/* footer action bar */
-.action-footer{position:fixed;left:0;right:0;bottom:0;z-index:30;
-  padding:12px clamp(12px,4vw,24px) calc(12px + env(safe-area-inset-bottom));
-  background:linear-gradient(180deg, rgba(246,248,251,0) 0%, rgba(246,248,251,.95) 30%, rgba(246,248,251,1) 80%);
-  backdrop-filter:saturate(140%) blur(6px);border-top:1px solid var(--stroke)}
-.action-footer .row{max-width:920px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.action-footer .row .btn{min-width:160px}
+    .row{ display:flex; gap:12px; width:min(760px,92vw); justify-content:space-between; flex-wrap:wrap }
+    .ghost{
+      background:var(--card); border:1px solid var(--ring); color:#2b466a;
+      padding:12px 14px; border-radius:12px; box-shadow:var(--shadow); font-weight:700;
+      cursor:pointer; user-select:none; touch-action:manipulation;
+    }
 
-/* chips */
-.chip{appearance:none;border:1px solid var(--stroke);background:var(--surface);
-  padding:10px 12px;border-radius:10px;cursor:pointer;box-shadow:var(--shadow-sm)}
-.chip:active{transform:translateY(1px);box-shadow:none}
-.chip.outline{background:#F3F7FF}
+    /* progress bubble */
+    .progress{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border:1px solid var(--ring); border-radius:14px; padding:10px 14px; background:var(--card); box-shadow:var(--shadow);
+      font-weight:800;
+    }
 
-/* page transition (เปลี่ยนคำ) */
-.card.enter{animation:slideIn .28s ease both}
-.card.leave{animation:slideOut .22s ease both}
-@keyframes slideIn{from{opacity:0;transform:translateY(8px) rotateY(0)}to{opacity:1;transform:translateY(0) rotateY(0)}}
-@keyframes slideOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-6px)}}
-
-/* sheets / summary */
-.sheet{width:min(780px,94vw);border:none;border-radius:16px;padding:0;box-shadow:var(--shadow-md)}
-.sheet::backdrop{background:rgba(15,23,42,.35)}
-.sheet-head{display:flex;align-items:center;gap:8px;padding:14px 16px;border-bottom:1px solid var(--stroke);background:var(--surface);border-radius:16px 16px 0 0}
-.sheet-body{padding:16px 16px 6px;background:var(--surface);max-height:min(64vh,560px);overflow:auto}
-.sheet-foot{padding:12px 16px;display:flex;gap:10px;justify-content:flex-end;background:var(--surface);border-top:1px solid var(--stroke);border-radius:0 0 16px 16px}
-.pill-group{display:flex;gap:8px;flex-wrap:wrap}.pill{border:1px solid var(--stroke);background:var(--surface);padding:8px 12px;border-radius:999px;cursor:pointer}
-.pill.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-.subbar{position:sticky;top:0;z-index:9;background:var(--surface);display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--stroke)}
-.stars-wrap{padding:14px 16px 120px;max-width:900px;margin:0 auto}
-.star-group{background:var(--surface);border-radius:12px;box-shadow:var(--shadow-sm);padding:12px 12px 6px;margin-bottom:14px}
-.word-chip{background:#F8FAFE;border:1px solid var(--stroke);border-radius:10px;padding:8px 10px;font-size:14px}
-
-@media(min-width:960px){.word-kanji{font-size:76px}}
-</style>
-<!-- การ์ด… (ของเดิม) -->
-<button id="btnFlip" class="btn btn--fill btn--ghost">Flip</button>
-
-<!-- footer ติดล่าง -->
-<div class="action-footer">
-  <div class="row">
-    <button id="btnKnow" class="btn btn--success">✓ Know</button>
-    <button id="btnDont" class="btn btn--danger">✕ Don’t know</button>
-  </div>
-  <div class="row" style="margin-top:8px">
-    <button id="btnPrev" class="chip">‹ ก่อนหน้า</button>
-    <button id="btnNext" class="chip">ถัดไป ›</button>
-    <button id="btnShuffle" class="chip outline">🔀 สุ่มชุดใหม่</button>
-    <button id="btnStars" class="chip outline">📊 รีเช็คความคืบหน้า</button>
-  </div>
-</div>
+    /* Avoid mobile Safari pinch zoom on double tap */
+    button, .ghost, .pill, .chip, .flip-bar { touch-action: manipulation; }
+  </style>
+</head>
 <script>
-// ===== ป้องกันดับเบิลแท็ปซูม / พินช์บน iOS =====
-let lastTouch=0;
-document.addEventListener('touchend',e=>{
-  const now=Date.now();
-  if(now-lastTouch<=300){e.preventDefault()}
-  lastTouch=now;
-},{passive:false});
-document.addEventListener('gesturestart',e=>e.preventDefault());
+/* --------------------- Data loading --------------------- */
+/** รองรับ 3 แบบ:
+ * 1) ถ้ามีตัวแปร global WORDS อยู่แล้ว → ใช้เลย
+ * 2) ถ้าไม่มี → พยายาม fetch ไฟล์ชื่อที่พบบ่อย
+ * 3) ถ้าไม่เจอ → ใช้ตัวอย่าง sample 3 คำ
+ */
+const candidateUrls = [
+  'n5-flashcards-500-word.json',
+  'n5-500 word.json',
+  'n5-500-word.json',
+  'words.json'
+];
 
-// ===== helper: ทำ ripple เบา ๆ ตอนกดปุ่ม =====
-function addRipple(btn,e){
-  const wrap = btn.querySelector('.ripple') || (()=>{const r=document.createElement('span');r.className='ripple';btn.appendChild(r);return r})();
-  const dot=document.createElement('span');
-  const rect=btn.getBoundingClientRect();
-  const x=(e.clientX||rect.width/2)-rect.left; const y=(e.clientY||rect.height/2)-rect.top;
-  dot.style.left=x+'px'; dot.style.top=y+'px'; dot.style.width=dot.style.height=Math.max(rect.width,rect.height)+'px';
-  wrap.appendChild(dot); setTimeout(()=>dot.remove(), 620);
+async function loadWords(){
+  if (Array.isArray(window.WORDS) && window.WORDS.length) return window.WORDS;
+
+  for (const u of candidateUrls){
+    try{
+      const res = await fetch(u);
+      if(!res.ok) continue;
+      const data = await res.json();
+      if(Array.isArray(data) && data.length) return data;
+      if(Array.isArray(data.vocab)) return data.vocab; // เผื่อโครงสร้างมี key vocab
+    }catch(e){}
+  }
+  // fallback ตัวอย่าง
+  return [
+    {kanji:'犬', kana:'いぬ', romaji:'inu', meaning:'สุนัข', level:'N5', category:'สัตว์'},
+    {kanji:'行く', kana:'いく', romaji:'iku', meaning:'ไป', level:'N5', category:'การเดินทาง'},
+    {kanji:'甘い', kana:'あまい', romaji:'amai', meaning:'หวาน', level:'N5', category:'อาหาร'}
+  ];
 }
-['btnFlip','btnKnow','btnDont','btnPrev','btnNext','btnShuffle','btnStars']
-  .forEach(id=>{
-    const el=document.getElementById(id);
-    if(!el) return;
-    el.addEventListener('click',ev=>addRipple(el,ev));
+
+/* --------------------- State --------------------- */
+let ALL = [];
+let filtered = [];
+let idx = 0;
+let known = new Set();
+let unknown = new Set();
+let actCategory = null;
+
+/* --------------------- Helpers --------------------- */
+const $ = s => document.querySelector(s);
+const byId = s => document.getElementById(s);
+
+const cardEl = byId('card');
+const el = {
+  kanji:   byId('c-kanji'),
+  kana:    byId('c-kana'),
+  romaji:  byId('c-romaji'),
+  meaning: byId('c-meaning'),
+  level:   byId('c-level'),
+  cat:     byId('c-category'),
+  prCur:   byId('prCur'),
+  prAll:   byId('prAll'),
+  chips:   byId('chipRow'),
+};
+
+function clamp(n,min,max){ return Math.max(min, Math.min(max,n)) }
+function updateProgress(){
+  el.prCur.textContent = filtered.length ? (idx+1) : 0;
+  el.prAll.textContent = filtered.length;
+}
+
+function renderCard(data){
+  if(!data) return;
+  el.kanji.textContent   = data.kanji   || '';
+  el.kana.textContent    = data.kana    || '';
+  el.romaji.textContent  = data.romaji  || '';
+  el.meaning.textContent = data.meaning || data.thai || '';
+  el.level.textContent   = data.level   || data.jlpt || 'N5';
+  el.cat.textContent     = data.category || data.type || '';
+  updateProgress();
+}
+
+function animateChange(updateFn){
+  cardEl.classList.remove('enter');
+  cardEl.classList.add('leave');
+  setTimeout(()=>{
+    updateFn();
+    cardEl.classList.remove('leave');
+    void cardEl.offsetWidth; // reflow
+    cardEl.classList.add('enter');
+  }, 160);
+}
+
+function go(delta){
+  if(!filtered.length) return;
+  idx = clamp(idx + delta, 0, filtered.length-1);
+  cardEl.classList.remove('flipped');
+  animateChange(()=> renderCard(filtered[idx]));
+}
+
+function shuffle(){
+  for (let i = filtered.length-1; i>0; i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
+  }
+  idx = 0;
+  cardEl.classList.remove('flipped');
+  animateChange(()=> renderCard(filtered[idx]));
+}
+
+function applyFilter(category){
+  actCategory = category || null;
+  filtered = actCategory ? ALL.filter(w => (w.category||w.type) === actCategory) : [...ALL];
+  if(!filtered.length){ idx = 0; renderCard({kanji:'',kana:'',romaji:'',meaning:'ไม่พบคำ',level:'',category:''}); updateProgress(); return; }
+  idx = 0;
+  cardEl.classList.remove('flipped');
+  renderCard(filtered[0]);
+}
+
+/* --------------------- UI bindings --------------------- */
+function bindUI(){
+  // flip by card tap + bar
+  const toggle = ()=> cardEl.classList.toggle('flipped');
+  byId('btnFlip').addEventListener('click', toggle);
+  cardEl.addEventListener('click', toggle);
+
+  byId('btnPrev').addEventListener('click', ()=> go(-1));
+  byId('btnNext').addEventListener('click', ()=> go(1));
+  byId('btnShuffle').addEventListener('click', shuffle);
+
+  byId('btnKnow').addEventListener('click', ()=>{
+    const cur = filtered[idx]; if(!cur) return;
+    unknown.delete(cur._id); known.add(cur._id); go(1);
+  });
+  byId('btnDont').addEventListener('click', ()=>{
+    const cur = filtered[idx]; if(!cur) return;
+    known.delete(cur._id); unknown.add(cur._id); go(1);
   });
 
-// ===== animation เปลี่ยนคำ (slide in/out) =====
-const card = document.querySelector('.card');
-function animateChange(fn){
-  if(!card) return fn();
-  card.classList.remove('enter');
-  card.classList.add('leave');
-  setTimeout(()=>{
-    fn();                    // เปลี่ยนข้อมูลการ์ดที่นี่ (คุณมี renderCard() อยู่แล้วให้เรียกแทน)
-    card.classList.remove('leave');
-    void card.offsetWidth;   // force reflow
-    card.classList.add('enter');
-  }, 180);
+  byId('btnBack').addEventListener('click', ()=> history.length>1 ? history.back() : window.location.href = './');
+  byId('btnSettings').addEventListener('click', ()=> alert('Settings จะตามมาเร็ว ๆ นี้ 👀'));
+  byId('btnFilter').addEventListener('click', ()=> {
+    if(!ALL.length) return;
+    // toggle “ทั้งหมด”
+    applyFilter(actCategory ? null : (ALL[0].category||ALL[0].type));
+  });
+  byId('btnStats').addEventListener('click', ()=>{
+    const k = known.size, u = unknown.size;
+    alert(`สรุปความคืบหน้า\nรู้แล้ว: ${k} คำ\nยังไม่รู้: ${u} คำ\nทั้งหมด(นับเฉพาะรอบนี้): ${filtered.length} คำ`);
+  });
 }
 
-// Hook ปุ่ม next/prev กับ animateChange
-document.getElementById('btnNext')?.addEventListener('click',()=>{
-  animateChange(()=> goNext()); // แทนที่ goNext() ด้วยฟังก์ชันของคุณ
-});
-document.getElementById('btnPrev')?.addEventListener('click',()=>{
-  animateChange(()=> goPrev());
-});
+/* สร้างชิปหมวด */
+function buildChips(){
+  const cats = [...new Set(ALL.map(w=> w.category || w.type || 'อื่นๆ'))].sort();
+  el.chips.innerHTML = '';
+  const btnAll = document.createElement('div');
+  btnAll.className = 'chip' + (!actCategory ? ' is-on' : '');
+  btnAll.textContent = 'ทั้งหมด';
+  btnAll.onclick = ()=>{ document.querySelectorAll('.chip').forEach(c=>c.classList.remove('is-on')); btnAll.classList.add('is-on'); applyFilter(null); };
+  el.chips.appendChild(btnAll);
 
-// Flip การ์ด (ยังคง tap เพื่อ flip ได้เหมือนเดิม)
-const btnFlip=document.getElementById('btnFlip');
-btnFlip?.addEventListener('click',()=> card?.classList.toggle('flipped'));
-card?.addEventListener('click',()=> card?.classList.toggle('flipped'));
+  cats.forEach(c=>{
+    const d = document.createElement('div');
+    d.className = 'chip' + (actCategory===c ? ' is-on' : '');
+    d.textContent = c;
+    d.onclick = ()=>{
+      document.querySelectorAll('.chip').forEach(c=>c.classList.remove('is-on'));
+      d.classList.add('is-on');
+      applyFilter(c);
+    };
+    el.chips.appendChild(d);
+  });
+}
 
-// เมื่อสุ่มชุดใหม่ให้ใช้ animation ก้อนเดียวกัน
-document.getElementById('btnShuffle')?.addEventListener('click',()=>{
-  animateChange(()=> reshuffle()); // เรียกฟังก์ชันสุ่มของคุณ
-});
+/* --------------------- Bootstrap --------------------- */
+(async function init(){
+  ALL = await loadWords();
+
+  // normalize + id
+  ALL = ALL.map((w,i)=>({
+    ...w,
+    _id: i,
+    // map คีย์เผื่อมาจากไฟล์อื่น
+    kanji:   w.kanji   ?? '',
+    kana:    w.kana    ?? '',
+    romaji:  w.romaji  ?? '',
+    meaning: w.meaning ?? w.thai ?? '',
+    level:   w.level   ?? w.jlpt ?? 'N5',
+    category:w.category?? w.type ?? 'อื่นๆ'
+  }));
+
+  filtered = [...ALL];
+  bindUI();
+  buildChips();
+  updateProgress();
+  renderCard(filtered[0]);
+})();
 </script>
+</body>
+</html>
+<body>
+  <div class="page">
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="back" id="btnBack" title="กลับ">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M15 19l-7-7 7-7" stroke="#2B3E5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="brand">
+        <h1>JLPT N5 <span style="font-weight:700">Flashcards</span></h1>
+        <small>ติ๊กเลือกหมวด + จดจำแบบคว่ำหน้า (แตะการ์ดเพื่อพลิก)</small>
+      </div>
+      <div class="spacer"></div>
+      <div id="progress" class="pill"><strong id="prCur">0</strong>/<span id="prAll">0</span></div>
+      <div id="btnSettings" class="pill">⚙️ Settings</div>
+      <div id="btnFilter" class="pill">🔎 Filter</div>
+    </div>
+
+    <!-- Chips (เติมระหว่างใช้งาน) -->
+    <div class="chips" id="chipRow"></div>
+
+    <!-- Card -->
+    <div class="card-wrap">
+      <div id="card" class="card enter">
+        <div class="card-face card-front">
+          <div id="c-kanji"  class="word-kanji">犬</div>
+          <div id="c-kana"   class="word-kana">いぬ</div>
+          <div id="c-romaji" class="word-romaji">inu</div>
+        </div>
+        <div class="card-face card-back">
+          <div id="c-meaning" class="meaning">สุนัข</div>
+          <div class="meta">
+            <span id="c-level"    class="meta-badge">N5</span>
+            <span id="c-category" class="meta-badge">สัตว์</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip full width -->
+    <div id="btnFlip" class="flip-bar">Flip</div>
+  </div>
+
+  <!-- Bottom fixed actions -->
+  <div class="bottom-bar">
+    <div class="actions">
+      <button id="btnKnow" class="btn btn-ok">✓ Know</button>
+      <button id="btnDont" class="btn btn-ng">✗ Don't know</button>
+    </div>
+    <div class="row">
+      <div id="btnPrev" class="ghost">‹ ก่อนหน้า</div>
+      <div id="btnNext" class="ghost">ถัดไป ›</div>
+      <div id="btnShuffle" class="ghost">🧩 สุ่มชุดใหม่</div>
+      <div id="btnStats" class="ghost">📊 รีเช็คความคืบหน้า</div>
+    </div>
+  </div>
