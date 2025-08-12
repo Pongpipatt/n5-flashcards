@@ -1,566 +1,200 @@
 <!doctype html>
 <html lang="th">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>JLPT N5 Flashcards</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#fafaf7;           /* กระดาษขาวนวล */
-  --panel:#ffffff;        /* แผง/การ์ด */
-  --ink:#16181d;          /* ตัวหนังสือ */
-  --muted:#6b7280;        /* ข้อความรอง */
-  --line:#e8e8e3;         /* เส้นขอบบาง */
-  --accent:#3a74ff;       /* ฟ้าอินดิโก้ */
-  --accent-weak:#eaf1ff;  /* ฟ้าอ่อน */
-  --success:#16a34a;
-  --danger:#ef4444;
-  --radius:16px;
-  --shadow:0 6px 18px rgba(20,24,32,.08);
-}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>N5 Flashcards — stable build</title>
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:"Noto Sans Thai","Noto Sans JP",ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;
-}
+  <!-- Fallback CSS สั้น ๆ เพื่อกัน overlay บังคลิกแม้ไฟล์หลักยังโหลดไม่เสร็จ -->
+  <style>
+    .overlay{visibility:hidden;opacity:0;pointer-events:none}
+    .overlay.open{visibility:visible;opacity:1;pointer-events:auto}
+  </style>
 
-.app{max-width:960px;margin:0 auto;padding:20px 16px 96px}
-
-.header{
-  position:sticky;top:0;z-index:10;
-  padding:8px 0 12px;
-  background:linear-gradient(#fafaf7, rgba(250,250,247,.85));
-  backdrop-filter:saturate(1.2) blur(4px);
-  border-bottom:1px solid var(--line);
-}
-.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.title{font-weight:800}
-.subtitle{font-size:12px;color:var(--muted)}
-
-.badge{
-  padding:6px 10px;border-radius:999px;
-  background:var(--accent-weak); color:#2a4fcf;
-  font-size:12px;font-weight:700
-}
-.spacer{flex:1}
-
-.btn{
-  appearance:none;border:1px solid var(--line);background:#fff;
-  padding:10px 14px;border-radius:12px;cursor:pointer;
-  box-shadow:var(--shadow);font-weight:700;color:var(--ink);
-  transition:.15s ease transform,.2s ease box-shadow,.2s ease background;
-}
-.btn:hover{transform:translateY(-1px)}
-.btn:active{transform:translateY(0)}
-.btn-icon{display:inline-flex;align-items:center;gap:8px}
-.btn-primary{background:var(--accent);color:#fff;border-color:transparent}
-.btn-success{background:#eaf7ee;color:#135e2b;border-color:#cfead8}
-.btn-danger{background:#feeeee;color:#7c2222;border-color:#ffdede}
-.btn-ghost{background:#fff}
-
-.select,.input{
-  width:100%;max-width:220px;padding:10px 12px;border-radius:12px;
-  border:1px solid var(--line);background:#fff;color:var(--ink)
-}
-
-.panel{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  box-shadow:var(--shadow);padding:12px;margin-top:12px
-}
-.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.hidden{display:none!important}
-
-.grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
-
-.card{
-  position:relative;border-radius:20px;border:1px solid var(--line);
-  background:var(--panel);box-shadow:var(--shadow);
-  padding:18px;min-height:220px; /* ไม่มีปุ่มอยู่ด้านในแล้ว */
-}
-.card-inner{position:relative;transform-style:preserve-3d;transition:transform .5s ease}
-.card.flipped .card-inner{transform:rotateY(180deg)}
-.card-face{position:absolute;inset:0;padding:18px;backface-visibility:hidden;display:flex;flex-direction:column;gap:10px}
-.card-face.back{transform:rotateY(180deg)}
-.card-top{display:flex;align-items:center;gap:8px}
-.card-main{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px}
-
-.kanji{font-size:44px;font-weight:800;letter-spacing:.5px}
-.kana{font-size:20px;color:#334155}
-.romaji{font-size:14px;color:var(--muted)}
-.meaning{font-size:18px;font-weight:800}
-
-.actions-bar{
-  display:flex;gap:10px;margin-top:10px
-}
-.actions-bar .btn{flex:1}
-.actions-bar .btn.flip{
-  /* ให้ยาวเท่ากับ Know + Don't know รวมกัน */
-  flex:2;background:var(--accent);color:#fff;border-color:transparent
-}
-
-/* backbar สำหรับหน้า secondary */
-.backbar{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app">
-    <header class="header">
-      <div class="toolbar">
-        <button id="btnBack" class="btn btn-icon hidden" aria-label="Back">
-          ◀︎
-        </button>
-        <div>
-          <div class="title">JLPT N5 Flashcards</div>
-          <div class="subtitle">ฝึกทีละหมวด + จดจำแบบก้าวหน้า</div>
-        </div>
-        <div class="spacer"></div>
-        <span id="statCounter" class="badge">0 / 0</span>
-        <button id="btnSettings" class="btn btn-icon">⚙️ Settings</button>
-        <button id="btnFilter" class="btn btn-icon">🔎 Filter</button>
+  <div id="app" class="app">
+    <header class="topbar">
+      <button id="btnMenu" class="icon-btn" aria-label="เมนู">☰</button>
+      <div class="title">
+        <div class="app-title">JLPT N5 Flashcards</div>
+        <div class="subtitle">ไทย-ญี่ปุ่น • เหมาะกับผู้เริ่มต้น</div>
       </div>
-      <div id="panelSettings" class="panel hidden" role="region" aria-label="Settings">
-        <div class="backbar">
-          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
-          <strong>Settings</strong>
-        </div>
-        <div class="row">
-          <label>โหมดการสุ่ม
-            <select id="modeSelect" class="select">
-              <option value="mixed">สุ่มทั้งหมด (ผสม)</option>
-              <option value="category">สุ่มตามหมวด (Category)</option>
-            </select>
-          </label>
-          <label>แสดงข้อมูลหน้าแรก
-            <select id="frontSelect" class="select">
-              <option value="kanji">Kanji</option>
-              <option value="kana">Kana</option>
-              <option value="meaning">ความหมาย (ไทย)</option>
-            </select>
-          </label>
-          <label>หลังการ์ดแสดง
-            <select id="backSelect" class="select">
-              <option value="meaning">ความหมาย (ไทย)</option>
-              <option value="kana">Kana</option>
-              <option value="romaji">Romaji</option>
-              <option value="kanji">Kanji</option>
-            </select>
-          </label>
-        </div>
-      </div>
-
-      <div id="panelFilter" class="panel hidden" role="region" aria-label="Filter">
-        <div class="backbar">
-          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
-          <strong>Filter</strong>
-        </div>
-        <div class="row">
-          <label>ระดับ
-            <select id="levelSelect" class="select">
-              <option value="">ทั้งหมด</option>
-              <option value="N5">N5</option>
-              <option value="N4">N4</option>
-            </select>
-          </label>
-          <label>หมวด (Category)
-            <select id="categorySelect" class="select">
-              <option value="">ทั้งหมด</option>
-            </select>
-          </label>
-          <label>ค้นหา (ญี่ปุ่น/ไทย)
-            <input id="searchInput" class="input" placeholder="พิมพ์คำค้น… (เช่น いく / 行く / ไป)">
-          </label>
-          <button id="btnApplyFilter" class="btn btn-primary">Apply</button>
-          <button id="btnClearFilter" class="btn btn-ghost">Clear</button>
-        </div>
+      <div class="progress-mini">
+        <span id="miniIndex">0 / 0</span><span id="miniPct">0%</span>
       </div>
     </header>
 
-    <main>
-<div class="grid">
-  <section class="card" id="flashCard" tabindex="0" aria-label="Flashcard (tap/คลิกเพื่อ flip)">
-    <div class="card-inner">
-      <div class="card-face front">
-        <div class="card-top">
-          <span id="badgeLevel" class="badge">N5</span>
-          <span id="badgeCategory" class="badge">หมวด</span>
+    <nav class="modes">
+      <button class="mode active" data-mode="learn">Practice</button>
+      <button class="mode" data-mode="test">Test</button>
+      <button class="mode" data-mode="type">Type</button>
+    </nav>
+
+    <main class="stage">
+      <article id="card" class="card" tabindex="0" aria-label="flashcard">
+        <!-- HUD -->
+        <div id="hud" class="hud hidden">
+          <div id="hudLives" class="lives"></div>
+          <div id="hudRound" class="round">1/5</div>
+          <div id="hudActions" class="row" style="gap:8px; justify-content:center">
+            <button id="btnResetTest" class="chip ghost" style="display:none">Reset Test</button>
+            <button id="btnResetType" class="chip ghost" style="display:none">Reset Type</button>
+          </div>
         </div>
-        <div class="card-main">
-          <div id="frontMain" class="kanji">…</div>
-          <div id="frontSub1" class="kana">…</div>
-          <div id="frontSub2" class="romaji">…</div>
+
+        <div class="card-3d">
+          <section class="face front">
+            <div class="tags">
+              <span id="badgeLevel" class="pill">N5</span>
+              <span id="badgeCat" class="pill">—</span>
+            </div>
+            <div class="front-main" id="frontMain">—</div>
+            <div class="front-sub" id="frontSub1"></div>
+            <div class="front-sub small" id="frontSub2"></div>
+          </section>
+
+          <section class="face back">
+            <div class="tags"><span class="pill">คำแปล</span></div>
+            <div class="answer-wrap">
+              <div class="back-main" id="backMain">—</div>
+              <div class="back-read" id="backRead">—</div>
+            </div>
+          </section>
         </div>
+
+        <!-- TYPE -->
+        <div id="typePane" class="type-pane hidden">
+          <div class="type-top">
+            <div class="type-chooser" id="typeChooser">
+              <button class="seg active" data-ans="meaning">ความหมาย</button>
+              <button class="seg" data-ans="kana">Kana</button>
+              <button class="seg" data-ans="romaji">Romaji</button>
+            </div>
+          </div>
+          <div class="type-center" id="typePrompt">พิมพ์คำตอบ</div>
+
+          <!-- แก้ให้เหลือชุด input/submit/feedback เพียงชุดเดียว -->
+          <div class="type-inputwrap">
+            <input id="typeInput" class="type-input" placeholder="พิมพ์คำตอบแล้วกด Enter" />
+          </div>
+          <div class="row" style="justify-content:center">
+            <button id="btnTypeSubmit" class="chip primary">ส่งคำตอบ</button>
+          </div>
+          <div id="typeFeedback" class="type-feedback"></div>
+        </div>
+
+        <!-- TEST -->
+        <section id="mcq" class="mcq hidden">
+          <div id="mcqPrompt" class="mcq-q">…</div>
+          <div id="mcqChoices" class="mcq-choices"></div>
+        </section>
+
+        <!-- Hint -->
+        <div id="hintBar" class="hintbar hidden"></div>
+
+        <!-- FX -->
+        <div id="fx" class="fx hidden"><div id="fxIcon" class="fx-icon"></div></div>
+      </article>
+    </main>
+
+    <!-- ปุ่มฝึกตอบเฉพาะ Practice -->
+    <div id="dock" class="dock">
+      <button id="btnDont" class="btn btn-red">ยังจำไม่ได้</button>
+      <button id="btnSkip" class="btn btn-violet">ข้าม</button>
+      <button id="btnKnow" class="btn btn-green">จำได้แล้ว</button>
+    </div>
+  </div>
+
+  <!-- Drawer overlay -->
+  <div id="drawerOverlay" class="overlay" aria-hidden="true">
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="ตั้งค่า & ตัวเลือก">
+      <div class="drawer-hero">
+        <div class="hero-title">ตั้งค่า & ตัวเลือก</div>
+        <button id="btnCloseDrawer" class="icon-btn solid">✕</button>
       </div>
-      <div class="card-face back">
-        <div class="card-top">
-          <span class="badge">คำแปล</span>
-        </div>
-        <div class="card-main">
-          <div id="backMain" class="meaning">…</div>
-          <div id="backSub1" class="kana">…</div>
-          <div id="backSub2" class="romaji">…</div>
-        </div>
+
+      <div class="drawer-content">
+        <section class="card-sec">
+          <h4>ตัวกรอง & หมวด</h4>
+          <div class="grid-2">
+            <label>ระดับ
+              <select id="selLevel">
+                <option value="">ทั้งหมด</option>
+                <option value="N5" selected>N5</option>
+                <option value="N4">N4</option>
+              </select>
+            </label>
+            <label>ค้นหา (JP/TH)
+              <input id="txtSearch" placeholder="เช่น 行く / いく / ไป" inputmode="search"/>
+            </label>
+          </div>
+          <label>เลือกหลายหมวด
+            <select id="selCats" class="multi" multiple size="8"></select>
+          </label>
+          <div class="row end">
+            <button id="btnClear" class="chip ghost">ล้าง</button>
+            <button id="btnApply" class="chip primary">Apply</button>
+          </div>
+        </section>
+
+        <section class="card-sec">
+          <h4>ตั้งค่าเซสชัน</h4>
+          <div class="grid-3">
+            <label>จำนวนคำ/รอบ
+              <select id="selLimit">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="40">40</option>
+                <option value="100">100</option>
+              </select>
+            </label>
+            <label>หน้าแรก
+              <select id="selFront">
+                <option value="kanji" selected>Kanji</option>
+                <option value="kana">Kana</option>
+                <option value="meaning">ความหมาย</option>
+              </select>
+            </label>
+            <label>หลังการ์ด
+              <select id="selBack">
+                <option value="meaning">ความหมาย</option>
+                <option value="kana">Kana</option>
+                <option value="romaji">Romaji</option>
+                <option value="kanji">Kanji</option>
+              </select>
+            </label>
+          </div>
+          <div class="toggles">
+            <label class="switch"><input id="toggleThai" type="checkbox" checked><span>ใช้คำแปลไทย (ถ้ามี)</span></label>
+            <label class="switch"><input id="toggleSpeak" type="checkbox"><span>อ่านเสียงญี่ปุ่น</span></label>
+            <label class="switch"><input id="toggleAuto" type="checkbox" checked><span>ตอบแล้วเลื่อนไปการ์ดถัดไป</span></label>
+          </div>
+        </section>
+
+        <section class="card-sec">
+          <h4>สถิติ & ดาว</h4>
+          <div id="statsWrap" class="stats-wrap"></div>
+          <div class="row end"><button id="btnResetStats" class="chip danger">ล้างสถิติ</button></div>
+        </section>
+
+        <section class="card-sec">
+          <h4>ไฟล์คำศัพท์</h4>
+          <div class="row gap">
+            <button id="btnLoadURL" class="chip">โหลดจาก n5-word.txt</button>
+            <button id="btnPickFile" class="chip primary">อัปโหลดไฟล์…</button>
+          </div>
+          <small class="muted">รองรับ .txt/.csv (kanji,kana,romaji,meaning,type,jlpt,category) และ .json</small>
+        </section>
       </div>
     </div>
-  </section>
-</div>
-
-<!-- แถบปุ่มอยู่ “นอกการ์ด” แล้ว จึงไม่ทับกัน -->
-<div class="actions-bar">
-  <button id="btnDontKnow" class="btn btn-danger">Don’t know</button>
-  <button id="btnFlip" class="btn flip">Flip</button>
-  <button id="btnKnow" class="btn btn-success">Know</button>
-</div>
-      <div class="panel" style="margin-top:18px">
-        <div class="row">
-          <button id="btnPrev" class="btn btn-ghost">⟨ ก่อนหน้า</button>
-          <button id="btnNext" class="btn btn-ghost">ถัดไป ⟩</button>
-          <div class="spacer"></div>
-          <button id="btnShuffle" class="btn">🔀 สุ่มชุดใหม่</button>
-          <button id="btnResetProgress" class="btn btn-ghost">รีเซ็ตความคืบหน้า</button>
-        </div>
-      </div>
-
-      <!-- หน้า “สรุปดาว” แยกต่างหาก (ไม่แสดงในการ์ด) -->
-      <section id="starSummary" class="panel hidden">
-        <div class="backbar">
-          <button class="btn btn-icon" data-action="back">◀︎ กลับ</button>
-          <strong>สรุปดาว (ซ่อนดาวในการ์ดแล้ว แต่ยังเก็บข้อมูลอยู่)</strong>
-        </div>
-        <div id="starBuckets"></div>
-      </section>
-    </main>
   </div>
-<script>
-/* ========= Utils ========= */
-const qs = (s, el=document)=>el.querySelector(s);
-const qsa = (s, el=document)=>[...el.querySelectorAll(s)];
-const clamp = (n,min,max)=>Math.max(min, Math.min(max,n));
-const escapeHTML = (str) => (str??"")
-  .toString()
-  .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
-  .replaceAll('"',"&quot;").replaceAll("'","&#39;");
 
-const persist = {
-  get(k, d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d; }catch{ return d; } },
-  set(k, v){ localStorage.setItem(k, JSON.stringify(v)); }
-};
+  <input id="filePicker" type="file" accept=".txt,.csv,.json" style="display:none"/>
 
-/* ========= Data mapping =========
-ไฟล์ n5-500 word.json (ฟิลด์):
-- kanji -> kanji
-- kana -> kana
-- romaji -> romaji
-- thai -> meaning
-- jlpt -> level
-- category -> category
-หมายเหตุ: ถ้าไม่มี kanji ให้ขึ้นจาก kana
-*/
-const SOURCE_URL = 'n5-500 word.json';
-
-let rawCards = [];
-let cards = [];       // หลัง filter/sort
-let idx = 0;          // index ปัจจุบัน
-let showingBack = false;
-
-// เก็บ “ดาว” และ คะแนนรู้/ไม่รู้ แบบซ่อนใน UI
-let stars = persist.get('stars', {});      // key = id (hash text), value = 0..3
-let mastery = persist.get('mastery', {});  // { id: {know: n, dont: n} }
-
-const settings = persist.get('settings', {
-  mode: 'mixed',
-  front: 'kanji',
-  back: 'meaning'
-});
-
-const filters = persist.get('filters', {
-  level: '',
-  category: '',
-  search: ''
-});
-
-function hashId(o){
-  const s = [o.kanji,o.kana,o.romaji,o.meaning,o.level,o.category].join('|');
-  let h=0; for(let i=0;i<s.length;i++){ h=((h<<5)-h)+s.charCodeAt(i); h|=0; }
-  return String(h);
-}
-
-/* ========= Load & Prepare ========= */
-async function loadData(){
-  try{
-    const res = await fetch(SOURCE_URL);
-    const json = await res.json();
-    rawCards = (json.vocab ?? json).map(x => ({
-      kanji: x.kanji?.trim() || '',
-      kana: x.kana?.trim() || '',
-      romaji: x.romaji?.trim() || '',
-      meaning: (x.thai ?? x.meaning ?? '').trim(),
-      level: (x.jlpt ?? x.level ?? '').trim() || 'N5',
-      category: (x.category ?? '').trim() || 'ทั่วไป',
-    })).map(o=>{
-      if(!o.kanji) o.kanji = o.kana || o.meaning;
-      return {...o, id: hashId(o)};
-    });
-  }catch(e){
-    console.error('โหลดไฟล์ไม่สำเร็จ', e);
-    rawCards = [{
-      kanji:'行く', kana:'いく', romaji:'iku', meaning:'ไป', level:'N5', category:'การเดินทาง'
-    }].map(o=>({...o, id: hashId(o)}));
-  }
-  buildCategoryOptions();
-  applyAll();
-}
-
-/* ========= Filtering / Shuffling / Mode ========= */
-function buildCategoryOptions(){
-  const set = new Set(rawCards.map(c=>c.category).filter(Boolean));
-  const sel = qs('#categorySelect');
-  sel.innerHTML = '<option value="">ทั้งหมด</option>' + [...set].sort().map(c=>`<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join('');
-}
-
-function applyFilters(){
-  const {level, category, search} = filters;
-  const t = (search||'').toLowerCase().trim();
-  let out = rawCards.filter(c=>{
-    if(level && c.level!==level) return false;
-    if(category && c.category!==category) return false;
-    if(t){
-      const hay = [c.kanji,c.kana,c.romaji,c.meaning].join(' ').toLowerCase();
-      if(!hay.includes(t)) return false;
-    }
-    return true;
-  });
-  if(settings.mode==='category' && !filters.category){
-    // ถ้าโหมด category แต่ยังไม่ได้เลือกหมวด เลือกหมวดแรกให้
-    const firstCat = out[0]?.category || rawCards[0]?.category || '';
-    filters.category = firstCat;
-    persist.set('filters', filters);
-    out = rawCards.filter(c=>c.category===firstCat && (!level || c.level===level));
-    qs('#categorySelect').value = firstCat;
-  }
-  // สุ่มแบบถ่วงน้ำหนัก: คำที่ไม่รู้ (dont) และดาวน้อย โผล่บ่อยขึ้น
-  out = weightedShuffle(out);
-  return out;
-}
-
-function weightedShuffle(arr){
-  // weight = 1 + dont - know + (1 - star/3)
-  const items = arr.map(c=>{
-    const m = mastery[c.id] || {know:0, dont:0};
-    const star = stars[c.id] ?? 0;
-    const w = Math.max(0.2, 1 + (m.dont - m.know)*0.7 + (1 - (star/3))*0.5);
-    return {c, w};
-  });
-  // roulette wheel
-  const result=[];
-  const pool=[...items];
-  while(pool.length){
-    const sum = pool.reduce((s,x)=>s+x.w,0);
-    let r = Math.random()*sum;
-    let pickIdx = 0;
-    for(let i=0;i<pool.length;i++){
-      r -= pool[i].w;
-      if(r<=0){ pickIdx=i; break; }
-    }
-    result.push(pool[pickIdx].c);
-    pool.splice(pickIdx,1);
-  }
-  return result;
-}
-
-function applyAll(){
-  cards = applyFilters();
-  idx = clamp(idx, 0, Math.max(0, cards.length-1));
-  showingBack = false;
-  updateStat();
-  renderCard();
-}
-
-/* ========= Render ========= */
-function setFrontBackDisplay(frontKey, backKey, item){
-  // Front
-  let frontMain='', frontSub1='', frontSub2='';
-  if(frontKey==='kanji'){ frontMain=item.kanji; frontSub1=item.kana; frontSub2=item.romaji; }
-  else if(frontKey==='kana'){ frontMain=item.kana || item.kanji; frontSub1=item.kanji; frontSub2=item.romaji; }
-  else if(frontKey==='meaning'){ frontMain=item.meaning; frontSub1=item.kana || item.kanji; frontSub2=item.romaji; }
-
-  qs('#frontMain').textContent = frontMain || '—';
-  qs('#frontSub1').textContent = frontSub1 || '';
-  qs('#frontSub2').textContent = frontSub2 || '';
-
-  // Back
-  let backMain='', backSub1='', backSub2='';
-  if(backKey==='meaning'){ backMain=item.meaning; backSub1=item.kana; backSub2=item.romaji; }
-  else if(backKey==='kana'){ backMain=item.kana || item.kanji; backSub1=item.meaning; backSub2=item.romaji; }
-  else if(backKey==='romaji'){ backMain=item.romaji || item.kana; backSub1=item.kana || item.kanji; backSub2=item.meaning; }
-  else if(backKey==='kanji'){ backMain=item.kanji; backSub1=item.kana; backSub2=item.romaji; }
-
-  qs('#backMain').textContent = backMain || '—';
-  qs('#backSub1').textContent = backSub1 || '';
-  qs('#backSub2').textContent = backSub2 || '';
-}
-
-function renderCard(){
-  const cardEl = qs('#flashCard');
-  cardEl.classList.toggle('flipped', showingBack);
-
-  const item = cards[idx];
-  if(!item){
-    qs('#frontMain').textContent = 'ไม่พบการ์ดตามเงื่อนไข';
-    qs('#frontSub1').textContent = '';
-    qs('#frontSub2').textContent = '';
-    qs('#backMain').textContent = '';
-    qs('#backSub1').textContent = '';
-    qs('#backSub2').textContent = '';
-    qs('#badgeLevel').textContent = '';
-    qs('#badgeCategory').textContent = '';
-    return;
-  }
-  qs('#badgeLevel').textContent = item.level || '—';
-  qs('#badgeCategory').textContent = item.category || '—';
-
-  setFrontBackDisplay(settings.front, settings.back, item);
-}
-
-function updateStat(){
-  qs('#statCounter').textContent = `${cards.length? (idx+1):0} / ${cards.length}`;
-}
-
-/* ========= Navigation & Actions ========= */
-function next(){ if(!cards.length) return; idx = (idx+1)%cards.length; showingBack=false; updateStat(); renderCard(); }
-function prev(){ if(!cards.length) return; idx = (idx-1+cards.length)%cards.length; showingBack=false; updateStat(); renderCard(); }
-function flip(){ showingBack = !showingBack; renderCard(); }
-
-function markKnow(val){ // val: true=know, false=dont
-  const item = cards[idx]; if(!item) return;
-  const rec = mastery[item.id] || {know:0, dont:0};
-  if(val) rec.know++; else rec.dont++;
-  mastery[item.id] = rec;
-  // อัปเดต “ดาว” แบบเงียบ ๆ : รู้มากขึ้นให้ดาวสูงขึ้น ไม่รู้ลดลง
-  const score = Math.max(0, Math.min(3, Math.round(rec.know - rec.dont/2)));
-  stars[item.id] = score;
-  persist.set('mastery', mastery);
-  persist.set('stars', stars);
-  next();
-}
-
-/* ========= Star Summary (เก็บข้อมูลแต่ซ่อนบนการ์ด) ========= */
-function showStarSummary(){
-  const box = qs('#starBuckets');
-  const buckets = {0:[],1:[],2:[],3:[]};
-  for(const c of rawCards){
-    const s = stars[c.id] ?? 0;
-    buckets[s].push(c);
-  }
-  box.innerHTML = [3,2,1,0].map(st => {
-    const list = buckets[st].slice(0,100).map(it=>`<li>${escapeHTML(it.kanji)} — ${escapeHTML(it.meaning)} <small>(${escapeHTML(it.kana||'')})</small></li>`).join('');
-    const more = buckets[st].length>100 ? `<li>…และอีก ${buckets[st].length-100} คำ</li>`: '';
-    return `
-      <div class="panel" style="margin-top:12px">
-        <strong>⭐️ × ${st}</strong> — ${buckets[st].length} คำ
-        <ol style="margin-top:8px">${list}${more}</ol>
-      </div>`;
-  }).join('');
-}
-
-/* ========= Panels & Back button ========= */
-function openPanel(which){
-  // which: 'settings' | 'filter' | 'star'
-  qs('#panelSettings').classList.toggle('hidden', which!=='settings');
-  qs('#panelFilter').classList.toggle('hidden', which!=='filter');
-  qs('#starSummary').classList.toggle('hidden', which!=='star');
-  qs('#btnBack').classList.toggle('hidden', which===null);
-  if(which==='star') showStarSummary();
-}
-function closePanels(){ openPanel(null); }
-
-/* ========= Wire UI ========= */
-function bindUI(){
-  qs('#btnSettings').addEventListener('click', ()=>openPanel('settings'));
-  qs('#btnFilter').addEventListener('click', ()=>openPanel('filter'));
-  qs('#btnBack').addEventListener('click', closePanels);
-  qsa('[data-action="back"]').forEach(b=>b.addEventListener('click', closePanels));
-
-  qs('#btnPrev').addEventListener('click', prev);
-  qs('#btnNext').addEventListener('click', next);
-  qs('#btnFlip').addEventListener('click', flip);
-  qs('#btnKnow').addEventListener('click', ()=>markKnow(true));
-  qs('#btnDontKnow').addEventListener('click', ()=>markKnow(false));
-  qs('#btnShuffle').addEventListener('click', ()=>{ cards = weightedShuffle(cards); idx=0; showingBack=false; updateStat(); renderCard(); });
-  qs('#btnResetProgress').addEventListener('click', ()=>{
-    if(confirm('ล้างสถิติการจำ (ดาว/รู้/ไม่รู้) ทั้งหมด?')){
-      stars={}; mastery={};
-      persist.set('stars',stars); persist.set('mastery',mastery);
-      alert('รีเซ็ตเรียบร้อย');
-    }
-  });
-
-  // Tap/Click การ์ด = flip (ไม่ต้องกดค้าง)
-  const card = qs('#flashCard');
-  card.addEventListener('click', (e)=>{
-    // ถ้าคลิกที่ปุ่มใน actions ให้ไม่ flip ซ้ำ
-    if(e.target.closest('.actions')) return;
-    flip();
-  });
-
-  // Keyboard
-  document.addEventListener('keydown', (e)=>{
-    if(e.key==='ArrowRight') next();
-    else if(e.key==='ArrowLeft') prev();
-    else if(e.key===' '){ e.preventDefault(); flip(); }
-    else if(e.key==='1') markKnow(false);
-    else if(e.key==='2') markKnow(true);
-  });
-
-  // Settings
-  const modeSel = qs('#modeSelect');
-  const frontSel = qs('#frontSelect');
-  const backSel = qs('#backSelect');
-  modeSel.value = settings.mode; frontSel.value = settings.front; backSel.value = settings.back;
-
-  modeSel.addEventListener('change', ()=>{
-    settings.mode = modeSel.value; persist.set('settings', settings); applyAll();
-  });
-  frontSel.addEventListener('change', ()=>{
-    settings.front = frontSel.value; persist.set('settings', settings); renderCard();
-  });
-  backSel.addEventListener('change', ()=>{
-    settings.back = backSel.value; persist.set('settings', settings); renderCard();
-  });
-
-  // Filter
-  qs('#levelSelect').value = filters.level;
-  qs('#categorySelect').value = filters.category;
-  qs('#searchInput').value = filters.search;
-
-  qs('#btnApplyFilter').addEventListener('click', ()=>{
-    filters.level = qs('#levelSelect').value;
-    filters.category = qs('#categorySelect').value;
-    filters.search = qs('#searchInput').value.trim();
-    persist.set('filters', filters);
-    applyAll();
-    closePanels();
-  });
-  qs('#btnClearFilter').addEventListener('click', ()=>{
-    filters.level=''; filters.category=''; filters.search='';
-    persist.set('filters', filters);
-    qs('#levelSelect').value=''; qs('#categorySelect').value=''; qs('#searchInput').value='';
-    applyAll();
-  });
-
-  // ซ่อนหน้า “ดาว” ไว้ก่อน — อยากเปิดดูให้ทำปุ่มเองหรือลองเรียกในคอนโซล openPanel('star')
-}
-
-/* ========= Init ========= */
-document.addEventListener('DOMContentLoaded', async ()=>{
-  bindUI();
-  await loadData();
-});
-</script>
+  <script src="app.js" defer></script>
 </body>
 </html>
