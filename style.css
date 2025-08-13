@@ -68,7 +68,7 @@ html,body{
 .lives .heart{ font-size:22px; line-height:1; color:#ef4444; filter: drop-shadow(0 2px 0 rgba(0,0,0,.06)); }
 .round{ color:#6f6a86; font-size:12px }
 
-/* TYPE */
+/* TYPE (for practice card only – legacy) */
 .type-pane{ position:absolute; left:16px; right:16px; bottom:18px; display:grid; gap:8px; z-index:2 }
 .type-pane.hidden{ display:none }
 .type-top{ display:flex; justify-content:center }
@@ -81,7 +81,7 @@ html,body{
   border:1px solid #ffffff88; background:rgba(255,255,255,.55); backdrop-filter:blur(10px) saturate(140%) }
 .type-feedback{ text-align:center; font-size:14px; color:#6f6a86; min-height:20px }
 
-/* TEST */
+/* TEST (legacy positions for card mode) */
 .mcq.hidden{ display:none } .mcq{ position:absolute; left:16px; right:16px; bottom:18px }
 .mcq-q{ font-size:14px; color:#4b3f6b; margin-bottom:8px; text-align:center }
 .mcq-choices{ display:grid; gap:8px }
@@ -89,7 +89,7 @@ html,body{
 .choice.disabled{ opacity:.5; pointer-events:none }
 .choice.correct{ outline:2px solid #22c55e } .choice.wrong{ outline:2px solid #ef4444 }
 
-/* Hint */
+/* Hint (legacy for card) */
 .hintbar{ position:absolute; left:16px; right:16px; bottom:18px; transform:translateY(110%); background:#fff; border:1px solid var(--border); border-radius:12px; padding:10px; box-shadow:0 8px 20px rgba(0,0,0,.08); text-align:center; color:#3a2d66 }
 .hintbar.hidden{ display:none }
 
@@ -101,10 +101,10 @@ html,body{
 .btn.pressXL{ transform:scale(1.5); z-index:2 }
 .btn.shrinkXL{ transform:scale(.75); opacity:.9; background:var(--violet-soft); color:#3a2d66 }
 
-/* Overlay Drawer (ปิดจริงเมื่อไม่ open) */
+/* Overlay Drawer */
 .overlay{
   position:fixed; inset:0; z-index:50;
-  display:block; /* ใช้ visibility/pointer-events ควบคุมแทน */
+  display:block;
   visibility:hidden; opacity:0; pointer-events:none;
   background:rgba(0,0,0,.28); transition:opacity .18s ease, visibility .18s ease;
 }
@@ -142,3 +142,21 @@ select,input{ font-size:16px; padding:10px; border-radius:12px; border:1px solid
 @keyframes pop{ 0%{transform:scale(.6); opacity:0} 60%{transform:scale(1.06); opacity:1} 100%{transform:scale(1)} }
 
 @media (prefers-reduced-motion:reduce){ .card,.face,.fx-icon{ transition:none; animation:none } }
+
+/* ⬇️ Exam page layout (Test/Type แยกการ์ด) */
+.exam.hidden{ display:none }
+.exam{ position:relative; width:min(820px,92vw); margin:0 auto; display:grid; grid-template-rows:auto 1fr auto; gap:10px }
+.exam-body{ display:grid; gap:10px; padding:8px 0 }
+.exam-prompt{ text-align:center; font-size:clamp(28px,6vw,48px); font-weight:900; color:#1c1535 }
+
+/* ใช้บล็อกเดิมแต่ไม่ fix bottom แบบการ์ด */
+.exam .mcq, .exam .type-pane, .exam .hintbar{ position:relative; left:auto; right:auto; bottom:auto }
+.exam .mcq{ margin:0 auto; width:100%; max-width:640px }
+.exam .type-pane{ margin:0 auto; width:100%; max-width:640px }
+.exam .hintbar{ position:sticky; bottom:0; margin-top:6px; transform:translateY(0) }
+.hintbar.hidden{ display:none }
+.hintbar.show{ display:block } /* exam mode: ไม่ต้องแอนิเมชัน */
+
+/* ซ่อนการ์ดเมื่ออยู่โหมดข้อสอบ */
+.stage.has-exam .card{ display:none }
+.stage.has-exam{ align-content:start; padding-top:16px }

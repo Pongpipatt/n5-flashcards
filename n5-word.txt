@@ -1,286 +1,297 @@
+
 kanji,kana,romaji,meaning,type,jlpt,category
-歩く,あるく,aruku,"to walk",verb,N5,travel
-行く,いく,iku,"to go",verb,N5,travel
-入口,いりぐち,iriguchi,"entrance",noun,N5,travel
-入る,はいる,hairu,"to enter, to contain",verb,N5,travel
-出かける,でかける,dekakeru,"to go out",verb,N5,travel
-出口,でぐち,deguchi,"exit",noun,N5,travel
-北,きた,kita,"North",noun,N5,travel
-南,みなみ,minami,"South",noun,N5,travel
-東,ひがし,higashi,"East",noun,N5,travel
-西,にし,nishi,"West",noun,N5,travel
-曲る,まがる,magaru,"to turn, to bend",verb,N5,travel
-着く,つく,tsuku,"to arrive at",verb,N5,travel
-地図,ちず,chizu,"map",noun,N5,travel
-電車,でんしゃ,densha,"electric train",noun,N5,travel
-天気,てんき,tenki,"weather",noun,N5,nature
-空,そら,sora,"Sky",noun,N5,nature
-山,やま,yama,"mountain",noun,N5,nature
-秋,あき,aki,"autumn",noun,N5,nature
-夏,なつ,natsu,"summer",noun,N5,nature
-春,はる,haru,"spring",noun,N5,nature
-冬,ふゆ,fuyu,"winter",noun,N5,nature
-川,かわ,kawa,"River",noun,N5,nature
-海,うみ,umi,"sea",noun,N5,nature
-曇り,くもり,kumori,"cloudy weather",noun,N5,nature
-曇る,くもる,kumoru,"to become cloudy, to become dim",verb,N5,nature
-晴れ,はれ,hare,"clear weather",noun,N5,nature
-晴れる,はれる,hareru,"to be sunny",verb,N5,nature
-雨,あめ,ame,"rain",noun,N5,nature
-雪,ゆき,yuki,"snow",noun,N5,nature
-風,かぜ,kaze,"Wind",noun,N5,nature
-降る,ふる,furu,"to fall (e.g. rain or snow)",verb,N5,nature
-吹く,ふく,fuku,"to blow",verb,N5,nature
-温い,ぬるい,nurui,"luke warm",い-adjective,N5,nature
-暑い,あつい,atsui,"hot (weather)",い-adjective,N5,nature
-暖かい,あたたかい,atatakai,"warm",い-adjective,N5,others
-寒い,さむい,samui,"Cold",い-adjective,N5,nature
-甘い,あまい,amai,"sweet",い-adjective,N5,food
-辛い,からい,karai,"Spicy",い-adjective,N5,food
-お茶,おちゃ,ocha,"green tea",noun,N5,food
-紅茶,こうちゃ,koucha,"black tea",noun,N5,food
-コーヒー,コーヒー,koohii,"Coffee",noun,N5,food
-パン,パン,pan,"bread",noun,N5,food
-果物,くだもの,kudamono,"Fruit",noun,N5,food
-牛乳,ぎゅうにゅう,gyuunyuu,"Milk",noun,N5,food
-水,みず,mizu,"water",noun,N5,food
-卵,たまご,tamago,"egg",noun,N5,food
-肉,にく,niku,"meat",noun,N5,food
-魚,さかな,sakana,"Fish",noun,N5,food
-豚肉,ぶたにく,butaniku,"pork",noun,N5,food
-とり肉,とりにく,toriniku,"chicken meat",noun,N5,food
-牛肉,ぎゅうにく,gyuuniku,"Beef",noun,N5,food
-野菜,やさい,yasai,"vegetable",noun,N5,food
-砂糖,さとう,satou,"Sugar",noun,N5,food
-塩,しお,shio,"Salt",noun,N5,food
-料理,りょうり,ryouri,"cuisine",noun,N5,food
-食堂,しょくどう,shokudou,"dining hall",noun,N5,food
-朝御飯,あさごはん,asagohan,"breakfast",noun,N5,food
-昼御飯,ひるごはん,hirugohan,"midday meal",noun,N5,food
-晩御飯,ばんごはん,bangohan,"evening meal",noun,N5,food
-お弁当,おべんとう,obentou,"boxed lunch",noun,N5,food
-飲み物,のみもの,nomimono,"a drink",noun,N5,food
-飲む,のむ,nomu,"to drink",verb,N5,food
-食べる,たべる,taberu,"to eat",verb,N5,food
-おいしい,おいしい,oishii,"delicious",い-adjective,N5,food
-まずい,まずい,mazui,"unpleasant",い-adjective,N5,food
-お皿,おさら,osara,"plate, dish",noun,N5,food
-茶碗,ちゃわん,chawan,"rice bowl",noun,N5,food
-箸,はし,hashi,"chopsticks",noun,N5,food
-フォーク,フォーク,fooku,"fork",noun,N5,food
-スプーン,スプーン,supuun,"spoon",noun,N5,food
-ナイフ,ナイフ,naifu,"knife",noun,N5,food
-台所,だいどころ,daidokoro,"kitchen",noun,N5,food
-kanji,kana,romaji,meaning,type,jlpt,category
-働く,はたらく,hataraku,"to work",verb,N5,daily activities
-勉強,べんきょうする,benkyou suru,"to study",verb,N5,daily activities
-勉強,べんきょう,benkyou,"homework",noun,N5,daily activities
-休む,やすむ,yasumu,"to rest",verb,N5,daily activities
-休み,やすみ,yasumi,"rest, holiday",noun,N5,daily activities
-遊ぶ,あそぶ,asobu,"to play, to make a visit",verb,N5,daily activities
-走る,はしる,hashiru,"to run",verb,N5,daily activities
-起きる,おきる,okiru,"to get up",verb,N5,daily activities
-寝る,ねる,neru,"to go to bed, to sleep",verb,N5,daily activities
-見る 観る,みる,miru,"to see, to watch",verb,N5,daily activities
-聞く,きく,kiku,"to hear, to listen to, to ask",verb,N5,daily activities
-話す,はなす,hanasu,"to speak",verb,N5,daily activities
-言う,いう,iu,"to say",verb,N5,daily activities
-読む,よむ,yomu,"to read",verb,N5,daily activities
-書く,かく,kaku,"to write",verb,N5,daily activities
-描く,えがく,egaku,"to draw",verb,N5,daily activities
-教える,おしえる,oshieru,"to teach, to tell",verb,N5,daily activities
-習う,ならう,narau,"to learn",verb,N5,daily activities
-考える,かんがえる,kangaeru,"to think",verb,N5,daily activities
-知る,しる,shiru,"to know",verb,N5,daily activities
-分かる,わかる,wakaru,"to be understood",verb,N5,daily activities
-覚える,おぼえる,oboeru,"to remember",verb,N5,daily activities
-忘れる,わすれる,wasureru,"to forget",verb,N5,daily activities
-歩く,あるく,aruku,"to walk",verb,N5,daily activities
-走る,はしる,hashiru,"to run",verb,N5,daily activities
-遊ぶ,あそぶ,asobu,"to play",verb,N5,daily activities
-働く,はたらく,hataraku,"to work",verb,N5,daily activities
-休む,やすむ,yasumu,"to rest",verb,N5,daily activities
-入れる,いれる,ireru,"to put in",verb,N5,daily activities
-使う,つかう,tsukau,"to use",verb,N5,daily activities
-作る,つくる,tsukuru,"to make",verb,N5,daily activities
-つまらない,つまらない,tsumaranai,"boring",い-adjective,N5,daily activities
-上げる,あげる,ageru,"to give",verb,N5,daily activities
-もらう,もらう,morau,"to receive",verb,N5,daily activities
-買う,かう,kau,"to buy",verb,N5,daily activities
-売る,うる,uru,"to sell",verb,N5,daily activities
-開ける,あける,akeru,"to open",verb,N5,tools
-閉める,しめる,shimeru,"to close something",verb,N5,tools
-開く,あく,aku,"to open, to become open",verb,N5,tools
-閉まる,しまる,shimaru,"to close, to be closed",verb,N5,tools
-もつ,もつ,motsu,"to hold",verb,N5,daily activities
-待つ,まつ,matsu,"to wait",verb,N5,daily activities
-立つ,たつ,tatsu,"to stand",verb,N5,daily activities
-座る,すわる,suwaru,"to sit",verb,N5,daily activities
-あさって,,asatte,"day after tomorrow",noun,N5,time/day
-朝,あさ,asa,"morning",noun,N5,time/day
-昼,ひる,hiru,"noon, daytime",noun,N5,time/day
-夕方,ゆうがた,yuugata,"evening",noun,N5,time/day
-晩,ばん,ban,"evening",noun,N5,time/day
-今朝,けさ,kesa,"this morning",noun,N5,time/day
-今晩,こんばん,konban,"this evening",noun,N5,time/day
-夜,よる,yoru,"evening, night",noun,N5,time/day
-kanji,kana,romaji,meaning,type,jlpt,category
-今日,きょう,kyou,"Today",noun,N5,time/day
-昨日,きのう,kinou,"Yesterday",noun,N5,time/day
-明日,あした,ashita,"Tomorrow",noun,N5,time/day
-先週,せんしゅう,senshuu,"last week",noun,N5,time/day
-今週,こんしゅう,konshuu,"this week",noun,N5,time/day
-来週,らいしゅう,raishuu,"next week",noun,N5,time/day
-先月,せんげつ,sengetsu,"last month",noun,N5,time/day
-今月,こんげつ,kongetsu,"this month",noun,N5,time/day
-来月,らいげつ,raigetsu,"next month",noun,N5,time/day
-去年,きょねん,kyonen,"last year",noun,N5,time/day
-今年,ことし,kotoshi,"this year",noun,N5,time/day
-来年,らいねん,rainen,"next year",noun,N5,time/day
-毎朝,まいあさ,maiasa,"every morning",noun,N5,time/day
-毎日,まいにち,mainichi,"every day",noun,N5,time/day
-毎晩,まいばん,maiban,"every night",noun,N5,time/day
-毎週,まいしゅう,maishuu,"every week",noun,N5,time/day
-毎月,まいつき,maitsuki,"every month",noun,N5,time/day
-毎年,まいとし/まいねん,maitoshi/mainen,"every year",noun,N5,time/day
-時々,ときどき,tokidoki,"sometimes",noun,N5,time/day
-いつ,いつ,itsu,"when",pronoun,N5,time/day
-今,いま,ima,"now",noun,N5,time/day
-まだ,まだ,mada,"yet, still",adverb,N5,time/day
-もう,もう,mou,"already",adverb,N5,time/day
-いつも,いつも,itsumo,"always",adverb,N5,time/day
-よく,よく,yoku,"often, well",adverb,N5,time/day
-だんだん,だんだん,dandan,"gradually",adverb,N5,daily activities
-すぐに,すぐに,suguni,"instantly",adverb,N5,daily activities
-たくさん,たくさん,takusan,"many",adverb,N5,daily activities
-ちょうど,ちょうど,choudo,"exactly",adverb,N5,daily activities
-もっと,もっと,motto,"more",adverb,N5,daily activities
-少し,すこし,sukoshi,"Few",adverb,N5,daily activities
-少ない,すくない,sukunai,"a few",い-adjective,N5,daily activities
-とても,とても,totemo,"very",adverb,N5,daily activities
-たいへん,たいへん,taihen,"very; difficult situation",な-adjective,N5,daily activities
-上手,じょうず,jouzu,"Skillful",な-adjective,N5,people
-下手,へた,heta,"unskillful",な-adjective,N5,people
-子供,こども,kodomo,"Child",noun,N5,family
-家族,かぞく,kazoku,"Family",noun,N5,family
-兄弟,きょうだい,kyoudai,"siblings (humble)",noun,N5,family
-お父さん,おとうさん,otousan,"(honorable) father",noun,N5,family
-お母さん,おかあさん,okaasan,"(honorable) mother",noun,N5,family
-お兄さん,おにいさん,oniisan,"(honorable) older brother",noun,N5,family
-お姉さん,おねえさん,oneesan,"(honorable) older sister",noun,N5,family
-弟,おとうと,otouto,"younger brother",noun,N5,family
-妹,いもうと,imouto,"(humble) younger sister",noun,N5,family
-おじいさん,おじいさん,ojiisan,"grandfather, male senior citizen",noun,N5,family
-おばあさん,おばあさん,obaasan,"grandmother, female senior citizen",noun,N5,family
-おじさん,おじさん,ojisan,"Aunt",noun,N5,family
-おばさん,おばさん,obasan,"Aunt",noun,N5,family
-kanji,kana,romaji,meaning,type,jlpt,category
-先生,せんせい,sensei,"teacher, doctor",noun,N5,people
-医者,いしゃ,isha,"medical doctor",noun,N5,health
-学生,がくせい,gakusei,"Student",noun,N5,people
-生徒,せいと,seito,"Pupil",noun,N5,people
-友達,ともだち,tomodachi,"friend",noun,N5,people
-大人,おとな,otona,"Adult",noun,N5,people
-外国人,がいこくじん,gaikokujin,"Foreigner",noun,N5,people
-人,ひと,hito,"person",noun,N5,people
-男,おとこ,otoko,"Man",noun,N5,people
-女,おんな,onna,"Woman",noun,N5,people
-男の子,おとこのこ,otokonoko,"Boy",noun,N5,people
-女の子,おんなのこ,onnanoko,"Girl",noun,N5,people
-警官,けいかん,keikan,"policeman",noun,N5,people
-おまわりさん,おまわりさん,omawari-san,"friendly term for policeman",noun,N5,people
-病院,びょういん,byouin,"hospital",noun,N5,health
-病気,びょうき,byouki,"illness",noun,N5,health
-薬,くすり,kusuri,"medicine",noun,N5,health
-元気,げんき,genki,"health, vitality",な-adjective,N5,health
-風邪,かぜ,kaze,"a cold",noun,N5,health
-体,からだ,karada,"Body",noun,N5,health
-頭,あたま,atama,"head",noun,N5,health
-顔,かお,kao,"face",noun,N5,health
-手,て,te,"hand",noun,N5,health
-足,あし,ashi,"foot, leg",noun,N5,health
-目,め,me,"eye",noun,N5,health
-耳,みみ,mimi,"ear",noun,N5,health
-鼻,はな,hana,"nose",noun,N5,health
-口,くち,kuchi,"mouth, opening",noun,N5,health
-歯,は,ha,"Tooth",noun,N5,health
-痛い,いたい,itai,"painful",い-adjective,N5,health
-疲れる,つかれる,tsukareru,"to get tired",verb,N5,health
-死ぬ,しぬ,shinu,"to die",verb,N5,health
-生まれる,うまれる,umareru,"to be born",verb,N5,health
-犬,いぬ,inu,"dog",noun,N5,animals
-猫,ねこ,neko,"cat",noun,N5,animals
-鳥,とり,tori,"bird",noun,N5,animals
-魚,さかな,sakana,"Fish",noun,N5,animals
-動物,どうぶつ,doubutsu,"animal",noun,N5,animals
-ペット,ペット,petto,"pet",noun,N5,animals
-kanji,kana,romaji,meaning,type,jlpt,category
-学校,がっこう,gakkou,"School",noun,N5,places
-大学,だいがく,daigaku,"university",noun,N5,places
-会社,かいしゃ,kaisha,"Company",noun,N5,places
-銀行,ぎんこう,ginkou,"Bank",noun,N5,places
-郵便局,ゆうびんきょく,yuubinkyoku,"post office",noun,N5,places
-公園,こうえん,kouen,"Park",noun,N5,places
-図書館,としょかん,toshokan,"library",noun,N5,places
-店,みせ,mise,"shop",noun,N5,places
-デパート,デパート,depaato,"department store",noun,N5,places
-ホテル,ホテル,hoteru,"hotel",noun,N5,places
-部屋,へや,heya,"room",noun,N5,places
-庭,にわ,niwa,"garden",noun,N5,places
-玄関,げんかん,genkan,"entry hall",noun,N5,places
-交番,こうばん,kouban,"police box",noun,N5,places
-トイレ,トイレ,toire,"toilet",noun,N5,places
-お手洗い,おてあらい,otearai,"bathroom",noun,N5,places
-お風呂,おふろ,ofuro,"Bath",noun,N5,places
-橋,はし,hashi,"bridge",noun,N5,places
-建物,たてもの,tatemono,"building",noun,N5,places
-道路,みち,michi,"street",noun,N5,places
-廊下,ろうか,rouka,"corridor",noun,N5,places
-椅子,いす,isu,"chair",noun,N5,tools
-机,つくえ,tsukue,"desk",noun,N5,tools
-テーブル,テーブル,teeburu,"table",noun,N5,tools
-ベッド,ベッド,beddo,"bed",noun,N5,tools
-車,くるま,kuruma,"car, vehicle",noun,N5,travel
-自転車,じてんしゃ,jitensha,"bicycle",noun,N5,travel
-電話,でんわ,denwa,"telephone call, phone",noun,N5,tools
-テレビ,テレビ,terebi,"television",noun,N5,tools
-ラジオ,ラジオ,rajio,"radio",noun,N5,tools
-カメラ,カメラ,kamera,"camera",noun,N5,tools
-傘,かさ,kasa,"Umbrella",noun,N5,tools
-お金,おかね,okane,"money",noun,N5,tools
-鍵,かぎ,kagi,"Key",noun,N5,tools
-時計,とけい,tokei,"watch, clock",noun,N5,tools
-電気,でんき,denki,"electricity, electric light",noun,N5,tools
-ノート,ノート,nooto,"notebook, exercise book",noun,N5,tools
-鉛筆,えんぴつ,enpitsu,"pencil",noun,N5,tools
-ペン,ペン,pen,"pen",noun,N5,tools
-ボールペン,ボールペン,boorupen,"ball-point pen",noun,N5,tools
-本,ほん,hon,"book",noun,N5,tools
-辞書,じしょ,jisho,"Dictionary",noun,N5,tools
-切手,きって,kitte,"postage stamp",noun,N5,tools
-はがき,はがき,hagaki,"postcard",noun,N5,tools
-封筒,ふうとう,fuutou,"envelope",noun,N5,tools
-服,ふく,fuku,"clothes",noun,N5,tools
-背広,せびろ,sebiro,"business suit",noun,N5,tools
-靴,くつ,kutsu,"Shoes",noun,N5,tools
-靴下,くつした,kutsushita,"Socks",noun,N5,tools
-帽子,ぼうし,boushi,"hat",noun,N5,tools
-眼鏡,めがね,megane,"glasses",noun,N5,tools
-ギター,ギター,gitaa,"Guitar",noun,N5,tools
-レコード,レコード,rekoodo,"record",noun,N5,tools
-ラジオカセット,ラジカセ / ラジオカセット,rajikase / rajiokasetto,"radio cassette player",noun,N5,tools
-シャツ,シャツ,shatsu,"Shirt",noun,N5,tools
-ストーブ,ストーブ,sutoobu,"Heater",noun,N5,tools
-スリッパ,スリッパ,surippa,"Slippers",noun,N5,tools
-エレベーター,エレベーター,erebeetaa,"elevator",noun,N5,tools
-せっけん,せっけん,sekken,"soap",noun,N5,tools
-はい,はい,hai,"yes",interjection,N5,others
-いいえ,いいえ,iie,"no",interjection,N5,others
-ありがとう,ありがとう,arigatou,"thank you",expression,N5,others
-どうも,どうも,doumo,"thanks",interjection,N5,others
-どうぞ,どうぞ,douzo,"please",interjection,N5,others
-さあ,さあ,saa,"well…",interjection,N5,others
-じゃ/じゃあ,じゃ/じゃあ,ja/jaa,"well then…",interjection,N5,others
-そうして/そして,そうして/そして,soushite/soshite,"And",conjunction,N5,others
-しかし,しかし,shikashi,"However",conjunction,N5,others
-でも,でも,demo,"but",conjunction,N5,others
+歩く,あるく,aruku,"เดิน",verb,N5,travel
+行く,いく,iku,"ไป",verb,N5,travel
+入口,いりぐち,iriguchi,"ทางเข้า",noun,N5,travel
+入る,はいる,hairu,"เข้า",verb,N5,travel
+出かける,でかける,dekakeru,"ออกไป",verb,N5,travel
+出口,でぐち,deguchi,"ทางออก",noun,N5,travel
+北,きた,kita,"เหนือ",noun,N5,travel
+南,みなみ,minami,"ใต้",noun,N5,travel
+東,ひがし,higashi,"ตะวันออก",noun,N5,travel
+西,にし,nishi,"ตะวันตก",noun,N5,travel
+曲る,まがる,magaru,"เลี้ยว",verb,N5,travel
+着く,つく,tsuku,"มาถึง",verb,N5,travel
+地図,ちず,chizu,"แผนที่",noun,N5,travel
+電車,でんしゃ,densha,"รถไฟฟ้า",noun,N5,travel
+天気,てんき,tenki,"อากาศ",noun,N5,nature
+空,そら,sora,"ท้องฟ้า",noun,N5,nature
+山,やま,yama,"ภูเขา",noun,N5,nature
+秋,あき,aki,"ฤดูใบไม้ร่วง",noun,N5,nature
+夏,なつ,natsu,"ฤดูร้อน",noun,N5,nature
+春,はる,haru,"ฤดูใบไม้ผลิ",noun,N5,nature
+冬,ふゆ,fuyu,"ฤดูหนาว",noun,N5,nature
+川,かわ,kawa,"แม่น้ำ",noun,N5,nature
+海,うみ,umi,"ทะเล",noun,N5,nature
+曇り,くもり,kumori,"มีเมฆ",noun,N5,nature
+曇る,くもる,kumoru,"ครึ้ม",verb,N5,nature
+晴れ,はれ,hare,"อากาศแจ่มใส",noun,N5,nature
+晴れる,はれる,hareru,"แดดออก",verb,N5,nature
+雨,あめ,ame,"ฝน",noun,N5,nature
+雪,ゆき,yuki,"หิมะ",noun,N5,nature
+風,かぜ,kaze,"ลม",noun,N5,nature
+降る,ふる,furu,"ตก",verb,N5,nature
+吹く,ふく,fuku,"พัด",verb,N5,nature
+温い,ぬるい,nurui,"อุ่น",い-adjective,N5,nature
+暑い,あつい,atsui,"ร้อน",い-adjective,N5,nature
+暖かい,あたたかい,atatakai,"อบอุ่น",い-adjective,N5,others
+寒い,さむい,samui,"หนาว",い-adjective,N5,nature
+甘い,あまい,amai,"หวาน",い-adjective,N5,food
+辛い,からい,karai,"เผ็ด",い-adjective,N5,food
+お茶,おちゃ,ocha,"ชาเขียว",noun,N5,food
+紅茶,こうちゃ,koucha,"ชาดำ",noun,N5,food
+コーヒー,コーヒー,koohii,"กาแฟ",noun,N5,food
+パン,パン,pan,"ขนมปัง",noun,N5,food
+果物,くだもの,kudamono,"ผลไม้",noun,N5,food
+牛乳,ぎゅうにゅう,gyuunyuu,"นม",noun,N5,food
+水,みず,mizu,"น้ำ",noun,N5,food
+卵,たまご,tamago,"ไข่",noun,N5,food
+肉,にく,niku,"เนื้อ",noun,N5,food
+魚,さかな,sakana,"ปลา",noun,N5,food
+豚肉,ぶたにく,butaniku,"เนื้อหมู",noun,N5,food
+とり肉,とりにく,toriniku,"เนื้อไก่",noun,N5,food
+牛肉,ぎゅうにく,gyuuniku,"เนื้อวัว",noun,N5,food
+野菜,やさい,yasai,"ผัก",noun,N5,food
+砂糖,さとう,satou,"น้ำตาล",noun,N5,food
+塩,しお,shio,"เกลือ",noun,N5,food
+料理,りょうり,ryouri,"อาหาร",noun,N5,food
+食堂,しょくどう,shokudou,"โรงอาหาร",noun,N5,food
+朝御飯,あさごはん,asagohan,"อาหารเช้า",noun,N5,food
+昼御飯,ひるごはん,hirugohan,"อาหารกลางวัน",noun,N5,food
+晩御飯,ばんごはん,bangohan,"อาหารเย็น",noun,N5,food
+お弁当,おべんとう,obentou,"ข้าวกล่อง",noun,N5,food
+飲み物,のみもの,nomimono,"เครื่องดื่ม",noun,N5,food
+飲む,のむ,nomu,"ดื่ม",verb,N5,food
+食べる,たべる,taberu,"กิน",verb,N5,food
+おいしい,おいしい,oishii,"อร่อย",い-adjective,N5,food
+まずい,まずい,mazui,"ไม่อร่อย",い-adjective,N5,food
+お皿,おさら,osara,"จาน",noun,N5,food
+茶碗,ちゃわん,chawan,"ชามข้าว",noun,N5,food
+箸,はし,hashi,"ตะเกียบ",noun,N5,food
+フォーク,フォーク,fooku,"ส้อม",noun,N5,food
+スプーン,スプーン,supuun,"ช้อน",noun,N5,food
+ナイフ,ナイフ,naifu,"มีด",noun,N5,food
+台所,だいどころ,daidokoro,"ห้องครัว",noun,N5,food
+働く,はたらく,hataraku,"ทำงาน",verb,N5,daily activities
+勉強,べんきょうする,benkyou suru,"เรียน",verb,N5,daily activities
+勉強,べんきょう,benkyou,"การบ้าน",noun,N5,daily activities
+休む,やすむ,yasumu,"พักผ่อน",verb,N5,daily activities
+休み,やすみ,yasumi,"การพักผ่อน",noun,N5,daily activities
+遊ぶ,あそぶ,asobu,"ไปเล่น/เยี่ยม",verb,N5,daily activities
+走る,はしる,hashiru,"วิ่ง",verb,N5,daily activities
+起きる,おきる,okiru,"ตื่น",verb,N5,daily activities
+寝る,ねる,neru,"เข้านอน",verb,N5,daily activities
+見る 観る,みる,miru,"ดู",verb,N5,daily activities
+聞く,きく,kiku,"ฟัง/ถาม",verb,N5,daily activities
+話す,はなす,hanasu,"พูด",verb,N5,daily activities
+言う,いう,iu,"พูด",verb,N5,daily activities
+読む,よむ,yomu,"อ่าน",verb,N5,daily activities
+書く,かく,kaku,"เขียน",verb,N5,daily activities
+描く,えがく,egaku,"วาด",verb,N5,daily activities
+教える,おしえる,oshieru,"สอน",verb,N5,daily activities
+習う,ならう,narau,"เรียนรู้",verb,N5,daily activities
+考える,かんがえる,kangaeru,"คิด",verb,N5,daily activities
+知る,しる,shiru,"รู้",verb,N5,daily activities
+分かる,わかる,wakaru,"เข้าใจ",verb,N5,daily activities
+覚える,おぼえる,oboeru,"จำ",verb,N5,daily activities
+忘れる,わすれる,wasureru,"ลืม",verb,N5,daily activities
+歩く,あるく,aruku,"เดิน",verb,N5,daily activities
+走る,はしる,hashiru,"วิ่ง",verb,N5,daily activities
+遊ぶ,あそぶ,asobu,"เล่น",verb,N5,daily activities
+働く,はたらく,hataraku,"ทำงาน",verb,N5,daily activities
+休む,やすむ,yasumu,"พักผ่อน",verb,N5,daily activities
+入れる,いれる,ireru,"ใส่",verb,N5,daily activities
+使う,つかう,tsukau,"ใช้",verb,N5,daily activities
+作る,つくる,tsukuru,"ทำ",verb,N5,daily activities
+つまらない,つまらない,tsumaranai,"น่าเบื่อ",い-adjective,N5,daily activities
+上げる,あげる,ageru,"ให้",verb,N5,daily activities
+もらう,もらう,morau,"ได้รับ",verb,N5,daily activities
+買う,かう,kau,"ซื้อ",verb,N5,daily activities
+売る,うる,uru,"ขาย",verb,N5,daily activities
+開ける,あける,akeru,"เปิด",verb,N5,tools
+閉める,しめる,shimeru,"ปิด",verb,N5,tools
+開く,あく,aku,"เปิด",verb,N5,tools
+閉まる,しまる,shimaru,"ปิด",verb,N5,tools
+もつ,もつ,motsu,"ถือ",verb,N5,daily activities
+待つ,まつ,matsu,"รอ",verb,N5,daily activities
+立つ,たつ,tatsu,"ยืน",verb,N5,daily activities
+座る,すわる,suwaru,"นั่ง",verb,N5,daily activities
+あさって,,asatte,"มะรืนนี้",noun,N5,time/day
+朝,あさ,asa,"เช้า",noun,N5,time/day
+昼,ひる,hiru,"กลางวัน",noun,N5,time/day
+夕方,ゆうがた,yuugata,"ตอนเย็น",noun,N5,time/day
+晩,ばん,ban,"ตอนเย็น",noun,N5,time/day
+今朝,けさ,kesa,"เช้านี้",noun,N5,time/day
+今晩,こんばん,konban,"เย็นนี้",noun,N5,time/day
+夜,よる,yoru,"ตอนเย็น",noun,N5,time/day
+今日,きょう,kyou,"วันนี้",noun,N5,time/day
+昨日,きのう,kinou,"เมื่อวาน",noun,N5,time/day
+明日,あした,ashita,"พรุ่งนี้",noun,N5,time/day
+先週,せんしゅう,senshuu,"สัปดาห์ที่แล้ว",noun,N5,time/day
+今週,こんしゅう,konshuu,"สัปดาห์นี้",noun,N5,time/day
+来週,らいしゅう,raishuu,"สัปดาห์หน้า",noun,N5,time/day
+先月,せんげつ,sengetsu,"เดือนที่แล้ว",noun,N5,time/day
+今月,こんげつ,kongetsu,"เดือนนี้",noun,N5,time/day
+来月,らいげつ,raigetsu,"เดือนหน้า",noun,N5,time/day
+去年,きょねん,kyonen,"ปีที่แล้ว",noun,N5,time/day
+今年,ことし,kotoshi,"ปีนี้",noun,N5,time/day
+来年,らいねん,rainen,"ปีหน้า",noun,N5,time/day
+毎朝,まいあさ,maiasa,"ทุกเช้า",noun,N5,time/day
+毎日,まいにち,mainichi,"ทุกวัน",noun,N5,time/day
+毎晩,まいばん,maiban,"ทุกคืน",noun,N5,time/day
+毎週,まいしゅう,maishuu,"ทุกสัปดาห์",noun,N5,time/day
+毎月,まいつき,maitsuki,"ทุกเดือน",noun,N5,time/day
+毎年,まいとし/まいねん,maitoshi/mainen,"ทุกปี",noun,N5,time/day
+時々,ときどき,tokidoki,"บางครั้ง",noun,N5,time/day
+いつ,いつ,itsu,"เมื่อไร",pronoun,N5,time/day
+今,いま,ima,"ตอนนี้",noun,N5,time/day
+まだ,まだ,mada,"ยัง",adverb,N5,time/day
+もう,もう,mou,"แล้ว",adverb,N5,time/day
+いつも,いつも,itsumo,"เสมอ",adverb,N5,time/day
+よく,よく,yoku,"บ่อยๆ",adverb,N5,time/day
+だんだん,だんだん,dandan,"ค่อยๆ",adverb,N5,daily activities
+すぐに,すぐに,suguni,"ทันที",adverb,N5,daily activities
+たくさん,たくさん,takusan,"หลาย",adverb,N5,daily activities
+ちょうど,ちょうど,choudo,"พอดี",adverb,N5,daily activities
+もっと,もっと,motto,"มากขึ้น",adverb,N5,daily activities
+少し,すこし,sukoshi,"ไม่กี่",adverb,N5,daily activities
+少ない,すくない,sukunai,"ไม่กี่",い-adjective,N5,daily activities
+とても,とても,totemo,"มาก",adverb,N5,daily activities
+たいへん,たいへん,taihen,"มาก; ยากลำบาก",な-adjective,N5,daily activities
+上手,じょうず,jouzu,"เก่ง",な-adjective,N5,people
+下手,へた,heta,"ไม่เก่ง",な-adjective,N5,people
+子供,こども,kodomo,"เด็ก",noun,N5,family
+家族,かぞく,kazoku,"ครอบครัว",noun,N5,family
+兄弟,きょうだい,kyoudai,"พี่น้อง",noun,N5,family
+お父さん,おとうさん,otousan,"คุณพ่อ",noun,N5,family
+お母さん,おかあさん,okaasan,"คุณแม่",noun,N5,family
+お兄さん,おにいさん,oniisan,"พี่ชาย",noun,N5,family
+お姉さん,おねえさん,oneesan,"พี่สาว",noun,N5,family
+弟,おとうと,otouto,"น้องชาย",noun,N5,family
+妹,いもうと,imouto,"น้องสาว",noun,N5,family
+おじいさん,おじいさん,ojiisan,"คุณปู่/คุณตา",noun,N5,family
+おばあさん,おばあさん,obaasan,"คุณย่า/คุณยาย",noun,N5,family
+おじさん,おじさん,ojisan,"ป้า",noun,N5,family
+おばさん,おばさん,obasan,"ป้า",noun,N5,family
+先生,せんせい,sensei,"ครู/หมอ",noun,N5,people
+医者,いしゃ,isha,"หมอ",noun,N5,health
+学生,がくせい,gakusei,"นักเรียน",noun,N5,people
+生徒,せいと,seito,"นักเรียน",noun,N5,people
+友達,ともだち,tomodachi,"เพื่อน",noun,N5,people
+大人,おとな,otona,"ผู้ใหญ่",noun,N5,people
+外国人,がいこくじん,gaikokujin,"ชาวต่างชาติ",noun,N5,people
+人,ひと,hito,"คน",noun,N5,people
+男,おとこ,otoko,"ผู้ชาย",noun,N5,people
+女,おんな,onna,"ผู้หญิง",noun,N5,people
+男の子,おとこのこ,otokonoko,"เด็กผู้ชาย",noun,N5,people
+女の子,おんなのこ,onnanoko,"เด็กผู้หญิง",noun,N5,people
+警官,けいかん,keikan,"ตำรวจ",noun,N5,people
+おまわりさん,おまわりさん,omawari-san,"คุณตำรวจ",noun,N5,people
+病院,びょういん,byouin,"โรงพยาบาล",noun,N5,health
+病気,びょうき,byouki,"การเจ็บป่วย",noun,N5,health
+薬,くすり,kusuri,"ยา",noun,N5,health
+元気,げんき,genki,"สุขภาพ",な-adjective,N5,health
+風邪,かぜ,kaze,"หวัด",noun,N5,health
+体,からだ,karada,"ร่างกาย",noun,N5,health
+頭,あたま,atama,"ศีรษะ",noun,N5,health
+顔,かお,kao,"ใบหน้า",noun,N5,health
+手,て,te,"มือ",noun,N5,health
+足,あし,ashi,"เท้า/ขา",noun,N5,health
+目,め,me,"ตา",noun,N5,health
+耳,みみ,mimi,"หู",noun,N5,health
+鼻,はな,hana,"จมูก",noun,N5,health
+口,くち,kuchi,"ปาก",noun,N5,health
+歯,は,ha,"ฟัน",noun,N5,health
+痛い,いたい,itai,"เจ็บ",い-adjective,N5,health
+疲れる,つかれる,tsukareru,"เหนื่อย",verb,N5,health
+死ぬ,しぬ,shinu,"ตาย",verb,N5,health
+生まれる,うまれる,umareru,"เกิด",verb,N5,health
+犬,いぬ,inu,"สุนัข",noun,N5,animals
+猫,ねこ,neko,"แมว",noun,N5,animals
+鳥,とり,tori,"นก",noun,N5,animals
+魚,さかな,sakana,"ปลา",noun,N5,animals
+動物,どうぶつ,doubutsu,"สัตว์",noun,N5,animals
+ペット,ペット,petto,"สัตว์เลี้ยง",noun,N5,animals
+学校,がっこう,gakkou,"โรงเรียน",noun,N5,places
+大学,だいがく,daigaku,"มหาวิทยาลัย",noun,N5,places
+会社,かいしゃ,kaisha,"บริษัท",noun,N5,places
+銀行,ぎんこう,ginkou,"ธนาคาร",noun,N5,places
+郵便局,ゆうびんきょく,yuubinkyoku,"ที่ทำการไปรษณีย์",noun,N5,places
+公園,こうえん,kouen,"สวนสาธารณะ",noun,N5,places
+図書館,としょかん,toshokan,"ห้องสมุด",noun,N5,places
+店,みせ,mise,"ร้าน",noun,N5,places
+デパート,デパート,depaato,"ห้างสรรพสินค้า",noun,N5,places
+ホテル,ホテル,hoteru,"โรงแรม",noun,N5,places
+部屋,へや,heya,"ห้อง",noun,N5,places
+庭,にわ,niwa,"สวน",noun,N5,places
+玄関,げんかん,genkan,"โถงทางเข้า",noun,N5,places
+交番,こうばん,kouban,"ป้อมตำรวจ",noun,N5,places
+トイレ,トイレ,toire,"ห้องน้ำ",noun,N5,places
+お手洗い,おてあらい,otearai,"ห้องน้ำ",noun,N5,places
+お風呂,おふろ,ofuro,"อ่างอาบน้ำ",noun,N5,places
+橋,はし,hashi,"สะพาน",noun,N5,places
+建物,たてもの,tatemono,"อาคาร",noun,N5,places
+道路,みち,michi,"ถนน",noun,N5,places
+廊下,ろうか,rouka,"ทางเดิน",noun,N5,places
+椅子,いす,isu,"เก้าอี้",noun,N5,tools
+机,つくえ,tsukue,"โต๊ะ",noun,N5,tools
+テーブル,テーブル,teeburu,"โต๊ะ",noun,N5,tools
+ベッド,ベッド,beddo,"เตียง",noun,N5,tools
+車,くるま,kuruma,"รถ",noun,N5,travel
+自転車,じてんしゃ,jitensha,"จักรยาน",noun,N5,travel
+電話,でんわ,denwa,"โทรศัพท์",noun,N5,tools
+テレビ,テレビ,terebi,"โทรทัศน์",noun,N5,tools
+ラジオ,ラジオ,rajio,"วิทยุ",noun,N5,tools
+カメラ,カメラ,kamera,"กล้อง",noun,N5,tools
+傘,かさ,kasa,"ร่ม",noun,N5,tools
+お金,おかね,okane,"เงิน",noun,N5,tools
+鍵,かぎ,kagi,"กุญแจ",noun,N5,tools
+時計,とけい,tokei,"นาฬิกา",noun,N5,tools
+電気,でんき,denki,"ไฟฟ้า",noun,N5,tools
+ノート,ノート,nooto,"สมุด",noun,N5,tools
+鉛筆,えんぴつ,enpitsu,"ดินสอ",noun,N5,tools
+ペン,ペン,pen,"ปากกา",noun,N5,tools
+ボールペン,ボールペン,boorupen,"ปากกาลูกลื่น",noun,N5,tools
+本,ほん,hon,"หนังสือ",noun,N5,tools
+辞書,じしょ,jisho,"พจนานุกรม",noun,N5,tools
+切手,きって,kitte,"แสตมป์",noun,N5,tools
+はがき,はがき,hagaki,"ไปรษณียบัตร",noun,N5,tools
+封筒,ふうとう,fuutou,"ซองจดหมาย",noun,N5,tools
+服,ふく,fuku,"เสื้อผ้า",noun,N5,tools
+背広,せびろ,sebiro,"ชุดสูท",noun,N5,tools
+靴,くつ,kutsu,"รองเท้า",noun,N5,tools
+靴下,くつした,kutsushita,"ถุงเท้า",noun,N5,tools
+帽子,ぼうし,boushi,"หมวก",noun,N5,tools
+眼鏡,めがね,megane,"แว่นตา",noun,N5,tools
+ギター,ギター,gitaa,"กีตาร์",noun,N5,tools
+レコード,レコード,rekoodo,"แผ่นเสียง",noun,N5,tools
+ラジオカセット,ラジカセ / ラジオカセット,rajikase / rajiokasetto,"เครื่องเล่นวิทยุเทป",noun,N5,tools
+シャツ,シャツ,shatsu,"เสื้อเชิ้ต",noun,N5,tools
+ストーブ,ストーブ,sutoobu,"เครื่องทำความร้อน",noun,N5,tools
+スリッパ,スリッパ,surippa,"รองเท้าแตะ",noun,N5,tools
+エレベーター,エレベーター,erebeetaa,"ลิฟต์",noun,N5,tools
+せっけん,せっけん,sekken,"สบู่",noun,N5,tools
+はい,はい,hai,"ใช่",interjection,N5,others
+いいえ,いいえ,iie,"ไม่",interjection,N5,others
+ありがとう,ありがとう,arigatou,"ขอบคุณ",expression,N5,others
+どうも,どうも,doumo,"ขอบคุณ",interjection,N5,others
+どうぞ,どうぞ,douzo,"กรุณา",interjection,N5,others
+さあ,さあ,saa,"เอ่อ…",interjection,N5,others
+じゃ/じゃあ,じゃ/じゃあ,ja/jaa,"งั้น…",interjection,N5,others
+そうして/そして,そうして/そして,soushite/soshite,"และ",conjunction,N5,others
+しかし,しかし,shikashi,"อย่างไรก็ตาม",conjunction,N5,others
+でも,でも,demo,"แต่",conjunction,N5,others
+牛,うし,ushi,"วัว",noun,N5,animals
+豚,ぶた,buta,"หมู",noun,N5,animals
+馬,うま,uma,"ม้า",noun,N5,animals
+兎,うさぎ,usagi,"กระต่าย",noun,N5,animals
+猿,さる,saru,"ลิง",noun,N5,animals
+蛇,へび,hebi,"งู",noun,N5,animals
+駅,えき,eki,"สถานี",noun,N5,travel
+切符,きっぷ,kippu,"ตั๋ว",noun,N5,travel
+飛行機,ひこうき,hikouki,"เครื่องบิน",noun,N5,travel
+バス,バス,basu,"รถบัส",noun,N5,travel
+こんにちは,こんにちは,konnichiwa,"สวัสดี",expression,N5,others
+おはようございます,おはようございます,ohayou gozaimasu,"สวัสดีตอนเช้า",expression,N5,others
+こんばんは,こんばんは,konbanwa,"สวัสดีตอนเย็น",expression,N5,others
+さようなら,さようなら,sayounara,"ลาก่อน",expression,N5,others
