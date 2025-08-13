@@ -142,9 +142,7 @@ select,input{ font-size:16px; padding:10px; border-radius:12px; border:1px solid
 @keyframes pop{ 0%{transform:scale(.6); opacity:0} 60%{transform:scale(1.06); opacity:1} 100%{transform:scale(1)} }
 
 @media (prefers-reduced-motion:reduce){ .card,.face,.fx-icon{ transition:none; animation:none } }
-
-/* Mobile safe area and hint bar improvements */
-.hintbar { transition: transform .18s ease; }
+/* --- Mobile fixes appended --- */
 .hintbar.show { transform: translateY(0); }
-.hintbar, .mcq, .type-pane { bottom: calc(env(safe-area-inset-bottom) + 18px); }
+.hintbar { transition: transform .18s ease; }
 .stage.has-controls .face { padding-bottom: 140px; }
