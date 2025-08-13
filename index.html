@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>N5 Flashcards — stable build</title>
+
+  <!-- Fallback CSS สั้น ๆ เพื่อกัน overlay บังคลิกแม้ไฟล์หลักยังโหลดไม่เสร็จ -->
+  <style>
+    .overlay{visibility:hidden;opacity:0;pointer-events:none}
+    .overlay.open{visibility:visible;opacity:1;pointer-events:auto}
+  </style>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <button id="btnMenu" class="icon-btn" aria-label="เมนู">☰</button>
+      <div class="title">
+        <div class="app-title">JLPT N5 Flashcards</div>
+        <div class="subtitle">ไทย-ญี่ปุ่น • เหมาะกับผู้เริ่มต้น</div>
+      </div>
+      <div class="progress-mini">
+        <span id="miniIndex">0 / 0</span><span id="miniPct">0%</span>
+      </div>
+    </header>
+
+    <nav class="modes">
+      <button class="mode active" data-mode="learn">Practice</button>
+      <button class="mode" data-mode="test">Test</button>
+      <button class="mode" data-mode="type">Type</button>
+    </nav>
+
+    <main class="stage">
+      <article id="card" class="card" tabindex="0" aria-label="flashcard">
+        <!-- HUD -->
+        <div id="hud" class="hud hidden">
+          <div id="hudLives" class="lives"></div>
+          <div id="hudRound" class="round">1/5</div>
+          <div id="hudActions" class="row" style="gap:8px; justify-content:center">
+            <button id="btnResetTest" class="chip ghost" style="display:none">Reset Test</button>
+            <button id="btnResetType" class="chip ghost" style="display:none">Reset Type</button>
+          </div>
+        </div>
+
+        <div class="card-3d">
+          <section class="face front">
+            <div class="tags">
+              <span id="badgeLevel" class="pill">N5</span>
+              <span id="badgeCat" class="pill">—</span>
+            </div>
+            <div class="front-main" id="frontMain">—</div>
+            <div class="front-sub" id="frontSub1"></div>
+            <div class="front-sub small" id="frontSub2"></div>
+          </section>
+
+          <section class="face back">
+            <div class="tags"><span class="pill">คำแปล</span></div>
+            <div class="answer-wrap">
+              <div class="back-main" id="backMain">—</div>
+              <div class="back-read" id="backRead">—</div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TYPE -->
+        <div id="typePane" class="type-pane hidden">
+          <div class="type-top">
+            <div class="type-chooser" id="typeChooser">
+              <button class="seg active" data-ans="meaning">ความหมาย</button>
+              <button class="seg" data-ans="kana">Kana</button>
+              <button class="seg" data-ans="romaji">Romaji</button>
+            </div>
+          </div>
+          <div class="type-center" id="typePrompt">พิมพ์คำตอบ</div>
+
+          <!-- แก้ให้เหลือชุด input/submit/feedback เพียงชุดเดียว -->
+          <div class="type-inputwrap">
+            <input id="typeInput" class="type-input" placeholder="พิมพ์คำตอบแล้วกด Enter" />
+          </div>
+          <div class="row" style="justify-content:center">
+            <button id="btnTypeSubmit" class="chip primary">ส่งคำตอบ</button>
+          </div>
+          <div id="typeFeedback" class="type-feedback"></div>
+        </div>
+
+        <!-- TEST -->
+        <section id="mcq" class="mcq hidden">
+          <div id="mcqPrompt" class="mcq-q">…</div>
+          <div id="mcqChoices" class="mcq-choices"></div>
+        </section>
+
+        <!-- Hint -->
+        <div id="hintBar" class="hintbar hidden"></div>
+
+        <!-- FX -->
+        <div id="fx" class="fx hidden"><div id="fxIcon" class="fx-icon"></div></div>
+      </article>
+    </main>
+
+    <!-- ปุ่มฝึกตอบเฉพาะ Practice -->
+    <div id="dock" class="dock">
+      <button id="btnDont" class="btn btn-red">ยังจำไม่ได้</button>
+      <button id="btnSkip" class="btn btn-violet">ข้าม</button>
+      <button id="btnKnow" class="btn btn-green">จำได้แล้ว</button>
+    </div>
+  </div>
+
+  <!-- Drawer overlay -->
+  <div id="drawerOverlay" class="overlay" aria-hidden="true">
+    <div class="drawer" role="dialog" aria-modal="true" aria-label="ตั้งค่า & ตัวเลือก">
+      <div class="drawer-hero">
+        <div class="hero-title">ตั้งค่า & ตัวเลือก</div>
+        <button id="btnCloseDrawer" class="icon-btn solid">✕</button>
+      </div>
+
+      <div class="drawer-content">
+        <section class="card-sec">
+          <h4>ตัวกรอง & หมวด</h4>
+          <div class="grid-2">
+            <label>ระดับ
+              <select id="selLevel">
+                <option value="">ทั้งหมด</option>
+                <option value="N5" selected>N5</option>
+                <option value="N4">N4</option>
+              </select>
+            </label>
+            <label>ค้นหา (JP/TH)
+              <input id="txtSearch" placeholder="เช่น 行く / いく / ไป" inputmode="search"/>
+            </label>
+          </div>
+          <label>เลือกหลายหมวด
+            <select id="selCats" class="multi" multiple size="8"></select>
+          </label>
+          <div class="row end">
+            <button id="btnClear" class="chip ghost">ล้าง</button>
+            <button id="btnApply" class="chip primary">Apply</button>
+          </div>
+        </section>
+
+        <section class="card-sec">
+          <h4>ตั้งค่าเซสชัน</h4>
+          <div class="grid-3">
+            <label>จำนวนคำ/รอบ
+              <select id="selLimit">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="40">40</option>
+                <option value="100">100</option>
+              </select>
+            </label>
+            <label>หน้าแรก
+              <select id="selFront">
+                <option value="kanji" selected>Kanji</option>
+                <option value="kana">Kana</option>
+                <option value="meaning">ความหมาย</option>
+              </select>
+            </label>
+            <label>หลังการ์ด
+              <select id="selBack">
+                <option value="meaning">ความหมาย</option>
+                <option value="kana">Kana</option>
+                <option value="romaji">Romaji</option>
+                <option value="kanji">Kanji</option>
+              </select>
+            </label>
+          </div>
+          <div class="toggles">
+            <label class="switch"><input id="toggleThai" type="checkbox" checked><span>ใช้คำแปลไทย (ถ้ามี)</span></label>
+            <label class="switch"><input id="toggleSpeak" type="checkbox"><span>อ่านเสียงญี่ปุ่น</span></label>
+            <label class="switch"><input id="toggleAuto" type="checkbox" checked><span>ตอบแล้วเลื่อนไปการ์ดถัดไป</span></label>
+          </div>
+        </section>
+
+        <section class="card-sec">
+          <h4>สถิติ & ดาว</h4>
+          <div id="statsWrap" class="stats-wrap"></div>
+          <div class="row end"><button id="btnResetStats" class="chip danger">ล้างสถิติ</button></div>
+        </section>
+
+        <section class="card-sec">
+          <h4>ไฟล์คำศัพท์</h4>
+          <div class="row gap">
+            <button id="btnLoadURL" class="chip">โหลดจาก n5-word.txt</button>
+            <button id="btnPickFile" class="chip primary">อัปโหลดไฟล์…</button>
+          </div>
+          <small class="muted">รองรับ .txt/.csv (kanji,kana,romaji,meaning,type,jlpt,category) และ .json</small>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <input id="filePicker" type="file" accept=".txt,.csv,.json" style="display:none"/>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
