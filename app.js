@@ -30,6 +30,23 @@ function hashId(o){ const s=[o.kanji,o.kana,o.romaji,o.meaning,o.level,o.categor
 function shuffle(a){ const r=[...a]; for(let i=r.length-1;i>0;i--){ const j=(Math.random()*(i+1))|0; [r[i],r[j]]=[r[j],r[i]] } return r }
 function normalizeAnswer(x){ if(!x) return ''; let s=x.toString().trim(); if(fuzzy){ s=s.normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim(); } return s }
 
+/***** THEME *****/
+const THEME_KEY = 'theme';
+function getTheme(){ return getStore(THEME_KEY, 'pastel'); }
+function setTheme(t){
+  const allowed = new Set(['pastel','white','dark']);
+  const theme = allowed.has(t) ? t : 'pastel';
+  document.documentElement.setAttribute('data-theme', theme);
+  setStore(THEME_KEY, theme);
+  // toggle active styles on buttons
+  const grp = $('#themeGroup');
+  if(grp){
+    grp.querySelectorAll('button[data-theme]').forEach(btn=>{
+      btn.classList.toggle('primary', btn.dataset.theme===theme);   // ใช้สไตล์ chip.primary ที่มีอยู่
+    });
+  }
+}
+
 /***** DATA LOADERS *****/
 async function loadFromURL(){
   try{
@@ -401,6 +418,9 @@ document.addEventListener('DOMContentLoaded', async ()=>{
   // ปิด overlay เสมอ
   $('#drawerOverlay')?.classList.remove('open');
 
+  // ⬇️ โหลดธีมที่เคยเลือกไว้ก่อน แล้วค่อย bind UI
+  setTheme(getTheme());
+
   // โหลด prefs
   frontKey=getStore('frontKey','kanji');  $('#selFront').value=frontKey;
   backKey=getStore('backKey','meaning');  $('#selBack').value=backKey;
@@ -509,4 +529,10 @@ function bindUI(){
   $('#btnResetType').addEventListener('click', ()=>{ typeState=null; startTypeIfNeeded(); render(); drawHUD(); });
 
   $('#btnResetStats').addEventListener('click', resetStats);
+
+  // ⬇️ Theme buttons
+  $('#themeGroup')?.addEventListener('click', (e)=>{
+    const b=e.target.closest('button[data-theme]'); if(!b) return;
+    setTheme(b.dataset.theme);
+  });
 }

@@ -1,0 +1,59 @@
+/* Pure Dark: grayscale only (no colored UI) */
+html[data-theme="dark"]{
+  --ink:#E5E7EB;
+  --muted:#A1A1AA;
+
+  --bgA:#000000; --bgB:#000000; --bgC:#000000;
+
+  --headerA:#111111; --headerB:#111111;
+  --topbar-text:#E5E7EB;
+
+  --card:#121212;
+  --border:#2A2A2A;
+
+  /* ปุ่มเป็นดำ/เทา เท่านั้น */
+  --btn-primary-bg:#222222;
+  --btn-primary-text:#FFFFFF;
+  --btn-primary-shadow:0 16px 36px rgba(0,0,0,.35);
+
+  --btn-secondary-bg:#171717;
+  --btn-secondary-text:#E5E7EB;
+
+  --btn-danger-bg:#222222;
+  --btn-danger-text:#FFFFFF;
+
+  --btn-success-bg:#222222;
+  --btn-success-text:#FFFFFF;
+
+  /* แท็ก/ชิป/แท็บ */
+  --pill-bg:#1A1A1A; --pill-text:#E5E7EB; --pill-border:#2A2A2A;
+
+  --chip-bg:#171717; --chip-text:#E5E7EB; --chip-border:#2A2A2A;
+  --chip-primary-bg:#222222; --chip-primary-text:#FFFFFF;
+  --chip-ghost-bg:#171717; --chip-ghost-text:#E5E7EB;
+
+  --tab-bg:#171717; --tab-text:#E5E7EB; --tab-border:#2A2A2A;
+  --tab-active-bg:#222222; --tab-active-text:#FFFFFF;
+
+  /* อินพุตโทนเข้ม */
+  --input-bg:#0F0F0F; --input-text:#E5E7EB; --input-border:#2A2A2A;
+
+  /* ฮินต์/ดรอว์เวอร์ */
+  --hint-bg:#0F0F0F; --hint-text:#E5E7EB; --hint-border:#2A2A2A;
+
+  --drawer-hero-bg:#111111; --drawer-hero-text:#E5E7EB; --drawer-content-bg:#0F0F0F;
+
+  --choice-bg:#0F0F0F; --choice-text:#E5E7EB; --choice-border:#2A2A2A;
+
+  /* FX เป็นขาว-เทา (ไม่มีสี) */
+  --fx-bg:#0F0F0F; --fx-border:#0000;
+  --fx-check:#E5E7EB;
+  --fx-cross:#9CA3AF;
+  --fx-skip:#6B7280;
+}
+
+/* พื้นหลังรวมดำล้วน */
+html[data-theme="dark"], html[data-theme="dark"] body{
+  background:#000000 !important;
+  color:var(--ink);
+}
