@@ -228,7 +228,7 @@ function getTestCurrent(){ return testState?.set[testState.idx]; }
 function renderTestQuestion(){
   const q=getTestCurrent(); if(!q) return;
 
-  // ป้ายหมวด/ระดับ
+  // ป้ายหมวด/ระดับ (ใช้ของการ์ดบนเฮดเดอร์เดิม)
   $('#badgeLevel').textContent=q.level||'N5'; $('#badgeCat').textContent=q.category||'—';
 
   // Prompt กลาง
@@ -398,6 +398,7 @@ function showFX(kind){
 
 /***** INIT + UI BINDINGS *****/
 document.addEventListener('DOMContentLoaded', async ()=>{
+  // ปิด overlay เสมอ
   $('#drawerOverlay')?.classList.remove('open');
 
   // โหลด prefs
@@ -412,6 +413,7 @@ document.addEventListener('DOMContentLoaded', async ()=>{
   renderStats();
   bindUI();
 
+  // โหลดคำศัพท์
   const arr=await loadFromURL(); applyRaw(arr);
 });
 
@@ -422,7 +424,7 @@ function bindUI(){
     btn.classList.add('active'); session.mode=btn.dataset.mode; showingBack=false; render();
   }));
 
-  // Flip (Practice only)
+  // Flip ที่การ์ด (เฉพาะ Practice)
   const card=$('#card');
   card.addEventListener('click', ()=>{ if(session.mode!=='learn') return; showingBack=!showingBack; card.classList.toggle('flipped', showingBack); if(showingBack&&speakJP){ const it=current(); speakKana(it?.kana||''); } });
 
@@ -474,7 +476,7 @@ function bindUI(){
   $('#toggleSpeak').addEventListener('change', e=>{ speakJP=e.target.checked; setStore('speakJP',speakJP); });
   $('#toggleAuto').addEventListener('change',  e=>{ autoNext=e.target.checked; setStore('autoNext',autoNext); });
 
-  // TYPE chooser + submit (ใน examPane)
+  // TYPE chooser + submit (อยู่ใน examPane แล้ว)
   const chooser=$('#typeChooser');
   chooser.addEventListener('click', (e)=>{
     const b=e.target.closest('.seg'); if(!b) return;

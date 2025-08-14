@@ -6,6 +6,7 @@
   --violet:#6d28d9; --violet-soft:#ede7ff;
   --green:#16a34a; --red:#ef4444;
   --radius:20px; --shadow:0 14px 36px rgba(19,15,31,.10);
+  --bottom-space: calc(84px + env(safe-area-inset-bottom));
 }
 
 *{box-sizing:border-box}
@@ -61,14 +62,17 @@ html,body{
 .back-main{ font-size:clamp(46px,9.6vw,102px); font-weight:900; color:#1c1535 }
 .back-read{ margin-top:8px; font-size:clamp(22px,5vw,34px); color:#3e2e75; font-weight:800 }
 
-/* HUD */
-.hud{ position:absolute; top:8px; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:6px; z-index:4 }
+/* HUD (Top: left=reset, center=round, right=hearts) */
+.hud{ position:absolute; top:8px; left:0; right:0; z-index:4;
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center; pointer-events:none }
 .hud.hidden{ display:none }
-.lives{ display:flex; gap:6px }
+.hud .left{ display:flex; gap:8px; justify-content:flex-start; pointer-events:auto }
+.hud .center{ display:flex; justify-content:center }
+.hud .right{ display:flex; gap:6px; justify-content:flex-end }
 .lives .heart{ font-size:22px; line-height:1; color:#ef4444; filter: drop-shadow(0 2px 0 rgba(0,0,0,.06)); }
-.round{ color:#6f6a86; font-size:12px }
+.round{ color:#6f6a86; font-size:12px; font-weight:700 }
 
-/* TYPE (for practice card only – legacy) */
+/* TYPE (การ์ด - ใช้เฉพาะ practice เดิม) */
 .type-pane{ position:absolute; left:16px; right:16px; bottom:18px; display:grid; gap:8px; z-index:2 }
 .type-pane.hidden{ display:none }
 .type-top{ display:flex; justify-content:center }
@@ -81,7 +85,7 @@ html,body{
   border:1px solid #ffffff88; background:rgba(255,255,255,.55); backdrop-filter:blur(10px) saturate(140%) }
 .type-feedback{ text-align:center; font-size:14px; color:#6f6a86; min-height:20px }
 
-/* TEST (legacy positions for card mode) */
+/* TEST (การ์ด - เดิม) */
 .mcq.hidden{ display:none } .mcq{ position:absolute; left:16px; right:16px; bottom:18px }
 .mcq-q{ font-size:14px; color:#4b3f6b; margin-bottom:8px; text-align:center }
 .mcq-choices{ display:grid; gap:8px }
@@ -89,7 +93,7 @@ html,body{
 .choice.disabled{ opacity:.5; pointer-events:none }
 .choice.correct{ outline:2px solid #22c55e } .choice.wrong{ outline:2px solid #ef4444 }
 
-/* Hint (legacy for card) */
+/* Hint (การ์ด - เดิม) */
 .hintbar{ position:absolute; left:16px; right:16px; bottom:18px; transform:translateY(110%); background:#fff; border:1px solid var(--border); border-radius:12px; padding:10px; box-shadow:0 8px 20px rgba(0,0,0,.08); text-align:center; color:#3a2d66 }
 .hintbar.hidden{ display:none }
 
@@ -143,20 +147,27 @@ select,input{ font-size:16px; padding:10px; border-radius:12px; border:1px solid
 
 @media (prefers-reduced-motion:reduce){ .card,.face,.fx-icon{ transition:none; animation:none } }
 
-/* ⬇️ Exam page layout (Test/Type แยกการ์ด) */
+/* Exam page layout (Test/Type separate from card) */
 .exam.hidden{ display:none }
-.exam{ position:relative; width:min(820px,92vw); margin:0 auto; display:grid; grid-template-rows:auto 1fr auto; gap:10px }
-.exam-body{ display:grid; gap:10px; padding:8px 0 }
-.exam-prompt{ text-align:center; font-size:clamp(28px,6vw,48px); font-weight:900; color:#1c1535 }
+.exam{
+  position:relative;
+  width:min(820px,92vw);
+  margin:0 auto;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  gap:10px;
+}
+.exam-body{ display:flex; flex-direction:column; gap:10px; padding:8px 0; min-height: 60vh }
+.exam-prompt{ text-align:center; font-size:clamp(28px,6vw,48px); font-weight:900; color:#1c1535; margin-top:2.2em }
 
-/* ใช้บล็อกเดิมแต่ไม่ fix bottom แบบการ์ด */
+/* reuse blocks but not absolute-bottom like card */
 .exam .mcq, .exam .type-pane, .exam .hintbar{ position:relative; left:auto; right:auto; bottom:auto }
-.exam .mcq{ margin:0 auto; width:100%; max-width:640px }
-.exam .type-pane{ margin:0 auto; width:100%; max-width:640px }
+.exam .mcq{ margin-top:auto; width:100%; max-width:640px; margin-left:auto; margin-right:auto; padding-bottom:var(--bottom-space) }
+.exam .type-pane{ margin-top:auto; width:100%; max-width:640px; margin-left:auto; margin-right:auto; padding-bottom:var(--bottom-space) }
 .exam .hintbar{ position:sticky; bottom:0; margin-top:6px; transform:translateY(0) }
 .hintbar.hidden{ display:none }
-.hintbar.show{ display:block } /* exam mode: ไม่ต้องแอนิเมชัน */
+.hintbar.show{ display:block }
 
-/* ซ่อนการ์ดเมื่ออยู่โหมดข้อสอบ */
+/* hide card when exam visible */
 .stage.has-exam .card{ display:none }
 .stage.has-exam{ align-content:start; padding-top:16px }

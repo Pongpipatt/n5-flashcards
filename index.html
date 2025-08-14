@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>N5 Flashcards — stable build</title>
 
+  <!-- Fallback CSS สั้น ๆ เพื่อกัน overlay บังคลิกแม้ไฟล์หลักยังโหลดไม่เสร็จ -->
   <style>
     .overlay{visibility:hidden;opacity:0;pointer-events:none}
     .overlay.open{visibility:visible;opacity:1;pointer-events:auto}
@@ -62,14 +63,14 @@
 
       <!-- ⬇️ Exam Pane (อยู่นอกการ์ด) -->
       <section id="examPane" class="exam hidden" aria-live="polite">
-        <!-- HUD -->
+        <!-- HUD : 左 Reset  |  中 Round  |  右 Hearts -->
         <div id="hud" class="hud hidden">
-          <div id="hudLives" class="lives"></div>
-          <div id="hudRound" class="round">1/5</div>
-          <div id="hudActions" class="row" style="gap:8px; justify-content:center">
+          <div class="left">
             <button id="btnResetTest" class="chip ghost" style="display:none">Reset Test</button>
             <button id="btnResetType" class="chip ghost" style="display:none">Reset Type</button>
           </div>
+          <div class="center"><div id="hudRound" class="round">1/5</div></div>
+          <div class="right"><div id="hudLives" class="lives"></div></div>
         </div>
 
         <div class="exam-body">
@@ -104,6 +105,7 @@
         <!-- Hint -->
         <div id="hintBar" class="hintbar hidden"></div>
       </section>
+
     </main>
 
     <!-- ปุ่มฝึกตอบเฉพาะ Practice -->
