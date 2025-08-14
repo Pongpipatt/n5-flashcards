@@ -1,23 +1,22 @@
-/* Pure Dark: grayscale only (no colored UI) */
 html[data-theme="dark"]{
-  --ink:#E5E7EB;
-  --muted:#A1A1AA;
+  --ink:#E6E6E6;       /* ตัวอักษรหลัก: เทาอ่อน */
+  --muted:#AAAAAA;     /* ตัวอักษรรอง */
 
   --bgA:#000000; --bgB:#000000; --bgC:#000000;
 
-  --headerA:#111111; --headerB:#111111;
-  --topbar-text:#E5E7EB;
+  --headerA:#0F0F0F; --headerB:#0F0F0F;
+  --topbar-text:#E6E6E6;
 
   --card:#121212;
   --border:#2A2A2A;
 
-  /* ปุ่มเป็นดำ/เทา เท่านั้น */
+  /* ปุ่ม: เทาเข้ม (ไม่ใช้สี) */
   --btn-primary-bg:#222222;
   --btn-primary-text:#FFFFFF;
-  --btn-primary-shadow:0 16px 36px rgba(0,0,0,.35);
+  --btn-primary-shadow:0 16px 32px rgba(0,0,0,.35);
 
   --btn-secondary-bg:#171717;
-  --btn-secondary-text:#E5E7EB;
+  --btn-secondary-text:#E6E6E6;
 
   --btn-danger-bg:#222222;
   --btn-danger-text:#FFFFFF;
@@ -26,33 +25,31 @@ html[data-theme="dark"]{
   --btn-success-text:#FFFFFF;
 
   /* แท็ก/ชิป/แท็บ */
-  --pill-bg:#1A1A1A; --pill-text:#E5E7EB; --pill-border:#2A2A2A;
+  --pill-bg:#1A1A1A; --pill-text:#E6E6E6; --pill-border:#2A2A2A;
 
-  --chip-bg:#171717; --chip-text:#E5E7EB; --chip-border:#2A2A2A;
+  --chip-bg:#171717; --chip-text:#E6E6E6; --chip-border:#2A2A2A;
   --chip-primary-bg:#222222; --chip-primary-text:#FFFFFF;
-  --chip-ghost-bg:#171717; --chip-ghost-text:#E5E7EB;
+  --chip-ghost-bg:#171717; --chip-ghost-text:#E6E6E6;
 
-  --tab-bg:#171717; --tab-text:#E5E7EB; --tab-border:#2A2A2A;
+  --tab-bg:#171717;        --tab-text:#E6E6E6; --tab-border:#2A2A2A;
   --tab-active-bg:#222222; --tab-active-text:#FFFFFF;
 
-  /* อินพุตโทนเข้ม */
-  --input-bg:#0F0F0F; --input-text:#E5E7EB; --input-border:#2A2A2A;
+  /* อินพุต/ฮินต์/ดรอว์เวอร์ */
+  --input-bg:#0F0F0F; --input-text:#E6E6E6; --input-border:#2A2A2A;
+  --hint-bg:#0F0F0F;  --hint-text:#E6E6E6;  --hint-border:#2A2A2A;
+  --drawer-hero-bg:#0F0F0F; --drawer-hero-text:#E6E6E6; --drawer-content-bg:#0F0F0F;
 
-  /* ฮินต์/ดรอว์เวอร์ */
-  --hint-bg:#0F0F0F; --hint-text:#E5E7EB; --hint-border:#2A2A2A;
+  /* MCQ */
+  --choice-bg:#0F0F0F; --choice-text:#E6E6E6; --choice-border:#2A2A2A;
 
-  --drawer-hero-bg:#111111; --drawer-hero-text:#E5E7EB; --drawer-content-bg:#0F0F0F;
-
-  --choice-bg:#0F0F0F; --choice-text:#E5E7EB; --choice-border:#2A2A2A;
-
-  /* FX เป็นขาว-เทา (ไม่มีสี) */
+  /* เอฟเฟกต์ (ไม่มีสี) */
   --fx-bg:#0F0F0F; --fx-border:#0000;
-  --fx-check:#E5E7EB;
-  --fx-cross:#9CA3AF;
-  --fx-skip:#6B7280;
+  --fx-check:#E6E6E6;
+  --fx-cross:#A0A0A0;
+  --fx-skip:#7A7A7A;
 }
 
-/* พื้นหลังรวมดำล้วน */
+/* พื้นหลังรวม */
 html[data-theme="dark"], html[data-theme="dark"] body{
   background:#000000 !important;
   color:var(--ink);

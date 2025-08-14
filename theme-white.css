@@ -1,59 +1,142 @@
-/* Pure White: grayscale only (no colored UI) */
-html[data-theme="white"]{
-  --ink:#0F172A;
-  --muted:#6B7280;
+/* White Theme (Pure White + Grey Buttons) */
+html[data-theme="white"] {
+  --ink: #374151;           /* ตัวอักษรเทาเข้ม */
+  --muted: #6B7280;
 
-  --bgA:#FFFFFF; --bgB:#FFFFFF; --bgC:#FFFFFF;
+  /* พื้นหลังขาวล้วน */
+  --bgA: #FFFFFF;
+  --bgB: #FFFFFF;
+  --bgC: #FFFFFF;
 
-  --headerA:#FFFFFF; --headerB:#FFFFFF;
-  --topbar-text:#0F172A;
+  /* Header ขาว */
+  --headerA: #FFFFFF;
+  --headerB: #FFFFFF;
 
-  --card:#FFFFFF;
-  --border:#E5E7EB;
+  /* การ์ด/เส้นขอบ */
+  --card: #FFFFFF;
+  --border: #E5E7EB;
 
-  /* ปุ่มเป็นขาว/ดำ เท่านั้น */
-  --btn-primary-bg:#111827;   /* almost black */
-  --btn-primary-text:#FFFFFF;
-  --btn-primary-shadow:0 12px 24px rgba(17,24,39,.18);
+  /* ปุ่ม/ชิปโทนเทา */
+  --primary-btn-bg: #F3F4F6;
+  --primary-btn-text: var(--ink);
+  --secondary-btn-bg: #E5E7EB;
+  --secondary-btn-text: var(--ink);
 
-  --btn-secondary-bg:#FFFFFF;
-  --btn-secondary-text:#0F172A;
-
-  --btn-danger-bg:#111827;
-  --btn-danger-text:#FFFFFF;
-
-  --btn-success-bg:#111827;
-  --btn-success-text:#FFFFFF;
-
-  /* แท็ก/ชิป/แท็บเป็นขาว-เทา */
-  --pill-bg:#FFFFFF; --pill-text:#0F172A; --pill-border:#E5E7EB;
-
-  --chip-bg:#FFFFFF; --chip-text:#0F172A; --chip-border:#E5E7EB;
-  --chip-primary-bg:#111827; --chip-primary-text:#FFFFFF;
-  --chip-ghost-bg:#FFFFFF; --chip-ghost-text:#0F172A;
-
-  --tab-bg:#FFFFFF; --tab-text:#0F172A; --tab-border:#E5E7EB;
-  --tab-active-bg:#111827; --tab-active-text:#FFFFFF;
-
-  /* อินพุตขาวล้วน */
-  --input-bg:#FFFFFF; --input-text:#0F172A; --input-border:#E5E7EB;
-
-  /* ฮินต์/ดรอว์เวอร์ขาวล้วน */
-  --hint-bg:#FFFFFF; --hint-text:#111827; --hint-border:#E5E7EB;
-
-  --drawer-hero-bg:#FFFFFF; --drawer-hero-text:#0F172A; --drawer-content-bg:#FFFFFF;
-
-  /* MCQ */
-  --choice-bg:#FFFFFF; --choice-text:#0F172A; --choice-border:#E5E7EB;
-
-  /* FX เป็นขาว-เทา (ไม่ใช้เขียว/แดงฉูดฉาด) */
-  --fx-bg:#FFFFFF; --fx-border:#0000;
-  --fx-check:#111827;   /* ใช้ดำเป็น feedback */
-  --fx-cross:#6B7280;   /* เทาเข้ม */
-  --fx-skip:#9CA3AF;    /* เทากลาง */
+  --radius: 20px;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
-/* พื้นหลังรวมขาวล้วน */
-html[data-theme="white"], html[data-theme="white"] body{
-  background:#FFFFFF !important;
+html[data-theme="white"],
+html[data-theme="white"] body {
+  background: #FFFFFF !important;
+  color: var(--ink);
+}
+
+/* Topbar */
+html[data-theme="white"] .topbar {
+  background: #FFFFFF !important;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+html[data-theme="white"] .icon-btn {
+  background: var(--primary-btn-bg);
+  border: 1px solid var(--border);
+  color: var(--ink);
+}
+
+html[data-theme="white"] .icon-btn:hover {
+  background: var(--secondary-btn-bg);
+}
+
+/* ปุ่มสามปุ่มด้านบน */
+html[data-theme="white"] .btn-violet,
+html[data-theme="white"] .btn-red,
+html[data-theme="white"] .btn-green {
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-text);
+  border: 1px solid var(--border);
+}
+
+html[data-theme="white"] .btn-violet:hover,
+html[data-theme="white"] .btn-red:hover,
+html[data-theme="white"] .btn-green:hover {
+  background: var(--secondary-btn-bg);
+}
+
+/* ปุ่มทั่วไป */
+html[data-theme="white"] .btn {
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-text);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+html[data-theme="white"] .btn:hover {
+  background: var(--secondary-btn-bg);
+}
+
+html[data-theme="white"] .btn.shrinkXL {
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-text);
+}
+
+/* สถานะ active/selected */
+html[data-theme="white"] .active,
+html[data-theme="white"] .selected {
+  background: var(--secondary-btn-bg) !important;
+  color: var(--primary-btn-text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* ชิป/แท็ก */
+html[data-theme="white"] .chip {
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-text);
+  border: 1px solid var(--border);
+}
+
+html[data-theme="white"] .chip.primary {
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-text);
+  border: 1px solid var(--border);
+}
+
+/* Choice ในข้อสอบ */
+html[data-theme="white"] .choice {
+  background: #FFFFFF;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+html[data-theme="white"] .choice.correct {
+  outline: 2px solid #9CA3AF; /* เทาเข้ม */
+}
+
+html[data-theme="white"] .choice.wrong {
+  outline: 2px solid #D1D5DB; /* เทาอ่อน */
+}
+
+/* Hintbar */
+html[data-theme="white"] .hintbar {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+/* Drawer */
+html[data-theme="white"] .drawer,
+html[data-theme="white"] .drawer-hero,
+html[data-theme="white"] .drawer-content {
+  background: #FFFFFF !important;
+  color: var(--ink);
+}
+
+html[data-theme="white"] select,
+html[data-theme="white"] input {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  color: var(--ink);
 }

@@ -1,94 +1,56 @@
 /* =========================================================
-   JLPT N5 Flashcards — Core Styles (themeable, no hardcoded colors)
-   This file defines structure + component vars only.
-   Colors come from theme-*.css via CSS variables.
+   JLPT N5 Flashcards — Core Styles (pure themeable)
+   No hardcoded brand colors. All UI uses component variables
+   provided by theme-*.css
    ========================================================= */
 
-/* ---------- Core + Component Variables (defaults for safety) ---------- */
+/* ---------- Core + Component Variables (defaults/safety) ---------- */
 :root{
-  /* Base text & surfaces (will be overridden by theme-*.css) */
-  --ink:#1E293B;           /* main text */
-  --muted:#6B7280;         /* secondary text */
+  /* Base text & surfaces */
+  --ink:#1E293B;
+  --muted:#6B7280;
 
-  --bgA:#FFFFFF;           /* background layers */
-  --bgB:#FFFFFF;
-  --bgC:#FFFFFF;
+  --bgA:#FFFFFF; --bgB:#FFFFFF; --bgC:#FFFFFF;
 
-  --headerA:#FFFFFF;       /* header background (A=B => flat) */
-  --headerB:#FFFFFF;
+  --headerA:#FFFFFF; --headerB:#FFFFFF;
   --topbar-text:#1E293B;
 
   --card:#FFFFFF;          /* cards & panels */
   --border:#E5E7EB;
 
-  /* Semantic (can be neutralized by pure themes) */
-  --accent:#6366F1;        /* rarely used; keep neutral */
+  /* Semantic */
   --green:#16A34A;
   --red:#EF4444;
 
-  /* Component-level tokens */
   /* Buttons */
-  --btn-primary-bg:#111827;
-  --btn-primary-text:#FFFFFF;
-  --btn-primary-shadow:0 12px 24px rgba(0,0,0,.16);
+  --btn-primary-bg:#222;   --btn-primary-text:#FFF;   --btn-primary-shadow:0 12px 24px rgba(0,0,0,.12);
+  --btn-secondary-bg:#FFF; --btn-secondary-text:#111;
 
-  --btn-secondary-bg:#FFFFFF;
-  --btn-secondary-text:#1E293B;
-
-  --btn-danger-bg:#111827;
-  --btn-danger-text:#FFFFFF;
-
-  --btn-success-bg:#111827;
-  --btn-success-text:#FFFFFF;
+  --btn-danger-bg:#222;    --btn-danger-text:#FFF;
+  --btn-success-bg:#222;   --btn-success-text:#FFF;
 
   /* Pills/Chips/Tags */
-  --pill-bg:#F5F5F5;
-  --pill-text:#1F2937;
-  --pill-border:var(--border);
+  --pill-bg:#F5F5F5;      --pill-text:#111;       --pill-border:#E5E7EB;
+  --chip-bg:#FFFFFF;      --chip-text:#111;       --chip-border:#E5E7EB;
+  --chip-primary-bg:#222; --chip-primary-text:#FFF;
+  --chip-ghost-bg:#FFFFFF;--chip-ghost-text:#111;
 
-  --chip-bg:#FFFFFF;
-  --chip-text:#1E293B;
-  --chip-border:var(--border);
-
-  --chip-primary-bg:var(--btn-primary-bg);
-  --chip-primary-text:var(--btn-primary-text);
-  --chip-ghost-bg:#FFFFFF;
-  --chip-ghost-text:var(--ink);
-
-  /* Tabs (segmented) */
-  --tab-bg:#FFFFFF;
-  --tab-text:#1E293B;
-  --tab-active-bg:var(--btn-primary-bg);
-  --tab-active-text:var(--btn-primary-text);
-  --tab-border:var(--border);
+  /* Tabs */
+  --tab-bg:#FFFFFF; --tab-text:#111; --tab-active-bg:#222; --tab-active-text:#FFF; --tab-border:#E5E7EB;
 
   /* Inputs */
-  --input-bg:#FFFFFF;
-  --input-text:#1E293B;
-  --input-border:var(--border);
-  --input-glass-bg:rgba(255,255,255,.7);
-  --input-glass-border:var(--border);
+  --input-bg:#FFFFFF; --input-text:#111; --input-border:#E5E7EB;
 
-  /* Hints / Drawer surfaces */
-  --hint-bg:#FFFFFF;
-  --hint-text:#334155;
-  --hint-border:var(--border);
-
-  --drawer-hero-bg:var(--headerA);
-  --drawer-hero-text:var(--topbar-text);
-  --drawer-content-bg:#FFFFFF;
+  /* Hints / Drawer */
+  --hint-bg:#FFFFFF; --hint-text:#333; --hint-border:#E5E7EB;
+  --drawer-hero-bg:#FFFFFF; --drawer-hero-text:#111; --drawer-content-bg:#FFFFFF;
 
   /* Choice (MCQ) */
-  --choice-bg:#FFFFFF;
-  --choice-text:#1E293B;
-  --choice-border:var(--border);
+  --choice-bg:#FFFFFF; --choice-text:#111; --choice-border:#E5E7EB;
 
   /* FX badge */
-  --fx-bg:#FFFFFF;
-  --fx-border:#0000;
-  --fx-check:#16a34a;
-  --fx-cross:#ef4444;
-  --fx-skip:#6b7280;
+  --fx-bg:var(--card); --fx-border:#0000;
+  --fx-check:#16a34a; --fx-cross:#ef4444; --fx-skip:#6b7280;
 
   /* Radius & shadow */
   --radius:20px;
@@ -100,7 +62,7 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 
-/* ---------- App background (no gradient here; themes decide) ---------- */
+/* ---------- App background (themes decide) ---------- */
 html,body{
   margin:0;
   background: var(--bgC);
@@ -109,7 +71,6 @@ html,body{
   -webkit-tap-highlight-color:transparent;
 }
 
-/* ---------- App container ---------- */
 .app{
   height:100dvh; display:grid; grid-template-rows:auto auto 1fr;
   overflow:hidden;
@@ -123,20 +84,20 @@ html,body{
   color:var(--topbar-text);
   background:linear-gradient(90deg, var(--headerA), var(--headerB));
   border-bottom:1px solid var(--border);
-  box-shadow:0 1px 0 rgba(15,23,42,.04);
+  box-shadow:0 1px 0 rgba(0,0,0,.04);
 }
 .icon-btn{
-  appearance:none; border:1px solid var(--border); background:#fff;
-  width:40px; height:40px; border-radius:14px; font-size:18px; color:var(--ink)
+  appearance:none; border:1px solid var(--border); background:var(--chip-ghost-bg);
+  width:40px; height:40px; border-radius:14px; font-size:18px; color:var(--chip-ghost-text)
 }
-.icon-btn.solid{ background:#fff }
+.icon-btn.solid{ background:var(--chip-ghost-bg) }
 .title .app-title{ font-weight:800; font-size:17px }
 .title .subtitle{ opacity:.9; font-size:12px; margin-top:2px; color:var(--muted) }
 .progress-mini{ margin-left:auto; display:flex; gap:8px; align-items:center; opacity:.9; font-size:12px; color:var(--muted) }
 
 /* ---------- Tabs ---------- */
 .modes{
-  display:flex; gap:10px; padding:10px 12px; background:#fff;
+  display:flex; gap:10px; padding:10px 12px; background:var(--card);
   border-bottom:1px solid var(--border)
 }
 .mode{
@@ -180,14 +141,14 @@ html,body{
 .type-pane{ position:absolute; left:16px; right:16px; bottom:18px; display:grid; gap:8px; z-index:2 }
 .type-pane.hidden{ display:none }
 .type-top{ display:flex; justify-content:center }
-.type-chooser{ display:flex; gap:6px; padding:6px; background:#fff; border:1px solid var(--input-border); border-radius:999px }
+.type-chooser{ display:flex; gap:6px; padding:6px; background:var(--card); border:1px solid var(--input-border); border-radius:999px }
 .seg{ border:0; background:transparent; padding:8px 12px; border-radius:999px; font-weight:800; color:var(--tab-text) }
 .seg.active{ background:var(--tab-active-bg); color:var(--tab-active-text) }
 .type-center{ align-self:center; justify-self:center; text-align:center; color:var(--muted); font-weight:800; font-size:14px }
 .type-inputwrap{ display:grid; place-items:center }
 .type-input{
   width:100%; max-width:560px; font-size:clamp(18px,4.6vw,24px); padding:14px 16px; border-radius:16px;
-  border:1px solid var(--input-border); background:var(--input-bg);
+  border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text);
 }
 .type-feedback{ text-align:center; font-size:14px; color:var(--muted); min-height:20px }
 
@@ -221,7 +182,7 @@ html,body{
 .btn-violet{ background:var(--btn-primary-bg); color:var(--btn-primary-text) }
 .btn-green{ background:var(--btn-success-bg); color:var(--btn-success-text) }
 .btn.pressXL{ transform:scale(1.5); z-index:2 }
-.btn.shrinkXL{ transform:scale(.75); opacity:.9; background:#F5F5F5; color:var(--ink) }
+.btn.shrinkXL{ transform:scale(.75); opacity:.9; background:var(--pill-bg); color:var(--ink) }
 
 /* ---------- Overlay Drawer ---------- */
 .overlay{
@@ -243,7 +204,10 @@ html,body{
 }
 .drawer-content{ padding:12px; background:var(--drawer-content-bg); overflow:auto; max-height:calc(92dvh - 64px) }
 .hero-title{ font-weight:900; letter-spacing:.3px }
-.card-sec{ background:#fff; border:1px solid var(--border); border-radius:16px; box-shadow:0 10px 24px rgba(2,6,23,.04); padding:14px; margin-bottom:12px }
+
+/* ✅ ใช้ var(--card) แทน #fff */
+.card-sec{ background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:0 10px 24px rgba(0,0,0,.04); padding:14px; margin-bottom:12px }
+
 h4{ margin:0 0 10px 0; font-size:14px; color:var(--ink) }
 .grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:10px }
 .grid-3{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px }
@@ -255,7 +219,7 @@ select,input{ font-size:16px; padding:10px; border-radius:12px; border:1px solid
 .chip{ padding:8px 12px; border-radius:999px; background:var(--chip-bg); color:var(--chip-text); border:1px solid var(--chip-border); font-weight:700 }
 .chip.primary{ background:var(--chip-primary-bg); color:var(--chip-primary-text); border-color:var(--chip-primary-bg) }
 .chip.ghost{ background:var(--chip-ghost-bg); color:var(--chip-ghost-text) }
-.chip.danger{ background:#F0F0F0; color:#7A7A7A }
+.chip.danger{ background:var(--pill-bg); color:var(--muted) }
 
 /* ---------- Animations + FX ---------- */
 .card,.face{ transition:transform .55s cubic-bezier(.2,.7,.2,1) }
@@ -279,7 +243,7 @@ select,input{ font-size:16px; padding:10px; border-radius:12px; border:1px solid
   .card,.face,.fx-icon{ transition:none; animation:none }
 }
 
-/* ---------- Exam layout (separate from card) ---------- */
+/* ---------- Exam layout ---------- */
 .exam.hidden{ display:none }
 .exam{
   position:relative;
@@ -292,7 +256,7 @@ select,input{ font-size:16px; padding:10px; border-radius:12px; border:1px solid
 .exam-body{ display:flex; flex-direction:column; gap:10px; padding:8px 0; min-height: 60vh }
 .exam-prompt{ text-align:center; font-size:clamp(28px,6vw,48px); font-weight:900; color:var(--ink); margin-top:2.2em }
 
-/* reuse blocks but not absolute-bottom like card */
+/* reuse blocks */
 .exam .mcq, .exam .type-pane, .exam .hintbar{ position:relative; left:auto; right:auto; bottom:auto }
 .exam .mcq{ margin-top:auto; width:100%; max-width:640px; margin-left:auto; margin-right:auto; padding-bottom:var(--bottom-space) }
 .exam .type-pane{ margin-top:auto; width:100%; max-width:640px; margin-left:auto; margin-right:auto; padding-bottom:var(--bottom-space) }
